@@ -1,5 +1,7 @@
 # PASTRIE
 
-Official release of the corpus for our paper at the 14th annual Linguistic Annotation Workshop @ COLING 2020:
+Official release of the corpus described in the paper:
 
-**PASTRIE: A Corpus of Prepositions Annotated with Supersense Tags in Reddit International English]** [[pdf](https://sigann.github.io/LAW-XIV-2020/pdf/2020.law-1.10.pdf)]
+Michael Kranzlein, Emma Manning, Siyao Peng, Shira Wein, Aryaman Arora, and Nathan Schneider (2020).
+**PASTRIE: A Corpus of Prepositions Annotated with Supersense Tags in Reddit International English** [[link](https://www.aclweb.org/anthology/2020.law-1.10/)].
+_Proceedings of the 14th Linguistic Annotation Workshop_.
