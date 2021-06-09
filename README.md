@@ -22,6 +22,7 @@ For details on how L1s were identified, see section 3.1 of [Rabinovich et al. (2
 
 ### Annotation Example
 Below is an example sentence from the corpus, where annotation targets are bolded and preposition supersenses are annotated with the notation SceneRole↝Function. Together, a scene role and function are known as a [construal](https://www.aclweb.org/anthology/S17-1022.pdf).
+
 ![](annotation_example.svg)
 
 ---
