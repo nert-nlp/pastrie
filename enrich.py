@@ -1,144 +1,123 @@
+from collections import defaultdict
 
-annolexcatmap = {'`c':'CCONJ','`j':'ADJ','`r':'ADV','`n':'NOUN','`o':'PRON','`v':'VERB','`d':'DISC','`i':'INF','`a':'AUX'}
-xposlexcatmap = {'PRP$':'PRON.POSS','WP$':'PRON.POSS','POS':'POSS','TO':'INF.P'}
+import conllu
+
+from streusle.lexcatter import compute_lexcat
+from streusle.mwerender import render
+from streusle.tagging import sent_tags
+# misc --------------------------------------------------------------------------------
+
+def get_conllulex_tokenlists(conllulex_path):
+    fields = tuple(list(conllu.parser.DEFAULT_FIELDS)
+                   + ['smwe',     # 10
+                      'lexcat',   # 11
+                      'lexlemma', # 12
+                      'ss',       # 13
+                      'ss2',      # 14
+                      'wmwe',     # 15
+                      'wcat',     # 16
+                      'wlemma',   # 17
+                      'lextag'])  # 18
+
+    with open(conllulex_path, 'r', encoding='utf-8') as f:
+        return conllu.parse(f.read(), fields=fields)
+
+
 special_labels = ['`i','`d','`c','`$','??']
 
-def compute_lexcat(inputfile,outputfile):
-    """
-    Given a conllulex file, populates the lexcat
-    The rules are taken from: https://github.com/nert-nlp/streusle/blob/master/lexcatter.py
 
-    Uses the 'p.' prefix to identify an adposition supersense. Script does not check for noun / verb supersenses for the time being.
+def read_mwes(sentence):
+    """Returns two dicts mapping from smwe/wmwe ID to token IDs"""
+    smwes = defaultdict(list)
+    wmwes = defaultdict(list)
 
-    :param filename: the conllulex filename
-    :return: Nada
-    """
-    assert inputfile != outputfile
-
-    with open (outputfile,'w') as fo:
-        with open (inputfile,'r') as fi:
-
-            lines = fi.readlines()
-            c = 0
-            while c < len(lines):
-                cache = []
-                if lines[c].strip() != '' and not lines[c].startswith('#'):
-                    l = lines[c].split('\t')
-
-                    # Now start the rule sequences
-                    if l[13].lower() in annolexcatmap.keys():
-                        l[11] = annolexcatmap[l[13]]
-
-                        # e.g `i with a TO Xpos is INF.P!
-                        if l[4] in xposlexcatmap.keys():
-                            l[11] = xposlexcatmap[l[4]]
-
-                        c += 1
-                    elif l[13].lower().startswith('p.') or l[13].lower() == '`$': # adposition supersense
-                        if l[10] != '_': # SMWE
-                            print(l)
-                            c += 1
-                            cache = []
-                            while lines[c].strip().split('\t')[10] != '_':
-                                cache.append(lines[c].strip() + '\n')
-                                c += 1 # get the last MWE token location
-                            if lines[c - 1].strip().split('\t')[3] in ['ADP','SCONJ']: l[11] = 'P'
-                            else: l[11] = 'PP'
-
-                        elif l[4] in xposlexcatmap.keys():
-                            l[11] = xposlexcatmap[l[4]]
-                            c += 1
-                        else:
-                            l[11] = 'P'
-                            c += 1
-                    elif l[3] in ['PART']:
-                        l[11] = 'ADV'
-                        c += 1
-                    else:
-                        l[11] = l[3]
-                        #if l[11] == 'NOUN': l[11] = 'N'
-                        #if l[11] == 'VERB': l[11] = 'V'
-                        c += 1
-
-                    fo.write('\t'.join(l))
-                    for cach in cache:
-                        fo.write(cach)
-
-                else:
-                    fo.write(lines[c].strip() + '\n')
-                    c += 1
+    for t in sentence:
+        if t['smwe'] != '_':
+            smwe_id, _ = t['smwe'].split(':')
+            smwes[smwe_id].append(t['id'])
+        if t['wmwe'] != '_':
+            wmwe_id, _ = t['wmwe'].split(':')
+            wmwes[wmwe_id].append(t['id'])
+    return smwes, wmwes
 
 
-
-def add_lemmas_prefix_supersense(filename):
-    """
-    Adds lemmas and prefixes supersenses with p. (except the special list of backtick tags)
-    :param filename: the input filename
-    :return: Nada
-    """
-    with open(filename.replace('.conllulex', '.enriched.conllulex'), 'w') as fo:
-        with open(filename,'r') as fi:
-            for line in fi.readlines():
-                if line.strip() != '' and not line.startswith('#'):
-                    l = line.strip().split('\t')
-                    if l[10] == '_' and l[15] == '_': #not strong nor weak mwe
-                        l[12] = l[2]
-                    if l[13] != '_' and l[13] not in special_labels: l[13] = 'p.' + l[13]
-                    if l[14] != '_' and l[14] not in special_labels: l[14] = 'p.' + l[14]
-                    fo.write('\t'.join(l) + '\n')
-                else:
-                    fo.write(line.strip() + '\n')
-
-def add_lextag(inputfile,outputfile):
-
-    """
-    Adds the LEXTAG. Only considers strong and continuous MWEs since there seem to be no weak MWE annotations nor any discontinuous ones (not confirmed!) in the PASTRIE data
-    """
-
-    assert inputfile != outputfile
-
-    with open(outputfile, 'w') as fo:
-        with open(inputfile, 'r') as fi:
-
-            lines = fi.readlines()
-            c = 0
-            while c < len(lines):
-                if lines[c].strip() != '' and not lines[c].startswith('#'):
-                    l = lines[c].strip().split('\t')
-                    if l[10] == '_' and l[15] == '_': # not an smwe nor wmwe
-                        if l[13] == '_':
-                            l[18] = 'O' + '-' + l[11]
-                        elif l[13] != '_' and l[14] == l[13]:
-                            l[18] = 'O' + '-' + l[11] + '-' + l[13]
-                        elif l[13] != '_' and l[14] != l[13]:
-                            l[18] = 'O' + '-' + l[11] + '-' + l[13] + '|' + l[14]
-                    elif l[10] != '_': # strong mwe only
-
-                        if (c != 0 and not lines[c - 1].startswith('#') and lines[c - 1].strip().split('\t')[10] == '_') or c == 0: # B token
-
-                            if l[13] == '_':
-                                l[18] = 'B' + '-' + l[11]
-                            elif l[13] != '_' and l[14] == l[13]:
-                                l[18] = 'B' + '-' + l[11] + '-' + l[13]
-                            elif l[13] != '_' and l[14] != l[13]:
-                                l[18] = 'B' + '-' + l[11] + '-' + l[13] + '|' + l[14]
-                        else: # I token
-                            l[18] = 'I_'
+# modifications --------------------------------------------------------------------------------
+def add_lextag(sentences):
+    for sentence in sentences:
+        smwes, wmwes = read_mwes(sentence)
+        tags = sent_tags(
+            len(sentence),
+            sentence,
+            list(smwes.values()),
+            list(wmwes.values())
+        )
+        for i, (t, tag) in enumerate(zip(sentence, tags)):
+            if tag not in ["I_", "i_"]:
+                tag += "-" + t['lexcat']
+                if t['ss'] != '_':
+                    tag += "-" + t['ss']
+                if t['ss2'] not in ['_', t['ss']]:
+                    tag += "|" + t['ss2']
+            sentence[i]['lextag'] = tag
 
 
-                    fo.write('\t'.join(l) + '\n')
+def add_lexcat(sentences):
+    for sentence in sentences:
+        smwes, _ = read_mwes(sentence)
+        poses = [(t['upos'], t['xpos']) for t in sentence]
+        deps = [(t['head'], t['deprel']) for t in sentence]
+        for t in sentence:
+            smwe_tok_ids = '_' if ':' not in t['smwe'] else smwes[t['smwe'].split(":")[0]]
+            t['lexcat'] = compute_lexcat(
+                t['id'],
+                t['smwe'],
+                smwe_tok_ids,
+                t['ss'],
+                t['lexlemma'],
+                poses,
+                deps
+            )
 
-                else:
-                    fo.write(lines[c].strip() +  '\n')
 
-                c += 1
+def add_lexlemma(sentences):
+    for sentence in sentences:
+        for t in sentence:
+            if t['smwe'] == '_' and t['wmwe'] == '_':
+                t['lexlemma'] = t['lemma']
 
 
-inputfile = 'corpus.conllulex'
-outputfile = 'corpus.enriched.conllulex'
-outputfile2 = 'corpus.enriched2.conllulex'
-outputfile3 = 'corpus.enriched3.conllulex'
+def prefix_prepositional_supersenses(sentences):
+    for sentence in sentences:
+        for t in sentence:
+            if t['ss'] != '_' and t['ss'] not in special_labels:
+                t['ss'] = 'p.' + t['ss']
+            if t['ss2'] != '_' and t['ss2'] not in special_labels:
+                t['ss2'] = 'p.' + t['ss2']
 
-add_lemmas_prefix_supersense(inputfile)
-compute_lexcat(outputfile,outputfile2)
-add_lextag(outputfile2,outputfile3)
+def add_mwe_metadatum(sentences):
+    for sentence in sentences:
+        smwes, wmwes = read_mwes(sentence)
+        if 'mwe' not in sentence.metadata:
+            sentence.metadata['mwe'] = render(
+                [t['form'] for t in sentence],
+                [tok_ids for tok_ids in smwes.values()],
+                [tok_ids for tok_ids in wmwes.values()],
+                {}  # ??
+            )
+
+
+def main():
+    sentences = get_conllulex_tokenlists('corpus.conllulex')
+
+    add_mwe_metadatum(sentences)
+    add_lexlemma(sentences)
+    prefix_prepositional_supersenses(sentences)
+    add_lexcat(sentences)
+    add_lextag(sentences)
+
+    with open('corpus_enriched.conllulex', 'w') as f:
+        f.write("\n".join(s.serialize() for s in sentences))
+
+
+if __name__ == '__main__':
+    main()
