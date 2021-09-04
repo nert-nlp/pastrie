@@ -104,8 +104,11 @@ def supersenses_for_lexcat(lc):
         if lc!='V':
             assert lc in {'V.VID', 'V.VPC.full', 'V.VPC.semi', 'V.LVC.full', 'V.LVC.cause', 'V.IAV'},lc # PARSEME 1.1 verbal MWE subtypes
         return VSS
+    if lc in ('INF'): return {"`i", None}
     if lc in ('P', 'PP', 'INF.P'): return PSS
     if lc in ('POSS', 'PRON.POSS'): return PSS | {'`$'}
+    if lc in ('DISC'): return {"`d"}
+    if lc in ('CCONJ'): return {"`c", None}
 
 ALL_LEXCATS = {'N', 'PRON', 'V', 'P', 'PP', 'INF', 'INF.P', 'POSS', 'PRON.POSS', 'DISC', 'AUX',
-               'ADJ', 'ADV', 'DET', 'CCONJ', 'SCONJ', 'INTJ', 'NUM', 'SYM', 'PUNCT', 'X'}
+               'ADJ', 'ADV', 'DET', 'CCONJ', 'SCONJ', 'INTJ', 'NUM', 'SYM', 'PUNCT', 'X', "??"}

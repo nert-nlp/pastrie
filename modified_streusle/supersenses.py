@@ -17,13 +17,13 @@ NSS = {'n.ACT', 'n.ANIMAL', 'n.ARTIFACT', 'n.ATTRIBUTE', 'n.BODY', 'n.COGNITION'
        'n.COMMUNICATION', 'n.EVENT', 'n.FEELING', 'n.FOOD', 'n.GROUP',
        'n.LOCATION', 'n.MOTIVE', 'n.NATURALOBJECT', 'n.OTHER', 'n.PERSON',
        'n.PHENOMENON', 'n.PLANT', 'n.POSSESSION', 'n.PROCESS', 'n.QUANTITY',
-       'n.RELATION', 'n.SHAPE', 'n.STATE', 'n.SUBSTANCE', 'n.TIME'}
+       'n.RELATION', 'n.SHAPE', 'n.STATE', 'n.SUBSTANCE', 'n.TIME', None}
 
 # Verb supersenses
 
 VSS = {'v.body', 'v.change', 'v.cognition', 'v.communication', 'v.competition',
        'v.consumption', 'v.contact', 'v.creation', 'v.emotion', 'v.motion',
-       'v.perception', 'v.possession', 'v.social', 'v.stative'}
+       'v.perception', 'v.possession', 'v.social', 'v.stative', None}
 
 # Adposition (preposition/postposition) and case supersenses
 # As of SNACS v2.5 guidelines, for STREUSLE v4.3
@@ -98,6 +98,7 @@ assert len(PSS_DEPTH)==len(PSS)==50
 assert max(PSS_DEPTH.values())==4
 assert min(PSS_DEPTH.values())==1
 
+PSS |= {None}
 
 ALL_SS = SPECIAL_LABELS | NSS | VSS | PSS
 

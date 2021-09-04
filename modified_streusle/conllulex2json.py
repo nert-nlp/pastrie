@@ -79,6 +79,13 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
 
     def _postproc_sent(sent):
         nonlocal lc_tbd
+        if 'mwe' not in sent:
+            sent['mwe'] = render(
+                [t['word'] for t in sent['toks']],
+                [smwe['toknums'] for smwe in sent['smwes'].values()],
+                [wmwe['toknums'] for wmwe in sent['wmwes'].values()],
+                {} #??
+            )
 
         # check that tokens are numbered from 1, in order
         for i,tok in enumerate(sent['toks'], 1):
@@ -99,15 +106,15 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
             lc = lexe['lexcat']
             if lc.endswith('!@'): lc_tbd += 1
             valid_ss = supersenses_for_lexcat(lc)
-            if lc=='V':
-                assert len(lexe['toknums'])==1,f'In {sent["sent_id"]}, Verbal MWE "{lexe["lexlemma"]}" lexcat must be subtyped (V.VID, etc., not V)'
+            #if lc=='V':
+            #    assert len(lexe['toknums'])==1,f'In {sent["sent_id"]}, Verbal MWE "{lexe["lexlemma"]}" lexcat must be subtyped (V.VID, etc., not V)'
             ss, ss2 = lexe['ss'], lexe['ss2']
             if valid_ss:
                 if ss=='??':
                     assert ss2 is None
-                elif ss not in valid_ss or (lc in ('N','V') or lc.startswith('V.'))!=(ss2 is None) or (ss2 is not None and ss2 not in valid_ss):
-                    assert False,f"In {sent['sent_id']}, invalid supersense(s) in lexical entry: {lexe}"
-                elif ss.startswith('p.'):
+                # elif ss not in valid_ss or (ss2 is not None and ss2 not in valid_ss):
+                #     assert False,f"In {sent['sent_id']}, invalid supersense(s) in lexical entry: {lexe}"
+                elif ss is not None and ss.startswith('p.'):
                     assert ss2.startswith('p.')
                     assert ss2 not in {'p.Experiencer', 'p.Stimulus', 'p.Originator', 'p.Recipient', 'p.SocialRel', 'p.Org', 'p.OrgMember', 'p.Ensemble', 'p.QuantityValue'},(f'{ss2} should never be function',lexe)
                     if ss!=ss2:
@@ -121,7 +128,7 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
                             assert ss not in ss2A,f"In {sent['sent_id']}, unexpected construal: {ss} ~> {ss2}"
                             assert ss2 not in ssA,f"In {sent['sent_id']}, unexpected construal: {ss} ~> {ss2}"
             else:
-                assert ss is None and ss2 is None and lc not in ('N', 'V', 'P', 'INF.P', 'PP', 'POSS', 'PRON.POSS'),f"In {sent['sent_id']}, invalid supersense(s) in lexical entry: {lexe}"
+                assert ss in [None, "??"] and ss2 in [None, "??"] and lc not in ('N', 'V', 'P', 'INF.P', 'PP', 'POSS', 'PRON.POSS'),f"In {sent['sent_id']}, invalid supersense(s) in lexical entry: {lexe}"
 
         # check lexcat on single-word expressions
         for swe in sent['swes'].values():
@@ -142,7 +149,7 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
                 if xpos=='TO' and lc.startswith('INF'):
                     mismatchOK = True
                 elif (xpos=='TO')!=lc.startswith('INF'):
-                    assert upos=='SCONJ' and swe['lexlemma']=='for',(sent['sent_id'],swe,tok)
+                    assert upos in ['SCONJ', "ADP"] and swe['lexlemma']=='for',(sent['sent_id'],swe,tok)
                     mismatchOK = True
 
                 if (upos in ('NOUN', 'PROPN'))!=(lc=='N'):
@@ -153,13 +160,13 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
                     mismatchOK = True
                 message = f"In {sent['sent_id']}, single-word expression '{tok['word']}' has lexcat {lc}, which is incompatible with its upos {upos}"
                 if (upos=='AUX')!=(lc=='AUX'):
-                    assert tok['lemma']=='be' and lc=='V',message    # copula has upos=AUX
+                    #assert tok['lemma']=='be' and lc=='V',message    # copula has upos=AUX
                     mismatchOK = True
                 if (upos=='VERB')!=(lc=='V'):
                     if lc=='ADJ':
                         print('Word treated as VERB in UD, ADJ for supersenses:', sent['sent_id'], tok['word'], file=sys.stderr)
-                    else:
-                        assert tok['lemma']=='be' and lc=='V',message    # copula has upos=AUX
+                    #else:
+                    #    assert tok['lemma']=='be' and lc=='V',message    # copula has upos=AUX
                     mismatchOK = True
                 if upos=='PRON':
                     assert lc=='PRON' or lc=='PRON.POSS',message
@@ -169,6 +176,11 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
                     mismatchOK = True
                 if upos=='ADP' and lc=='CCONJ':
                     assert tok['lemma']=='versus'
+                    mismatchOK = True
+                if lc == "P" and upos == "CCONJ":
+                    assert tok['lemma']=='but'
+                    mismatchOK = True
+                if lc == "??":
                     mismatchOK = True
 
                 assert mismatchOK,message
@@ -320,9 +332,9 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
                         assert tok['lexcat']=='_',f"In {sent['sent_id']}, token is non-initial in a strong MWE, so lexcat should be '_': {tok}"
                 else:
                     tok['smwe'] = None
-                    assert tok['lexlemma']==tok['lemma'],f"In {sent['sent_id']}, single-word expression lemma \"{tok['lexlemma']}\" doesn't match token lemma \"{tok['lemma']}\""
+                    #assert tok['lexlemma']==tok['lemma'],f"In {sent['sent_id']}, single-word expression lemma \"{tok['lexlemma']}\" doesn't match token lemma \"{tok['lemma']}\""
                     sent['swes'][tokNum]['lexlemma'] = tok['lexlemma']
-                    assert tok['lexcat'] and tok['lexcat']!='_'
+                    #assert tok['lexcat'] and tok['lexcat']!='_'
                     sent['swes'][tokNum]['lexcat'] = tok['lexcat']
                     sent['swes'][tokNum]['ss'] = ss_mapper(tok['ss']) if tok['ss']!='_' else None
                     sent['swes'][tokNum]['ss2'] = ss_mapper(tok['ss2']) if tok['ss2']!='_' else None
