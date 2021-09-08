@@ -20738,7 +20738,7 @@
 
 # sent_id = french-c02823ec-60bd-adce-7327-01337eb9d1c8-02
 # text = Your point is : being ignorant makes it right ?
-1	Your	you	PRON	PRP$	_	2	nmod:poss	_	_	_	_	_	Originator	Originator	_	_	_	_
+1	Your	you	PRON	PRP$	_	2	nmod:poss	_	_	_	_	_	Originator	Gestalt	_	_	_	_
 2	point	point	NOUN	NN	_	3	nsubj	_	_	_	_	_	_	_	_	_	_	_
 3	is	be	VERB	VBZ	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 4	:	:	PUNCT	:	_	3	punct	_	_	_	_	_	_	_	_	_	_	_
