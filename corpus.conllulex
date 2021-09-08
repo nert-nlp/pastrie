@@ -25635,7 +25635,7 @@
 2	since	since	ADP	IN	_	3	case	_	_	_	_	_	Explanation	Explanation	_	_	_	_
 3	noone	noone	PRON	NN	_	15	obl	_	_	_	_	_	_	_	_	_	_	_
 4	from	from	ADP	IN	_	6	mark	_	_	_	_	_	Source	Source	_	_	_	_
-5	NA	no	PART	TO	_	6	mark	_	_	_	_	_	_	_	_	_	_	_
+5	NA	NA	PROPN	NNP	_	6	mark	_	_	_	_	_	_	_	_	_	_	_
 6	bothered	bother	VERB	VBD	_	3	acl	_	_	_	_	_	_	_	_	_	_	_
 7	to	to	PART	TO	_	8	mark	_	_	_	_	_	_	_	_	_	_	_
 8	do	do	VERB	VB	_	6	xcomp	_	_	_	_	_	_	_	_	_	_	_
