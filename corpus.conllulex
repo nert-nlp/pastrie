@@ -18974,7 +18974,7 @@
 20	I	I	PRON	PRP	_	21	nsubj	_	_	_	_	_	_	_	_	_	_	_
 21	want	want	VERB	VBP	_	16	advcl	_	_	_	_	_	_	_	_	_	_	_
 22	it	it	PRON	PRP	_	21	obj	_	_	_	_	_	_	_	_	_	_	_
-23	to	to	ADP	IN	_	21	obl	_	_	_	_	_	`i	`i	_	_	_	_
+23	to	to	PART	TO	_	21	obl	_	_	_	_	_	`i	`i	_	_	_	_
 24	.	.	PUNCT	.	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = english-2f120554-4a53-08cc-3dfa-bc08935ddd72-01
