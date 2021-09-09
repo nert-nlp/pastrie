@@ -17190,7 +17190,7 @@
 1	There	there	PRON	EX	_	2	expl	_	_	_	_	_	_	_	_	_	_	_
 2	are	be	VERB	VBP	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 3	hundreds	hundred	NOUN	NNS	_	2	nsubj	_	_	_	_	_	_	_	_	_	_	_
-4	of	of	ADP	IN	_	5	case	_	_	_	_	_	Quantity	Quantity	_	_	_	_
+4	of	of	ADP	IN	_	5	case	_	_	_	_	_	QuantityItem	QuantityItem	_	_	_	_
 5	thousands	thousand	NOUN	NNS	_	3	nmod	_	_	_	_	_	_	_	_	_	_	_
 6	more	more	ADJ	JJR	_	5	amod	_	_	_	_	_	_	_	_	_	_	_
 7	that	that	PRON	WDT	_	9	nsubj	_	_	_	_	_	_	_	_	_	_	_
