@@ -65,14 +65,7 @@ def compute_lexcat(tokNum, smwe, smweGroupToks, ss, lexlemma, poses, rels):
     if lc is not None:
         return lc
 
-    # Rule 2
     upos, xpos = poses[tokNum - 1]
-    #if ss.isalpha() and ss.isupper():
-    if upos in ["NOUN", "PROPN"]:
-        return "N"
-    #if ss.isalpha() and ss.islower():
-    if upos == "VERB" or xpos[0:2] == "VB":
-        return "V"
 
     # Rule 3
     if ss == "`$" or ss.startswith("p.") or upos == "ADP":
@@ -91,6 +84,15 @@ def compute_lexcat(tokNum, smwe, smweGroupToks, ss, lexlemma, poses, rels):
             return "PP"
         return "P"
     # End rule 3
+
+    # Rule 2
+    # Extension to rule 2 made for PASTRIE
+    if upos == "AUX":
+        return "AUX"
+    if upos in ["NOUN", "PROPN"]:
+        return "N"
+    if upos == "VERB" or xpos[0:2] == "VB":
+        return "V"
 
     if upos == "PART":
         if lexlemma == "to":
@@ -200,6 +202,15 @@ def add_lexcat(sentences):
             t["lexcat"] = compute_lexcat(
                 t["id"], t["smwe"], smwe_tok_ids, t["ss"], t["lexlemma"], poses, deps
             )
+            # Check if we had a shorthand anno
+            if t['ss'][0] == '`':
+                # If it was for `i, force SCONJ+CC pos tags
+                if t['ss'] == "`i" and t['form'] == 'for':
+                    t['upos'] = "SCONJ"
+                    t['xpos'] = "CC"
+                # wipe away the supersense columns
+                t['ss'] = '_'
+                t['ss2'] = '_'
 
 
 def add_lexlemma(sentences):
@@ -229,6 +240,7 @@ def add_mwe_metadatum(sentences):
                 {},  # ??
             )
 
+
 def kill_unknown_ss(sentences):
     for sentence in sentences:
         for t in sentence:
@@ -249,6 +261,9 @@ def main():
     add_lextag(sentences)
     
     ignored = [
+        "spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-11",  # GH issue #5
+        "spanish-1d76d7a0-219d-c07b-1abf-286b47e0643b-01",  # GH issue #5
+        "german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-03",   # GH issue #5
     ]
 
     sentences = [s for s in sentences if s.metadata["sent_id"] not in ignored]
