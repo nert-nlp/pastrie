@@ -10887,7 +10887,7 @@
 22	by	by	ADP	IN	_	23	case	_	_	_	_	_	Causer	Causer	_	_	_	_
 23	diseases	disease	NOUN	NNS	_	21	obl	_	_	_	_	_	_	_	_	_	_	_
 24	everywhere	everywhere	ADV	RB	_	21	advmod	_	_	_	_	_	_	_	_	_	_	_
-25	but	but	CCONJ	CC	_	27	cc	_	_	_	_	_	PartPortion	PartPortion	_	_	_	_
+25	but	but	ADP	IN	_	27	cc	_	_	_	_	_	PartPortion	PartPortion	_	_	_	_
 26	the	the	DET	DT	_	27	det	_	_	_	_	_	_	_	_	_	_	_
 27	eyes	eye	NOUN	NNS	_	20	conj	_	_	_	_	_	_	_	_	_	_	_
 
