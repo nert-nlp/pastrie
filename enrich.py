@@ -237,6 +237,7 @@ def kill_unknown_ss(sentences):
             if t['ss2'] == "??":
                 t['ss2'] = "_"
 
+
 def main():
     sentences = get_conllulex_tokenlists("corpus.conllulex")
 
@@ -248,13 +249,6 @@ def main():
     add_lextag(sentences)
     
     ignored = [
-        "french-fad32caf-e595-e3cb-07bf-aaea891e53cb-02",  # missing ss anno
-        'french-f57dd6ab-5263-4c8a-e360-8ec683e6a37a-02',  # bad "versus" pos tag
-        'french-a17a4340-f9c0-8fef-fa1b-1bf13879399b-02',  # weird "to"
-        'french-c02823ec-60bd-adce-7327-01337eb9d1c8-02',  # originator as function
-        "spanish-a25e8289-e04a-f5af-ce56-ead9faca65b1-02", # single-word expression 'like' has lexcat DISC, which is incompatible with its upos ADJ
-        "spanish-ebba3c73-2431-c216-8f4d-d469ee8d5564-01", # her should be PRP$ not PRP
-        "german-35000895-1d78-c18a-01ed-f7410b9c0581-01",  # bad annotation of NA
     ]
 
     sentences = [s for s in sentences if s.metadata["sent_id"] not in ignored]
