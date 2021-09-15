@@ -45,6 +45,11 @@ def compute_lexcat(tokNum, smwe, smweGroupToks, ss, lexlemma, poses, rels):
 
     The script that performs automatic assignment should have an option to suffix any default (non-human) annotations with `@` and any problematic cases with `!`.
     """
+    upos, xpos = poses[tokNum - 1]
+    # custom for PASTRIE
+    if ss == "??" and upos in ["ADP"] and xpos in ["IN"]:
+        return "P"
+
     if smwe != "_" and not smwe.endswith(":1"):
         # non-initial token in MWE
         return "_"
@@ -60,15 +65,12 @@ def compute_lexcat(tokNum, smwe, smweGroupToks, ss, lexlemma, poses, rels):
         "`o": "PRON",
         "`r": "ADV",
         "`v": "V",
-        "??": "??",
     }.get(ss)
     if lc is not None:
         return lc
 
-    upos, xpos = poses[tokNum - 1]
-
     # Rule 3
-    if ss == "`$" or ss.startswith("p.") or upos == "ADP":
+    if ss == "`$" or ss == "??" or ss.startswith("p.") or upos == "ADP":
         lc = {
             "PRP$": "PRON.POSS",
             "WP$": "PRON.POSS",
@@ -216,7 +218,11 @@ def add_lexcat(sentences):
 def add_lexlemma(sentences):
     for sentence in sentences:
         for t in sentence:
-            if t["smwe"] == "_" and t["wmwe"] == "_":
+            # don't touch smwe tokens
+            if t['smwe'] != '_':
+                pass
+            # otherwise, copy
+            else:
                 t["lexlemma"] = t["lemma"]
 
 
@@ -241,19 +247,17 @@ def add_mwe_metadatum(sentences):
             )
 
 
-def kill_unknown_ss(sentences):
+def dedupe_question_marks(sentences):
     for sentence in sentences:
         for t in sentence:
-            if t['ss'] == "??":
-                t['ss'] = "_"
-            if t['ss2'] == "??":
+            if t['ss'] == "??" and t['ss2'] == "??""":
                 t['ss2'] = "_"
 
 
 def main():
     sentences = get_conllulex_tokenlists("corpus.conllulex")
 
-    kill_unknown_ss(sentences)
+    dedupe_question_marks(sentences)
     add_mwe_metadatum(sentences)
     add_lexlemma(sentences)
     prefix_prepositional_supersenses(sentences)
