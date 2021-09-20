@@ -175,6 +175,13 @@ def read_mwes(sentence):
     return smwes, wmwes
 
 
+def get_token(sentence, tid):
+    try:
+        return [t for t in sentence if str(tid) == str(t['id'])][0]
+    except IndexError:
+        raise Exception(f"Token with ID {tid} not found in {sentence.metadata['sent_id']}")
+
+
 # modifications --------------------------------------------------------------------------------
 def add_lextag(sentences):
     for sentence in sentences:
@@ -190,6 +197,16 @@ def add_lextag(sentences):
                 if t["ss2"] not in ["_", t["ss"]]:
                     tag += "|" + t["ss2"]
             sentence[i]["lextag"] = tag
+
+
+def add_wlemma(sentences):
+    for sentence in sentences:
+        _, wmwes = read_mwes(sentence)
+
+        for t in sentence:
+            wmwe_tok_ids = ([] if ":" not in t["wmwe"] else wmwes[t["wmwe"].split(":")[0]])
+            if len(wmwe_tok_ids) > 0 and str(wmwe_tok_ids[0]) == str(t['id']):
+                t['wlemma'] = " ".join([get_token(sentence, tid)['form'] for tid in wmwe_tok_ids])
 
 
 def add_lexcat(sentences):
@@ -260,6 +277,7 @@ def main():
     dedupe_question_marks(sentences)
     add_mwe_metadatum(sentences)
     add_lexlemma(sentences)
+    add_wlemma(sentences)
     prefix_prepositional_supersenses(sentences)
     add_lexcat(sentences)
     add_lextag(sentences)
