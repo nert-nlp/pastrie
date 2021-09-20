@@ -99,8 +99,9 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
             lc = lexe['lexcat']
             if lc.endswith('!@'): lc_tbd += 1
             valid_ss = supersenses_for_lexcat(lc)
-            if lc=='V':
-                assert len(lexe['toknums'])==1,f'In {sent["sent_id"]}, Verbal MWE "{lexe["lexlemma"]}" lexcat must be subtyped (V.VID, etc., not V)'
+            # change for PASTRIE--don't check lexcat
+            #if lc=='V':
+            #    assert len(lexe['toknums'])==1,f'In {sent["sent_id"]}, Verbal MWE "{lexe["lexlemma"]}" lexcat must be subtyped (V.VID, etc., not V)'
             ss, ss2 = lexe['ss'], lexe['ss2']
             if valid_ss:
                 if ss=='??':
