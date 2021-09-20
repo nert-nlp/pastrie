@@ -325,10 +325,10 @@
 # text = Once you have the hang of it it s pretty fast ( and does n't eat your clutch ) .
 1	Once	once	SCONJ	IN	_	3	mark	_	_	_	_	_	_	_	_	_	_	_
 2	you	you	PRON	PRP	_	3	nsubj	_	_	_	_	_	_	_	_	_	_	_
-3	have	have	VERB	VBP	_	11	advcl	_	_	_	_	_	_	_	_	_	_	_
-4	the	the	DET	DT	_	5	det	_	_	_	_	_	_	_	_	_	_	_
-5	hang	hang	NOUN	NN	_	3	obj	_	_	_	_	_	_	_	_	_	_	_
-6	of	of	ADP	IN	_	7	case	_	_	_	_	_	_	_	_	_	_	_
+3	have	have	VERB	VBP	_	11	advcl	_	_	1:1	_	have the hang of	_	_	_	_	_	_
+4	the	the	DET	DT	_	5	det	_	_	1:2	_	_	_	_	_	_	_	_
+5	hang	hang	NOUN	NN	_	3	obj	_	_	1:3	_	_	_	_	_	_	_	_
+6	of	of	ADP	IN	_	7	case	_	_	1:4	_	_	_	_	_	_	_	_
 7	it	it	PRON	PRP	_	5	nmod	_	_	_	_	_	_	_	_	_	_	_
 8	it	it	PRON	PRP	_	11	nsubj	_	_	_	_	_	_	_	_	_	_	_
 9	s	be	AUX	VBZ	_	11	cop	_	_	_	_	_	_	_	_	_	_	_
@@ -784,13 +784,13 @@
 50	he	he	PRON	PRP	_	51	nsubj	_	_	_	_	_	_	_	_	_	_	_
 51	had	have	VERB	VBD	_	42	advcl	_	_	_	_	_	_	_	_	_	_	_
 52	you	you	PRON	PRP	_	51	obj	_	_	_	_	_	_	_	_	_	_	_
-53	on	on	ADP	IN	_	54	case	_	_	_	_	_	_	_	_	_	_	_
-54	camera	camera	NOUN	NN	_	51	obl	_	_	_	_	_	_	_	_	_	_	_
+53	on	on	ADP	IN	_	54	case	_	_	1:1	_	on camera	Instrument	Locus	_	_	_	_
+54	camera	camera	NOUN	NN	_	51	obl	_	_	1:2	_	_	_	_	_	_	_	_
 55	lightly	lightly	ADV	RB	_	56	advmod	_	_	_	_	_	_	_	_	_	_	_
 56	dinging	ding	VERB	VBG	_	51	advcl	_	_	_	_	_	_	_	_	_	_	_
 57	it	it	PRON	PRP	_	56	obj	_	_	_	_	_	_	_	_	_	_	_
-58	by	by	ADP	IN	_	59	case	_	_	1:1	_	by accident	Manner	Manner	_	_	_	_
-59	accident	accident	NOUN	NN	_	56	obl	_	_	1:2	_	_	_	_	_	_	_	_
+58	by	by	ADP	IN	_	59	case	_	_	2:1	_	by accident	Manner	Manner	_	_	_	_
+59	accident	accident	NOUN	NN	_	56	obl	_	_	2:2	_	_	_	_	_	_	_	_
 60	.	.	PUNCT	.	_	13	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = french-5d698c8b-4448-0030-f3c6-68b114ed2049-01
@@ -1258,7 +1258,7 @@
 3	I	I	PRON	PRP	_	5	nsubj	_	_	_	_	_	_	_	_	_	_	_
 4	m	be	AUX	VBP	_	5	aux	_	_	_	_	_	_	_	_	_	_	_
 5	going	go	VERB	VBG	_	11	advcl	_	_	_	_	_	_	_	_	_	_	_
-6	with	with	ADP	IN	_	7	case	_	_	_	_	_	_	_	_	_	_	_
+6	with	with	ADP	IN	_	7	case	_	_	_	_	_	Topic	Topic	_	_	_	_
 7	this	this	PRON	DT	_	5	obl	_	_	_	_	_	_	_	_	_	_	_
 8	,	,	PUNCT	,	_	11	punct	_	_	_	_	_	_	_	_	_	_	_
 9	only	only	ADV	RB	_	11	advmod	_	_	_	_	_	_	_	_	_	_	_
@@ -1328,9 +1328,9 @@
 20	a	a	DET	DT	_	21	det	_	_	_	_	_	_	_	_	_	_	_
 21	favour	favour	NOUN	NN	_	18	obj	_	_	_	_	_	_	_	_	_	_	_
 22	by	by	SCONJ	IN	_	23	mark	_	_	_	_	_	Means	Means	_	_	_	_
-23	getting	get	VERB	VBG	_	18	advcl	_	_	_	_	_	_	_	_	_	_	_
-24	rid	rid	NOUN	NN	_	23	obj	_	_	_	_	_	_	_	_	_	_	_
-25	of	of	ADP	IN	_	26	case	_	_	_	_	_	_	_	_	_	_	_
+23	getting	get	VERB	VBG	_	18	advcl	_	_	2:1	_	get rid of	_	_	_	_	_	_
+24	rid	rid	NOUN	NN	_	23	obj	_	_	2:2	_	_	_	_	_	_	_	_
+25	of	of	ADP	IN	_	26	case	_	_	2:3	_	_	_	_	_	_	_	_
 26	Boris	Boris	PROPN	NNP	_	24	nmod	_	_	_	_	_	_	_	_	_	_	_
 27	.	.	PUNCT	.	_	1	punct	_	_	_	_	_	_	_	_	_	_	_
 
@@ -1346,8 +1346,8 @@
 8	)	)	PUNCT	-RRB-	_	5	punct	_	_	_	_	_	_	_	_	_	_	_
 9	will	will	AUX	MD	_	11	aux	_	_	_	_	_	_	_	_	_	_	_
 10	be	be	AUX	VB	_	11	aux:pass	_	_	_	_	_	_	_	_	_	_	_
-11	put	put	VERB	VBN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-12	to	to	ADP	IN	_	14	case	_	_	_	_	_	_	_	_	_	_	_
+11	put	put	VERB	VBN	_	0	root	_	_	1:1	put to	_	_	_	_	_	_	_
+12	to	to	ADP	IN	_	14	case	_	_	_	1:2	_	_	_	_	_	_	_
 13	the	the	DET	DT	_	14	det	_	_	_	_	_	_	_	_	_	_	_
 14	Tory	Tory	PROPN	NNP	_	11	obl	_	_	_	_	_	_	_	_	_	_	_
 15	members	member	NOUN	NNS	_	14	flat	_	_	_	_	_	_	_	_	_	_	_
@@ -1450,7 +1450,7 @@
 
 # sent_id = french-f3ff1b4d-9a8b-0920-a38d-1eadcca4b02b-02
 # text = Except on Youtube ( oh god this one ) and sometimes news sites .
-1	Except	except	ADP	IN	_	3	case	_	_	_	_	_	_	_	_	_	_	_
+1	Except	except	ADP	IN	_	3	case	_	_	_	_	_	PartPortion	PartPortion	_	_	_	_
 2	on	on	ADP	IN	_	3	case	_	_	_	_	_	Locus	Locus	_	_	_	_
 3	Youtube	Youtube	PROPN	NNP	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 4	(	(	PUNCT	-LRB-	_	3	punct	_	_	_	_	_	_	_	_	_	_	_
@@ -1838,8 +1838,8 @@
 10	currently	currently	ADV	RB	_	11	advmod	_	_	_	_	_	_	_	_	_	_	_
 11	is	be	VERB	VBZ	_	8	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
 12	and	and	CCONJ	CC	_	13	cc	_	_	_	_	_	_	_	_	_	_	_
-13	build	build	VERB	VB	_	6	conj	_	_	_	_	_	_	_	_	_	_	_
-14	upon	upon	ADP	IN	_	15	case	_	_	_	_	_	_	_	_	_	_	_
+13	build	build	VERB	VB	_	6	conj	_	_	1:1	_	build upon	_	_	_	_	_	_
+14	upon	upon	ADP	IN	_	15	case	_	_	1:2	_	_	_	_	_	_	_	_
 15	that	that	PRON	DT	_	13	obl	_	_	_	_	_	_	_	_	_	_	_
 16	You	you	PRON	PRP	_	17	nsubj	_	_	_	_	_	_	_	_	_	_	_
 17	sure	sure	ADJ	JJ	_	3	parataxis	_	_	_	_	_	_	_	_	_	_	_
@@ -2476,18 +2476,18 @@
 14	great	great	ADJ	JJ	_	16	amod	_	_	_	_	_	_	_	_	_	_	_
 15	police	police	NOUN	NN	_	16	compound	_	_	_	_	_	_	_	_	_	_	_
 16	tactic	tactic	NOUN	NN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-17	because	because	ADP	IN	_	21	case	_	_	_	_	_	_	_	_	_	_	_
-18	a	a	DET	DT	_	21	det	_	_	_	_	_	_	_	_	_	_	_
-19	dozen	dozen	NOUN	NN	_	21	compound	_	_	_	_	_	_	_	_	_	_	_
+17	because	because	SCONJ	IN	_	35	mark	_	_	_	_	_	_	_	_	_	_	_
+18	a	a	DET	DT	_	19	det	_	_	_	_	_	_	_	_	_	_	_
+19	dozen	dozen	NOUN	NN	_	21	nummod	_	_	_	_	_	_	_	_	_	_	_
 20	bait	bait	NOUN	NN	_	21	compound	_	_	_	_	_	_	_	_	_	_	_
-21	cars	car	NOUN	NNS	_	16	nmod	_	_	_	_	_	_	_	_	_	_	_
+21	cars	car	NOUN	NNS	_	35	nsubj	_	_	_	_	_	_	_	_	_	_	_
 22	,	,	PUNCT	,	_	23	punct	_	_	_	_	_	_	_	_	_	_	_
-23	say	say	VERB	VB	_	16	parataxis	_	_	_	_	_	_	_	_	_	_	_
+23	say	say	VERB	VB	_	21	discourse	_	_	_	_	_	_	_	_	_	_	_
 24	,	,	PUNCT	,	_	23	punct	_	_	_	_	_	_	_	_	_	_	_
 25	in	in	ADP	IN	_	26	case	_	_	_	_	_	Locus	Locus	_	_	_	_
-26	all	all	DET	DT	_	23	obl	_	_	_	_	_	_	_	_	_	_	_
+26	all	all	DET	DT	_	21	nmod	_	_	_	_	_	_	_	_	_	_	_
 27	of	of	ADP	IN	_	29	case	_	_	_	_	_	QuantityItem	Whole	_	_	_	_
-28	New	New	PROPN	NNP	_	29	compound	_	_	_	_	_	_	_	_	_	_	_
+28	New	New	PROPN	NNP	_	29	amod	_	_	_	_	_	_	_	_	_	_	_
 29	York	York	PROPN	NNP	_	26	nmod	_	_	_	_	_	_	_	_	_	_	_
 30	,	,	PUNCT	,	_	35	punct	_	_	_	_	_	_	_	_	_	_	_
 31	would	would	AUX	MD	_	35	aux	_	_	_	_	_	_	_	_	_	_	_
@@ -2875,14 +2875,14 @@
 4	does	do	AUX	VBZ	_	5	aux	_	_	_	_	_	_	_	_	_	_	_
 5	stop	stop	VERB	VB	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 6	criminals	criminal	NOUN	NNS	_	5	obj	_	_	_	_	_	_	_	_	_	_	_
-7	because	because	ADP	IN	_	10	case	_	_	_	_	_	_	_	_	_	_	_
-8	by	by	ADP	IN	_	7	fixed	_	_	_	_	_	Means	Means	_	_	_	_
-9	switching	switch	VERB	VBG	_	10	amod	_	_	_	_	_	_	_	_	_	_	_
-10	cars	car	NOUN	NNS	_	5	obl	_	_	_	_	_	_	_	_	_	_	_
+7	because	because	SCONJ	IN	_	14	mark	_	_	_	_	_	_	_	_	_	_	_
+8	by	by	ADP	IN	_	9	mark	_	_	_	_	_	Means	Means	_	_	_	_
+9	switching	switch	VERB	VBG	_	14	advcl	_	_	_	_	_	_	_	_	_	_	_
+10	cars	car	NOUN	NNS	_	9	obj	_	_	_	_	_	_	_	_	_	_	_
 11	they	they	PRON	PRP	_	14	nsubj	_	_	_	_	_	_	_	_	_	_	_
 12	ca	can	AUX	MD	_	14	aux	_	_	_	_	_	_	_	_	_	_	_
 13	n't	not	PART	RB	_	14	advmod	_	_	_	_	_	_	_	_	_	_	_
-14	get	get	VERB	VB	_	5	parataxis	_	_	_	_	_	_	_	_	_	_	_
+14	get	get	VERB	VB	_	5	advcl	_	_	_	_	_	_	_	_	_	_	_
 15	to	to	PART	TO	_	16	mark	_	_	_	_	_	_	_	_	_	_	_
 16	know	know	VERB	VB	_	14	xcomp	_	_	_	_	_	_	_	_	_	_	_
 17	which	which	DET	WDT	_	18	det	_	_	_	_	_	_	_	_	_	_	_
@@ -3539,8 +3539,8 @@
 15	they	they	PRON	PRP	_	18	nsubj	_	_	_	_	_	_	_	_	_	_	_
 16	would	would	AUX	MD	_	18	aux	_	_	_	_	_	_	_	_	_	_	_
 17	n't	not	PART	RB	_	18	advmod	_	_	_	_	_	_	_	_	_	_	_
-18	go	go	VERB	VB	_	4	conj	_	_	_	_	_	_	_	_	_	_	_
-19	to	to	ADP	IN	_	20	case	_	_	_	_	_	_	_	_	_	_	_
+18	go	go	VERB	VB	_	4	conj	_	_	1:1	_	go to waste	_	_	_	_	_	_
+19	to	to	ADP	IN	_	20	case	_	_	_	1:2	_	_	_	_	_	_	_
 20	waste	waste	NOUN	NN	_	18	obl	_	_	_	_	_	_	_	_	_	_	_
 21	.	.	PUNCT	.	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 
@@ -3808,11 +3808,11 @@
 # text = Someone who makes a hobby out of smoking meat might associate the same note with a certain kind of wood smoke .
 1	Someone	someone	PRON	NN	_	11	nsubj	_	_	_	_	_	_	_	_	_	_	_
 2	who	who	PRON	WP	_	3	nsubj	_	_	_	_	_	_	_	_	_	_	_
-3	makes	make	VERB	VBZ	_	1	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
-4	a	a	DET	DT	_	5	det	_	_	_	_	_	_	_	_	_	_	_
-5	hobby	hobby	NOUN	NN	_	3	obj	_	_	_	_	_	_	_	_	_	_	_
-6	out	out	ADP	IN	_	9	case	_	_	_	_	_	_	_	_	_	_	_
-7	of	of	ADP	IN	_	9	case	_	_	_	_	_	_	_	_	_	_	_
+3	makes	make	VERB	VBZ	_	1	acl:relcl	_	_	1:1	_	make a hobby out of	_	_	_	_	_	_
+4	a	a	DET	DT	_	5	det	_	_	1:2	_	_	_	_	_	_	_	_
+5	hobby	hobby	NOUN	NN	_	3	obj	_	_	1:3	_	_	_	_	_	_	_	_
+6	out	out	ADP	IN	_	9	case	_	_	1:4	_	_	_	_	_	_	_	_
+7	of	of	ADP	IN	_	9	case	_	_	1:5	_	_	_	_	_	_	_	_
 8	smoking	smoking	NOUN	NN	_	9	compound	_	_	_	_	_	_	_	_	_	_	_
 9	meat	meat	NOUN	NN	_	3	obl	_	_	_	_	_	_	_	_	_	_	_
 10	might	might	AUX	MD	_	11	aux	_	_	_	_	_	_	_	_	_	_	_
@@ -3848,9 +3848,9 @@
 15	their	they	PRON	PRP$	_	16	nmod:poss	_	_	_	_	_	Experiencer	Gestalt	_	_	_	_
 16	experiences	experience	NOUN	NNS	_	13	conj	_	_	_	_	_	_	_	_	_	_	_
 17	and	and	CCONJ	CC	_	18	cc	_	_	_	_	_	_	_	_	_	_	_
-18	frames	frame	NOUN	NNS	_	13	conj	_	_	_	_	_	_	_	_	_	_	_
-19	of	of	ADP	IN	_	20	case	_	_	_	_	_	_	_	_	_	_	_
-20	reference	reference	NOUN	NN	_	18	nmod	_	_	_	_	_	_	_	_	_	_	_
+18	frames	frame	NOUN	NNS	_	13	conj	_	_	1:1	_	frame of reference	_	_	_	_	_	_
+19	of	of	ADP	IN	_	20	case	_	_	1:2	_	_	_	_	_	_	_	_
+20	reference	reference	NOUN	NN	_	18	nmod	_	_	1:3	_	_	_	_	_	_	_	_
 21	differ	differ	VERB	VBP	_	2	ccomp	_	_	_	_	_	_	_	_	_	_	_
 22	.	.	PUNCT	.	_	2	punct	_	_	_	_	_	_	_	_	_	_	_
 
@@ -3972,8 +3972,8 @@
 13	collapses	collapse	VERB	VBZ	_	4	conj	_	_	_	_	_	_	_	_	_	_	_
 14	,	,	PUNCT	,	_	13	punct	_	_	_	_	_	_	_	_	_	_	_
 15	so	so	ADV	RB	_	16	advmod	_	_	_	_	_	_	_	_	_	_	_
-16	bear	bear	VERB	VB	_	13	parataxis	_	_	_	_	_	_	_	_	_	_	_
-17	with	with	ADP	IN	_	18	case	_	_	_	_	_	_	_	_	_	_	_
+16	bear	bear	VERB	VB	_	13	parataxis	_	_	1:1	_	bear with	_	_	_	_	_	_
+17	with	with	ADP	IN	_	18	case	_	_	1:2	_	_	_	_	_	_	_	_
 18	me	I	PRON	PRP	_	16	obl	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = french-b578afa0-673d-d93b-2046-56047925de5f-01
@@ -4225,9 +4225,9 @@
 15	of	of	ADP	IN	_	18	case	_	_	_	_	_	Theme	Theme	_	_	_	_
 16	multiple	multiple	ADJ	JJ	_	18	amod	_	_	_	_	_	_	_	_	_	_	_
 17	distributed	distribute	VERB	VBN	_	18	amod	_	_	_	_	_	_	_	_	_	_	_
-18	denial	denial	NOUN	NN	_	14	nmod	_	_	_	_	_	_	_	_	_	_	_
-19	of	of	ADP	IN	_	20	case	_	_	_	_	_	_	_	_	_	_	_
-20	service	service	NOUN	NN	_	18	nmod	_	_	_	_	_	_	_	_	_	_	_
+18	denial	denial	NOUN	NN	_	14	nmod	_	_	2:1	_	denial of service	_	_	_	_	_	_
+19	of	of	ADP	IN	_	20	case	_	_	2:2	_	_	_	_	_	_	_	_
+20	service	service	NOUN	NN	_	18	nmod	_	_	2:3	_	_	_	_	_	_	_	_
 21	(	(	PUNCT	-LRB-	_	22	punct	_	_	_	_	_	_	_	_	_	_	_
 22	DDOS	ddo	NOUN	NN	_	24	compound	_	_	_	_	_	_	_	_	_	_	_
 23	)	)	PUNCT	-RRB-	_	22	punct	_	_	_	_	_	_	_	_	_	_	_
@@ -5913,10 +5913,10 @@
 12	been	be	AUX	VBN	_	13	aux	_	_	_	_	_	_	_	_	_	_	_
 13	beginning	begin	VERB	VBG	_	3	conj	_	_	_	_	_	_	_	_	_	_	_
 14	to	to	PART	TO	_	15	mark	_	_	_	_	_	_	_	_	_	_	_
-15	take	take	VERB	VB	_	13	xcomp	_	_	_	_	_	_	_	_	_	_	_
+15	take	take	VERB	VB	_	13	xcomp	_	_	2:1	_	take into consideration	_	_	_	_	_	_
 16	this	this	PRON	DT	_	15	obj	_	_	_	_	_	_	_	_	_	_	_
-17	into	into	ADP	IN	_	18	case	_	_	_	_	_	_	_	_	_	_	_
-18	consideration	consideration	NOUN	NN	_	15	obl	_	_	_	_	_	_	_	_	_	_	_
+17	into	into	ADP	IN	_	18	case	_	_	2:2	_	_	_	_	_	_	_	_
+18	consideration	consideration	NOUN	NN	_	15	obl	_	_	2:3	_	_	_	_	_	_	_	_
 19	.	.	PUNCT	.	_	3	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = french-47473c91-d121-950d-7ed2-24ed3362591e-04
@@ -6778,8 +6778,8 @@
 # sent_id = french-23ec7597-9615-a32e-71b5-ff55819e0387-03
 # text = Bit off topic , considering I m probably the only one here who gives a shit about TCR .
 1	Bit	bit	NOUN	NN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-2	off	off	ADP	IN	_	3	case	_	_	_	_	_	_	_	_	_	_	_
-3	topic	topic	NOUN	NN	_	1	nmod	_	_	_	_	_	_	_	_	_	_	_
+2	off	off	ADP	IN	_	3	case	_	_	1:1	_	off topic	`d	`d	_	_	_	_
+3	topic	topic	NOUN	NN	_	1	nmod	_	_	1:2	_	_	_	_	_	_	_	_
 4	,	,	PUNCT	,	_	1	punct	_	_	_	_	_	_	_	_	_	_	_
 5	considering	consider	VERB	VBG	_	1	parataxis	_	_	_	_	_	_	_	_	_	_	_
 6	I	I	PRON	PRP	_	11	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -6816,7 +6816,7 @@
 15	extends	extend	VERB	VBZ	_	6	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
 16	so	so	ADV	RB	_	17	advmod	_	_	_	_	_	_	_	_	_	_	_
 17	far	far	ADV	RB	_	15	advmod	_	_	_	_	_	_	_	_	_	_	_
-18	out	out	ADP	IN	_	21	case	_	_	_	_	_	_	_	_	_	_	_
+18	out	out	ADP	IN	_	21	case	_	_	_	_	_	Direction	Direction	_	_	_	_
 19	past	past	ADP	IN	_	21	case	_	_	_	_	_	Locus	Path	_	_	_	_
 20	the	the	DET	DT	_	21	det	_	_	_	_	_	_	_	_	_	_	_
 21	PCB	pcb	NOUN	NN	_	15	obl	_	_	_	_	_	_	_	_	_	_	_
@@ -6974,7 +6974,7 @@
 9	Wayne	Wayne	PROPN	NNP	_	11	nsubj	_	_	_	_	_	_	_	_	_	_	_
 10	Rogers	Rogers	PROPN	NNP	_	9	flat	_	_	_	_	_	_	_	_	_	_	_
 11	railed	rail	VERB	VBD	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-12	against	against	ADP	IN	_	13	case	_	_	_	_	_	_	_	_	_	_	_
+12	against	against	ADP	IN	_	13	case	_	_	_	_	_	Topic	Beneficiary	_	_	_	_
 13	Obama	Obama	PROPN	NNP	_	11	obl	_	_	_	_	_	_	_	_	_	_	_
 14	saying	say	VERB	VBG	_	11	advcl	_	_	_	_	_	_	_	_	_	_	_
 15	accusingly	accusingly	ADV	RB	_	14	advmod	_	_	_	_	_	_	_	_	_	_	_
@@ -7448,18 +7448,18 @@
 
 # sent_id = french-5b177a38-a96d-fb2c-780b-25d9b02d3504-01
 # text = Number 2 is spot on : anyone who likes Farage is voting to leave anyway , so the Out camp would be better finding someone else .
-1	Number	number	NOUN	NN	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
+1	Number	number	NOUN	NN	_	5	nsubj	_	_	_	_	_	_	_	_	_	_	_
 2	2	2	NUM	CD	_	1	nummod	_	_	_	_	_	_	_	_	_	_	_
 3	is	be	AUX	VBZ	_	4	cop	_	_	_	_	_	_	_	_	_	_	_
-4	spot	spot	NOUN	NN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-5	on	on	ADP	IN	_	7	case	_	_	_	_	_	_	_	_	_	_	_
-6	:	:	PUNCT	:	_	7	punct	_	_	_	_	_	_	_	_	_	_	_
-7	anyone	anyone	PRON	NN	_	4	nmod	_	_	_	_	_	_	_	_	_	_	_
+4	spot	spot	NOUN	NN	_	5	compound	_	_	1:1	_	spot on	_	_	_	_	_	_
+5	on	on	ADP	IN	_	0	root	_	_	1:2	_	_	_	_	_	_	_	_
+6	:	:	PUNCT	:	_	12	punct	_	_	_	_	_	_	_	_	_	_	_
+7	anyone	anyone	PRON	NN	_	12	nsubj	_	_	_	_	_	_	_	_	_	_	_
 8	who	who	PRON	WP	_	9	nsubj	_	_	_	_	_	_	_	_	_	_	_
 9	likes	like	VERB	VBZ	_	7	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
 10	Farage	Farage	PROPN	NNP	_	9	obj	_	_	_	_	_	_	_	_	_	_	_
 11	is	be	AUX	VBZ	_	12	aux	_	_	_	_	_	_	_	_	_	_	_
-12	voting	voting	VERB	VBG	_	9	ccomp	_	_	_	_	_	_	_	_	_	_	_
+12	voting	voting	VERB	VBG	_	5	parataxis	_	_	_	_	_	_	_	_	_	_	_
 13	to	to	PART	TO	_	14	mark	_	_	_	_	_	_	_	_	_	_	_
 14	leave	leave	VERB	VB	_	12	xcomp	_	_	_	_	_	_	_	_	_	_	_
 15	anyway	anyway	ADV	RB	_	14	advmod	_	_	_	_	_	_	_	_	_	_	_
@@ -7470,19 +7470,19 @@
 20	camp	camp	NOUN	NN	_	23	nsubj	_	_	_	_	_	_	_	_	_	_	_
 21	would	would	AUX	MD	_	23	aux	_	_	_	_	_	_	_	_	_	_	_
 22	be	be	AUX	VB	_	23	cop	_	_	_	_	_	_	_	_	_	_	_
-23	better	better	ADJ	JJR	_	4	parataxis	_	_	_	_	_	_	_	_	_	_	_
+23	better	better	ADJ	JJR	_	12	parataxis	_	_	_	_	_	_	_	_	_	_	_
 24	finding	find	VERB	VBG	_	23	advcl	_	_	_	_	_	_	_	_	_	_	_
 25	someone	someone	PRON	NN	_	24	obj	_	_	_	_	_	_	_	_	_	_	_
 26	else	else	ADJ	JJ	_	25	amod	_	_	_	_	_	_	_	_	_	_	_
-27	.	.	PUNCT	.	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
+27	.	.	PUNCT	.	_	5	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = french-5b177a38-a96d-fb2c-780b-25d9b02d3504-02
 # text = I would n't go for BoJo - he s too much of a posh buffoon - maybe James Dyson ?
 1	I	I	PRON	PRP	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
 2	would	would	AUX	MD	_	4	aux	_	_	_	_	_	_	_	_	_	_	_
 3	n't	not	PART	RB	_	4	advmod	_	_	_	_	_	_	_	_	_	_	_
-4	go	go	VERB	VB	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-5	for	for	ADP	IN	_	6	case	_	_	_	_	_	_	_	_	_	_	_
+4	go	go	VERB	VB	_	0	root	_	_	1:1	_	go for	_	_	_	_	_	_
+5	for	for	ADP	IN	_	6	case	_	_	1:2	_	_	_	_	_	_	_	_
 6	BoJo	BoJo	PROPN	NNP	_	4	obl	_	_	_	_	_	_	_	_	_	_	_
 7	-	-	PUNCT	,	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 8	he	he	PRON	PRP	_	11	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -7625,11 +7625,11 @@
 32	was	be	AUX	VBD	_	40	cop	_	_	_	_	_	_	_	_	_	_	_
 33	being	be	AUX	VBG	_	40	cop	_	_	_	_	_	_	_	_	_	_	_
 34	really	really	ADV	RB	_	40	advmod	_	_	_	_	_	_	_	_	_	_	_
-35	over	over	ADP	IN	_	39	case	_	_	_	_	_	_	_	_	_	_	_
-36	-	-	PUNCT	HYPH	_	39	punct	_	_	_	_	_	_	_	_	_	_	_
-37	the	the	DET	DT	_	39	det	_	_	_	_	_	_	_	_	_	_	_
-38	-	-	PUNCT	HYPH	_	39	punct	_	_	_	_	_	_	_	_	_	_	_
-39	top	top	ADJ	JJ	_	40	amod	_	_	_	_	_	_	_	_	_	_	_
+35	over	over	ADP	IN	_	39	case	_	_	3:1	_	over - the - top	Extent	Extent	_	_	_	_
+36	-	-	PUNCT	HYPH	_	39	punct	_	_	3:2	_	_	_	_	_	_	_	_
+37	the	the	DET	DT	_	39	det	_	_	3:3	_	_	_	_	_	_	_	_
+38	-	-	PUNCT	HYPH	_	39	punct	_	_	3:4	_	_	_	_	_	_	_	_
+39	top	top	NOUN	NN	_	40	compound	_	_	3:5	_	_	_	_	_	_	_	_
 40	aggressive	aggressive	ADJ	JJ	_	15	ccomp	_	_	_	_	_	_	_	_	_	_	_
 41	,	,	PUNCT	,	_	42	punct	_	_	_	_	_	_	_	_	_	_	_
 42	judgmental	judgmental	ADJ	JJ	_	40	conj	_	_	_	_	_	_	_	_	_	_	_
@@ -7676,11 +7676,11 @@
 
 # sent_id = english-e3e70682-c209-4cac-629f-6fbed82c07cd-03
 # text = Because , you know , they are paying for this service after all and seeing a naked woman stand ' the wrong way ' can just absolutely wreck your day .
-1	Because	because	ADP	IN	_	4	mark	_	_	_	_	_	_	_	_	_	_	_
+1	Because	because	SCONJ	IN	_	8	mark	_	_	_	_	_	_	_	_	_	_	_
 2	,	,	PUNCT	,	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 3	you	you	PRON	PRP	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
-4	know	know	VERB	VBP	_	8	parataxis	_	_	_	_	_	_	_	_	_	_	_
-5	,	,	PUNCT	,	_	8	punct	_	_	_	_	_	_	_	_	_	_	_
+4	know	know	VERB	VBP	_	8	discourse	_	_	_	_	_	_	_	_	_	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 6	they	they	PRON	PRP	_	8	nsubj	_	_	_	_	_	_	_	_	_	_	_
 7	are	be	AUX	VBP	_	8	aux	_	_	_	_	_	_	_	_	_	_	_
 8	paying	pay	VERB	VBG	_	0	root	_	_	_	_	_	_	_	_	_	_	_
@@ -8019,8 +8019,8 @@
 11	be	be	AUX	VB	_	13	cop	_	_	_	_	_	_	_	_	_	_	_
 12	a	a	DET	DT	_	13	det	_	_	_	_	_	_	_	_	_	_	_
 13	world	world	NOUN	NN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-14	devoid	devoid	ADJ	JJ	_	13	amod	_	_	_	_	_	_	_	_	_	_	_
-15	of	of	ADP	IN	_	18	case	_	_	_	_	_	_	_	_	_	_	_
+14	devoid	devoid	ADJ	JJ	_	13	amod	_	_	1:1	_	devoid of	_	_	_	_	_	_
+15	of	of	ADP	IN	_	18	case	_	_	1:2	_	_	_	_	_	_	_	_
 16	nation	nation	NOUN	NN	_	18	compound	_	_	_	_	_	_	_	_	_	_	_
 17	-	-	PUNCT	HYPH	_	18	punct	_	_	_	_	_	_	_	_	_	_	_
 18	states	state	NOUN	NNS	_	14	obl	_	_	_	_	_	_	_	_	_	_	_
@@ -10170,9 +10170,9 @@
 6	things	thing	NOUN	NNS	_	4	obl	_	_	_	_	_	_	_	_	_	_	_
 7	they	they	PRON	PRP	_	9	nsubj	_	_	_	_	_	_	_	_	_	_	_
 8	themselves	themselves	PRON	PRP	_	7	nmod:npmod	_	_	_	_	_	_	_	_	_	_	_
-9	take	take	VERB	VBP	_	6	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
-10	for	for	ADP	IN	_	11	mark	_	_	_	_	_	_	_	_	_	_	_
-11	granted	grant	VERB	VBN	_	9	advcl	_	_	_	_	_	_	_	_	_	_	_
+9	take	take	VERB	VBP	_	6	acl:relcl	_	_	1:1	_	take for grant	_	_	_	_	_	_
+10	for	for	ADP	IN	_	11	mark	_	_	1:2	_	_	_	_	_	_	_	_
+11	granted	grant	VERB	VBN	_	9	advcl	_	_	1:3	_	_	_	_	_	_	_	_
 12	,	,	PUNCT	,	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 13	Computers	Computers	NOUN	NNS	_	16	nsubj	_	_	_	_	_	_	_	_	_	_	_
 14	are	be	AUX	VBP	_	16	cop	_	_	_	_	_	_	_	_	_	_	_
@@ -10264,7 +10264,7 @@
 2	did	do	AUX	VBD	_	4	aux	_	_	_	_	_	_	_	_	_	_	_
 3	n't	not	PART	RB	_	4	advmod	_	_	_	_	_	_	_	_	_	_	_
 4	take	take	VERB	VB	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-5	before	before	ADP	IN	_	6	case	_	_	_	_	_	_	_	_	_	_	_
+5	before	before	ADJ	JJ	_	6	amod	_	_	_	_	_	_	_	_	_	_	_
 6	pics	pic	NOUN	NNS	_	4	obl	_	_	_	_	_	_	_	_	_	_	_
 7	because	because	SCONJ	IN	_	9	mark	_	_	_	_	_	_	_	_	_	_	_
 8	I	I	PRON	PRP	_	9	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -10415,8 +10415,8 @@
 2	from	from	ADP	IN	_	5	case	_	_	_	_	_	Source	Source	_	_	_	_
 3	the	the	DET	DT	_	5	det	_	_	_	_	_	_	_	_	_	_	_
 4	health	health	NOUN	NN	_	5	compound	_	_	_	_	_	_	_	_	_	_	_
-5	point	point	NOUN	NN	_	10	obl	_	_	_	_	_	_	_	_	_	_	_
-6	of	of	ADP	IN	_	7	case	_	_	_	_	_	_	_	_	_	_	_
+5	point	point	NOUN	NN	_	10	obl	_	_	1:1	_	point of view	_	_	_	_	_	_
+6	of	of	ADP	IN	_	7	case	_	_	1:2	_	_	_	_	_	_	_	_
 7	view	view	NOUN	NN	_	5	nmod	_	_	_	_	_	_	_	_	_	_	_
 8	,	,	PUNCT	,	_	10	punct	_	_	_	_	_	_	_	_	_	_	_
 9	I	I	PRON	PRP	_	10	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -10425,8 +10425,8 @@
 12	better	better	ADJ	JJR	_	10	xcomp	_	_	_	_	_	_	_	_	_	_	_
 13	than	than	SCONJ	IN	_	15	mark	_	_	_	_	_	ComparisonRef	ComparisonRef	_	_	_	_
 14	I	I	PRON	PRP	_	15	nsubj	_	_	_	_	_	_	_	_	_	_	_
-15	used	use	VERB	VBD	_	12	advcl	_	_	_	_	_	_	_	_	_	_	_
-16	to	to	ADP	IN	_	15	obl	_	_	_	_	_	_	_	_	_	_	_
+15	used	use	VERB	VBD	_	12	advcl	_	_	2:1	_	use to	_	_	_	_	_	_
+16	to	to	ADP	IN	_	15	obl	_	_	2:2	_	_	_	_	_	_	_	_
 17	.	.	PUNCT	.	_	10	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = spanish-e86a5da6-5f5e-ef2e-7072-ef7b6625afeb-08
@@ -11243,15 +11243,15 @@
 1	At	at	ADP	IN	_	4	case	_	_	_	_	_	Circumstance	Circumstance	_	_	_	_
 2	my	my	PRON	PRP$	_	4	nmod:poss	_	_	_	_	_	Agent	Gestalt	_	_	_	_
 3	last	last	ADJ	JJ	_	4	amod	_	_	_	_	_	_	_	_	_	_	_
-4	gig	gig	NOUN	NN	_	10	obl	_	_	_	_	_	_	_	_	_	_	_
-5	,	,	PUNCT	,	_	10	punct	_	_	_	_	_	_	_	_	_	_	_
-6	we	we	PRON	PRP	_	10	nsubj	_	_	_	_	_	_	_	_	_	_	_
-7	did	do	AUX	VBD	_	10	aux	_	_	_	_	_	_	_	_	_	_	_
-8	HA	ha	ADP	IN	_	10	case	_	_	_	_	_	_	_	_	_	_	_
+4	gig	gig	NOUN	NN	_	7	obl	_	_	_	_	_	_	_	_	_	_	_
+5	,	,	PUNCT	,	_	7	punct	_	_	_	_	_	_	_	_	_	_	_
+6	we	we	PRON	PRP	_	7	nsubj	_	_	_	_	_	_	_	_	_	_	_
+7	did	do	AUX	VBD	_	0	root	_	_	_	_	_	_	_	_	_	_	_
+8	HA	HA	NOUN	NN	Abbr=Yes	7	obj	_	_	_	_	_	_	_	_	_	_	_
 9	on	on	ADP	IN	_	10	case	_	_	_	_	_	Locus	Locus	_	_	_	_
-10	layer	layer	NOUN	NN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
+10	layer	layer	NOUN	NN	_	8	nmod	_	_	_	_	_	_	_	_	_	_	_
 11	3	3	NUM	CD	_	10	nummod	_	_	_	_	_	_	_	_	_	_	_
-12	...	...	PUNCT	.	_	10	punct	_	_	_	_	_	_	_	_	_	_	_
+12	...	...	PUNCT	.	_	7	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = german-02f2f585-aadb-7166-5044-385fab991787-01
 # text = I know the feeling .
@@ -11385,7 +11385,7 @@
 6	all	all	DET	PDT	_	8	det:predet	_	_	_	_	_	_	_	_	_	_	_
 7	the	the	DET	DT	_	8	det	_	_	_	_	_	_	_	_	_	_	_
 8	reasons	reason	NOUN	NNS	_	5	obj	_	_	_	_	_	_	_	_	_	_	_
-9	in	in	ADP	IN	_	11	case	_	_	_	_	_	_	_	_	_	_	_
+9	in	in	ADP	IN	_	11	case	_	_	_	_	_	Locus	Locus	_	_	_	_
 10	the	the	DET	DT	_	11	det	_	_	_	_	_	_	_	_	_	_	_
 11	world	world	NOUN	NN	_	8	nmod	_	_	_	_	_	_	_	_	_	_	_
 12	to	to	PART	TO	_	14	mark	_	_	_	_	_	_	_	_	_	_	_
@@ -11590,14 +11590,14 @@
 1	Do	do	AUX	VB	_	3	aux	_	_	_	_	_	_	_	_	_	_	_
 2	n't	not	PART	RB	_	3	advmod	_	_	_	_	_	_	_	_	_	_	_
 3	sleep	sleep	VERB	VB	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-4	on	on	ADP	IN	_	6	case	_	_	_	_	_	_	_	_	_	_	_
+4	on	on	ADP	IN	_	6	case	_	_	_	_	_	Topic	Topic	_	_	_	_
 5	crafted	craft	VERB	VBN	_	6	amod	_	_	_	_	_	_	_	_	_	_	_
 6	gear	gear	NOUN	NN	_	3	obl	_	_	_	_	_	_	_	_	_	_	_
 7	either	either	CCONJ	CC	_	15	cc:preconj	_	_	_	_	_	_	_	_	_	_	_
 8	,	,	PUNCT	,	_	15	punct	_	_	_	_	_	_	_	_	_	_	_
-9	off	off	ADP	IN	_	11	mark	_	_	_	_	_	_	_	_	_	_	_
-10	-	-	PUNCT	HYPH	_	11	punct	_	_	_	_	_	_	_	_	_	_	_
-11	set	set	VERB	VBN	_	13	amod	_	_	_	_	_	_	_	_	_	_	_
+9	off	off	ADP	IN	_	11	case	_	_	_	_	_	Whole	Locus	_	_	_	_
+10	-	-	PUNCT	HYPH	_	11	punct	_	_	_	_	_	Whole	Locus	_	_	_	_
+11	set	set	NOUN	NN	_	13	compound	_	_	_	_	_	_	_	_	_	_	_
 12	crafted	craft	VERB	VBN	_	13	amod	_	_	_	_	_	_	_	_	_	_	_
 13	gear	gear	NOUN	NN	_	15	nsubj	_	_	_	_	_	_	_	_	_	_	_
 14	typically	typically	ADV	RB	_	15	advmod	_	_	_	_	_	_	_	_	_	_	_
@@ -11833,7 +11833,7 @@
 
 # sent_id = german-7d8dd474-c146-a389-381b-37241398aa12-02
 # text = Like , someone invents a time machine , and goes back in time to kill Hitler and prevent WW2 , but you have to stop them to continue existing .
-1	Like	like	ADP	IN	_	4	obl	_	_	_	_	_	_	_	_	_	_	_
+1	Like	like	ADP	IN	_	4	obl	_	_	_	_	_	`d	`d	_	_	_	_
 2	,	,	PUNCT	,	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 3	someone	someone	PRON	NN	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
 4	invents	invent	VERB	VBZ	_	0	root	_	_	_	_	_	_	_	_	_	_	_
@@ -12243,22 +12243,23 @@
 
 # sent_id = english-6522ff46-74b7-061c-09ce-15a8afd4fc7b-02
 # text = But as people said here earlier , because its proportional , every vote does count .
-1	But	but	CCONJ	CC	_	15	cc	_	_	_	_	_	_	_	_	_	_	_
+1	But	but	CCONJ	CC	_	16	cc	_	_	_	_	_	_	_	_	_	_	_
 2	as	as	SCONJ	IN	_	4	mark	_	_	_	_	_	`d	`d	_	_	_	_
 3	people	people	NOUN	NNS	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
-4	said	say	VERB	VBD	_	15	advcl	_	_	_	_	_	_	_	_	_	_	_
+4	said	say	VERB	VBD	_	16	advcl	_	_	_	_	_	_	_	_	_	_	_
 5	here	here	ADV	RB	_	4	advmod	_	_	_	_	_	_	_	_	_	_	_
 6	earlier	earlier	ADV	RBR	_	4	advmod	_	_	_	_	_	_	_	_	_	_	_
-7	,	,	PUNCT	,	_	15	punct	_	_	_	_	_	_	_	_	_	_	_
-8	because	because	ADP	IN	_	10	case	_	_	_	_	_	_	_	_	_	_	_
-9	its	its	PRON	PRP$	_	10	nmod:poss	_	_	_	_	_	_	_	_	_	_	_
-10	proportional	proportional	ADJ	JJ	_	15	obl	_	_	_	_	_	_	_	_	_	_	_
-11	,	,	PUNCT	,	_	15	punct	_	_	_	_	_	_	_	_	_	_	_
-12	every	every	DET	DT	_	13	det	_	_	_	_	_	_	_	_	_	_	_
-13	vote	vote	NOUN	NN	_	15	nsubj	_	_	_	_	_	_	_	_	_	_	_
-14	does	do	AUX	VBZ	_	15	aux	_	_	_	_	_	_	_	_	_	_	_
-15	count	count	VERB	VB	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-16	.	.	PUNCT	.	_	15	punct	_	_	_	_	_	_	_	_	_	_	_
+7	,	,	PUNCT	,	_	16	punct	_	_	_	_	_	_	_	_	_	_	_
+8	because	because	SCONJ	IN	_	11	mark	_	_	_	_	_	_	_	_	_	_	_
+9	it	it	PRON	PRP	_	11	nsubj	_	SpaceAfter=No	_	_	_	_	_	_	_	_	_
+10	s	be	VERB	VBZ	Typo=Yes	11	cop	_	CorrectForm='s	_	_	_	_	_	_	_	_	_
+11	proportional	proportional	ADJ	JJ	_	16	advcl	_	_	_	_	_	_	_	_	_	_	_
+12	,	,	PUNCT	,	_	16	punct	_	_	_	_	_	_	_	_	_	_	_
+13	every	every	DET	DT	_	14	det	_	_	_	_	_	_	_	_	_	_	_
+14	vote	vote	NOUN	NN	_	16	nsubj	_	_	_	_	_	_	_	_	_	_	_
+15	does	do	AUX	VBZ	_	16	aux	_	_	_	_	_	_	_	_	_	_	_
+16	count	count	VERB	VB	_	0	root	_	_	_	_	_	_	_	_	_	_	_
+17	.	.	PUNCT	.	_	16	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = spanish-d684fef4-59bd-63a6-3ff8-48e936d3a69a-01
 # text = > A new poll out from the German TV station ARD found that two - thirds of Germans disapproved of Merkel s handling of the refugee crisis , compared with 34 percent who were in favor .
@@ -13443,11 +13444,11 @@
 15	saying	say	VERB	VBG	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 16	how	how	ADV	WRB	_	18	advmod	_	_	_	_	_	_	_	_	_	_	_
 17	Green	Green	PROPN	NNP	_	18	nsubj	_	_	_	_	_	_	_	_	_	_	_
-18	got	get	VERB	VBD	_	15	ccomp	_	_	_	_	_	_	_	_	_	_	_
-19	under	under	ADP	IN	_	22	case	_	_	_	_	_	_	_	_	_	_	_
+18	got	get	VERB	VBD	_	15	ccomp	_	_	1:1	_	get under 's skin	_	_	_	_	_	_
+19	under	under	ADP	IN	_	22	case	_	_	1:2	_	_	_	_	_	_	_	_
 20	Lebron	Lebron	PROPN	NNP	_	22	nmod:poss	_	_	_	_	_	_	_	_	_	_	_
-21	s	's	PART	POS	_	20	case	_	_	_	_	_	_	_	_	_	_	_
-22	skin	skin	NOUN	NN	_	18	obl	_	_	_	_	_	_	_	_	_	_	_
+21	s	's	PART	POS	_	20	case	_	_	1:3	_	_	_	_	_	_	_	_
+22	skin	skin	NOUN	NN	_	18	obl	_	_	1:4	_	_	_	_	_	_	_	_
 23	and	and	CCONJ	CC	_	26	cc	_	_	_	_	_	_	_	_	_	_	_
 24	how	how	ADV	WRB	_	26	advmod	_	_	_	_	_	_	_	_	_	_	_
 25	he	he	PRON	PRP	_	26	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -13456,8 +13457,8 @@
 28	not	not	PART	RB	_	26	advmod	_	_	_	_	_	_	_	_	_	_	_
 29	to	to	PART	TO	_	30	mark	_	_	_	_	_	_	_	_	_	_	_
 30	act	act	VERB	VB	_	26	xcomp	_	_	_	_	_	_	_	_	_	_	_
-31	on	on	ADP	IN	_	32	case	_	_	_	_	_	_	_	_	_	_	_
-32	James	James	PROPN	NNP	_	30	obl	_	_	_	_	_	_	_	_	_	_	_
+31	on	on	SCONJ	IN	_	33	mark	_	_	_	_	_	Explanation	Topic	_	_	_	_
+32	James	James	PROPN	NNP	_	33	nsubj	_	_	_	_	_	_	_	_	_	_	_
 33	provoking	provoke	VERB	VBG	_	30	advcl	_	_	_	_	_	_	_	_	_	_	_
 34	him	he	PRON	PRP	_	33	obj	_	_	_	_	_	_	_	_	_	_	_
 35	.	.	PUNCT	.	_	15	punct	_	_	_	_	_	_	_	_	_	_	_
@@ -13491,8 +13492,8 @@
 25	like	like	ADP	IN	_	26	case	_	_	_	_	_	Manner	ComparisonRef	_	_	_	_
 26	this	this	PRON	DT	_	24	obl	_	_	_	_	_	_	_	_	_	_	_
 27	and	and	CCONJ	CC	_	28	cc	_	_	_	_	_	_	_	_	_	_	_
-28	going	go	VERB	VBG	_	24	conj	_	_	_	_	_	_	_	_	_	_	_
-29	for	for	ADP	IN	_	32	case	_	_	_	_	_	_	_	_	_	_	_
+28	going	go	VERB	VBG	_	24	conj	_	_	1:1	_	go for	_	_	_	_	_	_
+29	for	for	ADP	IN	_	32	case	_	_	1:2	_	_	_	_	_	_	_	_
 30	someone	someone	PRON	NN	_	32	nmod:poss	_	_	_	_	_	_	_	_	_	_	_
 31	s	's	PART	POS	_	30	case	_	_	_	_	_	Whole	Gestalt	_	_	_	_
 32	balls	ball	NOUN	NNS	_	28	obl	_	_	_	_	_	_	_	_	_	_	_
@@ -13781,7 +13782,7 @@
 21	n't	not	PART	RB	_	23	advmod	_	_	_	_	_	_	_	_	_	_	_
 22	be	be	AUX	VB	_	23	cop	_	_	_	_	_	_	_	_	_	_	_
 23	much	much	ADJ	JJ	_	1	parataxis	_	_	_	_	_	_	_	_	_	_	_
-24	of	of	ADP	IN	_	26	case	_	_	_	_	_	_	_	_	_	_	_
+24	of	of	ADP	IN	_	26	case	_	_	_	_	_	Gestalt	Gestalt	_	_	_	_
 25	an	a	DET	DT	_	26	det	_	_	_	_	_	_	_	_	_	_	_
 26	issue	issue	NOUN	NN	_	23	obl	_	_	_	_	_	_	_	_	_	_	_
 27	,	,	PUNCT	,	_	23	punct	_	_	_	_	_	_	_	_	_	_	_
@@ -14780,8 +14781,8 @@
 2	really	really	ADV	RB	_	3	advmod	_	_	_	_	_	_	_	_	_	_	_
 3	amazing	amazing	ADJ	JJ	_	4	amod	_	_	_	_	_	_	_	_	_	_	_
 4	woman	woman	NOUN	NN	_	5	nsubj	_	_	_	_	_	_	_	_	_	_	_
-5	fell	fall	VERB	VBD	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-6	for	for	ADP	IN	_	8	case	_	_	_	_	_	_	_	_	_	_	_
+5	fell	fall	VERB	VBD	_	0	root	_	_	1:1	_	fall for	_	_	_	_	_	_
+6	for	for	ADP	IN	_	8	case	_	_	1:2	_	_	_	_	_	_	_	_
 7	a	a	DET	DT	_	8	det	_	_	_	_	_	_	_	_	_	_	_
 8	schlub	schlub	NOUN	NN	_	5	obl	_	_	_	_	_	_	_	_	_	_	_
 9	like	like	ADP	IN	_	10	case	_	_	_	_	_	Identity	ComparisonRef	_	_	_	_
@@ -14795,8 +14796,8 @@
 17	*	*	PUNCT	NFP	_	14	punct	_	_	_	_	_	_	_	_	_	_	_
 18	be	be	AUX	VB	_	19	cop	_	_	_	_	_	_	_	_	_	_	_
 19	someone	someone	PRON	NN	_	14	nsubj	_	_	_	_	_	_	_	_	_	_	_
-20	out	out	ADV	RB	_	21	advmod	_	_	1:1	_	out there	Locus	Locus	_	_	_	_
-21	there	there	ADV	RB	_	19	advmod	_	_	1:2	_	_	_	_	_	_	_	_
+20	out	out	ADV	RB	_	21	advmod	_	_	2:1	_	out there	Locus	Locus	_	_	_	_
+21	there	there	ADV	RB	_	19	advmod	_	_	2:2	_	_	_	_	_	_	_	_
 22	for	for	ADP	IN	_	24	case	_	_	_	_	_	Beneficiary	Beneficiary	_	_	_	_
 23	Tailor	Tailor	PROPN	NNP	_	24	compound	_	_	_	_	_	_	_	_	_	_	_
 24	Livy	Livy	PROPN	NNP	_	19	nmod	_	_	_	_	_	_	_	_	_	_	_
@@ -15437,9 +15438,9 @@
 3	if	if	SCONJ	IN	_	6	mark	_	_	_	_	_	_	_	_	_	_	_
 4	they	they	PRON	PRP	_	6	nsubj	_	_	_	_	_	_	_	_	_	_	_
 5	d	would	AUX	MD	_	6	aux	_	_	_	_	_	_	_	_	_	_	_
-6	go	go	VERB	VB	_	2	advcl	_	_	_	_	_	_	_	_	_	_	_
-7	in	in	ADV	RB	_	6	advmod	_	_	_	_	_	_	_	_	_	_	_
-8	for	for	ADP	IN	_	9	case	_	_	_	_	_	_	_	_	_	_	_
+6	go	go	VERB	VB	_	2	advcl	_	_	1:1	_	go in for	_	_	_	_	_	_
+7	in	in	ADV	RB	_	6	advmod	_	_	1:2	_	_	_	_	_	_	_	_
+8	for	for	ADP	IN	_	9	case	_	_	1:3	_	_	_	_	_	_	_	_
 9	Suarez	Suarez	PROPN	NNP	_	6	obl	_	_	_	_	_	_	_	_	_	_	_
 10	.	.	PUNCT	.	_	2	punct	_	_	_	_	_	_	_	_	_	_	_
 
@@ -15890,25 +15891,25 @@
 3	task	task	NOUN	NN	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
 4	was	be	VERB	VBD	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 5	to	to	PART	TO	_	6	mark	_	_	_	_	_	_	_	_	_	_	_
-6	get	get	VERB	VB	_	4	ccomp	_	_	_	_	_	_	_	_	_	_	_
-7	rid	rid	NOUN	NN	_	6	obj	_	_	_	_	_	_	_	_	_	_	_
-8	of	of	ADP	IN	_	13	case	_	_	_	_	_	_	_	_	_	_	_
-9	a	a	DET	DT	_	13	det	_	_	_	_	_	_	_	_	_	_	_
+6	get	get	VERB	VB	_	4	ccomp	_	_	1:1	_	get rid of	_	_	_	_	_	_
+7	rid	rid	ADJ	JJ	_	6	xcomp	_	_	1:2	_	_	_	_	_	_	_	_
+8	of	of	ADP	IN	_	21	case	_	_	1:3	_	_	_	_	_	_	_	_
+9	a	a	DET	DT	_	21	det	_	_	_	_	_	_	_	_	_	_	_
 10	power	power	NOUN	NN	_	12	compound	_	_	_	_	_	_	_	_	_	_	_
 11	-	-	PUNCT	HYPH	_	12	punct	_	_	_	_	_	_	_	_	_	_	_
 12	armor	armor	NOUN	NN	_	13	compound	_	_	_	_	_	_	_	_	_	_	_
-13	wearing	wear	NOUN	NN	_	7	nmod	_	_	_	_	_	_	_	_	_	_	_
+13	wearing	wear	VERB	VBG	_	21	amod	_	_	_	_	_	_	_	_	_	_	_
 14	,	,	PUNCT	,	_	13	punct	_	_	_	_	_	_	_	_	_	_	_
-15	female	female	NOUN	NN	_	13	appos	_	_	_	_	_	_	_	_	_	_	_
+15	female	female	ADJ	JJ	_	21	amod	_	_	_	_	_	_	_	_	_	_	_
 16	,	,	PUNCT	,	_	15	punct	_	_	_	_	_	_	_	_	_	_	_
-17	Judge	judge	NOUN	NN	_	15	appos	_	_	_	_	_	_	_	_	_	_	_
-18	Dredd	Dredd	PROPN	NNP	_	15	appos	_	_	_	_	_	_	_	_	_	_	_
+17	Judge	judge	PROPN	NNP	_	20	compound	_	_	_	_	_	_	_	_	_	_	_
+18	Dredd	Dredd	PROPN	NNP	_	17	flat	_	_	_	_	_	_	_	_	_	_	_
 19	-	-	PUNCT	HYPH	_	18	punct	_	_	_	_	_	_	_	_	_	_	_
-20	like	like	ADP	IN	_	21	case	_	_	_	_	_	_	_	_	_	_	_
-21	officer	officer	NOUN	NN	_	13	nmod	_	_	_	_	_	_	_	_	_	_	_
+20	like	like	ADJ	JJ	_	21	amod	_	_	_	_	_	_	_	_	_	_	_
+21	officer	officer	NOUN	NN	_	7	obl	_	_	_	_	_	_	_	_	_	_	_
 22	who	who	PRON	WP	_	24	nsubj	_	_	_	_	_	_	_	_	_	_	_
 23	was	be	AUX	VBD	_	24	aux	_	_	_	_	_	_	_	_	_	_	_
-24	kicking	kick	VERB	VBG	_	13	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
+24	kicking	kick	VERB	VBG	_	21	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
 25	down	down	ADP	RP	_	24	compound:prt	_	_	_	_	_	_	_	_	_	_	_
 26	doors	door	NOUN	NNS	_	24	obj	_	_	_	_	_	_	_	_	_	_	_
 27	on	on	ADP	IN	_	30	case	_	_	_	_	_	Locus	Locus	_	_	_	_
@@ -17224,18 +17225,18 @@
 # sent_id = german-38ebbccb-ec0a-a1f2-d064-944c27c71e63-06
 # text = So take the problems cited on this sub with a grain of salt and enjoy your phone ;) --
 1	So	so	ADV	RB	_	2	advmod	_	_	_	_	_	_	_	_	_	_	_
-2	take	take	VERB	VB	_	0	root	_	_	_	_	_	_	_	_	_	_	_
+2	take	take	VERB	VB	_	0	root	_	_	1:1	_	_	_	_	_	_	_	_
 3	the	the	DET	DT	_	4	det	_	_	_	_	_	_	_	_	_	_	_
 4	problems	problem	NOUN	NNS	_	2	obj	_	_	_	_	_	_	_	_	_	_	_
 5	cited	cite	VERB	VBN	_	4	acl	_	_	_	_	_	_	_	_	_	_	_
 6	on	on	ADP	IN	_	8	case	_	_	_	_	_	Locus	Locus	_	_	_	_
 7	this	this	DET	DT	_	8	det	_	_	_	_	_	_	_	_	_	_	_
 8	sub	sub	NOUN	NN	_	5	obl	_	_	_	_	_	_	_	_	_	_	_
-9	with	with	ADP	IN	_	11	case	_	_	_	_	_	_	_	_	_	_	_
-10	a	a	DET	DT	_	11	det	_	_	_	_	_	_	_	_	_	_	_
-11	grain	grain	NOUN	NN	_	5	obl	_	_	_	_	_	_	_	_	_	_	_
-12	of	of	ADP	IN	_	13	case	_	_	_	_	_	_	_	_	_	_	_
-13	salt	salt	NOUN	NN	_	11	nmod	_	_	_	_	_	_	_	_	_	_	_
+9	with	with	ADP	IN	_	11	case	_	_	1:2	_	_	_	_	_	_	_	_
+10	a	a	DET	DT	_	11	det	_	_	1:3	_	_	_	_	_	_	_	_
+11	grain	grain	NOUN	NN	_	5	obl	_	_	1:4	_	_	_	_	_	_	_	_
+12	of	of	ADP	IN	_	13	case	_	_	1:5	_	_	_	_	_	_	_	_
+13	salt	salt	NOUN	NN	_	11	nmod	_	_	1:6	_	_	_	_	_	_	_	_
 14	and	and	CCONJ	CC	_	15	cc	_	_	_	_	_	_	_	_	_	_	_
 15	enjoy	enjoy	VERB	VB	_	2	conj	_	_	_	_	_	_	_	_	_	_	_
 16	your	you	PRON	PRP$	_	17	nmod:poss	_	_	_	_	_	Possessor	Possessor	_	_	_	_
@@ -17401,8 +17402,8 @@
 47	is	be	AUX	VBZ	_	49	cop	_	_	_	_	_	_	_	_	_	_	_
 48	around	around	ADV	RB	_	49	advmod	_	_	_	_	_	Approximator	Approximator	_	_	_	_
 49	140	140	NUM	CD	_	29	conj	_	_	_	_	_	_	_	_	_	_	_
-50	on	on	ADP	IN	_	51	case	_	_	_	_	_	_	_	_	_	_	_
-51	average	average	NOUN	NN	_	49	nmod	_	_	_	_	_	_	_	_	_	_	_
+50	on	on	ADP	IN	_	51	case	_	_	1:1	_	on average	Extent	Extent	_	_	_	_
+51	average	average	NOUN	NN	_	49	nmod	_	_	1:2	_	_	_	_	_	_	_	_
 52	.	.	PUNCT	.	_	2	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = french-759aaeee-4311-62a4-f20a-b3059b33d947-02
@@ -17473,9 +17474,9 @@
 5	to	to	PART	TO	_	6	mark	_	_	_	_	_	Purpose	Purpose	_	_	_	_
 6	sell	sell	VERB	VB	_	4	acl	_	_	_	_	_	_	_	_	_	_	_
 7	petrol	petrol	NOUN	NN	_	6	obj	_	_	_	_	_	_	_	_	_	_	_
-8	usin	usin	ADP	IN	_	10	case	_	_	_	_	_	_	_	_	_	_	_
+8	usin	use	VERB	VBG	Typo=Yes	7	acl	_	CorrectForm=using	_	_	_	_	_	_	_	_	_
 9	other	other	ADJ	JJ	_	10	amod	_	_	_	_	_	_	_	_	_	_	_
-10	thing	thing	NOUN	NN	_	6	obl	_	_	_	_	_	_	_	_	_	_	_
+10	thing	thing	NOUN	NN	_	8	obj	_	_	_	_	_	_	_	_	_	_	_
 11	than	than	ADP	IN	_	12	case	_	_	_	_	_	??	??	_	_	_	_
 12	dollard	dollard	PROPN	NNP	_	10	nmod	_	_	_	_	_	_	_	_	_	_	_
 13	motivated	motivate	VERB	VBD	_	0	root	_	_	_	_	_	_	_	_	_	_	_
@@ -17658,9 +17659,9 @@
 2	was	be	AUX	VBD	_	3	aux	_	_	_	_	_	_	_	_	_	_	_
 3	saying	say	VERB	VBG	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 4	that	that	SCONJ	IN	_	11	mark	_	_	_	_	_	_	_	_	_	_	_
-5	*	*	PUNCT	NFP	_	11	punct	_	_	_	_	_	_	_	_	_	_	_
-6	because	because	ADP	IN	_	11	mark	_	_	_	_	_	_	_	_	_	_	_
-7	*	*	PUNCT	NFP	_	6	fixed	_	_	_	_	_	_	_	_	_	_	_
+5	*	*	PUNCT	NFP	_	6	punct	_	_	_	_	_	_	_	_	_	_	_
+6	because	because	SCONJ	IN	_	11	mark	_	_	_	_	_	_	_	_	_	_	_
+7	*	*	PUNCT	NFP	_	6	punct	_	_	_	_	_	_	_	_	_	_	_
 8	human	human	ADJ	JJ	_	9	amod	_	_	_	_	_	_	_	_	_	_	_
 9	trafficking	trafficking	NOUN	NN	_	11	nsubj	_	_	_	_	_	_	_	_	_	_	_
 10	is	be	AUX	VBZ	_	11	cop	_	_	_	_	_	_	_	_	_	_	_
@@ -17673,9 +17674,9 @@
 17	my	my	PRON	PRP$	_	18	nmod:poss	_	_	_	_	_	OrgMember	Gestalt	_	_	_	_
 18	country	country	NOUN	NN	_	15	nmod	_	_	_	_	_	_	_	_	_	_	_
 19	,	,	PUNCT	,	_	11	punct	_	_	_	_	_	_	_	_	_	_	_
-20	*	*	PUNCT	NFP	_	3	punct	_	_	_	_	_	_	_	_	_	_	_
+20	*	*	PUNCT	NFP	_	21	punct	_	_	_	_	_	_	_	_	_	_	_
 21	therefore	therefore	ADV	RB	_	26	advmod	_	_	_	_	_	_	_	_	_	_	_
-22	*	*	PUNCT	NFP	_	26	punct	_	_	_	_	_	_	_	_	_	_	_
+22	*	*	PUNCT	NFP	_	21	punct	_	_	_	_	_	_	_	_	_	_	_
 23	prostitutes	prostitute	NOUN	NNS	_	26	nsubj	_	_	_	_	_	_	_	_	_	_	_
 24	are	be	AUX	VBP	_	26	cop	_	_	_	_	_	_	_	_	_	_	_
 25	not	not	PART	RB	_	26	advmod	_	_	_	_	_	_	_	_	_	_	_
@@ -17834,8 +17835,8 @@
 10	do	do	VERB	VB	_	6	conj	_	_	_	_	_	_	_	_	_	_	_
 11	was	be	AUX	VBD	_	13	aux:pass	_	_	_	_	_	_	_	_	_	_	_
 12	not	not	PART	RB	_	13	advmod	_	_	_	_	_	_	_	_	_	_	_
-13	based	base	VERB	VBN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-14	on	on	ADP	IN	_	15	case	_	_	_	_	_	_	_	_	_	_	_
+13	based	base	VERB	VBN	_	0	root	_	_	1:1	_	base on	_	_	_	_	_	_
+14	on	on	ADP	IN	_	15	case	_	_	1:2	_	_	_	_	_	_	_	_
 15	scope	scope	NOUN	NN	_	13	obl	_	_	_	_	_	_	_	_	_	_	_
 16	(	(	PUNCT	-LRB-	_	17	punct	_	_	_	_	_	_	_	_	_	_	_
 17	all	all	DET	DT	_	15	appos	_	_	_	_	_	_	_	_	_	_	_
@@ -17845,8 +17846,8 @@
 21	,	,	PUNCT	,	_	24	punct	_	_	_	_	_	_	_	_	_	_	_
 22	it	it	PRON	PRP	_	24	nsubj:pass	_	_	_	_	_	_	_	_	_	_	_
 23	was	be	AUX	VBD	_	24	aux:pass	_	_	_	_	_	_	_	_	_	_	_
-24	based	base	VERB	VBN	_	13	conj	_	_	_	_	_	_	_	_	_	_	_
-25	on	on	ADP	IN	_	27	case	_	_	_	_	_	_	_	_	_	_	_
+24	based	base	VERB	VBN	_	13	conj	_	_	2:1	_	base on	_	_	_	_	_	_
+25	on	on	ADP	IN	_	27	case	_	_	2:2	_	_	_	_	_	_	_	_
 26	the	the	DET	DT	_	27	det	_	_	_	_	_	_	_	_	_	_	_
 27	concept	concept	NOUN	NN	_	24	obl	_	_	_	_	_	_	_	_	_	_	_
 28	being	be	AUX	VBG	_	29	cop	_	_	_	_	_	_	_	_	_	_	_
@@ -17860,8 +17861,8 @@
 3	it	it	PRON	PRP	_	6	nsubj:pass	_	_	_	_	_	_	_	_	_	_	_
 4	absolutely	absolutely	ADV	RB	_	6	advmod	_	_	_	_	_	_	_	_	_	_	_
 5	was	be	AUX	VBD	_	6	aux:pass	_	_	_	_	_	_	_	_	_	_	_
-6	based	base	VERB	VBN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-7	on	on	ADP	IN	_	8	case	_	_	_	_	_	_	_	_	_	_	_
+6	based	base	VERB	VBN	_	0	root	_	_	1:1	_	base on	_	_	_	_	_	_
+7	on	on	ADP	IN	_	8	case	_	_	1:2	_	_	_	_	_	_	_	_
 8	scope	scope	NOUN	NN	_	6	obl	_	_	_	_	_	_	_	_	_	_	_
 9	.	.	PUNCT	.	_	6	punct	_	_	_	_	_	_	_	_	_	_	_
 
@@ -18072,8 +18073,8 @@
 1	one	one	NUM	CD	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
 2	is	be	AUX	VBZ	_	4	aux	_	_	_	_	_	_	_	_	_	_	_
 3	clearly	clearly	ADV	RB	_	4	advmod	_	_	_	_	_	_	_	_	_	_	_
-4	going	go	VERB	VBG	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-5	for	for	ADP	IN	_	7	case	_	_	_	_	_	_	_	_	_	_	_
+4	going	go	VERB	VBG	_	0	root	_	_	1:1	_	go for	_	_	_	_	_	_
+5	for	for	ADP	IN	_	7	case	_	_	1:2	_	_	_	_	_	_	_	_
 6	an	a	DET	DT	_	7	det	_	_	_	_	_	_	_	_	_	_	_
 7	image	image	NOUN	NN	_	4	obl	_	_	_	_	_	_	_	_	_	_	_
 8	while	while	SCONJ	IN	_	12	mark	_	_	_	_	_	_	_	_	_	_	_
@@ -18666,10 +18667,10 @@
 42	it	it	PRON	PRP	_	45	nsubj:pass	_	_	_	_	_	_	_	_	_	_	_
 43	s	be	AUX	VBZ	_	45	aux:pass	_	_	_	_	_	_	_	_	_	_	_
 44	probably	probably	ADV	RB	_	45	advmod	_	_	_	_	_	_	_	_	_	_	_
-45	kept	keep	VERB	VBN	_	55	advcl	_	_	_	_	_	_	_	_	_	_	_
+45	kept	keep	VERB	VBN	_	55	advcl	_	_	1:1	_	keep under wrap	_	_	_	_	_	_
 46	reasonably	reasonably	ADV	RB	_	45	advmod	_	_	_	_	_	_	_	_	_	_	_
-47	under	under	ADP	IN	_	48	case	_	_	_	_	_	_	_	_	_	_	_
-48	wraps	wrap	NOUN	NNS	_	45	obl	_	_	_	_	_	_	_	_	_	_	_
+47	under	under	ADP	IN	_	48	case	_	_	1:2	_	_	_	_	_	_	_	_
+48	wraps	wrap	NOUN	NNS	_	45	obl	_	_	1:3	_	_	_	_	_	_	_	_
 49	)	)	PUNCT	-RRB-	_	55	punct	_	_	_	_	_	_	_	_	_	_	_
 50	is	be	AUX	VBZ	_	55	cop	_	_	_	_	_	_	_	_	_	_	_
 51	a	a	DET	DT	_	55	det	_	_	_	_	_	_	_	_	_	_	_
@@ -18723,10 +18724,10 @@
 19	will	will	AUX	MD	_	20	aux	_	_	_	_	_	_	_	_	_	_	_
 20	refrain	refrain	VERB	VB	_	5	conj	_	_	_	_	_	_	_	_	_	_	_
 21	from	from	SCONJ	IN	_	22	mark	_	_	_	_	_	Source	Source	_	_	_	_
-22	jumping	jump	VERB	VBG	_	20	advcl	_	_	_	_	_	_	_	_	_	_	_
-23	to	to	ADP	IN	_	25	case	_	_	_	_	_	_	_	_	_	_	_
+22	jumping	jump	VERB	VBG	_	20	advcl	_	_	1:1	_	jump to conclusion	_	_	_	_	_	_
+23	to	to	ADP	IN	_	25	case	_	_	1:2	_	_	_	_	_	_	_	_
 24	any	any	DET	DT	_	25	det	_	_	_	_	_	_	_	_	_	_	_
-25	conclusions	conclusion	NOUN	NNS	_	22	obl	_	_	_	_	_	_	_	_	_	_	_
+25	conclusions	conclusion	NOUN	NNS	_	22	obl	_	_	1:3	_	_	_	_	_	_	_	_
 26	.	.	PUNCT	.	_	2	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = german-02e13718-5227-fc28-b838-04dd0c2c67f2-01
@@ -19281,9 +19282,9 @@
 1	They	they	PRON	PRP	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
 2	may	may	AUX	MD	_	4	aux	_	_	_	_	_	_	_	_	_	_	_
 3	well	well	ADV	RB	_	4	advmod	_	_	_	_	_	_	_	_	_	_	_
-4	keep	keep	VERB	VB	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-5	tabs	tabs	NOUN	NN	_	4	obj	_	_	_	_	_	_	_	_	_	_	_
-6	on	on	ADP	IN	_	7	case	_	_	_	_	_	_	_	_	_	_	_
+4	keep	keep	VERB	VB	_	0	root	_	_	1:1	_	keep tab on	_	_	_	_	_	_
+5	tabs	tabs	NOUN	NN	_	4	obj	_	_	1:2	_	_	_	_	_	_	_	_
+6	on	on	ADP	IN	_	7	case	_	_	1:3	_	_	_	_	_	_	_	_
 7	you	you	PRON	PRP	_	4	obl	_	_	_	_	_	_	_	_	_	_	_
 8	,	,	PUNCT	,	_	11	punct	_	_	_	_	_	_	_	_	_	_	_
 9	or	or	CCONJ	CC	_	11	cc	_	_	_	_	_	_	_	_	_	_	_
@@ -19566,8 +19567,8 @@
 16	,	,	PUNCT	,	_	10	punct	_	_	_	_	_	_	_	_	_	_	_
 17	not	not	ADV	RB	_	20	advmod	_	_	_	_	_	_	_	_	_	_	_
 18	a	a	DET	DT	_	20	det	_	_	_	_	_	_	_	_	_	_	_
-19	for	for	ADP	IN	_	20	case	_	_	_	_	_	_	_	_	_	_	_
-20	loop	loop	NOUN	NN	_	15	obl	_	_	_	_	_	_	_	_	_	_	_
+19	for	for	NOUN	NN	_	20	compound	_	_	1:1	_	for loop	_	_	_	_	_	_
+20	loop	loop	NOUN	NN	_	15	obl	_	_	1:2	_	_	_	_	_	_	_	_
 21	,	,	PUNCT	,	_	8	punct	_	_	_	_	_	_	_	_	_	_	_
 22	as	as	SCONJ	IN	_	24	mark	_	_	_	_	_	Explanation	Explanation	_	_	_	_
 23	you	you	PRON	PRP	_	24	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -20162,8 +20163,8 @@
 15	a	a	DET	DT	_	16	det	_	_	_	_	_	_	_	_	_	_	_
 16	kid	kid	NOUN	NN	_	14	obj	_	_	_	_	_	_	_	_	_	_	_
 17	with	with	ADP	IN	_	18	case	_	_	_	_	_	Characteristic	Characteristic	_	_	_	_
-18	Down	down	ADP	IN	_	14	obl	_	_	_	_	_	_	_	_	_	_	_
-19	s	's	PART	POS	_	18	case	_	_	_	_	_	`$	`$	_	_	_	_
+18	Down	Down	PROPN	NNP	_	16	nmod	_	_	1:1	_	Down 's	_	_	_	_	_	_
+19	s	's	PART	POS	_	18	case	_	_	1:2	_	_	`$	`$	_	_	_	_
 20	.	.	PUNCT	.	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = french-2dd5ad98-475c-61b1-af3e-f55c43ecf2b9-02
@@ -20239,9 +20240,9 @@
 3	are	be	AUX	VBP	_	4	cop	_	_	_	_	_	_	_	_	_	_	_
 4	able	able	ADJ	JJ	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 5	to	to	PART	TO	_	6	mark	_	_	_	_	_	`i	`i	_	_	_	_
-6	pick	pick	VERB	VB	_	4	xcomp	_	_	_	_	_	_	_	_	_	_	_
-7	up	up	ADP	RP	_	6	compound:prt	_	_	_	_	_	_	_	_	_	_	_
-8	on	on	ADP	IN	_	9	case	_	_	_	_	_	_	_	_	_	_	_
+6	pick	pick	VERB	VB	_	4	xcomp	_	_	1:1	_	pick up on	_	_	_	_	_	_
+7	up	up	ADP	RP	_	6	compound:prt	_	_	1:2	_	_	_	_	_	_	_	_
+8	on	on	ADP	IN	_	9	case	_	_	1:3	_	_	_	_	_	_	_	_
 9	it	it	PRON	PRP	_	6	obl	_	_	_	_	_	_	_	_	_	_	_
 10	,	,	PUNCT	,	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 11	this	this	PRON	DT	_	12	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -21001,9 +21002,9 @@
 5	VA	VA	PROPN	NNP	_	2	obj	_	_	_	_	_	_	_	_	_	_	_
 6	for	for	ADP	IN	_	11	case	_	_	_	_	_	Purpose	Purpose	_	_	_	_
 7	my	my	PRON	PRP$	_	11	nmod:poss	_	_	_	_	_	Gestalt	Gestalt	_	_	_	_
-8	day	day	NOUN	NN	_	11	compound	_	_	_	_	_	_	_	_	_	_	_
-9	to	to	ADP	IN	_	10	case	_	_	_	_	_	_	_	_	_	_	_
-10	day	day	NOUN	NN	_	8	nmod	_	_	_	_	_	_	_	_	_	_	_
+8	day	day	NOUN	NN	_	11	compound	_	_	1:1	_	day to day	_	_	_	_	_	_
+9	to	to	ADP	IN	_	10	case	_	_	1:2	_	_	_	_	_	_	_	_
+10	day	day	NOUN	NN	_	8	nmod	_	_	1:3	_	_	_	_	_	_	_	_
 11	things	thing	NOUN	NNS	_	2	obl	_	_	_	_	_	_	_	_	_	_	_
 12	,	,	PUNCT	,	_	15	punct	_	_	_	_	_	_	_	_	_	_	_
 13	and	and	CCONJ	CC	_	15	cc	_	_	_	_	_	_	_	_	_	_	_
@@ -21233,11 +21234,11 @@
 55	except	except	ADP	IN	_	63	case	_	_	_	_	_	PartPortion	PartPortion	_	_	_	_
 56	the	the	DET	DT	_	63	det	_	_	_	_	_	_	_	_	_	_	_
 57	weird	weird	ADJ	JJ	_	63	amod	_	_	_	_	_	_	_	_	_	_	_
-58	out	out	ADP	IN	_	63	compound	_	_	_	_	_	_	_	_	_	_	_
-59	-	-	PUNCT	HYPH	_	58	punct	_	_	_	_	_	_	_	_	_	_	_
-60	of	of	ADP	IN	_	62	case	_	_	_	_	_	_	_	_	_	_	_
-61	-	-	PUNCT	HYPH	_	62	punct	_	_	_	_	_	_	_	_	_	_	_
-62	bounds	bound	NOUN	NNS	_	58	nmod	_	_	_	_	_	_	_	_	_	_	_
+58	out	out	ADP	IN	_	63	compound	_	_	1:1	_	out - of - bounds	Characteristic	Locus	_	_	_	_
+59	-	-	PUNCT	HYPH	_	58	punct	_	_	1:2	_	_	_	_	_	_	_	_
+60	of	of	ADP	IN	_	62	case	_	_	1:3	_	_	_	_	_	_	_	_
+61	-	-	PUNCT	HYPH	_	62	punct	_	_	1:4	_	_	_	_	_	_	_	_
+62	bounds	bound	NOUN	NNS	_	58	nmod	_	_	1:5	_	_	_	_	_	_	_	_
 63	stuff	stuff	NOUN	NN	_	51	obl	_	_	_	_	_	_	_	_	_	_	_
 64	they	they	PRON	PRP	_	65	nsubj	_	_	_	_	_	_	_	_	_	_	_
 65	try	try	VERB	VBP	_	63	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
@@ -21551,9 +21552,9 @@
 3	,	,	PUNCT	,	_	5	punct	_	_	_	_	_	_	_	_	_	_	_
 4	just	just	ADV	RB	_	5	advmod	_	_	_	_	_	_	_	_	_	_	_
 5	how	how	ADV	WRB	_	10	advmod	_	_	_	_	_	_	_	_	_	_	_
-6	out	out	ADP	IN	_	8	case	_	_	_	_	_	_	_	_	_	_	_
-7	of	of	ADP	IN	_	8	case	_	_	_	_	_	_	_	_	_	_	_
-8	touch	touch	NOUN	NN	_	5	obl	_	_	_	_	_	_	_	_	_	_	_
+6	out	out	ADP	IN	_	8	case	_	_	1:1	_	out of touch	Characteristic	Locus	_	_	_	_
+7	of	of	ADP	IN	_	8	case	_	_	1:2	_	_	_	_	_	_	_	_
+8	touch	touch	NOUN	NN	_	5	obl	_	_	1:3	_	_	_	_	_	_	_	_
 9	are	be	AUX	VBP	_	5	cop	_	_	_	_	_	_	_	_	_	_	_
 10	you	you	PRON	PRP	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 11	?	?	PUNCT	.	_	10	punct	_	_	_	_	_	_	_	_	_	_	_
@@ -21817,10 +21818,10 @@
 # sent_id = german-bd143fa9-b714-210c-665d-7435c1066932-01
 # text = I base this simply on the fact that USB Power Delivery will be everywhere you find a USB - C port .
 1	I	I	PRON	PRP	_	2	nsubj	_	_	_	_	_	_	_	_	_	_	_
-2	base	base	VERB	VBP	_	0	root	_	_	_	_	_	_	_	_	_	_	_
+2	base	base	VERB	VBP	_	0	root	_	_	1:1	_	base on	_	_	_	_	_	_
 3	this	this	PRON	DT	_	2	obj	_	_	_	_	_	_	_	_	_	_	_
 4	simply	simply	ADV	RB	_	2	advmod	_	_	_	_	_	_	_	_	_	_	_
-5	on	on	ADP	IN	_	7	case	_	_	_	_	_	_	_	_	_	_	_
+5	on	on	ADP	IN	_	7	case	_	_	1:2	_	_	_	_	_	_	_	_
 6	the	the	DET	DT	_	7	det	_	_	_	_	_	_	_	_	_	_	_
 7	fact	fact	NOUN	NN	_	2	obl	_	_	_	_	_	_	_	_	_	_	_
 8	that	that	SCONJ	IN	_	14	mark	_	_	_	_	_	_	_	_	_	_	_
@@ -22172,19 +22173,19 @@
 
 # sent_id = french-642a357c-7329-02f4-51fb-fcc798b8da9f-06
 # text = Double his goal total and the narrative is completely different about him .
-1	Double	double	ADP	IN	_	3	case	_	_	_	_	_	_	_	_	_	_	_
+1	Double	double	VERB	VB	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 2	his	he	PRON	PRP$	_	3	nmod:poss	_	_	_	_	_	Gestalt	Gestalt	_	_	_	_
 3	goal	goal	NOUN	NN	_	4	obl	_	_	_	_	_	_	_	_	_	_	_
-4	total	total	ADJ	JJ	_	0	root	_	_	_	_	_	_	_	_	_	_	_
+4	total	total	NOUN	NN	_	1	obj	_	_	_	_	_	_	_	_	_	_	_
 5	and	and	CCONJ	CC	_	10	cc	_	_	_	_	_	_	_	_	_	_	_
 6	the	the	DET	DT	_	7	det	_	_	_	_	_	_	_	_	_	_	_
 7	narrative	narrative	NOUN	NN	_	10	nsubj	_	_	_	_	_	_	_	_	_	_	_
 8	is	be	AUX	VBZ	_	10	cop	_	_	_	_	_	_	_	_	_	_	_
 9	completely	completely	ADV	RB	_	10	advmod	_	_	_	_	_	_	_	_	_	_	_
-10	different	different	ADJ	JJ	_	4	conj	_	_	_	_	_	_	_	_	_	_	_
+10	different	different	ADJ	JJ	_	1	conj	_	_	_	_	_	_	_	_	_	_	_
 11	about	about	ADP	IN	_	12	case	_	_	_	_	_	Topic	Topic	_	_	_	_
-12	him	he	PRON	PRP	_	10	obl	_	_	_	_	_	_	_	_	_	_	_
-13	.	.	PUNCT	.	_	10	punct	_	_	_	_	_	_	_	_	_	_	_
+12	him	he	PRON	PRP	_	7	nmod	_	_	_	_	_	_	_	_	_	_	_
+13	.	.	PUNCT	.	_	1	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = french-642a357c-7329-02f4-51fb-fcc798b8da9f-07
 # text = I feel he d be the perfect complementary piece if we had a great C and a scoring winger which , sadly , we do n't have neither of .
@@ -22459,9 +22460,9 @@
 1	So	so	ADV	RB	_	31	advmod	_	_	_	_	_	_	_	_	_	_	_
 2	corporate	corporate	ADJ	JJ	_	3	amod	_	_	_	_	_	_	_	_	_	_	_
 3	capitalism	capitalism	NOUN	NN	_	31	nsubj	_	_	_	_	_	_	_	_	_	_	_
-4	taking	take	VERB	VBG	_	3	acl	_	_	_	_	_	_	_	_	_	_	_
-5	advantage	advantage	NOUN	NN	_	4	obj	_	_	_	_	_	_	_	_	_	_	_
-6	of	of	ADP	IN	_	8	case	_	_	_	_	_	_	_	_	_	_	_
+4	taking	take	VERB	VBG	_	3	acl	_	_	1:1	_	take advantage of	_	_	_	_	_	_
+5	advantage	advantage	NOUN	NN	_	4	obj	_	_	1:2	_	_	_	_	_	_	_	_
+6	of	of	ADP	IN	_	8	case	_	_	1:3	_	_	_	_	_	_	_	_
 7	the	the	DET	DT	_	8	det	_	_	_	_	_	_	_	_	_	_	_
 8	relocation	relocation	NOUN	NN	_	5	nmod	_	_	_	_	_	_	_	_	_	_	_
 9	of	of	ADP	IN	_	10	case	_	_	_	_	_	Theme	Theme	_	_	_	_
@@ -22472,8 +22473,8 @@
 14	men	man	NOUN	NNS	_	10	nmod	_	_	_	_	_	_	_	_	_	_	_
 15	from	from	ADP	IN	_	18	case	_	_	_	_	_	Source	Source	_	_	_	_
 16	the	the	DET	DT	_	18	det	_	_	_	_	_	_	_	_	_	_	_
-17	middle	middle	ADJ	JJ	_	18	amod	_	_	_	_	_	_	_	_	_	_	_
-18	east	east	NOUN	NN	_	14	nmod	_	_	_	_	_	_	_	_	_	_	_
+17	middle	Middle	ADJ	JJ	_	18	amod	_	_	_	_	_	_	_	_	_	_	_
+18	east	East	PROPN	NNP	_	14	nmod	_	_	_	_	_	_	_	_	_	_	_
 19	to	to	PART	TO	_	20	mark	_	_	_	_	_	Purpose	Purpose	_	_	_	_
 20	replenish	replenish	VERB	VB	_	8	acl	_	_	_	_	_	_	_	_	_	_	_
 21	their	they	PRON	PRP$	_	22	nmod:poss	_	_	_	_	_	Gestalt	Gestalt	_	_	_	_
@@ -23483,14 +23484,14 @@
 31	them	they	PRON	PRP	_	29	nmod	_	_	_	_	_	_	_	_	_	_	_
 32	,	,	PUNCT	,	_	40	punct	_	_	_	_	_	_	_	_	_	_	_
 33	meaning	mean	VERB	VBG	_	27	advcl	_	_	_	_	_	_	_	_	_	_	_
-34	$	$	SYM	$	_	33	obj	_	_	_	_	_	_	_	_	_	_	_
+34	$	$	SYM	$	_	40	nsubj	_	_	_	_	_	_	_	_	_	_	_
 35	1000	1000	NUM	CD	_	34	nummod	_	_	_	_	_	_	_	_	_	_	_
 36	extra	extra	ADJ	JJ	_	34	amod	_	_	_	_	_	_	_	_	_	_	_
 37	per	per	ADP	IN	_	39	case	_	_	_	_	_	RateUnit	RateUnit	_	_	_	_
 38	flight	flight	NOUN	NN	_	39	compound	_	_	_	_	_	_	_	_	_	_	_
 39	hour	hour	NOUN	NN	_	34	nmod	_	_	_	_	_	_	_	_	_	_	_
-40	works	work	VERB	VBZ	_	33	ccomp	_	_	_	_	_	_	_	_	_	_	_
-41	out	out	ADP	IN	_	44	case	_	_	_	_	_	_	_	_	_	_	_
+40	works	work	VERB	VBZ	_	33	ccomp	_	_	1:1	_	work out	_	_	_	_	_	_
+41	out	out	ADP	RP	_	40	compound:prt	_	_	1:2	_	_	_	_	_	_	_	_
 42	to	to	ADP	IN	_	44	case	_	_	_	_	_	Goal	Goal	_	_	_	_
 43	about	about	ADV	RB	_	44	advmod	_	_	_	_	_	Approximator	Approximator	_	_	_	_
 44	$	$	SYM	$	_	40	obl	_	_	_	_	_	_	_	_	_	_	_
@@ -24007,7 +24008,7 @@
 5	ideologies	ideology	NOUN	NNS	_	6	nsubj	_	_	_	_	_	_	_	_	_	_	_
 6	become	become	VERB	VBP	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 7	less	less	ADJ	JJR	_	6	xcomp	_	_	_	_	_	_	_	_	_	_	_
-8	of	of	ADP	IN	_	11	case	_	_	_	_	_	_	_	_	_	_	_
+8	of	of	ADP	IN	_	11	case	_	_	_	_	_	Gestalt	Gestalt	_	_	_	_
 9	a	a	DET	DT	_	11	det	_	_	_	_	_	_	_	_	_	_	_
 10	conflict	conflict	NOUN	NN	_	11	compound	_	_	_	_	_	_	_	_	_	_	_
 11	point	point	NOUN	NN	_	7	obl	_	_	_	_	_	_	_	_	_	_	_
@@ -24016,9 +24017,9 @@
 14	kind	kind	NOUN	NN	_	11	nmod	_	_	_	_	_	_	_	_	_	_	_
 15	of	of	ADP	IN	_	16	case	_	_	_	_	_	QuantityItem	Gestalt	_	_	_	_
 16	power	power	NOUN	NN	_	14	nmod	_	_	_	_	_	_	_	_	_	_	_
-17	at	at	ADP	IN	_	19	case	_	_	_	_	_	_	_	_	_	_	_
+17	at	at	ADP	IN	_	19	case	_	_	1:1	_	at disposal	Characteristic	Locus	_	_	_	_
 18	your	you	PRON	PRP$	_	19	nmod:poss	_	_	_	_	_	_	_	_	_	_	_
-19	disposal	disposal	NOUN	NN	_	14	nmod	_	_	_	_	_	_	_	_	_	_	_
+19	disposal	disposal	NOUN	NN	_	14	nmod	_	_	1:3	_	_	_	_	_	_	_	_
 20	.	.	PUNCT	.	_	6	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = german-f3a7a81d-1965-5597-d014-2891a5112fd2-02
@@ -24375,9 +24376,9 @@
 23	that	that	PRON	WDT	_	24	nsubj	_	_	_	_	_	_	_	_	_	_	_
 24	was	be	VERB	VBD	_	22	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
 25	to	to	PART	TO	_	26	mark	_	_	_	_	_	_	_	_	_	_	_
-26	come	come	VERB	VB	_	24	xcomp	_	_	_	_	_	_	_	_	_	_	_
-27	up	up	ADV	RB	_	26	advmod	_	_	_	_	_	_	_	_	_	_	_
-28	with	with	ADP	IN	_	29	case	_	_	_	_	_	_	_	_	_	_	_
+26	come	come	VERB	VB	_	24	xcomp	_	_	1:1	_	come up with	_	_	_	_	_	_
+27	up	up	ADP	RP	_	26	compound:prt	_	_	1:2	_	_	_	_	_	_	_	_
+28	with	with	ADP	IN	_	29	case	_	_	1:3	_	_	_	_	_	_	_	_
 29	guidelines	guideline	NOUN	NNS	_	26	obl	_	_	_	_	_	_	_	_	_	_	_
 30	for	for	ADP	IN	_	34	case	_	_	_	_	_	Purpose	Purpose	_	_	_	_
 31	future	future	ADJ	JJ	_	34	amod	_	_	_	_	_	_	_	_	_	_	_
@@ -24404,7 +24405,7 @@
 5	industrial	industrial	ADJ	JJ	_	6	amod	_	_	_	_	_	_	_	_	_	_	_
 6	advantage	advantage	NOUN	NN	_	9	nsubj	_	_	_	_	_	_	_	_	_	_	_
 7	is	be	AUX	VBZ	_	9	cop	_	_	_	_	_	_	_	_	_	_	_
-8	to	to	ADP	IN	_	9	case	_	_	_	_	_	_	_	_	_	_	_
+8	to	too	ADV	RB	Typo=Yes	9	advmod	_	CorrectForm=too	_	_	_	_	_	_	_	_	_
 9	big	big	ADJ	JJ	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 10	.	.	PUNCT	.	_	9	punct	_	_	_	_	_	_	_	_	_	_	_
 
@@ -24641,9 +24642,9 @@
 4	them	they	PRON	PRP	_	2	nmod	_	_	_	_	_	_	_	_	_	_	_
 5	just	just	ADV	RB	_	6	advmod	_	_	_	_	_	_	_	_	_	_	_
 6	kept	keep	VERB	VBD	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-7	coming	come	VERB	VBG	_	6	xcomp	_	_	_	_	_	_	_	_	_	_	_
-8	up	up	ADP	RP	_	7	compound:prt	_	_	_	_	_	_	_	_	_	_	_
-9	with	with	ADP	IN	_	13	case	_	_	_	_	_	_	_	_	_	_	_
+7	coming	come	VERB	VBG	_	6	xcomp	_	_	1:1	_	come up with	_	_	_	_	_	_
+8	up	up	ADP	RP	_	7	compound:prt	_	_	1:2	_	_	_	_	_	_	_	_
+9	with	with	ADP	IN	_	13	case	_	_	1:3	_	_	_	_	_	_	_	_
 10	the	the	DET	DT	_	13	det	_	_	_	_	_	_	_	_	_	_	_
 11	most	most	ADV	RBS	_	12	advmod	_	_	_	_	_	_	_	_	_	_	_
 12	ridicolous	ridicolous	ADJ	JJ	_	13	amod	_	_	_	_	_	_	_	_	_	_	_
@@ -24659,9 +24660,9 @@
 22	were	be	AUX	VBD	_	24	cop	_	_	_	_	_	_	_	_	_	_	_
 23	completely	completely	ADV	RB	_	24	advmod	_	_	_	_	_	_	_	_	_	_	_
 24	impractical	impractical	ADJ	JJ	_	19	advcl	_	_	_	_	_	_	_	_	_	_	_
-25	as	as	ADV	RB	_	26	advmod	_	_	1:1	_	as long as	Circumstance	Circumstance	_	_	_	_
-26	long	long	ADV	RB	_	24	advmod	_	_	1:2	_	_	_	_	_	_	_	_
-27	as	as	SCONJ	IN	_	30	mark	_	_	1:3	_	_	_	_	_	_	_	_
+25	as	as	ADV	RB	_	26	advmod	_	_	2:1	_	as long as	Circumstance	Circumstance	_	_	_	_
+26	long	long	ADV	RB	_	24	advmod	_	_	2:2	_	_	_	_	_	_	_	_
+27	as	as	SCONJ	IN	_	30	mark	_	_	2:3	_	_	_	_	_	_	_	_
 28	they	they	PRON	PRP	_	30	nsubj	_	_	_	_	_	_	_	_	_	_	_
 29	somehow	somehow	ADV	RB	_	30	advmod	_	_	_	_	_	_	_	_	_	_	_
 30	convinced	convinced	VERB	VBD	_	25	advcl	_	_	_	_	_	_	_	_	_	_	_
@@ -24761,8 +24762,8 @@
 5	what	what	PRON	WP	_	8	obl	_	_	_	_	_	_	_	_	_	_	_
 6	does	do	AUX	VBZ	_	8	aux	_	_	_	_	_	_	_	_	_	_	_
 7	Ticos	ticos	PRON	PRP	_	8	nsubj	_	_	_	_	_	_	_	_	_	_	_
-8	stand	stand	VERB	VB	_	1	appos	_	_	_	_	_	_	_	_	_	_	_
-9	for	for	ADP	IN	_	5	case	_	_	_	_	_	_	_	_	_	_	_
+8	stand	stand	VERB	VB	_	1	appos	_	_	1:1	_	stand for	_	_	_	_	_	_
+9	for	for	ADP	IN	_	5	case	_	_	1:2	_	_	_	_	_	_	_	_
 10	?	?	PUNCT	.	_	1	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = french-449c4ca2-3685-156b-89c8-0c4de9367ed9-01
@@ -24788,7 +24789,7 @@
 6	a	a	DET	DT	_	12	det	_	_	_	_	_	_	_	_	_	_	_
 7	3	3	NUM	CD	_	12	nummod	_	_	_	_	_	_	_	_	_	_	_
 8	-	-	PUNCT	HYPH	_	7	punct	_	_	_	_	_	_	_	_	_	_	_
-9	in	in	ADP	IN	_	11	case	_	_	_	_	_	_	_	_	_	_	_
+9	in	in	ADP	IN	_	11	case	_	_	_	_	_	Whole	Locus	_	_	_	_
 10	-	-	PUNCT	HYPH	_	11	punct	_	_	_	_	_	_	_	_	_	_	_
 11	1	1	NUM	CD	_	7	nmod	_	_	_	_	_	_	_	_	_	_	_
 12	package	package	NOUN	NN	_	5	obj	_	_	_	_	_	_	_	_	_	_	_
@@ -24937,8 +24938,8 @@
 3	you	you	PRON	PRP	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
 4	want	want	VERB	VBP	_	2	ccomp	_	_	_	_	_	_	_	_	_	_	_
 5	to	to	PART	TO	_	6	mark	_	_	_	_	_	_	_	_	_	_	_
-6	go	go	VERB	VB	_	4	xcomp	_	_	_	_	_	_	_	_	_	_	_
-7	with	with	ADP	IN	_	9	case	_	_	_	_	_	_	_	_	_	_	_
+6	go	go	VERB	VB	_	4	xcomp	_	_	1:1	_	go with	_	_	_	_	_	_
+7	with	with	ADP	IN	_	9	case	_	_	1:2	_	_	_	_	_	_	_	_
 8	the	the	DET	DT	_	9	det	_	_	_	_	_	_	_	_	_	_	_
 9	imperfect	imperfect	ADJ	JJ	_	6	obl	_	_	_	_	_	_	_	_	_	_	_
 10	here	here	ADV	RB	_	6	advmod	_	_	_	_	_	_	_	_	_	_	_
@@ -25014,8 +25015,8 @@
 15	with	with	ADP	IN	_	17	case	_	_	_	_	_	Circumstance	Circumstance	_	_	_	_
 16	specific	specific	ADJ	JJ	_	17	amod	_	_	_	_	_	_	_	_	_	_	_
 17	moments	moment	NOUN	NNS	_	14	obl	_	_	_	_	_	_	_	_	_	_	_
-18	in	in	ADP	IN	_	19	case	_	_	_	_	_	_	_	_	_	_	_
-19	mind	mind	NOUN	NN	_	17	nmod	_	_	_	_	_	_	_	_	_	_	_
+18	in	in	ADP	IN	_	19	case	_	_	1:1	_	_	Characteristic	Locus	_	_	_	_
+19	mind	mind	NOUN	NN	_	17	nmod	_	_	1:2	_	_	_	_	_	_	_	_
 20	.	.	PUNCT	.	_	14	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = spanish-cd0dfe6b-d673-4d3d-b898-f2f2d412c848-05
@@ -25127,8 +25128,8 @@
 5	of	of	ADP	IN	_	6	case	_	_	_	_	_	Gestalt	Gestalt	_	_	_	_
 6	religion	religion	NOUN	NN	_	4	nmod	_	_	_	_	_	_	_	_	_	_	_
 7	is	be	AUX	VBZ	_	8	aux:pass	_	_	_	_	_	_	_	_	_	_	_
-8	based	base	VERB	VBN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-9	on	on	ADP	IN	_	10	case	_	_	_	_	_	_	_	_	_	_	_
+8	based	base	VERB	VBN	_	0	root	_	_	1:1	_	base on	_	_	_	_	_	_
+9	on	on	ADP	IN	_	10	case	_	_	1:2	_	_	_	_	_	_	_	_
 10	faith	faith	NOUN	NN	_	8	obl	_	_	_	_	_	_	_	_	_	_	_
 11	.	.	PUNCT	.	_	8	punct	_	_	_	_	_	_	_	_	_	_	_
 
@@ -25142,8 +25143,8 @@
 6	,	,	PUNCT	,	_	5	punct	_	_	_	_	_	_	_	_	_	_	_
 7	it	it	PRON	PRP	_	9	nsubj:pass	_	_	_	_	_	_	_	_	_	_	_
 8	is	be	AUX	VBZ	_	9	aux:pass	_	_	_	_	_	_	_	_	_	_	_
-9	founded	found	VERB	VBN	_	5	parataxis	_	_	_	_	_	_	_	_	_	_	_
-10	on	on	ADP	IN	_	11	case	_	_	_	_	_	_	_	_	_	_	_
+9	founded	found	VERB	VBN	_	5	parataxis	_	_	1:1	_	found on	_	_	_	_	_	_
+10	on	on	ADP	IN	_	11	case	_	_	1:2	_	_	_	_	_	_	_	_
 11	observation	observation	NOUN	NN	_	9	obl	_	_	_	_	_	_	_	_	_	_	_
 12	and	and	CCONJ	CC	_	13	cc	_	_	_	_	_	_	_	_	_	_	_
 13	measurement	measurement	NOUN	NN	_	11	conj	_	_	_	_	_	_	_	_	_	_	_
@@ -25216,24 +25217,24 @@
 11	and	and	CCONJ	CC	_	12	cc	_	_	_	_	_	_	_	_	_	_	_
 12	measured	measure	VERB	VBN	_	10	conj	_	_	_	_	_	_	_	_	_	_	_
 13	and	and	CCONJ	CC	_	16	cc	_	_	_	_	_	_	_	_	_	_	_
-14	is	be	AUX	VBZ	_	18	cop	_	_	_	_	_	_	_	_	_	_	_
+14	is	be	AUX	VBZ	_	16	cop	_	_	_	_	_	_	_	_	_	_	_
 15	not	not	PART	RB	_	16	advmod	_	_	_	_	_	_	_	_	_	_	_
-16	up	up	ADV	RB	_	18	advmod	_	_	_	_	_	_	_	_	_	_	_
-17	for	for	ADP	IN	_	18	case	_	_	_	_	_	_	_	_	_	_	_
-18	debate	debate	NOUN	NN	_	10	conj	_	_	_	_	_	_	_	_	_	_	_
+16	up	up	ADV	RB	_	10	conj	_	_	1:1	_	up for debate	_	_	_	_	_	_
+17	for	for	ADP	IN	_	18	case	_	_	1:2	_	_	_	_	_	_	_	_
+18	debate	debate	NOUN	NN	_	16	obl	_	_	1:3	_	_	_	_	_	_	_	_
 19	of	of	ADP	IN	_	20	case	_	_	_	_	_	??	??	_	_	_	_
 20	existence	existence	NOUN	NN	_	18	nmod	_	_	_	_	_	_	_	_	_	_	_
 21	,	,	PUNCT	,	_	24	punct	_	_	_	_	_	_	_	_	_	_	_
 22	or	or	CCONJ	CC	_	24	cc	_	_	_	_	_	_	_	_	_	_	_
 23	even	even	ADV	RB	_	24	advmod	_	_	_	_	_	_	_	_	_	_	_
-24	cause	cause	VERB	VB	_	10	conj	_	_	_	_	_	_	_	_	_	_	_
+24	cause	cause	VERB	VB	_	20	conj	_	_	_	_	_	_	_	_	_	_	_
 25	(	(	PUNCT	-LRB-	_	31	punct	_	_	_	_	_	_	_	_	_	_	_
 26	historical	historical	ADJ	JJ	_	27	amod	_	_	_	_	_	_	_	_	_	_	_
 27	data	data	NOUN	NN	_	31	nsubj	_	_	_	_	_	_	_	_	_	_	_
 28	and	and	CCONJ	CC	_	29	cc	_	_	_	_	_	_	_	_	_	_	_
 29	measurements	measurement	NOUN	NNS	_	27	conj	_	_	_	_	_	_	_	_	_	_	_
 30	has	have	AUX	VBZ	_	31	aux	_	_	_	_	_	_	_	_	_	_	_
-31	linked	link	VERB	VBN	_	10	conj	_	_	_	_	_	_	_	_	_	_	_
+31	linked	link	VERB	VBN	_	10	parataxis	_	_	_	_	_	_	_	_	_	_	_
 32	human	human	ADJ	JJ	_	33	amod	_	_	_	_	_	_	_	_	_	_	_
 33	interference	interference	NOUN	NN	_	31	obj	_	_	_	_	_	_	_	_	_	_	_
 34	to	to	PART	TO	_	35	mark	_	_	_	_	_	Goal	Goal	_	_	_	_
