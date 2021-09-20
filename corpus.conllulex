@@ -1502,7 +1502,7 @@
 2	are	be	VERB	VBP	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 3	plenty	plenty	NOUN	NN	_	2	nsubj	_	_	_	_	_	_	_	_	_	_	_
 4	of	of	ADP	IN	_	6	case	_	_	_	_	_	QuantityItem	QuantityItem	_	_	_	_
-5	Christians	Christians	PROPN	NNPS	_	6	compound	_	_	_	_	_	_	_	_	_	_	_
+5	Christians	Christian	PROPN	NNPS	_	6	compound	_	_	_	_	_	_	_	_	_	_	_
 6	countries	country	NOUN	NNS	_	3	nmod	_	_	_	_	_	_	_	_	_	_	_
 7	that	that	PRON	WDT	_	12	nsubj	_	_	_	_	_	_	_	_	_	_	_
 8	are	be	AUX	VBP	_	12	cop	_	_	_	_	_	_	_	_	_	_	_
@@ -1513,7 +1513,7 @@
 13	of	of	ADP	IN	_	17	case	_	_	_	_	_	QuantityItem	Whole	_	_	_	_
 14	the	the	DET	DT	_	17	det	_	_	_	_	_	_	_	_	_	_	_
 15	worse	worse	ADJ	JJR	_	17	amod	_	_	_	_	_	_	_	_	_	_	_
-16	Islamic	islamic	ADJ	JJ	_	17	amod	_	_	_	_	_	_	_	_	_	_	_
+16	Islamic	Islamic	ADJ	JJ	_	17	amod	_	_	_	_	_	_	_	_	_	_	_
 17	countries	country	NOUN	NNS	_	12	nmod	_	_	_	_	_	_	_	_	_	_	_
 18	in	in	ADP	IN	_	19	case	_	_	1:1	_	in term of	Topic	Topic	_	_	_	_
 19	terms	term	NOUN	NNS	_	12	nmod	_	_	1:2	_	_	_	_	_	_	_	_
@@ -1732,7 +1732,7 @@
 9	really	really	ADV	RB	_	10	advmod	_	_	_	_	_	_	_	_	_	_	_
 10	need	need	VERB	VB	_	6	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
 11	spending	spend	VERB	VBG	_	10	xcomp	_	_	_	_	_	_	_	_	_	_	_
-12	bajillions	bajillion	NOUN	NNS	_	11	obj	_	_	_	_	_	_	_	_	_	_	_
+12	bajillions	bajillion	NUM	NNS	_	11	obj	_	_	_	_	_	_	_	_	_	_	_
 13	of	of	ADP	IN	_	14	case	_	_	_	_	_	QuantityItem	QuantityItem	_	_	_	_
 14	dollars	dollar	NOUN	NNS	_	12	nmod	_	_	_	_	_	_	_	_	_	_	_
 15	right	right	ADV	RB	_	16	advmod	_	_	_	_	_	_	_	_	_	_	_
@@ -1872,7 +1872,7 @@
 4	make	make	VERB	VBP	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 5	shitty	shitty	ADJ	JJ	_	6	amod	_	_	_	_	_	_	_	_	_	_	_
 6	games	game	NOUN	NNS	_	7	nsubj	_	_	_	_	_	_	_	_	_	_	_
-7	Agree	agree	VERB	VBP	_	4	ccomp	_	_	_	_	_	_	_	_	_	_	_
+7	Agree	agree	VERB	VBP	_	4	parataxis	_	_	_	_	_	_	_	_	_	_	_
 8	but	but	CCONJ	CC	_	22	cc	_	_	_	_	_	_	_	_	_	_	_
 9	a	a	DET	DT	_	10	det	_	_	_	_	_	_	_	_	_	_	_
 10	lot	lot	NOUN	NN	_	22	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -2286,7 +2286,7 @@
 4	smart	smart	ADJ	JJ	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 5	they	they	PRON	PRP	_	7	nsubj	_	_	_	_	_	_	_	_	_	_	_
 6	ll	will	AUX	MD	_	7	aux	_	_	_	_	_	_	_	_	_	_	_
-7	stop	stop	VERB	VB	_	4	ccomp	_	_	_	_	_	_	_	_	_	_	_
+7	stop	stop	VERB	VB	_	4	parataxis	_	_	_	_	_	_	_	_	_	_	_
 8	stealing	steal	VERB	VBG	_	7	xcomp	_	_	_	_	_	_	_	_	_	_	_
 9	locked	lock	VERB	VBN	_	10	amod	_	_	_	_	_	_	_	_	_	_	_
 10	cars	car	NOUN	NNS	_	8	obj	_	_	_	_	_	_	_	_	_	_	_
@@ -2604,9 +2604,9 @@
 # sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-18
 # text = > Hell you do a bank robbery that s like 12 years and probably more profitable you re trying to reduce and already reducing crime Unless we re talking about a GTA5 grade heist the most you can get from a bank robbery is a few thousands , and you have a pretty high chance of getting shot while also your penalty is much higher than by just stealing a car ( I mean , stealing a car might be 1 - 2 years , 10 years would be an extreme case , but robbing a bank is going to be 10 + years for sure , just not worth it ) .
 1	>	>	PUNCT	NFP	_	2	punct	_	_	_	_	_	_	_	_	_	_	_
-2	Hell	Hell	NOUN	NN	_	47	nsubj	_	_	_	_	_	_	_	_	_	_	_
+2	Hell	Hell	NOUN	NN	_	4	discourse	_	_	_	_	_	_	_	_	_	_	_
 3	you	you	PRON	PRP	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
-4	do	do	VERB	VBP	_	2	appos	_	_	_	_	_	_	_	_	_	_	_
+4	do	do	VERB	VBP	_	2	root	_	_	_	_	_	_	_	_	_	_	_
 5	a	a	DET	DT	_	7	det	_	_	_	_	_	_	_	_	_	_	_
 6	bank	bank	NOUN	NN	_	7	compound	_	_	_	_	_	_	_	_	_	_	_
 7	robbery	robbery	NOUN	NN	_	4	obj	_	_	_	_	_	_	_	_	_	_	_
@@ -2621,7 +2621,7 @@
 16	profitable	profitable	ADJ	JJ	_	12	conj	_	_	_	_	_	_	_	_	_	_	_
 17	you	you	PRON	PRP	_	19	nsubj	_	_	_	_	_	_	_	_	_	_	_
 18	re	be	AUX	VBP	_	19	aux	_	_	_	_	_	_	_	_	_	_	_
-19	trying	try	VERB	VBG	_	2	parataxis	_	_	_	_	_	_	_	_	_	_	_
+19	trying	try	VERB	VBG	_	4	parataxis	_	_	_	_	_	_	_	_	_	_	_
 20	to	to	PART	TO	_	21	mark	_	_	_	_	_	_	_	_	_	_	_
 21	reduce	reduce	VERB	VB	_	19	xcomp	_	_	_	_	_	_	_	_	_	_	_
 22	and	and	CCONJ	CC	_	24	cc	_	_	_	_	_	_	_	_	_	_	_
@@ -2649,7 +2649,7 @@
 44	is	be	AUX	VBZ	_	47	cop	_	_	_	_	_	_	_	_	_	_	_
 45	a	a	DET	DT	_	47	det	_	_	_	_	_	_	_	_	_	_	_
 46	few	few	ADJ	JJ	_	47	amod	_	_	_	_	_	_	_	_	_	_	_
-47	thousands	thousand	NOUN	NNS	_	0	root	_	_	_	_	_	_	_	_	_	_	_
+47	thousands	thousand	NOUN	NNS	_	4	parataxis	_	_	_	_	_	_	_	_	_	_	_
 48	,	,	PUNCT	,	_	51	punct	_	_	_	_	_	_	_	_	_	_	_
 49	and	and	CCONJ	CC	_	51	cc	_	_	_	_	_	_	_	_	_	_	_
 50	you	you	PRON	PRP	_	51	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -2676,7 +2676,7 @@
 71	car	car	NOUN	NN	_	69	obj	_	_	_	_	_	_	_	_	_	_	_
 72	(	(	PUNCT	-LRB-	_	74	punct	_	_	_	_	_	_	_	_	_	_	_
 73	I	I	PRON	PRP	_	74	nsubj	_	_	_	_	_	_	_	_	_	_	_
-74	mean	mean	VERB	VBP	_	65	parataxis	_	_	_	_	_	_	_	_	_	_	_
+74	mean	mean	VERB	VBP	_	84	discourse	_	_	_	_	_	_	_	_	_	_	_
 75	,	,	PUNCT	,	_	74	punct	_	_	_	_	_	_	_	_	_	_	_
 76	stealing	steal	VERB	VBG	_	74	advcl	_	_	_	_	_	_	_	_	_	_	_
 77	a	a	DET	DT	_	78	det	_	_	_	_	_	_	_	_	_	_	_
@@ -2686,7 +2686,7 @@
 81	1	1	NUM	CD	_	84	nummod	_	_	_	_	_	_	_	_	_	_	_
 82	-	-	SYM	SYM	_	83	case	_	_	_	_	_	_	_	_	_	_	_
 83	2	2	NUM	CD	_	81	nmod	_	_	_	_	_	_	_	_	_	_	_
-84	years	year	NOUN	NNS	_	74	ccomp	_	_	_	_	_	_	_	_	_	_	_
+84	years	year	NOUN	NNS	_	47	parataxis	_	_	_	_	_	_	_	_	_	_	_
 85	,	,	PUNCT	,	_	2	punct	_	_	_	_	_	_	_	_	_	_	_
 86	10	10	NUM	CD	_	87	nummod	_	_	_	_	_	_	_	_	_	_	_
 87	years	year	NOUN	NNS	_	92	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -2715,7 +2715,7 @@
 110	worth	worth	ADJ	JJ	_	99	parataxis	_	_	_	_	_	_	_	_	_	_	_
 111	it	it	PRON	PRP	_	110	obj	_	_	_	_	_	_	_	_	_	_	_
 112	)	)	PUNCT	-RRB-	_	110	punct	_	_	_	_	_	_	_	_	_	_	_
-113	.	.	PUNCT	.	_	2	punct	_	_	_	_	_	_	_	_	_	_	_
+113	.	.	PUNCT	.	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-19
 # text = > You re creating crime , spending more money on a dwindling crime , taking up police time , filling the courts and not helping solve the problem your solution does n't stop anything other than the initial unfortunate ones and the really stupid after that I m not creating crime , those criminals were already there , waiting for someone to leave their car unlocked .
@@ -2768,7 +2768,7 @@
 47	I	I	PRON	PRP	_	50	nsubj	_	_	_	_	_	_	_	_	_	_	_
 48	m	be	AUX	VBP	_	50	aux	_	_	_	_	_	_	_	_	_	_	_
 49	not	not	PART	RB	_	50	advmod	_	_	_	_	_	_	_	_	_	_	_
-50	creating	create	VERB	VBG	_	44	advcl	_	_	_	_	_	_	_	_	_	_	_
+50	creating	create	VERB	VBG	_	4	parataxis	_	_	_	_	_	_	_	_	_	_	_
 51	crime	crime	NOUN	NN	_	50	obj	_	_	_	_	_	_	_	_	_	_	_
 52	,	,	PUNCT	,	_	57	punct	_	_	_	_	_	_	_	_	_	_	_
 53	those	those	DET	DT	_	54	det	_	_	_	_	_	_	_	_	_	_	_
@@ -3005,7 +3005,7 @@
 22	cause	cause	VERB	VB	_	19	ccomp	_	_	_	_	_	_	_	_	_	_	_
 23	extreme	extreme	ADJ	JJ	_	26	amod	_	_	_	_	_	_	_	_	_	_	_
 24	and	and	CCONJ	CC	_	25	cc	_	_	_	_	_	_	_	_	_	_	_
-25	~~un~~fair	~~un~~fair	ADJ	JJ	_	23	conj	_	_	_	_	_	_	_	_	_	_	_
+25	~~un~~fair	unfair	ADJ	JJ	Style=Expr	23	conj	_	_	_	_	_	_	_	_	_	_	_
 26	prejudice	prejudice	NOUN	NN	_	22	obj	_	_	_	_	_	_	_	_	_	_	_
 27	against	against	ADP	IN	_	28	case	_	_	_	_	_	Beneficiary	Beneficiary	_	_	_	_
 28	it	it	PRON	PRP	_	22	obl	_	_	_	_	_	_	_	_	_	_	_
@@ -3418,11 +3418,11 @@
 2	really	really	ADV	RB	_	3	advmod	_	_	_	_	_	_	_	_	_	_	_
 3	believe	believe	VERB	VBP	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 4	that	that	SCONJ	IN	_	9	mark	_	_	_	_	_	_	_	_	_	_	_
-5	?	?	PUNCT	.	_	9	punct	_	_	_	_	_	_	_	_	_	_	_
+5	?	?	PUNCT	.	_	3	punct	_	_	_	_	_	_	_	_	_	_	_
 6	Anyway	anyway	INTJ	UH	_	9	discourse	_	_	_	_	_	_	_	_	_	_	_
 7	,	,	PUNCT	,	_	9	punct	_	_	_	_	_	_	_	_	_	_	_
 8	I	I	PRON	PRP	_	9	nsubj	_	_	_	_	_	_	_	_	_	_	_
-9	looked	look	VERB	VBD	_	3	ccomp	_	_	_	_	_	_	_	_	_	_	_
+9	looked	look	VERB	VBD	_	3	parataxis	_	_	_	_	_	_	_	_	_	_	_
 10	for	for	ADP	IN	_	12	case	_	_	_	_	_	Theme	Theme	_	_	_	_
 11	decent	decent	ADJ	JJ	_	12	amod	_	_	_	_	_	_	_	_	_	_	_
 12	reviews	review	NOUN	NNS	_	9	obl	_	_	_	_	_	_	_	_	_	_	_
@@ -4036,7 +4036,7 @@
 2	you	you	PRON	PRP	_	3	nsubj	_	_	_	_	_	_	_	_	_	_	_
 3	leave	leave	VERB	VBP	_	0	root	_	_	_	_	_	_	_	_	_	_	_
 4	a	a	DET	DT	_	6	det	_	_	_	_	_	_	_	_	_	_	_
-5	fucking	fuck	NOUN	NN	_	6	compound	_	_	_	_	_	_	_	_	_	_	_
+5	fucking	fuck	NOUN	NN	_	6	discourse	_	_	_	_	_	_	_	_	_	_	_
 6	country	country	NOUN	NN	_	3	obj	_	_	_	_	_	_	_	_	_	_	_
 7	in	in	ADP	IN	_	9	case	_	_	_	_	_	Circumstance	Locus	_	_	_	_
 8	a	a	DET	DT	_	9	det	_	_	_	_	_	_	_	_	_	_	_
@@ -4044,7 +4044,7 @@
 10	We	we	PRON	PRP	_	13	nsubj	_	_	_	_	_	_	_	_	_	_	_
 11	did	do	AUX	VBD	_	13	aux	_	_	_	_	_	_	_	_	_	_	_
 12	n't	not	PART	RB	_	13	advmod	_	_	_	_	_	_	_	_	_	_	_
-13	put	put	VERB	VB	_	3	conj	_	_	_	_	_	_	_	_	_	_	_
+13	put	put	VERB	VB	_	3	parataxis	_	_	_	_	_	_	_	_	_	_	_
 14	the	the	DET	DT	_	15	det	_	_	_	_	_	_	_	_	_	_	_
 15	country	country	NOUN	NN	_	13	obj	_	_	_	_	_	_	_	_	_	_	_
 16	in	in	ADP	IN	_	18	case	_	_	_	_	_	Goal	Locus	_	_	_	_
@@ -4052,7 +4052,7 @@
 18	war	war	NOUN	NN	_	13	obl	_	_	_	_	_	_	_	_	_	_	_
 19	,	,	PUNCT	,	_	3	punct	_	_	_	_	_	_	_	_	_	_	_
 20	they	they	PRON	PRP	_	21	nsubj	_	_	_	_	_	_	_	_	_	_	_
-21	went	go	VERB	VBD	_	3	parataxis	_	_	_	_	_	_	_	_	_	_	_
+21	went	go	VERB	VBD	_	13	parataxis	_	_	_	_	_	_	_	_	_	_	_
 22	themselves	themselves	PRON	PRP	_	21	obj	_	_	_	_	_	_	_	_	_	_	_
 23	.	.	PUNCT	.	_	3	punct	_	_	_	_	_	_	_	_	_	_	_
 
@@ -4062,7 +4062,7 @@
 2	s	be	AUX	VBZ	_	5	cop	_	_	_	_	_	_	_	_	_	_	_
 3	not	not	PART	RB	_	5	advmod	_	_	_	_	_	_	_	_	_	_	_
 4	our	we	PRON	PRP$	_	5	nmod:poss	_	_	_	_	_	Gestalt	Gestalt	_	_	_	_
-5	responsability	responsability	NOUN	NN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
+5	responsability	responsibility	NOUN	NN	Typo=Yes	0	root	_	CorrectForm=responsibility	_	_	_	_	_	_	_	_	_
 6	.	.	PUNCT	.	_	5	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = french-b578afa0-673d-d93b-2046-56047925de5f-06
@@ -5634,7 +5634,7 @@
 2	reason	reason	NOUN	NN	_	8	nsubj	_	_	_	_	_	_	_	_	_	_	_
 3	there	there	PRON	EX	_	4	expl	_	_	_	_	_	_	_	_	_	_	_
 4	are	be	VERB	VBP	_	2	acl:relcl	_	_	_	_	_	_	_	_	_	_	_
-5	lotsa	lotsa	ADJ	JJ	_	6	amod	_	_	_	_	_	_	_	_	_	_	_
+5	lotsa	lotsa	ADJ	JJ	Abbr=Yes	6	amod	_	_	_	_	_	_	_	_	_	_	_
 6	flavors	flavor	NOUN	NNS	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
 7	is	be	AUX	VBZ	_	8	cop	_	_	_	_	_	_	_	_	_	_	_
 8	personalization	personalization	NOUN	NN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
@@ -6531,7 +6531,7 @@
 4	fight	fight	VERB	VB	_	1	conj	_	_	_	_	_	_	_	_	_	_	_
 5	for	for	ADP	IN	_	8	case	_	_	_	_	_	Beneficiary	Beneficiary	_	_	_	_
 6	the	the	DET	DT	_	8	det	_	_	_	_	_	_	_	_	_	_	_
-7	fucking	fuck	NOUN	NN	_	8	compound	_	_	_	_	_	_	_	_	_	_	_
+7	fucking	fucking	ADJ	JJ	_	8	amod	_	_	_	_	_	_	_	_	_	_	_
 8	team	team	NOUN	NN	_	4	obl	_	_	_	_	_	_	_	_	_	_	_
 9	when	when	ADV	WRB	_	11	mark	_	_	_	_	_	_	_	_	_	_	_
 10	you	you	PRON	PRP	_	11	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -9902,13 +9902,14 @@
 
 # sent_id = english-dc45488d-84dd-a9b9-1f1e-0ee9cf6c9992-15
 # text = Moreso than they used to be .
-1	Moreso	moreso	ADJ	JJR	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-2	than	than	SCONJ	IN	_	4	mark	_	_	_	_	_	ComparisonRef	ComparisonRef	_	_	_	_
-3	they	they	PRON	PRP	_	4	nsubj	_	_	_	_	_	_	_	_	_	_	_
-4	used	use	VERB	VBD	_	1	advcl	_	_	_	_	_	_	_	_	_	_	_
-5	to	to	PART	TO	_	6	mark	_	_	_	_	_	_	_	_	_	_	_
-6	be	be	VERB	VB	_	4	xcomp	_	_	_	_	_	_	_	_	_	_	_
-7	.	.	PUNCT	.	_	1	punct	_	_	_	_	_	_	_	_	_	_	_
+1	More	more	ADV	RBR	_	1	advmod	_	CorrectSpaceAfter=Yes|SpaceAfter=No	_	_	_	_	_	_	_	_	_
+2	so	so	ADV	RB	_	0	root	_	_	_	_	_	_	_	_	_	_	_
+3	than	than	SCONJ	IN	_	5	mark	_	_	_	_	_	ComparisonRef	ComparisonRef	_	_	_	_
+4	they	they	PRON	PRP	_	5	nsubj	_	_	_	_	_	_	_	_	_	_	_
+5	used	use	VERB	VBD	_	2	obl	_	_	_	_	_	_	_	_	_	_	_
+6	to	to	PART	TO	_	7	mark	_	_	_	_	_	_	_	_	_	_	_
+7	be	be	VERB	VB	_	5	xcomp	_	_	_	_	_	_	_	_	_	_	_
+8	.	.	PUNCT	.	_	1	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = english-dc45488d-84dd-a9b9-1f1e-0ee9cf6c9992-16
 # text = Edit : Tova O'Brien is ( my chosen ) messiah .
@@ -9937,14 +9938,15 @@
 9	s	be	AUX	VBZ	_	10	cop	_	_	_	_	_	_	_	_	_	_	_
 10	hot	hot	ADJ	JJ	_	4	advcl	_	_	_	_	_	_	_	_	_	_	_
 11	,	,	PUNCT	,	_	12	punct	_	_	_	_	_	_	_	_	_	_	_
-12	lets	let	VERB	VBZ	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-13	clear	clear	ADJ	JJ	_	14	amod	_	_	_	_	_	_	_	_	_	_	_
-14	that	that	PRON	DT	_	12	obj	_	_	_	_	_	_	_	_	_	_	_
-15	up	up	ADP	RP	_	12	compound:prt	_	_	_	_	_	_	_	_	_	_	_
-16	from	from	ADP	IN	_	18	case	_	_	_	_	_	StartTime	StartTime	_	_	_	_
-17	the	the	DET	DT	_	18	det	_	_	_	_	_	_	_	_	_	_	_
-18	beginning	beginning	NOUN	NN	_	12	obl	_	_	_	_	_	_	_	_	_	_	_
-19	.	.	PUNCT	.	_	12	punct	_	_	_	_	_	_	_	_	_	_	_
+12	let	let	VERB	VBZ	_	0	root	_	SpaceAfter=No	_	_	_	_	_	_	_	_	_
+13	s	we	PRON	PRP	Abbr=Yes	12	obj	_	CorrectForm='s	_	_	_	_	_	_	_	_	_
+14	clear	clear	VERB	VB	_	12	xcomp	_	_	_	_	_	_	_	_	_	_	_
+15	that	that	PRON	DT	_	14	obj	_	_	_	_	_	_	_	_	_	_	_
+16	up	up	ADP	RP	_	14	compound:prt	_	_	_	_	_	_	_	_	_	_	_
+17	from	from	ADP	IN	_	19	case	_	_	_	_	_	StartTime	StartTime	_	_	_	_
+18	the	the	DET	DT	_	19	det	_	_	_	_	_	_	_	_	_	_	_
+19	beginning	beginning	NOUN	NN	_	14	obl	_	_	_	_	_	_	_	_	_	_	_
+20	.	.	PUNCT	.	_	12	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = english-5c7cbc62-01a4-f7a1-6526-4961ab4414ae-01
 # text = It s so much better in your second year when you move out of halls and in with some friends .
@@ -24647,7 +24649,7 @@
 9	with	with	ADP	IN	_	13	case	_	_	1:3	_	_	_	_	_	_	_	_
 10	the	the	DET	DT	_	13	det	_	_	_	_	_	_	_	_	_	_	_
 11	most	most	ADV	RBS	_	12	advmod	_	_	_	_	_	_	_	_	_	_	_
-12	ridicolous	ridicolous	ADJ	JJ	_	13	amod	_	_	_	_	_	_	_	_	_	_	_
+12	ridicolous	ridiculous	ADJ	JJ	Typo=Yes	13	amod	_	CorrectForm=ridiculous	_	_	_	_	_	_	_	_	_
 13	designs	design	NOUN	NNS	_	7	obl	_	_	_	_	_	_	_	_	_	_	_
 14	ever	ever	ADV	RB	_	7	advmod	_	_	_	_	_	_	_	_	_	_	_
 15	,	,	PUNCT	,	_	19	punct	_	_	_	_	_	_	_	_	_	_	_
@@ -25669,10 +25671,10 @@
 3	to	to	ADP	IN	_	11	case	_	_	_	_	_	Beneficiary	Goal	_	_	_	_
 4	all	all	DET	PDT	_	11	det:predet	_	_	_	_	_	_	_	_	_	_	_
 5	the	the	DET	DT	_	11	det	_	_	_	_	_	_	_	_	_	_	_
-6	north	north	ADJ	JJ	_	11	amod	_	_	_	_	_	_	_	_	_	_	_
+6	north	North	ADJ	JJ	_	11	amod	_	_	_	_	_	_	_	_	_	_	_
 7	/	/	PUNCT	,	_	8	punct	_	_	_	_	_	_	_	_	_	_	_
-8	south	south	ADJ	JJ	_	6	conj	_	_	_	_	_	_	_	_	_	_	_
-9	american	american	ADJ	JJ	_	10	amod	_	_	_	_	_	_	_	_	_	_	_
+8	south	South	ADJ	JJ	_	6	conj	_	_	_	_	_	_	_	_	_	_	_
+9	american	American	ADJ	JJ	_	10	amod	_	_	_	_	_	_	_	_	_	_	_
 10	ladder	ladder	NOUN	NN	_	11	compound	_	_	_	_	_	_	_	_	_	_	_
 11	heroes	heroe	NOUN	NNS	_	2	nmod	_	_	_	_	_	_	_	_	_	_	_
 12	!	!	PUNCT	.	_	2	punct	_	_	_	_	_	_	_	_	_	_	_
