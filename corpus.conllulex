@@ -17225,7 +17225,7 @@
 # sent_id = german-38ebbccb-ec0a-a1f2-d064-944c27c71e63-06
 # text = So take the problems cited on this sub with a grain of salt and enjoy your phone ;) --
 1	So	so	ADV	RB	_	2	advmod	_	_	_	_	_	_	_	_	_	_	_
-2	take	take	VERB	VB	_	0	root	_	_	1:1	_	_	_	_	_	_	_	_
+2	take	take	VERB	VB	_	0	root	_	_	1:1	_	take with a grain of salt	_	_	_	_	_	_
 3	the	the	DET	DT	_	4	det	_	_	_	_	_	_	_	_	_	_	_
 4	problems	problem	NOUN	NNS	_	2	obj	_	_	_	_	_	_	_	_	_	_	_
 5	cited	cite	VERB	VBN	_	4	acl	_	_	_	_	_	_	_	_	_	_	_
@@ -25015,7 +25015,7 @@
 15	with	with	ADP	IN	_	17	case	_	_	_	_	_	Circumstance	Circumstance	_	_	_	_
 16	specific	specific	ADJ	JJ	_	17	amod	_	_	_	_	_	_	_	_	_	_	_
 17	moments	moment	NOUN	NNS	_	14	obl	_	_	_	_	_	_	_	_	_	_	_
-18	in	in	ADP	IN	_	19	case	_	_	1:1	_	_	Characteristic	Locus	_	_	_	_
+18	in	in	ADP	IN	_	19	case	_	_	1:1	_	in mind	Characteristic	Locus	_	_	_	_
 19	mind	mind	NOUN	NN	_	17	nmod	_	_	1:2	_	_	_	_	_	_	_	_
 20	.	.	PUNCT	.	_	14	punct	_	_	_	_	_	_	_	_	_	_	_
 
