@@ -1346,8 +1346,8 @@
 8	)	)	PUNCT	-RRB-	_	5	punct	_	_	_	_	_	_	_	_	_	_	_
 9	will	will	AUX	MD	_	11	aux	_	_	_	_	_	_	_	_	_	_	_
 10	be	be	AUX	VB	_	11	aux:pass	_	_	_	_	_	_	_	_	_	_	_
-11	put	put	VERB	VBN	_	0	root	_	_	1:1	put to	_	_	_	_	_	_	_
-12	to	to	ADP	IN	_	14	case	_	_	_	1:2	_	_	_	_	_	_	_
+11	put	put	VERB	VBN	_	0	root	_	_	1:1	_	put to	_	_	_	_	_	_
+12	to	to	ADP	IN	_	14	case	_	_	1:2	_	_	_	_	_	_	_	_
 13	the	the	DET	DT	_	14	det	_	_	_	_	_	_	_	_	_	_	_
 14	Tory	Tory	PROPN	NNP	_	11	obl	_	_	_	_	_	_	_	_	_	_	_
 15	members	member	NOUN	NNS	_	14	flat	_	_	_	_	_	_	_	_	_	_	_
@@ -3540,8 +3540,8 @@
 16	would	would	AUX	MD	_	18	aux	_	_	_	_	_	_	_	_	_	_	_
 17	n't	not	PART	RB	_	18	advmod	_	_	_	_	_	_	_	_	_	_	_
 18	go	go	VERB	VB	_	4	conj	_	_	1:1	_	go to waste	_	_	_	_	_	_
-19	to	to	ADP	IN	_	20	case	_	_	_	1:2	_	_	_	_	_	_	_
-20	waste	waste	NOUN	NN	_	18	obl	_	_	_	_	_	_	_	_	_	_	_
+19	to	to	ADP	IN	_	20	case	_	_	1:2	_	_	_	_	_	_	_	_
+20	waste	waste	NOUN	NN	_	18	obl	_	_	1:3	_	_	_	_	_	_	_	_
 21	.	.	PUNCT	.	_	4	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = german-e3366088-dd1d-fed4-c04a-1bcca4d14de8-01
@@ -10419,7 +10419,7 @@
 4	health	health	NOUN	NN	_	5	compound	_	_	_	_	_	_	_	_	_	_	_
 5	point	point	NOUN	NN	_	10	obl	_	_	1:1	_	point of view	_	_	_	_	_	_
 6	of	of	ADP	IN	_	7	case	_	_	1:2	_	_	_	_	_	_	_	_
-7	view	view	NOUN	NN	_	5	nmod	_	_	_	_	_	_	_	_	_	_	_
+7	view	view	NOUN	NN	_	5	nmod	_	_	1:3	_	_	_	_	_	_	_	_
 8	,	,	PUNCT	,	_	10	punct	_	_	_	_	_	_	_	_	_	_	_
 9	I	I	PRON	PRP	_	10	nsubj	_	_	_	_	_	_	_	_	_	_	_
 10	sleep	sleep	VERB	VBP	_	0	root	_	_	_	_	_	_	_	_	_	_	_
@@ -11598,7 +11598,7 @@
 7	either	either	CCONJ	CC	_	15	cc:preconj	_	_	_	_	_	_	_	_	_	_	_
 8	,	,	PUNCT	,	_	15	punct	_	_	_	_	_	_	_	_	_	_	_
 9	off	off	ADP	IN	_	11	case	_	_	_	_	_	Whole	Locus	_	_	_	_
-10	-	-	PUNCT	HYPH	_	11	punct	_	_	_	_	_	Whole	Locus	_	_	_	_
+10	-	-	PUNCT	HYPH	_	11	punct	_	_	_	_	_	_	_	_	_	_	_
 11	set	set	NOUN	NN	_	13	compound	_	_	_	_	_	_	_	_	_	_	_
 12	crafted	craft	VERB	VBN	_	13	amod	_	_	_	_	_	_	_	_	_	_	_
 13	gear	gear	NOUN	NN	_	15	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -19285,7 +19285,7 @@
 2	may	may	AUX	MD	_	4	aux	_	_	_	_	_	_	_	_	_	_	_
 3	well	well	ADV	RB	_	4	advmod	_	_	_	_	_	_	_	_	_	_	_
 4	keep	keep	VERB	VB	_	0	root	_	_	1:1	_	keep tab on	_	_	_	_	_	_
-5	tabs	tabs	NOUN	NN	_	4	obj	_	_	1:2	_	_	_	_	_	_	_	_
+5	tabs	tab	NOUN	NN	_	4	obj	_	_	1:2	_	_	_	_	_	_	_	_
 6	on	on	ADP	IN	_	7	case	_	_	1:3	_	_	_	_	_	_	_	_
 7	you	you	PRON	PRP	_	4	obl	_	_	_	_	_	_	_	_	_	_	_
 8	,	,	PUNCT	,	_	11	punct	_	_	_	_	_	_	_	_	_	_	_
@@ -21236,7 +21236,7 @@
 55	except	except	ADP	IN	_	63	case	_	_	_	_	_	PartPortion	PartPortion	_	_	_	_
 56	the	the	DET	DT	_	63	det	_	_	_	_	_	_	_	_	_	_	_
 57	weird	weird	ADJ	JJ	_	63	amod	_	_	_	_	_	_	_	_	_	_	_
-58	out	out	ADP	IN	_	63	compound	_	_	1:1	_	out - of - bounds	Characteristic	Locus	_	_	_	_
+58	out	out	ADP	IN	_	63	compound	_	_	1:1	_	out - of - bound	Characteristic	Locus	_	_	_	_
 59	-	-	PUNCT	HYPH	_	58	punct	_	_	1:2	_	_	_	_	_	_	_	_
 60	of	of	ADP	IN	_	62	case	_	_	1:3	_	_	_	_	_	_	_	_
 61	-	-	PUNCT	HYPH	_	62	punct	_	_	1:4	_	_	_	_	_	_	_	_
@@ -24021,7 +24021,7 @@
 16	power	power	NOUN	NN	_	14	nmod	_	_	_	_	_	_	_	_	_	_	_
 17	at	at	ADP	IN	_	19	case	_	_	1:1	_	at disposal	Characteristic	Locus	_	_	_	_
 18	your	you	PRON	PRP$	_	19	nmod:poss	_	_	_	_	_	_	_	_	_	_	_
-19	disposal	disposal	NOUN	NN	_	14	nmod	_	_	1:3	_	_	_	_	_	_	_	_
+19	disposal	disposal	NOUN	NN	_	14	nmod	_	_	1:2	_	_	_	_	_	_	_	_
 20	.	.	PUNCT	.	_	6	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = german-f3a7a81d-1965-5597-d014-2891a5112fd2-02
