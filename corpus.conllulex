@@ -20657,13 +20657,13 @@
 # text = With how bad divorce laws are in the US , I really ca n't blame men for wanting to get high and jackoff instead of getting a girlfriend who could potentially take their money through alimony and child support in the future .
 1	With	with	SCONJ	IN	_	9	mark	_	_	_	_	_	Circumstance	Circumstance	_	_	_	_
 2	how	how	ADV	WRB	_	3	advmod	_	_	_	_	_	_	_	_	_	_	_
-3	bad	bad	ADJ	JJ	_	5	amod	_	_	_	_	_	_	_	_	_	_	_
+3	bad	bad	ADJ	JJ	_	15	advcl	_	_	_	_	_	_	_	_	_	_	_
 4	divorce	divorce	NOUN	NN	_	5	compound	_	_	_	_	_	_	_	_	_	_	_
-5	laws	law	NOUN	NNS	_	9	nsubj	_	_	_	_	_	_	_	_	_	_	_
-6	are	be	AUX	VBP	_	9	cop	_	_	_	_	_	_	_	_	_	_	_
+5	laws	law	NOUN	NNS	_	3	nsubj	_	_	_	_	_	_	_	_	_	_	_
+6	are	be	AUX	VBP	_	3	cop	_	_	_	_	_	_	_	_	_	_	_
 7	in	in	ADP	IN	_	9	case	_	_	_	_	_	Locus	Locus	_	_	_	_
 8	the	the	DET	DT	_	9	det	_	_	_	_	_	_	_	_	_	_	_
-9	US	US	PROPN	NNP	_	15	advcl	_	_	_	_	_	_	_	_	_	_	_
+9	US	US	PROPN	NNP	_	5	nmod	_	_	_	_	_	_	_	_	_	_	_
 10	,	,	PUNCT	,	_	15	punct	_	_	_	_	_	_	_	_	_	_	_
 11	I	I	PRON	PRP	_	15	nsubj	_	_	_	_	_	_	_	_	_	_	_
 12	really	really	ADV	RB	_	15	advmod	_	_	_	_	_	_	_	_	_	_	_
@@ -24990,7 +24990,7 @@
 14	the	the	DET	DT	_	15	det	_	_	_	_	_	_	_	_	_	_	_
 15	past	past	NOUN	NN	_	12	obl	_	_	_	_	_	_	_	_	_	_	_
 16	without	without	SCONJ	IN	_	17	mark	_	_	_	_	_	Manner	Manner	_	_	_	_
-17	tying	ty	VERB	VBG	_	12	advcl	_	_	_	_	_	_	_	_	_	_	_
+17	tying	tie	VERB	VBG	_	12	advcl	_	_	_	_	_	_	_	_	_	_	_
 18	it	it	PRON	PRP	_	17	obj	_	_	_	_	_	_	_	_	_	_	_
 19	to	to	ADP	IN	_	22	case	_	_	_	_	_	Locus	Goal	_	_	_	_
 20	a	a	DET	DT	_	22	det	_	_	_	_	_	_	_	_	_	_	_
@@ -25014,11 +25014,11 @@
 12	)	)	PUNCT	-RRB-	_	5	punct	_	_	_	_	_	_	_	_	_	_	_
 13	is	be	AUX	VBZ	_	14	aux:pass	_	_	_	_	_	_	_	_	_	_	_
 14	used	use	VERB	VBN	_	0	root	_	_	_	_	_	_	_	_	_	_	_
-15	with	with	ADP	IN	_	17	case	_	_	_	_	_	Circumstance	Circumstance	_	_	_	_
+15	with	with	SCONJ	IN	_	19	mark	_	_	_	_	_	Circumstance	Circumstance	_	_	_	_
 16	specific	specific	ADJ	JJ	_	17	amod	_	_	_	_	_	_	_	_	_	_	_
-17	moments	moment	NOUN	NNS	_	14	obl	_	_	_	_	_	_	_	_	_	_	_
+17	moments	moment	NOUN	NNS	_	19	nsubj	_	_	_	_	_	_	_	_	_	_	_
 18	in	in	ADP	IN	_	19	case	_	_	1:1	_	in mind	Characteristic	Locus	_	_	_	_
-19	mind	mind	NOUN	NN	_	17	nmod	_	_	1:2	_	_	_	_	_	_	_	_
+19	mind	mind	NOUN	NN	_	14	advcl	_	_	1:2	_	_	_	_	_	_	_	_
 20	.	.	PUNCT	.	_	14	punct	_	_	_	_	_	_	_	_	_	_	_
 
 # sent_id = spanish-cd0dfe6b-d673-4d3d-b898-f2f2d412c848-05
