@@ -264,11 +264,7 @@ def main():
     add_lexcat(sentences)
     add_lextag(sentences)
     
-    ignored = [
-        "spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-11",  # GH issue #5
-        "spanish-1d76d7a0-219d-c07b-1abf-286b47e0643b-01",  # GH issue #5
-        "german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-03",   # GH issue #5
-    ]
+    ignored = []
 
     sentences = [s for s in sentences if s.metadata["sent_id"] not in ignored]
     with open("corpus_enriched.conllulex", "w") as f:
