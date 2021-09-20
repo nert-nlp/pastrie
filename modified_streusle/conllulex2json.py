@@ -103,7 +103,6 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
                 assert len(lexe['toknums'])==1,f'In {sent["sent_id"]}, Verbal MWE "{lexe["lexlemma"]}" lexcat must be subtyped (V.VID, etc., not V)'
             ss, ss2 = lexe['ss'], lexe['ss2']
             if valid_ss:
-                print(valid_ss)
                 if ss=='??':
                     assert ss2 is None
                 elif ss is not None and (ss not in valid_ss or (lc in ('N','V') or lc.startswith('V.'))!=(ss2 is None) or (ss2 is not None and ss2 not in valid_ss)):
