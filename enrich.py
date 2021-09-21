@@ -130,7 +130,7 @@ def compute_lexcat(tokNum, smwe, smweGroupToks, ss, lexlemma, poses, rels):
         else:
             assert upos != "X"  # X is used for goeswith (also 'sub <advmod par').
             # In those cases the head should be in the MWE.
-        return "!@"
+        # return "!@"
     return upos
 
 
@@ -206,7 +206,7 @@ def add_wlemma(sentences):
         for t in sentence:
             wmwe_tok_ids = ([] if ":" not in t["wmwe"] else wmwes[t["wmwe"].split(":")[0]])
             if len(wmwe_tok_ids) > 0 and str(wmwe_tok_ids[0]) == str(t['id']):
-                t['wlemma'] = " ".join([get_token(sentence, tid)['form'] for tid in wmwe_tok_ids])
+                t['wlemma'] = " ".join([get_token(sentence, tid)['lemma'] for tid in wmwe_tok_ids])
 
 
 def add_lexcat(sentences):
