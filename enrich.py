@@ -272,7 +272,7 @@ def dedupe_question_marks(sentences):
 
 
 def main():
-    sentences = get_conllulex_tokenlists("corpus.conllulex")
+    sentences = get_conllulex_tokenlists("corpus_raw.conllulex")
 
     dedupe_question_marks(sentences)
     add_mwe_metadatum(sentences)
@@ -285,7 +285,7 @@ def main():
     ignored = []
 
     sentences = [s for s in sentences if s.metadata["sent_id"] not in ignored]
-    with open("corpus_enriched.conllulex", "w") as f:
+    with open("corpus.conllulex", "w") as f:
         f.write("".join(s.serialize() for s in sentences))
 
 
