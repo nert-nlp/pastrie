@@ -106,8 +106,12 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
             if valid_ss:
                 if ss=='??':
                     assert ss2 is None
-                elif ss not in valid_ss or (lc in ('N','V') or lc.startswith('V.'))!=(ss2 is None) or (ss2 is not None and ss2 not in valid_ss):
+                elif ss not in valid_ss:
                     assert False,f"In {sent['sent_id']}, invalid supersense(s) in lexical entry: {lexe}"
+                elif (lc in ('N','V') or lc.startswith('V.')) and ss2 is not None:
+                    assert False,f"In {sent['sent_id']}, noun/verb should not have ss2 annotation: {lexe}"
+                elif ss2 is not None and ss2 not in valid_ss:
+                    assert False,f"In {sent['sent_id']}, invalid ss2: {lexe}"
                 elif ss.startswith('p.'):
                     assert ss2.startswith('p.')
                     assert ss2 not in {'p.Experiencer', 'p.Stimulus', 'p.Originator', 'p.Recipient', 'p.SocialRel', 'p.Org', 'p.OrgMember', 'p.Ensemble', 'p.QuantityValue'},(f'{ss2} should never be function',lexe)
