@@ -13,17 +13,17 @@ SPECIAL_LABELS = {'??', # a semantic supersense could not be assigned:
 
 # Noun supersenses
 
-NSS = {'n.ACT', 'n.ANIMAL', 'n.ARTIFACT', 'n.ATTRIBUTE', 'n.BODY', 'n.COGNITION',
-       'n.COMMUNICATION', 'n.EVENT', 'n.FEELING', 'n.FOOD', 'n.GROUP',
-       'n.LOCATION', 'n.MOTIVE', 'n.NATURALOBJECT', 'n.OTHER', 'n.PERSON',
-       'n.PHENOMENON', 'n.PLANT', 'n.POSSESSION', 'n.PROCESS', 'n.QUANTITY',
-       'n.RELATION', 'n.SHAPE', 'n.STATE', 'n.SUBSTANCE', 'n.TIME'}
+NSS = set() # {'n.ACT', 'n.ANIMAL', 'n.ARTIFACT', 'n.ATTRIBUTE', 'n.BODY', 'n.COGNITION',
+            #  'n.COMMUNICATION', 'n.EVENT', 'n.FEELING', 'n.FOOD', 'n.GROUP',
+            #  'n.LOCATION', 'n.MOTIVE', 'n.NATURALOBJECT', 'n.OTHER', 'n.PERSON',
+            #  'n.PHENOMENON', 'n.PLANT', 'n.POSSESSION', 'n.PROCESS', 'n.QUANTITY',
+            #  'n.RELATION', 'n.SHAPE', 'n.STATE', 'n.SUBSTANCE', 'n.TIME'}
 
 # Verb supersenses
 
-VSS = {'v.body', 'v.change', 'v.cognition', 'v.communication', 'v.competition',
-       'v.consumption', 'v.contact', 'v.creation', 'v.emotion', 'v.motion',
-       'v.perception', 'v.possession', 'v.social', 'v.stative'}
+VSS = set() # {'v.body', 'v.change', 'v.cognition', 'v.communication', 'v.competition',
+            #  'v.consumption', 'v.contact', 'v.creation', 'v.emotion', 'v.motion',
+            #  'v.perception', 'v.possession', 'v.social', 'v.stative'}
 
 # Adposition (preposition/postposition) and case supersenses
 # As of SNACS v2.5 guidelines, for STREUSLE v4.3

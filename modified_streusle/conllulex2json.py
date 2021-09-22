@@ -106,9 +106,11 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
             if valid_ss:
                 if ss=='??':
                     assert ss2 is None
-                elif ss is not None and (ss not in valid_ss or (lc in ('N','V') or lc.startswith('V.'))!=(ss2 is None) or (ss2 is not None and ss2 not in valid_ss)):
+                elif ss not in valid_ss or (lc in ('N','V') or lc.startswith('V.'))!=(ss2 is None) or (ss2 is not None and ss2 not in valid_ss):
+                #elif ss is not None and (ss not in valid_ss or (lc in ('N','V') or lc.startswith('V.'))!=(ss2 is None) or (ss2 is not None and ss2 not in valid_ss)):
                     assert False,f"In {sent['sent_id']}, invalid supersense(s) in lexical entry: {lexe}"
-                elif ss is not None and ss.startswith('p.'):
+                elif ss.startswith('p.'):
+                #elif ss is not None and ss.startswith('p.'):
                     assert ss2.startswith('p.')
                     assert ss2 not in {'p.Experiencer', 'p.Stimulus', 'p.Originator', 'p.Recipient', 'p.SocialRel', 'p.Org', 'p.OrgMember', 'p.Ensemble', 'p.QuantityValue'},(f'{ss2} should never be function',lexe)
                     if ss!=ss2:
@@ -122,7 +124,7 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
                             assert ss not in ss2A,f"In {sent['sent_id']}, unexpected construal: {ss} ~> {ss2}"
                             assert ss2 not in ssA,f"In {sent['sent_id']}, unexpected construal: {ss} ~> {ss2}"
             else:
-                assert ss is None and ss2 is None and lc not in ('N', 'V', 'P', 'INF.P', 'PP', 'POSS', 'PRON.POSS'),f"In {sent['sent_id']}, invalid supersense(s) in lexical entry: {lexe}"
+                assert ss is None and ss2 is None and lc not in ('P', 'INF.P', 'PP', 'POSS', 'PRON.POSS'),f"In {sent['sent_id']}, invalid supersense(s) in lexical entry: {lexe}"
 
         # check lexcat on single-word expressions
         for swe in sent['swes'].values():
