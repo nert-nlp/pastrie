@@ -2400,8 +2400,8 @@
 19	them	they	PRON	PRP	_	17	nmod	_	_	_	_	_	_	_	_	_	_	_
 20	will	will	AUX	MD	_	21	aux	_	_	_	_	_	_	_	_	_	_	_
 21	give	give	VERB	VB	_	10	conj	_	_	2:1	_	give up	_	_	3:1	_	_	_
-22	up	up	ADP	RP	_	21	compound:prt	_	_	2:2	_	_	Theme	Theme	3:2	_	_	_
-23	on	on	ADP	IN	_	24	case	_	_	_	_	_	_	_	3:3	_	_	_
+22	up	up	ADP	RP	_	21	compound:prt	_	_	2:2	_	_	_	_	3:2	_	_	_
+23	on	on	ADP	IN	_	24	case	_	_	_	_	_	Theme	Theme	3:3	_	_	_
 24	crime	crime	NOUN	NN	_	21	obl	_	_	_	_	_	_	_	_	_	_	_
 25	because	because	SCONJ	IN	_	31	mark	_	_	_	_	_	_	_	_	_	_	_
 26	now	now	ADV	RB	_	31	advmod	_	_	_	_	_	_	_	_	_	_	_
