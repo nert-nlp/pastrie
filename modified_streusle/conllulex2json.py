@@ -106,6 +106,8 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
             if valid_ss:
                 if ss=='??':
                     assert ss2 is None
+                elif lc == 'PRON.POSS':
+                    continue
                 elif ss is None:
                     assert False,f"In {sent['sent_id']}, missing supersense annotation in lexical entry: {lexe}"
                 elif ss not in valid_ss:
