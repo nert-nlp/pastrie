@@ -227,9 +227,11 @@ def add_lexcat(sentences):
                 if t['ss'] == "`i" and t['form'] == 'for':
                     t['upos'] = "SCONJ"
                     t['xpos'] = "CC"
-                # wipe away the supersense columns
-                t['ss'] = '_'
-                t['ss2'] = '_'
+
+                if not (t['ss'] == "`$" and t['ss2'] == "`$"):
+                    # wipe away the supersense columns
+                    t['ss'] = '_'
+                    t['ss2'] = '_'
 
 
 def add_lexlemma(sentences):
