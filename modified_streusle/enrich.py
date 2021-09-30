@@ -319,7 +319,7 @@ def renumber_mwes(sentences):
 
 
 def main():
-    sentences = get_conllulex_tokenlists("corpus_raw.conllulex")
+    sentences = get_conllulex_tokenlists("../corpus_raw.conllulex")
 
     dedupe_question_marks(sentences)
     make_compount_prts_smwes(sentences)
@@ -331,10 +331,10 @@ def main():
     add_lextag(sentences)
     renumber_mwes(sentences)
 
-    ignored = []
+    ignored = ["spanish-d684fef4-59bd-63a6-3ff8-48e936d3a69a-01"]
 
     sentences = [s for s in sentences if s.metadata["sent_id"] not in ignored]
-    with open("corpus.conllulex", "w") as f:
+    with open("../corpus.conllulex", "w") as f:
         f.write("".join(s.serialize() for s in sentences))
 
 

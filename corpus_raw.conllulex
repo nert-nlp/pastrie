@@ -12390,7 +12390,7 @@
 
 # sent_id = spanish-c55fd024-99dd-8bfa-b3d7-77e95bc2b64f-01
 # text = Because [ S ] Flip is not really seen in the narrative , but told by Doc Scratch , recalled to the extent of his omniscient knowledge ( or some BS like that ) .
-1	Because	because	ADP	IN	_	5	case	_	_	_	_	_	_	_	_	_	_	_
+1	Because	because	SCONJ	IN	_	5	case	_	_	_	_	_	_	_	_	_	_	_
 2	[	[	PUNCT	-LRB-	_	1	punct	_	_	_	_	_	_	_	_	_	_	_
 3	S	S	X	AFX	_	1	fixed	_	_	_	_	_	_	_	_	_	_	_
 4	]	]	PUNCT	-RRB-	_	5	punct	_	_	_	_	_	_	_	_	_	_	_
