@@ -12491,8 +12491,8 @@
 6	without	without	SCONJ	IN	_	7	mark	_	_	_	_	_	Manner	Manner	_	_	_	_
 7	having	have	VERB	VBG	_	3	advcl	_	_	_	_	_	_	_	_	_	_	_
 8	to	to	PART	TO	_	9	mark	_	_	_	_	_	_	_	_	_	_	_
-9	deal	deal	VERB	VB	_	7	xcomp	_	_	_	_	_	_	_	_	_	_	_
-10	with	with	ADP	IN	_	13	case	_	_	_	_	_	_	_	_	_	_	_
+9	deal	deal	VERB	VB	_	7	xcomp	_	_	1:1	_	deal with	_	_	_	_	_	_
+10	with	with	ADP	IN	_	13	case	_	_	1:2	_	_	_	_	_	_	_	_
 11	the	the	DET	DT	_	13	det	_	_	_	_	_	_	_	_	_	_	_
 12	causal	causal	ADJ	JJ	_	13	amod	_	_	_	_	_	_	_	_	_	_	_
 13	consequences	consequence	NOUN	NNS	_	9	obl	_	_	_	_	_	_	_	_	_	_	_
