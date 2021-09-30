@@ -12390,7 +12390,7 @@
 
 # sent_id = spanish-c55fd024-99dd-8bfa-b3d7-77e95bc2b64f-01
 # text = Because [ S ] Flip is not really seen in the narrative , but told by Doc Scratch , recalled to the extent of his omniscient knowledge ( or some BS like that ) .
-1	Because	because	SCONJ	IN	_	5	case	_	_	_	_	_	_	_	_	_	_	_
+1	Because	because	SCONJ	IN	_	9	mark	_	_	_	_	_	_	_	_	_	_	_
 2	[	[	PUNCT	-LRB-	_	1	punct	_	_	_	_	_	_	_	_	_	_	_
 3	S	S	X	AFX	_	1	fixed	_	_	_	_	_	_	_	_	_	_	_
 4	]	]	PUNCT	-RRB-	_	5	punct	_	_	_	_	_	_	_	_	_	_	_
@@ -12795,14 +12795,14 @@
 13	on	on	ADP	IN	_	15	case	_	_	_	_	_	Gestalt	Locus	_	_	_	_
 14	her	she	PRON	PRP$	_	15	nmod:poss	_	_	_	_	_	Possessor	Possessor	_	_	_	_
 15	shield	shield	NOUN	NN	_	12	nmod	_	_	_	_	_	_	_	_	_	_	_
-16	and	and	CCONJ	CC	_	18	cc	_	_	_	_	_	_	_	_	_	_	_
+16	and	and	CCONJ	CC	_	24	cc	_	_	_	_	_	_	_	_	_	_	_
 17	winston	winston	NOUN	NN	_	18	compound	_	_	_	_	_	_	_	_	_	_	_
-18	shield	shield	NOUN	NN	_	15	conj	_	_	_	_	_	_	_	_	_	_	_
-19	being	be	AUX	VBG	_	24	cop	_	_	_	_	_	_	_	_	_	_	_
-20	up	up	ADV	RB	_	24	compound:prt	_	_	_	_	_	_	_	_	_	_	_
+18	shield	shield	NOUN	NN	_	20	nsubj	_	_	_	_	_	_	_	_	_	_	_
+19	being	be	AUX	VBG	_	20	aux	_	_	_	_	_	_	_	_	_	_	_
+20	up	up	ADV	RB	_	24	csubj	_	_	_	_	_	_	_	_	_	_	_
 21	all	all	DET	PDT	_	23	det:predet	_	_	_	_	_	_	_	_	_	_	_
 22	the	the	DET	DT	_	23	det	_	_	_	_	_	_	_	_	_	_	_
-23	time	time	NOUN	NN	_	24	nsubj	_	_	_	_	_	_	_	_	_	_	_
+23	time	time	NOUN	NN	_	20	obl	_	_	_	_	_	_	_	_	_	_	_
 24	negates	negate	VERB	VBZ	_	8	conj	_	_	_	_	_	_	_	_	_	_	_
 25	a	a	DET	DT	_	26	det	_	_	_	_	_	_	_	_	_	_	_
 26	lot	lot	NOUN	NN	_	24	obj	_	_	_	_	_	_	_	_	_	_	_
@@ -12812,6 +12812,7 @@
 30	all	all	DET	DT	_	31	det	_	_	1:2	_	_	_	_	_	_	_	_
 31	time	time	NOUN	NN	_	24	obl	_	_	1:3	_	_	_	_	_	_	_	_
 32	.	.	PUNCT	.	_	8	punct	_	_	_	_	_	_	_	_	_	_	_
+
 
 # sent_id = french-d3f21dcc-2be8-8b46-75fa-6dd891fde85c-03
 # text = So you end up in a situation where you want to kill their Zarya but ca n't because Winston s shield is on her or she s getting ressurected at the instant she dies .
@@ -19296,9 +19297,9 @@
 13	-	-	PUNCT	HYPH	_	14	punct	_	_	_	_	_	_	_	_	_	_	_
 14	term	term	NOUN	NN	_	11	obj	_	_	_	_	_	_	_	_	_	_	_
 15	,	,	PUNCT	,	_	19	punct	_	_	_	_	_	_	_	_	_	_	_
-16	one	one	NUM	CD	_	19	nummod	_	_	_	_	_	_	_	_	_	_	_
+16	one	one	NUM	CD	_	19	compound	_	_	_	_	_	_	_	_	_	_	_
 17	-	-	PUNCT	HYPH	_	16	punct	_	_	_	_	_	_	_	_	_	_	_
-18	off	off	ADV	RB	_	16	compound	_	_	_	_	_	_	_	_	_	_	_
+18	off	off	ADV	RB	_	16	advmod	_	_	_	_	_	_	_	_	_	_	_
 19	deals	deal	NOUN	NNS	_	11	obj	_	_	_	_	_	_	_	_	_	_	_
 20	when	when	ADV	WRB	_	22	mark	_	_	_	_	_	_	_	_	_	_	_
 21	you	you	PRON	PRP	_	22	nsubj	_	_	_	_	_	_	_	_	_	_	_
@@ -19902,7 +19903,7 @@
 5	to	to	PART	TO	_	6	mark	_	_	_	_	_	`i	`i	_	_	_	_
 6	say	say	VERB	VB	_	4	xcomp	_	_	_	_	_	_	_	_	_	_	_
 7	that	that	PRON	DT	_	6	obj	_	_	_	_	_	_	_	_	_	_	_
-8	down	down	ADV	RB	_	10	compound:prt	_	_	_	_	_	_	_	_	_	_	_
+8	down	down	ADV	RB	_	10	advmod	_	_	_	_	_	_	_	_	_	_	_
 9	-	-	PUNCT	HYPH	_	10	punct	_	_	_	_	_	_	_	_	_	_	_
 10	voting	voting	VERB	VBG	_	6	advcl	_	_	_	_	_	_	_	_	_	_	_
 11	every	every	DET	DT	_	12	det	_	_	_	_	_	_	_	_	_	_	_
