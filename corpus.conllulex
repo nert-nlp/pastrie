@@ -669,10 +669,10 @@
 
 # sent_id = french-6ae70ff2-504b-60b5-889f-5e9aa6af9b40-04
 # text = Just turn off the ASAS and you should be able to warp fine .
-# mwe = Just turn off the ASAS and you should be able to warp fine .
+# mwe = Just turn_off the ASAS and you should be able to warp fine .
 1	Just	just	ADV	RB	_	2	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
-2	turn	turn	VERB	VB	_	0	root	_	_	_	V	turn	_	_	_	_	_	O-V
-3	off	off	ADP	RP	_	2	compound:prt	_	_	_	P	off	_	_	_	_	_	O-P
+2	turn	turn	VERB	VB	_	0	root	_	_	1:1	V	turn off	_	_	_	_	_	B-V
+3	off	off	ADP	RP	_	2	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 4	the	the	DET	DT	_	5	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 5	ASAS	ASAS	PROPN	NNP	_	2	obj	_	_	_	N	ASAS	_	_	_	_	_	O-N
 6	and	and	CCONJ	CC	_	10	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
@@ -885,15 +885,15 @@
 
 # sent_id = french-5d698c8b-4448-0030-f3c6-68b114ed2049-04
 # text = Unless their beta tests with chromebooks works out D:
-# mwe = Unless their beta tests with chromebooks works out D:
+# mwe = Unless their beta tests with chromebooks works_out D:
 1	Unless	unless	SCONJ	IN	_	7	mark	_	_	_	SCONJ	unless	_	_	_	_	_	O-SCONJ
 2	their	they	PRON	PRP$	_	4	nmod:poss	_	_	_	PRON.POSS	they	p.Agent	p.Gestalt	_	_	_	O-PRON.POSS-p.Agent|p.Gestalt
 3	beta	beta	NOUN	NN	_	4	compound	_	_	_	N	beta	_	_	_	_	_	O-N
 4	tests	test	NOUN	NNS	_	7	nsubj	_	_	_	N	test	_	_	_	_	_	O-N
 5	with	with	ADP	IN	_	6	case	_	_	_	P	with	p.Theme	p.Theme	_	_	_	O-P-p.Theme
 6	chromebooks	chromebook	NOUN	NNS	_	4	nmod	_	_	_	N	chromebook	_	_	_	_	_	O-N
-7	works	work	VERB	VBZ	_	0	root	_	_	_	V	work	_	_	_	_	_	O-V
-8	out	out	ADP	RP	_	7	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+7	works	work	VERB	VBZ	_	0	root	_	_	1:1	V	work out	_	_	_	_	_	B-V
+8	out	out	ADP	RP	_	7	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 9	D:	d:	SYM	NFP	_	7	discourse	_	_	_	SYM	d:	_	_	_	_	_	O-SYM
 
 # sent_id = spanish-6b153e7a-b1b2-0f01-f346-24556ba6cc6d-01
@@ -993,7 +993,7 @@
 
 # sent_id = german-fdfb0286-16dc-f265-210a-e8a1892739f6-02
 # text = Do yourself a favour and do n't have sex anymore until you ve figured it all out !
-# mwe = Do yourself a favour and do n't have sex anymore until you ve figured it all out !
+# mwe = Do yourself a favour and do n't have sex anymore until you ve figured_ it all _out !
 1	Do	do	VERB	VB	_	0	root	_	_	_	V	do	_	_	_	_	_	O-V
 2	yourself	yourself	PRON	PRP	_	1	iobj	_	_	_	PRON	yourself	_	_	_	_	_	O-PRON
 3	a	a	DET	DT	_	4	det	_	_	_	DET	a	_	_	_	_	_	O-DET
@@ -1007,15 +1007,15 @@
 11	until	until	SCONJ	IN	_	14	mark	_	_	_	P	until	p.EndTime	p.EndTime	_	_	_	O-P-p.EndTime
 12	you	you	PRON	PRP	_	14	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
 13	ve	have	AUX	VBP	_	14	aux	_	_	_	AUX	have	_	_	_	_	_	O-AUX
-14	figured	figure	VERB	VBN	_	8	advcl	_	_	_	V	figure	_	_	_	_	_	O-V
-15	it	it	PRON	PRP	_	14	obj	_	_	_	PRON	it	_	_	_	_	_	O-PRON
-16	all	all	DET	DT	_	15	det	_	_	_	DET	all	_	_	_	_	_	O-DET
-17	out	out	ADP	RP	_	14	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+14	figured	figure	VERB	VBN	_	8	advcl	_	_	1:1	V	figure out	_	_	_	_	_	B-V
+15	it	it	PRON	PRP	_	14	obj	_	_	_	PRON	it	_	_	_	_	_	o-PRON
+16	all	all	DET	DT	_	15	det	_	_	_	DET	all	_	_	_	_	_	o-DET
+17	out	out	ADP	RP	_	14	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 18	!	!	PUNCT	.	_	1	punct	_	_	_	PUNCT	!	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-fdfb0286-16dc-f265-210a-e8a1892739f6-03
 # text = We are being bombareded with images of sexualised women everywhere we go and it s absolutely confusing trying to figure out who you as a woman ( who might or might not be - sexual ) are .
-# mwe = We are being bombareded with images of sexualised women everywhere we go and it s absolutely confusing trying to figure out who you as a woman ( who might or might not be - sexual ) are .
+# mwe = We are being bombareded with images of sexualised women everywhere we go and it s absolutely confusing trying to figure_out who you as a woman ( who might or might not be - sexual ) are .
 1	We	we	PRON	PRP	_	4	nsubj:pass	_	_	_	PRON	we	_	_	_	_	_	O-PRON
 2	are	be	AUX	VBP	_	4	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 3	being	be	AUX	VBG	_	4	aux:pass	_	_	_	AUX	be	_	_	_	_	_	O-AUX
@@ -1035,8 +1035,8 @@
 17	confusing	confusing	ADJ	JJ	_	4	conj	_	_	_	ADJ	confusing	_	_	_	_	_	O-ADJ
 18	trying	try	VERB	VBG	_	17	conj	_	_	_	V	try	_	_	_	_	_	O-V
 19	to	to	PART	TO	_	20	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-20	figure	figure	VERB	VB	_	18	xcomp	_	_	_	V	figure	_	_	_	_	_	O-V
-21	out	out	ADP	RP	_	20	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+20	figure	figure	VERB	VB	_	18	xcomp	_	_	1:1	V	figure out	_	_	_	_	_	B-V
+21	out	out	ADP	RP	_	20	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 22	who	who	PRON	WP	_	37	nsubj	_	_	_	PRON	who	_	_	_	_	_	O-PRON
 23	you	you	PRON	PRP	_	20	obj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
 24	as	as	ADP	IN	_	26	case	_	_	_	P	as	p.Identity	p.Identity	_	_	_	O-P-p.Identity
@@ -1287,10 +1287,10 @@
 
 # sent_id = german-fdfb0286-16dc-f265-210a-e8a1892739f6-15
 # text = I read up on radical feminist texts ( not tumblr bs ) and it was an eye opener .
-# mwe = I read up on radical feminist texts ( not tumblr bs ) and it was an eye opener .
+# mwe = I read_up on radical feminist texts ( not tumblr bs ) and it was an eye opener .
 1	I	I	PRON	PRP	_	2	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
-2	read	read	VERB	VBD	_	0	root	_	_	_	V	read	_	_	_	_	_	O-V
-3	up	up	ADP	RP	_	2	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+2	read	read	VERB	VBD	_	0	root	_	_	1:1	V	read up	_	_	_	_	_	B-V
+3	up	up	ADP	RP	_	2	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 4	on	on	ADP	IN	_	7	case	_	_	_	P	on	p.Topic	p.Topic	_	_	_	O-P-p.Topic
 5	radical	radical	ADJ	JJ	_	7	amod	_	_	_	ADJ	radical	_	_	_	_	_	O-ADJ
 6	feminist	feminist	ADJ	JJ	_	7	amod	_	_	_	ADJ	feminist	_	_	_	_	_	O-ADJ
@@ -1709,7 +1709,7 @@
 
 # sent_id = english-34dd7624-c3d9-b3b0-22b5-6be11392a255-02
 # text = I pay my taxes and they go on helping out this hambeast .
-# mwe = I pay my taxes and they go on helping out this hambeast .
+# mwe = I pay my taxes and they go on helping_out this hambeast .
 1	I	I	PRON	PRP	_	2	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 2	pay	pay	VERB	VBP	_	0	root	_	_	_	V	pay	_	_	_	_	_	O-V
 3	my	my	PRON	PRP$	_	4	nmod:poss	_	_	_	PRON.POSS	my	p.Originator	p.Gestalt	_	_	_	O-PRON.POSS-p.Originator|p.Gestalt
@@ -1718,8 +1718,8 @@
 6	they	they	PRON	PRP	_	7	nsubj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
 7	go	go	VERB	VBP	_	2	conj	_	_	_	V	go	_	_	_	_	_	O-V
 8	on	on	SCONJ	IN	_	9	mark	_	_	_	SCONJ	on	_	_	_	_	_	O-SCONJ
-9	helping	help	VERB	VBG	_	7	advcl	_	_	_	V	help	_	_	_	_	_	O-V
-10	out	out	ADP	RP	_	9	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+9	helping	help	VERB	VBG	_	7	advcl	_	_	1:1	V	help out	_	_	_	_	_	B-V
+10	out	out	ADP	RP	_	9	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 11	this	this	DET	DT	_	12	det	_	_	_	DET	this	_	_	_	_	_	O-DET
 12	hambeast	hambeast	NOUN	NN	_	9	obj	_	_	_	N	hambeast	_	_	_	_	_	O-N
 13	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
@@ -1734,7 +1734,7 @@
 
 # sent_id = english-34dd7624-c3d9-b3b0-22b5-6be11392a255-04
 # text = Not only does she prevent those 12 vehicles from helping out people in need but she got the fucking road closed causing untold chaos for countless drivers .
-# mwe = Not only does she prevent those 12 vehicles from helping out people in need but she got the fucking road closed causing untold chaos for countless drivers .
+# mwe = Not only does she prevent those 12 vehicles from helping_out people in need but she got the fucking road closed causing untold chaos for countless drivers .
 1	Not	not	ADV	RB	_	2	advmod	_	_	_	ADV	not	_	_	_	_	_	O-ADV
 2	only	only	ADV	RB	_	5	cc:preconj	_	_	_	ADV	only	_	_	_	_	_	O-ADV
 3	does	do	AUX	VBZ	_	5	aux	_	_	_	AUX	do	_	_	_	_	_	O-AUX
@@ -1744,8 +1744,8 @@
 7	12	12	NUM	CD	_	8	nummod	_	_	_	NUM	12	_	_	_	_	_	O-NUM
 8	vehicles	vehicle	NOUN	NNS	_	5	obj	_	_	_	N	vehicle	_	_	_	_	_	O-N
 9	from	from	SCONJ	IN	_	10	mark	_	_	_	P	from	p.Theme	p.Source	_	_	_	O-P-p.Theme|p.Source
-10	helping	help	VERB	VBG	_	5	advcl	_	_	_	V	help	_	_	_	_	_	O-V
-11	out	out	ADP	RP	_	10	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+10	helping	help	VERB	VBG	_	5	advcl	_	_	1:1	V	help out	_	_	_	_	_	B-V
+11	out	out	ADP	RP	_	10	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 12	people	people	NOUN	NNS	_	10	obj	_	_	_	N	people	_	_	_	_	_	O-N
 13	in	in	ADP	IN	_	14	case	_	_	_	P	in	p.Characteristic	p.Locus	_	_	_	O-P-p.Characteristic|p.Locus
 14	need	need	NOUN	NN	_	10	obl	_	_	_	N	need	_	_	_	_	_	O-N
@@ -2496,8 +2496,8 @@
 19	them	they	PRON	PRP	_	17	nmod	_	_	_	PRON	they	_	_	_	_	_	O-PRON
 20	will	will	AUX	MD	_	21	aux	_	_	_	AUX	will	_	_	_	_	_	O-AUX
 21	give	give	VERB	VB	_	10	conj	_	_	2:1	V	give up	_	_	3:1	_	give up on	B-V
-22	up	up	ADP	RP	_	21	compound:prt	_	_	2:2	_	_	p.Theme	p.Theme	3:2	_	_	I_
-23	on	on	ADP	IN	_	24	case	_	_	_	P	on	_	_	3:3	_	_	I~-P
+22	up	up	ADP	RP	_	21	compound:prt	_	_	2:2	_	_	_	_	3:2	_	_	I_
+23	on	on	ADP	IN	_	24	case	_	_	_	P	on	p.Theme	p.Theme	3:3	_	_	I~-P-p.Theme
 24	crime	crime	NOUN	NN	_	21	obl	_	_	_	N	crime	_	_	_	_	_	O-N
 25	because	because	SCONJ	IN	_	31	mark	_	_	_	SCONJ	because	_	_	_	_	_	O-SCONJ
 26	now	now	ADV	RB	_	31	advmod	_	_	_	ADV	now	_	_	_	_	_	O-ADV
@@ -2661,7 +2661,7 @@
 
 # sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-16
 # text = Then so be it , for every 10 criminals switching from stealing cars to mugging people , one of them might give up and find some legal way to stay afloat .
-# mwe = Then so be it , for every 10 criminals switching from stealing cars to mugging people , one of them might give up and find some legal way to stay afloat .
+# mwe = Then so be it , for every 10 criminals switching from stealing cars to mugging people , one of them might give_up and find some legal way to stay afloat .
 1	Then	then	ADV	RB	_	22	advmod	_	_	_	ADV	then	_	_	_	_	_	O-ADV
 2	so	so	ADV	RB	_	22	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
 3	be	be	AUX	VB	_	4	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
@@ -2683,8 +2683,8 @@
 19	of	of	ADP	IN	_	20	case	_	_	_	P	of	p.QuantityItem	p.Whole	_	_	_	O-P-p.QuantityItem|p.Whole
 20	them	they	PRON	PRP	_	18	nmod	_	_	_	PRON	they	_	_	_	_	_	O-PRON
 21	might	might	AUX	MD	_	22	aux	_	_	_	AUX	might	_	_	_	_	_	O-AUX
-22	give	give	VERB	VB	_	0	root	_	_	_	V	give	_	_	_	_	_	O-V
-23	up	up	ADP	RP	_	22	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+22	give	give	VERB	VB	_	0	root	_	_	1:1	V	give up	_	_	_	_	_	B-V
+23	up	up	ADP	RP	_	22	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 24	and	and	CCONJ	CC	_	25	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
 25	find	find	VERB	VB	_	22	conj	_	_	_	V	find	_	_	_	_	_	O-V
 26	some	some	DET	DT	_	28	det	_	_	_	DET	some	_	_	_	_	_	O-DET
@@ -2822,7 +2822,7 @@
 
 # sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-19
 # text = > You re creating crime , spending more money on a dwindling crime , taking up police time , filling the courts and not helping solve the problem your solution does n't stop anything other than the initial unfortunate ones and the really stupid after that I m not creating crime , those criminals were already there , waiting for someone to leave their car unlocked .
-# mwe = > You re creating crime , spending more money on a dwindling crime , taking up police time , filling the courts and not helping solve the problem your solution does n't stop anything other_than the initial unfortunate ones and the really stupid after that I m not creating crime , those criminals were already there , waiting for someone to leave their car unlocked .
+# mwe = > You re creating crime , spending more money on a dwindling crime , taking_up police time , filling the courts and not helping solve the problem your solution does n't stop anything other_than the initial unfortunate ones and the really stupid after that I m not creating crime , those criminals were already there , waiting for someone to leave their car unlocked .
 1	>	>	PUNCT	NFP	_	4	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
 2	You	you	PRON	PRP	_	4	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
 3	re	be	AUX	VBP	_	4	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
@@ -2837,8 +2837,8 @@
 12	dwindling	dwindling	ADJ	JJ	_	13	amod	_	_	_	ADJ	dwindling	_	_	_	_	_	O-ADJ
 13	crime	crime	NOUN	NN	_	7	obl	_	_	_	N	crime	_	_	_	_	_	O-N
 14	,	,	PUNCT	,	_	7	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-15	taking	take	VERB	VBG	_	7	conj	_	_	_	V	take	_	_	_	_	_	O-V
-16	up	up	ADP	RP	_	15	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+15	taking	take	VERB	VBG	_	7	conj	_	_	1:1	V	take up	_	_	_	_	_	B-V
+16	up	up	ADP	RP	_	15	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 17	police	police	NOUN	NN	_	18	compound	_	_	_	N	police	_	_	_	_	_	O-N
 18	time	time	NOUN	NN	_	15	obj	_	_	_	N	time	_	_	_	_	_	O-N
 19	,	,	PUNCT	,	_	4	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
@@ -2857,8 +2857,8 @@
 32	n't	not	PART	RB	_	33	advmod	_	_	_	ADV	not	_	_	_	_	_	O-ADV
 33	stop	stop	VERB	VB	_	4	parataxis	_	_	_	V	stop	_	_	_	_	_	O-V
 34	anything	anything	PRON	NN	_	33	obj	_	_	_	PRON	anything	_	_	_	_	_	O-PRON
-35	other	other	ADJ	JJ	_	34	amod	_	_	1:1	P	other than	p.PartPortion	p.PartPortion	_	_	_	B-P-p.PartPortion
-36	than	than	ADP	IN	_	40	case	_	_	1:2	_	_	_	_	_	_	_	I_
+35	other	other	ADJ	JJ	_	34	amod	_	_	2:1	P	other than	p.PartPortion	p.PartPortion	_	_	_	B-P-p.PartPortion
+36	than	than	ADP	IN	_	40	case	_	_	2:2	_	_	_	_	_	_	_	I_
 37	the	the	DET	DT	_	40	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 38	initial	initial	ADJ	JJ	_	40	amod	_	_	_	ADJ	initial	_	_	_	_	_	O-ADJ
 39	unfortunate	unfortunate	ADJ	JJ	_	40	amod	_	_	_	ADJ	unfortunate	_	_	_	_	_	O-ADJ
@@ -2948,7 +2948,7 @@
 
 # sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-22
 # text = Also it s extremely cheap because there s no need to fill the streets with bait cars to scare em off a little .
-# mwe = Also it s extremely cheap because there s no need to fill the streets with bait cars to scare em off a little .
+# mwe = Also it s extremely cheap because there s no need to fill the streets with bait cars to scare_ em _off a little .
 1	Also	also	ADV	RB	_	5	advmod	_	_	_	ADV	also	_	_	_	_	_	O-ADV
 2	it	it	PRON	PRP	_	5	nsubj	_	_	_	PRON	it	_	_	_	_	_	O-PRON
 3	s	be	AUX	VBZ	_	5	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
@@ -2967,16 +2967,16 @@
 16	bait	bait	NOUN	NN	_	17	compound	_	_	_	N	bait	_	_	_	_	_	O-N
 17	cars	car	NOUN	NNS	_	12	obl	_	_	_	N	car	_	_	_	_	_	O-N
 18	to	to	PART	TO	_	19	mark	_	_	_	INF.P	to	p.Purpose	p.Purpose	_	_	_	O-INF.P-p.Purpose
-19	scare	scare	VERB	VB	_	12	advcl	_	_	_	V	scare	_	_	_	_	_	O-V
-20	em	they	PRON	PRP	_	19	obj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
-21	off	off	ADP	RP	_	19	compound:prt	_	_	_	P	off	_	_	_	_	_	O-P
+19	scare	scare	VERB	VB	_	12	advcl	_	_	1:1	V	scare off	_	_	_	_	_	B-V
+20	em	they	PRON	PRP	_	19	obj	_	_	_	PRON	they	_	_	_	_	_	o-PRON
+21	off	off	ADP	RP	_	19	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 22	a	a	DET	DT	_	23	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 23	little	little	ADJ	JJ	_	19	obl:npmod	_	_	_	ADJ	little	_	_	_	_	_	O-ADJ
 24	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-23
 # text = And yes it does stop criminals because by switching cars they ca n't get to know which ones are bait cars , and by trying out new techniques the criminals ca n't predict which ones are most likely to be baits .
-# mwe = And yes it does stop criminals because by switching cars they ca n't get to know which ones are bait cars , and by trying out new techniques the criminals ca n't predict which ones are most likely to be baits .
+# mwe = And yes it does stop criminals because by switching cars they ca n't get to know which ones are bait cars , and by trying_out new techniques the criminals ca n't predict which ones are most likely to be baits .
 1	And	and	CCONJ	CC	_	5	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
 2	yes	yes	INTJ	UH	_	5	discourse	_	_	_	INTJ	yes	_	_	_	_	_	O-INTJ
 3	it	it	PRON	PRP	_	5	nsubj	_	_	_	PRON	it	_	_	_	_	_	O-PRON
@@ -3001,8 +3001,8 @@
 22	,	,	PUNCT	,	_	33	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 23	and	and	CCONJ	CC	_	33	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
 24	by	by	SCONJ	IN	_	25	mark	_	_	_	P	by	p.Means	p.Means	_	_	_	O-P-p.Means
-25	trying	try	VERB	VBG	_	33	advcl	_	_	_	V	try	_	_	_	_	_	O-V
-26	out	out	ADP	RP	_	25	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+25	trying	try	VERB	VBG	_	33	advcl	_	_	1:1	V	try out	_	_	_	_	_	B-V
+26	out	out	ADP	RP	_	25	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 27	new	new	ADJ	JJ	_	28	amod	_	_	_	ADJ	new	_	_	_	_	_	O-ADJ
 28	techniques	technique	NOUN	NNS	_	25	obj	_	_	_	N	technique	_	_	_	_	_	O-N
 29	the	the	DET	DT	_	30	det	_	_	_	DET	the	_	_	_	_	_	O-DET
@@ -3187,7 +3187,7 @@
 
 # sent_id = english-e072caae-797c-27bf-c793-85209c921e7f-02
 # text = The US would have been colonized long ago in its weakened state and carved up by the ascendant post-crisis powers .
-# mwe = The US would have been colonized long ago in its weakened state and carved up by the ascendant post-crisis powers .
+# mwe = The US would have been colonized long ago in its weakened state and carved_up by the ascendant post-crisis powers .
 1	The	the	DET	DT	_	2	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 2	US	US	PROPN	NNP	_	6	nsubj:pass	_	_	_	N	US	_	_	_	_	_	O-N
 3	would	would	AUX	MD	_	6	aux	_	_	_	AUX	would	_	_	_	_	_	O-AUX
@@ -3201,8 +3201,8 @@
 11	weakened	weaken	VERB	VBN	_	12	amod	_	_	_	V	weaken	_	_	_	_	_	O-V
 12	state	state	NOUN	NN	_	6	obl	_	_	_	N	state	_	_	_	_	_	O-N
 13	and	and	CCONJ	CC	_	14	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-14	carved	carve	VERB	VBN	_	6	conj	_	_	_	V	carve	_	_	_	_	_	O-V
-15	up	up	ADP	RP	_	14	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+14	carved	carve	VERB	VBN	_	6	conj	_	_	1:1	V	carve up	_	_	_	_	_	B-V
+15	up	up	ADP	RP	_	14	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 16	by	by	ADP	IN	_	20	case	_	_	_	P	by	p.Agent	p.Agent	_	_	_	O-P-p.Agent
 17	the	the	DET	DT	_	20	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 18	ascendant	ascendant	ADJ	JJ	_	20	amod	_	_	_	ADJ	ascendant	_	_	_	_	_	O-ADJ
@@ -3444,7 +3444,7 @@
 
 # sent_id = english-2412579d-6af9-44e0-7b38-785b0932f5b6-06
 # text = I m eagerly waiting for GM to come up in the lectures as I hope it will make a lot of the students think a little more about the positions they hold ( wishful thinking ? ) .
-# mwe = I m eagerly waiting for GM to come up in the lectures as I hope it will make a lot of the students think a little more about the positions they hold ( wishful thinking ? ) .
+# mwe = I m eagerly waiting for GM to come_up in the lectures as I hope it will make a lot of the students think a little more about the positions they hold ( wishful thinking ? ) .
 1	I	I	PRON	PRP	_	4	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 2	m	be	AUX	VBP	_	4	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 3	eagerly	eagerly	ADV	RB	_	4	advmod	_	_	_	ADV	eagerly	_	_	_	_	_	O-ADV
@@ -3452,8 +3452,8 @@
 5	for	for	ADP	IN	_	6	case	_	_	_	P	for	p.Theme	p.Theme	_	_	_	O-P-p.Theme
 6	GM	GM	PROPN	NNP	_	4	obl	_	_	_	N	GM	_	_	_	_	_	O-N
 7	to	to	PART	TO	_	8	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-8	come	come	VERB	VB	_	4	advcl	_	_	_	V	come	_	_	_	_	_	O-V
-9	up	up	ADP	RP	_	8	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+8	come	come	VERB	VB	_	4	advcl	_	_	1:1	V	come up	_	_	_	_	_	B-V
+9	up	up	ADP	RP	_	8	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 10	in	in	ADP	IN	_	12	case	_	_	_	P	in	p.Circumstance	p.Circumstance	_	_	_	O-P-p.Circumstance
 11	the	the	DET	DT	_	12	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 12	lectures	lecture	NOUN	NNS	_	8	obl	_	_	_	N	lecture	_	_	_	_	_	O-N
@@ -3505,7 +3505,7 @@
 
 # sent_id = english-2412579d-6af9-44e0-7b38-785b0932f5b6-08
 # text = I did n't know anything about it , but the claims he quoted about our eating GM food having killed off our gut flora and conesquently causing a weakening of our immune system ... really ??
-# mwe = I did n't know anything about it , but the claims he quoted about our eating GM food having killed off our gut flora and conesquently causing a weakening of our immune system ... really ??
+# mwe = I did n't know anything about it , but the claims he quoted about our eating GM food having killed_off our gut flora and conesquently causing a weakening of our immune system ... really ??
 1	I	I	PRON	PRP	_	4	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 2	did	do	AUX	VBD	_	4	aux	_	_	_	AUX	do	_	_	_	_	_	O-AUX
 3	n't	not	PART	RB	_	4	advmod	_	_	_	ADV	not	_	_	_	_	_	O-ADV
@@ -3525,8 +3525,8 @@
 17	GM	GM	PROPN	NNP	_	18	compound	_	_	_	N	GM	_	_	_	_	_	O-N
 18	food	food	NOUN	NN	_	13	obl	_	_	_	N	food	_	_	_	_	_	O-N
 19	having	have	AUX	VBG	_	20	aux	_	_	_	AUX	have	_	_	_	_	_	O-AUX
-20	killed	kill	VERB	VBN	_	4	conj	_	_	_	V	kill	_	_	_	_	_	O-V
-21	off	off	ADP	RP	_	20	compound:prt	_	_	_	P	off	_	_	_	_	_	O-P
+20	killed	kill	VERB	VBN	_	4	conj	_	_	1:1	V	kill off	_	_	_	_	_	B-V
+21	off	off	ADP	RP	_	20	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 22	our	we	PRON	PRP$	_	24	nmod:poss	_	_	_	PRON.POSS	we	p.Whole	p.Gestalt	_	_	_	O-PRON.POSS-p.Whole|p.Gestalt
 23	gut	gut	NOUN	NN	_	24	compound	_	_	_	N	gut	_	_	_	_	_	O-N
 24	flora	flora	NOUN	NN	_	20	obj	_	_	_	N	flora	_	_	_	_	_	O-N
@@ -3545,7 +3545,7 @@
 
 # sent_id = english-2412579d-6af9-44e0-7b38-785b0932f5b6-09
 # text = you really believe that ? Anyway , I looked for decent reviews of the book , and kept seeing the term Hygiene Hypothesis come up , so I rushed ahead and did n't do the proper background reading .
-# mwe = you really believe that ? Anyway , I looked for decent reviews of the book , and kept seeing the term Hygiene Hypothesis come up , so I rushed ahead and did n't do the proper background reading .
+# mwe = you really believe that ? Anyway , I looked for decent reviews of the book , and kept seeing the term Hygiene Hypothesis come_up , so I rushed ahead and did n't do the proper background reading .
 1	you	you	PRON	PRP	_	3	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
 2	really	really	ADV	RB	_	3	advmod	_	_	_	ADV	really	_	_	_	_	_	O-ADV
 3	believe	believe	VERB	VBP	_	0	root	_	_	_	V	believe	_	_	_	_	_	O-V
@@ -3569,8 +3569,8 @@
 21	term	term	NOUN	NN	_	23	compound	_	_	_	N	term	_	_	_	_	_	O-N
 22	Hygiene	hygiene	NOUN	NN	_	23	compound	_	_	_	N	hygiene	_	_	_	_	_	O-N
 23	Hypothesis	hypothesis	NOUN	NN	_	19	obj	_	_	_	N	hypothesis	_	_	_	_	_	O-N
-24	come	come	VERB	VB	_	19	ccomp	_	_	_	V	come	_	_	_	_	_	O-V
-25	up	up	ADP	RP	_	24	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+24	come	come	VERB	VB	_	19	ccomp	_	_	1:1	V	come up	_	_	_	_	_	B-V
+25	up	up	ADP	RP	_	24	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 26	,	,	PUNCT	,	_	29	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 27	so	so	ADV	RB	_	29	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
 28	I	I	PRON	PRP	_	29	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
@@ -3706,7 +3706,7 @@
 
 # sent_id = german-e3366088-dd1d-fed4-c04a-1bcca4d14de8-02
 # text = Force them to write anti Nazi stuff into their constitution > 80 years later complain that Germans still abide to the rules you set up .
-# mwe = Force them to write anti Nazi stuff into their constitution > 80 years later complain that Germans still abide to the rules you set up .
+# mwe = Force them to write anti Nazi stuff into their constitution > 80 years later complain that Germans still abide to the rules you set_up .
 1	Force	Force	VERB	VB	_	0	root	_	_	_	V	Force	_	_	_	_	_	O-V
 2	them	they	PRON	PRP	_	1	obj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
 3	to	to	PART	TO	_	4	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
@@ -3730,8 +3730,8 @@
 21	the	the	DET	DT	_	22	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 22	rules	rule	NOUN	NNS	_	19	obl	_	_	_	N	rule	_	_	_	_	_	O-N
 23	you	you	PRON	PRP	_	24	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
-24	set	set	VERB	VBD	_	22	acl:relcl	_	_	_	V	set	_	_	_	_	_	O-V
-25	up	up	ADP	RP	_	24	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+24	set	set	VERB	VBD	_	22	acl:relcl	_	_	1:1	V	set up	_	_	_	_	_	B-V
+25	up	up	ADP	RP	_	24	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 26	.	.	PUNCT	.	_	1	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-73a695f2-7da5-6266-bff7-03ce8613b181-01
@@ -3755,7 +3755,7 @@
 
 # sent_id = german-73a695f2-7da5-6266-bff7-03ce8613b181-02
 # text = Nitpicking aside , taste nuances depend so much on context , expectations , cultural norms and personal impression that they re often hard to pin down .
-# mwe = Nitpicking aside , taste nuances depend so much on context , expectations , cultural norms and personal impression that they re often hard to pin down .
+# mwe = Nitpicking aside , taste nuances depend so much on context , expectations , cultural norms and personal impression that they re often hard to pin_down .
 1	Nitpicking	nitpick	VERB	VBG	_	6	advcl	_	_	_	V	nitpick	_	_	_	_	_	O-V
 2	aside	aside	ADV	RB	_	1	advmod	_	_	_	DISC	aside	_	_	_	_	_	O-DISC
 3	,	,	PUNCT	,	_	6	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
@@ -3780,8 +3780,8 @@
 22	often	often	ADV	RB	_	23	advmod	_	_	_	ADV	often	_	_	_	_	_	O-ADV
 23	hard	hard	ADJ	JJ	_	18	acl	_	_	_	ADJ	hard	_	_	_	_	_	O-ADJ
 24	to	to	PART	TO	_	25	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-25	pin	pin	VERB	VB	_	23	advcl	_	_	_	V	pin	_	_	_	_	_	O-V
-26	down	down	ADP	RP	_	25	compound:prt	_	_	_	P	down	_	_	_	_	_	O-P
+25	pin	pin	VERB	VB	_	23	advcl	_	_	1:1	V	pin down	_	_	_	_	_	B-V
+26	down	down	ADP	RP	_	25	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 27	.	.	PUNCT	.	_	6	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-73a695f2-7da5-6266-bff7-03ce8613b181-03
@@ -4290,7 +4290,7 @@
 
 # sent_id = english-417df4f8-c1a7-de00-9ec1-2fa2e6df12ce-02
 # text = A play out of a timeout to send your team to the playoffs , and the best you can get is Jamal Crawford chucking up a contested 40 - ft fadeaway ?
-# mwe = A play out_of a timeout to send your team to the playoffs , and the best you can get is Jamal Crawford chucking up a contested 40 - ft fadeaway ?
+# mwe = A play out_of a timeout to send your team to the playoffs , and the best you can get is Jamal Crawford chucking_up a contested 40 - ft fadeaway ?
 1	A	a	DET	DT	_	2	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 2	play	play	NOUN	NN	_	0	root	_	_	_	N	play	_	_	_	_	_	O-N
 3	out	out	ADP	IN	_	6	case	_	_	1:1	P	out of	p.Source	p.Source	_	_	_	B-P-p.Source
@@ -4314,8 +4314,8 @@
 21	is	be	AUX	VBZ	_	22	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 22	Jamal	Jamal	PROPN	NNP	_	2	conj	_	_	_	N	Jamal	_	_	_	_	_	O-N
 23	Crawford	Crawford	PROPN	NNP	_	22	flat	_	_	_	N	Crawford	_	_	_	_	_	O-N
-24	chucking	chuck	VERB	VBG	_	22	acl	_	_	_	V	chuck	_	_	_	_	_	O-V
-25	up	up	ADP	RP	_	24	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+24	chucking	chuck	VERB	VBG	_	22	acl	_	_	2:1	V	chuck up	_	_	_	_	_	B-V
+25	up	up	ADP	RP	_	24	compound:prt	_	_	2:2	_	_	_	_	_	_	_	I_
 26	a	a	DET	DT	_	31	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 27	contested	contest	VERB	VBN	_	31	amod	_	_	_	V	contest	_	_	_	_	_	O-V
 28	40	40	NUM	CD	_	30	nummod	_	_	_	NUM	40	_	_	_	_	_	O-NUM
@@ -4480,7 +4480,7 @@
 
 # sent_id = german-23d6da7c-7e53-c255-4d91-1afa07c6ed04-01
 # text = At the moment I expect us to end up 16th this year and I m not sure we can pull a Hamburg .
-# mwe = At the moment I expect us to end up 16th this year and I m not sure we can pull a Hamburg .
+# mwe = At the moment I expect us to end_up 16th this year and I m not sure we can pull a Hamburg .
 1	At	at	ADP	IN	_	3	case	_	_	_	P	at	p.Time	p.Time	_	_	_	O-P-p.Time
 2	the	the	DET	DT	_	3	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 3	moment	moment	NOUN	NN	_	5	obl	_	_	_	N	moment	_	_	_	_	_	O-N
@@ -4488,8 +4488,8 @@
 5	expect	expect	VERB	VBP	_	0	root	_	_	_	V	expect	_	_	_	_	_	O-V
 6	us	we	PRON	PRP	_	5	obj	_	_	_	PRON	we	_	_	_	_	_	O-PRON
 7	to	to	PART	TO	_	8	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-8	end	end	VERB	VB	_	5	xcomp	_	_	_	V	end	_	_	_	_	_	O-V
-9	up	up	ADP	RP	_	8	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+8	end	end	VERB	VB	_	5	xcomp	_	_	1:1	V	end up	_	_	_	_	_	B-V
+9	up	up	ADP	RP	_	8	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 10	16th	16th	NOUN	NN	_	8	obj	_	_	_	N	16th	_	_	_	_	_	O-N
 11	this	this	DET	DT	_	12	det	_	_	_	DET	this	_	_	_	_	_	O-DET
 12	year	year	NOUN	NN	_	8	obl:tmod	_	_	_	N	year	_	_	_	_	_	O-N
@@ -4535,7 +4535,7 @@
 
 # sent_id = english-120961ea-0913-5087-15d3-8ca9986cc8d5-02
 # text = If people got free copies where they would * otherwise had paid for them * , then yeah , that would bum me out a little .
-# mwe = If people got free copies where they would * otherwise had paid for them * , then yeah , that would bum me out a little .
+# mwe = If people got free copies where they would * otherwise had paid for them * , then yeah , that would bum_ me _out a little .
 1	If	if	SCONJ	IN	_	3	mark	_	_	_	SCONJ	if	_	_	_	_	_	O-SCONJ
 2	people	people	NOUN	NNS	_	3	nsubj	_	_	_	N	people	_	_	_	_	_	O-N
 3	got	get	VERB	VBD	_	22	advcl	_	_	_	V	get	_	_	_	_	_	O-V
@@ -4557,9 +4557,9 @@
 19	,	,	PUNCT	,	_	22	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 20	that	that	PRON	DT	_	22	nsubj	_	_	_	PRON	that	_	_	_	_	_	O-PRON
 21	would	would	AUX	MD	_	22	aux	_	_	_	AUX	would	_	_	_	_	_	O-AUX
-22	bum	bum	VERB	VB	_	0	root	_	_	_	V	bum	_	_	_	_	_	O-V
-23	me	I	PRON	PRP	_	22	obj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
-24	out	out	ADP	RP	_	22	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+22	bum	bum	VERB	VB	_	0	root	_	_	1:1	V	bum out	_	_	_	_	_	B-V
+23	me	I	PRON	PRP	_	22	obj	_	_	_	PRON	I	_	_	_	_	_	o-PRON
+24	out	out	ADP	RP	_	22	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 25	a	a	DET	DT	_	26	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 26	little	little	ADJ	JJ	_	22	obl:npmod	_	_	_	ADJ	little	_	_	_	_	_	O-ADJ
 27	.	.	PUNCT	.	_	22	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
@@ -5060,7 +5060,7 @@
 
 # sent_id = english-c90853fd-fc9e-a692-ba62-6aee542d19c0-06
 # text = You sound like you re in a very tedious process of figuring out where you DO N'T want to live , which is important as it is frustrating .
-# mwe = You sound like you re in a very tedious process of figuring out where you DO N'T want to live , which is important as it is frustrating .
+# mwe = You sound like you re in a very tedious process of figuring_out where you DO N'T want to live , which is important as it is frustrating .
 1	You	you	PRON	PRP	_	2	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
 2	sound	sound	VERB	VBP	_	0	root	_	_	_	V	sound	_	_	_	_	_	O-V
 3	like	like	SCONJ	IN	_	10	mark	_	_	_	P	like	p.Theme	p.ComparisonRef	_	_	_	O-P-p.Theme|p.ComparisonRef
@@ -5072,8 +5072,8 @@
 9	tedious	tedious	ADJ	JJ	_	10	amod	_	_	_	ADJ	tedious	_	_	_	_	_	O-ADJ
 10	process	process	NOUN	NN	_	2	advcl	_	_	_	N	process	_	_	_	_	_	O-N
 11	of	of	SCONJ	IN	_	12	mark	_	_	_	P	of	p.Identity	p.Identity	_	_	_	O-P-p.Identity
-12	figuring	figure	VERB	VBG	_	10	acl	_	_	_	V	figure	_	_	_	_	_	O-V
-13	out	out	ADP	RP	_	12	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+12	figuring	figure	VERB	VBG	_	10	acl	_	_	1:1	V	figure out	_	_	_	_	_	B-V
+13	out	out	ADP	RP	_	12	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 14	where	where	ADV	WRB	_	18	mark	_	_	_	ADV	where	_	_	_	_	_	O-ADV
 15	you	you	PRON	PRP	_	18	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
 16	DO	do	AUX	VBP	_	18	aux	_	_	_	AUX	do	_	_	_	_	_	O-AUX
@@ -5268,7 +5268,7 @@
 # text = > your brown - eyed , wan na ' be brown - shirt , trust - fund , ignorant playboy What s that supposed to mean ?
 # mwe = > your brown - eyed , wan na ' be brown - shirt , trust - fund , ignorant playboy What s that supposed to mean ?
 1	>	>	PUNCT	NFP	_	13	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
-2	your	you	PRON	PRP$	_	7	nmod:poss	_	_	_	PRON.POSS	you	_	_	_	_	_	O-PRON.POSS
+2	your	you	PRON	PRP$	_	7	nmod:poss	_	_	_	PRON.POSS	you	`$	`$	_	_	_	O-PRON.POSS-`$
 3	brown	brown	ADJ	JJ	_	5	compound	_	_	_	ADJ	brown	_	_	_	_	_	O-ADJ
 4	-	-	PUNCT	HYPH	_	5	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
 5	eyed	ey	VERB	VBN	_	7	amod	_	_	_	V	ey	_	_	_	_	_	O-V
@@ -5552,7 +5552,7 @@
 
 # sent_id = french-f065df4a-4207-158a-69b4-8c0eff6b0446-02
 # text = It s a problem , because my job is to be nice to these clients , and feeling like I do n't have the option to tell them to fuck off is a bit triggering for me .
-# mwe = It s a problem , because my job is to be nice to these clients , and feeling like I do n't have the option to tell them to fuck off is a bit triggering for me .
+# mwe = It s a problem , because my job is to be nice to these clients , and feeling like I do n't have the option to tell them to fuck_off is a bit triggering for me .
 1	It	it	PRON	PRP	_	4	nsubj	_	_	_	PRON	it	_	_	_	_	_	O-PRON
 2	s	be	AUX	VBZ	_	4	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 3	a	a	DET	DT	_	4	det	_	_	_	DET	a	_	_	_	_	_	O-DET
@@ -5582,8 +5582,8 @@
 27	tell	tell	VERB	VB	_	25	acl	_	_	_	V	tell	_	_	_	_	_	O-V
 28	them	they	PRON	PRP	_	27	obj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
 29	to	to	PART	TO	_	30	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-30	fuck	fuck	VERB	VB	_	27	xcomp	_	_	_	V	fuck	_	_	_	_	_	O-V
-31	off	off	ADP	RP	_	30	compound:prt	_	_	_	P	off	_	_	_	_	_	O-P
+30	fuck	fuck	VERB	VB	_	27	xcomp	_	_	1:1	V	fuck off	_	_	_	_	_	B-V
+31	off	off	ADP	RP	_	30	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 32	is	be	AUX	VBZ	_	35	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 33	a	a	DET	DT	_	34	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 34	bit	bit	NOUN	NN	_	35	obl:npmod	_	_	_	N	bit	_	_	_	_	_	O-N
@@ -6646,7 +6646,7 @@
 
 # sent_id = spanish-eb0fc38b-db7c-4aa0-d306-241c7801db00-03
 # text = Australia celebrates the day Captain Cook and the first fleet arrived in Botany Bay and began wiping out a 40,000 year old culture as its national day spend the day off at Aleixasv s house so you can be obnoxious together
-# mwe = Australia celebrates the day Captain Cook and the first fleet arrived in Botany Bay and began wiping out a 40,000 year old culture as its national day spend the day off at Aleixasv s house so you can be obnoxious together
+# mwe = Australia celebrates the day Captain Cook and the first fleet arrived in Botany Bay and began wiping_out a 40,000 year old culture as its national day spend_ the day _off at Aleixasv s house so you can be obnoxious together
 1	Australia	Australia	PROPN	NNP	_	2	nsubj	_	_	_	N	Australia	_	_	_	_	_	O-N
 2	celebrates	celebrate	VERB	VBZ	_	0	root	_	_	_	V	celebrate	_	_	_	_	_	O-V
 3	the	the	DET	DT	_	4	det	_	_	_	DET	the	_	_	_	_	_	O-DET
@@ -6663,8 +6663,8 @@
 14	Bay	Bay	PROPN	NNP	_	11	obl	_	_	_	N	Bay	_	_	_	_	_	O-N
 15	and	and	CCONJ	CC	_	16	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
 16	began	begin	VERB	VBD	_	11	conj	_	_	_	V	begin	_	_	_	_	_	O-V
-17	wiping	wipe	VERB	VBG	_	16	xcomp	_	_	_	V	wipe	_	_	_	_	_	O-V
-18	out	out	ADP	RP	_	17	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+17	wiping	wipe	VERB	VBG	_	16	xcomp	_	_	1:1	V	wipe out	_	_	_	_	_	B-V
+18	out	out	ADP	RP	_	17	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 19	a	a	DET	DT	_	23	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 20	40,000	40,000	NUM	CD	_	21	nummod	_	_	_	NUM	40,000	_	_	_	_	_	O-NUM
 21	year	year	NOUN	NN	_	22	obl:npmod	_	_	_	N	year	_	_	_	_	_	O-N
@@ -6674,10 +6674,10 @@
 25	its	its	PRON	PRP$	_	27	nmod:poss	_	_	_	PRON.POSS	its	p.Gestalt	p.Gestalt	_	_	_	O-PRON.POSS-p.Gestalt
 26	national	national	ADJ	JJ	_	27	amod	_	_	_	ADJ	national	_	_	_	_	_	O-ADJ
 27	day	day	NOUN	NN	_	23	nmod	_	_	_	N	day	_	_	_	_	_	O-N
-28	spend	spend	VERB	VBP	_	2	conj	_	_	_	V	spend	_	_	_	_	_	O-V
-29	the	the	DET	DT	_	30	det	_	_	_	DET	the	_	_	_	_	_	O-DET
-30	day	day	NOUN	NN	_	28	obj	_	_	_	N	day	_	_	_	_	_	O-N
-31	off	off	ADP	RP	_	28	compound:prt	_	_	_	P	off	_	_	_	_	_	O-P
+28	spend	spend	VERB	VBP	_	2	conj	_	_	2:1	V	spend off	_	_	_	_	_	B-V
+29	the	the	DET	DT	_	30	det	_	_	_	DET	the	_	_	_	_	_	o-DET
+30	day	day	NOUN	NN	_	28	obj	_	_	_	N	day	_	_	_	_	_	o-N
+31	off	off	ADP	RP	_	28	compound:prt	_	_	2:2	_	_	_	_	_	_	_	I_
 32	at	at	ADP	IN	_	35	case	_	_	_	P	at	p.Locus	p.Locus	_	_	_	O-P-p.Locus
 33	Aleixasv	Aleixasv	PROPN	NNP	_	35	nmod:poss	_	_	_	N	Aleixasv	_	_	_	_	_	O-N
 34	s	's	PART	POS	_	33	case	_	_	_	POSS	's	p.Possessor	p.Possessor	_	_	_	O-POSS-p.Possessor
@@ -6853,7 +6853,7 @@
 
 # sent_id = french-05b6e6e3-07d4-bedc-5143-1193e6c3f339-02
 # text = Alternatively , hack means a easy flanker take down ( no blink / reflect ) which means she could be used on defense in a kind of a turtle comp with McCree / Sombra as the dps .
-# mwe = Alternatively , hack means a easy flanker take down ( no blink / reflect ) which means she could be used on defense in a kind of a turtle comp with McCree / Sombra as the dps .
+# mwe = Alternatively , hack means a easy flanker take_down ( no blink / reflect ) which means she could be used on defense in a kind of a turtle comp with McCree / Sombra as the dps .
 1	Alternatively	alternatively	ADV	RB	_	4	advmod	_	_	_	ADV	alternatively	_	_	_	_	_	O-ADV
 2	,	,	PUNCT	,	_	4	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 3	hack	hack	NOUN	NN	_	4	nsubj	_	_	_	N	hack	_	_	_	_	_	O-N
@@ -6861,8 +6861,8 @@
 5	a	a	DET	DT	_	7	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 6	easy	easy	ADJ	JJ	_	7	amod	_	_	_	ADJ	easy	_	_	_	_	_	O-ADJ
 7	flanker	flanker	NOUN	NN	_	8	nsubj	_	_	_	N	flanker	_	_	_	_	_	O-N
-8	take	take	VERB	VB	_	4	ccomp	_	_	_	V	take	_	_	_	_	_	O-V
-9	down	down	ADP	RP	_	8	compound:prt	_	_	_	P	down	_	_	_	_	_	O-P
+8	take	take	VERB	VB	_	4	ccomp	_	_	1:1	V	take down	_	_	_	_	_	B-V
+9	down	down	ADP	RP	_	8	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 10	(	(	PUNCT	-LRB-	_	12	punct	_	_	_	PUNCT	(	_	_	_	_	_	O-PUNCT
 11	no	no	DET	DT	_	12	det	_	_	_	DET	no	_	_	_	_	_	O-DET
 12	blink	blink	NOUN	NN	_	8	obj	_	_	_	N	blink	_	_	_	_	_	O-N
@@ -6895,7 +6895,7 @@
 
 # sent_id = french-05b6e6e3-07d4-bedc-5143-1193e6c3f339-03
 # text = You ca n't really dive on them , so it also means maybe Lucio could be swapped out in this comp , I would imagine with Zen on attack and Mercy on def .
-# mwe = You ca n't really dive on them , so it also means maybe Lucio could be swapped out in this comp , I would imagine with Zen on attack and Mercy on def .
+# mwe = You ca n't really dive on them , so it also means maybe Lucio could be swapped_out in this comp , I would imagine with Zen on attack and Mercy on def .
 1	You	you	PRON	PRP	_	5	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
 2	ca	can	AUX	MD	_	5	aux	_	_	_	AUX	can	_	_	_	_	_	O-AUX
 3	n't	not	PART	RB	_	5	advmod	_	_	_	ADV	not	_	_	_	_	_	O-ADV
@@ -6912,8 +6912,8 @@
 14	Lucio	Lucio	PROPN	NNP	_	17	nsubj:pass	_	_	_	N	Lucio	_	_	_	_	_	O-N
 15	could	could	AUX	MD	_	17	aux	_	_	_	AUX	could	_	_	_	_	_	O-AUX
 16	be	be	AUX	VB	_	17	aux:pass	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-17	swapped	swap	VERB	VBN	_	12	ccomp	_	_	_	V	swap	_	_	_	_	_	O-V
-18	out	out	ADP	RP	_	17	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+17	swapped	swap	VERB	VBN	_	12	ccomp	_	_	1:1	V	swap out	_	_	_	_	_	B-V
+18	out	out	ADP	RP	_	17	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 19	in	in	ADP	IN	_	21	case	_	_	_	P	in	p.Circumstance	p.Circumstance	_	_	_	O-P-p.Circumstance
 20	this	this	DET	DT	_	21	det	_	_	_	DET	this	_	_	_	_	_	O-DET
 21	comp	comp	NOUN	NN	_	17	obl	_	_	_	N	comp	_	_	_	_	_	O-N
@@ -7879,7 +7879,7 @@
 
 # sent_id = english-f16f1487-f7f2-1e5c-ce07-55e354565b12-01
 # text = My point was that they dissected so many parts of the article , but missed out those bits .
-# mwe = My point was that they dissected so many parts of the article , but missed out those bits .
+# mwe = My point was that they dissected so many parts of the article , but missed_out those bits .
 1	My	my	PRON	PRP$	_	2	nmod:poss	_	_	_	PRON.POSS	my	p.Originator	p.Gestalt	_	_	_	O-PRON.POSS-p.Originator|p.Gestalt
 2	point	point	NOUN	NN	_	3	nsubj	_	_	_	N	point	_	_	_	_	_	O-N
 3	was	be	VERB	VBD	_	0	root	_	_	_	V	be	_	_	_	_	_	O-V
@@ -7894,8 +7894,8 @@
 12	article	article	NOUN	NN	_	9	nmod	_	_	_	N	article	_	_	_	_	_	O-N
 13	,	,	PUNCT	,	_	15	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 14	but	but	CCONJ	CC	_	15	cc	_	_	_	CCONJ	but	_	_	_	_	_	O-CCONJ
-15	missed	miss	VERB	VBD	_	6	conj	_	_	_	V	miss	_	_	_	_	_	O-V
-16	out	out	ADP	RP	_	15	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+15	missed	miss	VERB	VBD	_	6	conj	_	_	1:1	V	miss out	_	_	_	_	_	B-V
+16	out	out	ADP	RP	_	15	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 17	those	those	DET	DT	_	18	det	_	_	_	DET	those	_	_	_	_	_	O-DET
 18	bits	bit	NOUN	NNS	_	15	obj	_	_	_	N	bit	_	_	_	_	_	O-N
 19	.	.	PUNCT	.	_	3	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
@@ -8306,7 +8306,7 @@
 
 # sent_id = french-d994539a-3dc0-7bbb-ed6e-472512fca4ed-01
 # text = What Marx theorized as his ideal concept of communism was essentially that the workers of the world would all rise up in unison and overthrow nations , landlords , and capitalists .
-# mwe = What Marx theorized as his ideal concept of communism was essentially that the workers of the world would all rise up in_unison and overthrow nations , landlords , and capitalists .
+# mwe = What Marx theorized as his ideal concept of communism was essentially that the workers of the world would all rise_up in_unison and overthrow nations , landlords , and capitalists .
 1	What	what	PRON	WP	_	10	nsubj	_	_	_	PRON	what	_	_	_	_	_	O-PRON
 2	Marx	Marx	PROPN	NNP	_	3	nsubj	_	_	_	N	Marx	_	_	_	_	_	O-N
 3	theorized	theorize	VERB	VBD	_	1	acl:relcl	_	_	_	V	theorize	_	_	_	_	_	O-V
@@ -8326,10 +8326,10 @@
 17	world	world	NOUN	NN	_	14	nmod	_	_	_	N	world	_	_	_	_	_	O-N
 18	would	would	AUX	MD	_	20	aux	_	_	_	AUX	would	_	_	_	_	_	O-AUX
 19	all	all	ADV	RB	_	20	advmod	_	_	_	ADV	all	_	_	_	_	_	O-ADV
-20	rise	rise	VERB	VB	_	10	ccomp	_	_	_	V	rise	_	_	_	_	_	O-V
-21	up	up	ADP	RP	_	20	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
-22	in	in	ADP	IN	_	23	case	_	_	1:1	PP	in unison	p.Manner	p.Manner	_	_	_	B-PP-p.Manner
-23	unison	unison	NOUN	NN	_	20	obl	_	_	1:2	_	_	_	_	_	_	_	I_
+20	rise	rise	VERB	VB	_	10	ccomp	_	_	1:1	V	rise up	_	_	_	_	_	B-V
+21	up	up	ADP	RP	_	20	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
+22	in	in	ADP	IN	_	23	case	_	_	2:1	PP	in unison	p.Manner	p.Manner	_	_	_	B-PP-p.Manner
+23	unison	unison	NOUN	NN	_	20	obl	_	_	2:2	_	_	_	_	_	_	_	I_
 24	and	and	CCONJ	CC	_	25	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
 25	overthrow	overthrow	VERB	VB	_	20	conj	_	_	_	V	overthrow	_	_	_	_	_	O-V
 26	nations	nation	NOUN	NNS	_	25	obj	_	_	_	N	nation	_	_	_	_	_	O-N
@@ -10001,7 +10001,7 @@
 
 # sent_id = english-dc45488d-84dd-a9b9-1f1e-0ee9cf6c9992-04
 # text = The latest trend is that John Key is infallible and a PR genius , when that s really 30 % skill and 70 % luck , and is helped by a lot of good neoliberal policy from National , and National ministers who keep quiet even when they re being shuffled off into the scorpion pit .
-# mwe = The latest trend is that John Key is infallible and a PR genius , when that s really 30 % skill and 70 % luck , and is helped by a lot of good neoliberal policy from National , and National ministers who keep quiet even when they re being shuffled off into the scorpion pit .
+# mwe = The latest trend is that John Key is infallible and a PR genius , when that s really 30 % skill and 70 % luck , and is helped by a lot of good neoliberal policy from National , and National ministers who keep quiet even when they re being shuffled_off into the scorpion pit .
 1	The	the	DET	DT	_	3	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 2	latest	latest	ADJ	JJS	_	3	amod	_	_	_	ADJ	latest	_	_	_	_	_	O-ADJ
 3	trend	trend	NOUN	NN	_	4	nsubj	_	_	_	N	trend	_	_	_	_	_	O-N
@@ -10052,8 +10052,8 @@
 48	they	they	PRON	PRP	_	51	nsubj:pass	_	_	_	PRON	they	_	_	_	_	_	O-PRON
 49	re	be	AUX	VBP	_	51	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 50	being	be	AUX	VBG	_	51	aux:pass	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-51	shuffled	shuffle	VERB	VBN	_	44	advcl	_	_	_	V	shuffle	_	_	_	_	_	O-V
-52	off	off	ADP	RP	_	51	compound:prt	_	_	_	P	off	_	_	_	_	_	O-P
+51	shuffled	shuffle	VERB	VBN	_	44	advcl	_	_	1:1	V	shuffle off	_	_	_	_	_	B-V
+52	off	off	ADP	RP	_	51	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 53	into	into	ADP	IN	_	56	case	_	_	_	P	into	p.Goal	p.Goal	_	_	_	O-P-p.Goal
 54	the	the	DET	DT	_	56	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 55	scorpion	scorpion	NOUN	NN	_	56	compound	_	_	_	N	scorpion	_	_	_	_	_	O-N
@@ -10343,7 +10343,7 @@
 
 # sent_id = english-dc45488d-84dd-a9b9-1f1e-0ee9cf6c9992-17
 # text = Because she s good , not because she s hot , lets clear that up from the beginning .
-# mwe = Because she s good , not because she s hot , let s clear that up from the beginning .
+# mwe = Because she s good , not because she s hot , let s clear_ that _up from the beginning .
 1	Because	because	SCONJ	IN	_	4	mark	_	_	_	SCONJ	because	_	_	_	_	_	O-SCONJ
 2	she	she	PRON	PRP	_	4	nsubj	_	_	_	PRON	she	_	_	_	_	_	O-PRON
 3	s	be	AUX	VBZ	_	4	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
@@ -10357,9 +10357,9 @@
 11	,	,	PUNCT	,	_	12	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 12	let	let	VERB	VBZ	_	0	root	_	SpaceAfter=No	_	V	let	_	_	_	_	_	O-V
 13	s	we	PRON	PRP	Abbr=Yes	12	obj	_	CorrectForm='s	_	PRON	we	_	_	_	_	_	O-PRON
-14	clear	clear	VERB	VB	_	12	xcomp	_	_	_	V	clear	_	_	_	_	_	O-V
-15	that	that	PRON	DT	_	14	obj	_	_	_	PRON	that	_	_	_	_	_	O-PRON
-16	up	up	ADP	RP	_	14	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+14	clear	clear	VERB	VB	_	12	xcomp	_	_	1:1	V	clear up	_	_	_	_	_	B-V
+15	that	that	PRON	DT	_	14	obj	_	_	_	PRON	that	_	_	_	_	_	o-PRON
+16	up	up	ADP	RP	_	14	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 17	from	from	ADP	IN	_	19	case	_	_	_	P	from	p.StartTime	p.StartTime	_	_	_	O-P-p.StartTime
 18	the	the	DET	DT	_	19	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 19	beginning	beginning	NOUN	NN	_	14	obl	_	_	_	N	beginning	_	_	_	_	_	O-N
@@ -11031,12 +11031,12 @@
 
 # sent_id = french-b74f3410-5463-852d-9c43-4723dde138d8-01
 # text = The solution is setting up an independent Coptic state in Egypt by the UN and them let the savage Muslims find a new target .
-# mwe = The solution is setting up an independent Coptic state in Egypt by the UN and them let the savage Muslims find a new target .
+# mwe = The solution is setting_up an independent Coptic state in Egypt by the UN and them let the savage Muslims find a new target .
 1	The	the	DET	DT	_	2	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 2	solution	solution	NOUN	NN	_	4	nsubj	_	_	_	N	solution	_	_	_	_	_	O-N
 3	is	be	AUX	VBZ	_	4	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-4	setting	set	VERB	VBG	_	0	root	_	_	_	V	set	_	_	_	_	_	O-V
-5	up	up	ADP	RP	_	4	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+4	setting	set	VERB	VBG	_	0	root	_	_	1:1	V	set up	_	_	_	_	_	B-V
+5	up	up	ADP	RP	_	4	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 6	an	a	DET	DT	_	9	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 7	independent	independent	ADJ	JJ	_	9	amod	_	_	_	ADJ	independent	_	_	_	_	_	O-ADJ
 8	Coptic	coptic	ADJ	JJ	_	9	amod	_	_	_	ADJ	coptic	_	_	_	_	_	O-ADJ
@@ -11441,7 +11441,7 @@
 
 # sent_id = french-7b6eb806-cc54-4333-3056-ddb0f1da2b29-01
 # text = So which is worse , not getting married but still be able to get a civil union which is identical or let in hundreds of thousands of uncultured homophobic people with a completely different ideology , no job , no skills and nowhere to live ?
-# mwe = So which is worse , not getting married but still be able to get a civil union which is identical or let in hundreds of thousands of uncultured homophobic people with a completely different ideology , no job , no skills and nowhere to live ?
+# mwe = So which is worse , not getting married but still be able to get a civil union which is identical or let_in hundreds of thousands of uncultured homophobic people with a completely different ideology , no job , no skills and nowhere to live ?
 1	So	so	ADV	RB	_	4	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
 2	which	which	PRON	WDT	_	4	nsubj	_	_	_	PRON	which	_	_	_	_	_	O-PRON
 3	is	be	AUX	VBZ	_	4	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
@@ -11463,8 +11463,8 @@
 19	is	be	AUX	VBZ	_	20	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 20	identical	identical	ADJ	JJ	_	17	acl:relcl	_	_	_	ADJ	identical	_	_	_	_	_	O-ADJ
 21	or	or	CCONJ	CC	_	22	cc	_	_	_	CCONJ	or	_	_	_	_	_	O-CCONJ
-22	let	let	VERB	VB	_	14	conj	_	_	_	V	let	_	_	_	_	_	O-V
-23	in	in	ADP	RP	_	22	compound:prt	_	_	_	P	in	_	_	_	_	_	O-P
+22	let	let	VERB	VB	_	14	conj	_	_	1:1	V	let in	_	_	_	_	_	B-V
+23	in	in	ADP	RP	_	22	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 24	hundreds	hundred	NOUN	NNS	_	22	obj	_	_	_	N	hundred	_	_	_	_	_	O-N
 25	of	of	ADP	IN	_	26	case	_	_	_	P	of	p.QuantityItem	p.QuantityItem	_	_	_	O-P-p.QuantityItem
 26	thousands	thousand	NOUN	NNS	_	24	nmod	_	_	_	N	thousand	_	_	_	_	_	O-N
@@ -12547,7 +12547,7 @@
 3	feeling	feel	VERB	VBG	_	2	xcomp	_	_	_	V	feel	_	_	_	_	_	O-V
 4	shocked	shocked	ADJ	JJ	_	3	xcomp	_	_	_	ADJ	shocked	_	_	_	_	_	O-ADJ
 5	seeing	see	VERB	VBG	_	3	advcl	_	_	_	V	see	_	_	_	_	_	O-V
-6	my	my	PRON	PRP$	_	9	nmod:poss	_	_	_	PRON.POSS	my	_	_	_	_	_	O-PRON.POSS
+6	my	my	PRON	PRP$	_	9	nmod:poss	_	_	_	PRON.POSS	my	`$	`$	_	_	_	O-PRON.POSS-`$
 7	first	first	ADJ	JJ	_	9	amod	_	_	_	ADJ	first	_	_	_	_	_	O-ADJ
 8	child	child	NOUN	NN	_	9	compound	_	_	_	N	child	_	_	_	_	_	O-N
 9	beggar	beggar	NOUN	NN	_	5	obj	_	_	_	N	beggar	_	_	_	_	_	O-N
@@ -12562,7 +12562,7 @@
 
 # sent_id = spanish-4149fe1e-e4ae-3f92-f174-302733027e60-02
 # text = She must had been around 3 or 4 , there she was sitting in her dirty dress with a plastic cup in her hand , she was hanging out with some older kids though not much older than herself .
-# mwe = She must had been around 3 or 4 , there she was sitting in her dirty dress with a plastic cup in her hand , she was hanging out with some older kids though not much older than herself .
+# mwe = She must had been around 3 or 4 , there she was sitting in her dirty dress with a plastic cup in her hand , she was hanging_out with some older kids though not much older than herself .
 1	She	she	PRON	PRP	_	6	nsubj	_	_	_	PRON	she	_	_	_	_	_	O-PRON
 2	must	must	AUX	MD	_	6	aux	_	_	_	AUX	must	_	_	_	_	_	O-AUX
 3	had	have	AUX	VB	_	6	aux	_	_	_	AUX	have	_	_	_	_	_	O-AUX
@@ -12590,8 +12590,8 @@
 25	,	,	PUNCT	,	_	28	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 26	she	she	PRON	PRP	_	28	nsubj	_	_	_	PRON	she	_	_	_	_	_	O-PRON
 27	was	be	AUX	VBD	_	28	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-28	hanging	hang	VERB	VBG	_	13	parataxis	_	_	_	V	hang	_	_	_	_	_	O-V
-29	out	out	ADP	RP	_	28	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+28	hanging	hang	VERB	VBG	_	13	parataxis	_	_	1:1	V	hang out	_	_	_	_	_	B-V
+29	out	out	ADP	RP	_	28	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 30	with	with	ADP	IN	_	33	case	_	_	_	P	with	p.Ancillary	p.Ancillary	_	_	_	O-P-p.Ancillary
 31	some	some	DET	DT	_	33	det	_	_	_	DET	some	_	_	_	_	_	O-DET
 32	older	older	ADJ	JJR	_	33	amod	_	_	_	ADJ	older	_	_	_	_	_	O-ADJ
@@ -12679,13 +12679,13 @@
 
 # sent_id = spanish-4149fe1e-e4ae-3f92-f174-302733027e60-06
 # text = Visited Dubrovnik recently and hang out around the old town during my entire stay , I did n't see a single beggar !
-# mwe = Visited Dubrovnik recently and hang out around the old town during my entire stay , I did n't see a single beggar !
+# mwe = Visited Dubrovnik recently and hang_out around the old town during my entire stay , I did n't see a single beggar !
 1	Visited	visit	VERB	VBD	_	0	root	_	_	_	V	visit	_	_	_	_	_	O-V
 2	Dubrovnik	Dubrovnik	PROPN	NNP	_	1	obj	_	_	_	N	Dubrovnik	_	_	_	_	_	O-N
 3	recently	recently	ADV	RB	_	1	advmod	_	_	_	ADV	recently	_	_	_	_	_	O-ADV
 4	and	and	CCONJ	CC	_	5	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-5	hang	hang	VERB	VBD	_	1	conj	_	_	_	V	hang	_	_	_	_	_	O-V
-6	out	out	ADP	RP	_	5	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+5	hang	hang	VERB	VBD	_	1	conj	_	_	1:1	V	hang out	_	_	_	_	_	B-V
+6	out	out	ADP	RP	_	5	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 7	around	around	ADP	IN	_	10	case	_	_	_	P	around	p.Locus	p.Locus	_	_	_	O-P-p.Locus
 8	the	the	DET	DT	_	10	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 9	old	old	ADJ	JJ	_	10	amod	_	_	_	ADJ	old	_	_	_	_	_	O-ADJ
@@ -12789,7 +12789,7 @@
 2	A	a	DET	DT	_	4	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 3	new	new	ADJ	JJ	_	4	amod	_	_	_	ADJ	new	_	_	_	_	_	O-ADJ
 4	poll	poll	NOUN	NN	_	12	nsubj	_	_	_	N	poll	_	_	_	_	_	O-N
-5	out	out	ADP	RP	_	4	case	_	_	_	P	out	_	_	_	_	_	O-P
+5	out	out	ADP	RP	_	4	case	_	_	_	P	out	p.Direction	p.Direction	_	_	_	O-P-p.Direction
 6	from	from	ADP	IN	_	10	case	_	_	_	P	from	p.Originator	p.Source	_	_	_	O-P-p.Originator|p.Source
 7	the	the	DET	DT	_	10	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 8	German	german	ADJ	JJ	_	10	amod	_	_	_	ADJ	german	_	_	_	_	_	O-ADJ
@@ -12825,7 +12825,7 @@
 
 # sent_id = spanish-d684fef4-59bd-63a6-3ff8-48e936d3a69a-02
 # text = As for her overall approval rating in the poll , part of a series called DeutschlandTrend , Merkel was at 47 percent approval -- higher than in February after the New Year s Eve attacks , but far lower than the 74 percent approval rating she had in April of 2015 before the refugee crisis heated up .
-# mwe = As_for her overall approval rating in the poll , part of a series called DeutschlandTrend , Merkel was at 47 percent approval -- higher than in February after the New Year s Eve attacks , but far lower than the 74 percent approval rating she had in April of 2015 before the refugee crisis heated up .
+# mwe = As_for her overall approval rating in the poll , part of a series called DeutschlandTrend , Merkel was at 47 percent approval -- higher than in February after the New Year s Eve attacks , but far lower than the 74 percent approval rating she had in April of 2015 before the refugee crisis heated_up .
 1	As	as	ADP	IN	_	6	case	_	_	1:1	DISC	as for	_	_	_	_	_	B-DISC
 2	for	for	ADP	IN	_	6	case	_	_	1:2	_	_	_	_	_	_	_	I_
 3	her	she	PRON	PRP$	_	6	nmod:poss	_	_	_	PRON.POSS	she	p.Gestalt	p.Gestalt	_	_	_	O-PRON.POSS-p.Gestalt
@@ -12881,8 +12881,8 @@
 53	the	the	DET	DT	_	55	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 54	refugee	refugee	NOUN	NN	_	55	compound	_	_	_	N	refugee	_	_	_	_	_	O-N
 55	crisis	crisis	NOUN	NN	_	56	nsubj	_	_	_	N	crisis	_	_	_	_	_	O-N
-56	heated	heat	VERB	VBD	_	47	advcl	_	_	_	V	heat	_	_	_	_	_	O-V
-57	up	up	ADP	RP	_	56	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+56	heated	heat	VERB	VBD	_	47	advcl	_	_	2:1	V	heat up	_	_	_	_	_	B-V
+57	up	up	ADP	RP	_	56	compound:prt	_	_	2:2	_	_	_	_	_	_	_	I_
 58	.	.	PUNCT	.	_	23	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = spanish-d684fef4-59bd-63a6-3ff8-48e936d3a69a-03
@@ -12913,7 +12913,7 @@
 # sent_id = spanish-c55fd024-99dd-8bfa-b3d7-77e95bc2b64f-01
 # text = Because [ S ] Flip is not really seen in the narrative , but told by Doc Scratch , recalled to the extent of his omniscient knowledge ( or some BS like that ) .
 # mwe = Because [ S ] Flip is not really seen in the narrative , but told by Doc Scratch , recalled to_the_extent_of his omniscient knowledge ( or some BS like that ) .
-1	Because	because	ADP	IN	_	5	case	_	_	_	P	because	_	_	_	_	_	O-P
+1	Because	because	SCONJ	IN	_	5	case	_	_	_	SCONJ	because	_	_	_	_	_	O-SCONJ
 2	[	[	PUNCT	-LRB-	_	1	punct	_	_	_	PUNCT	[	_	_	_	_	_	O-PUNCT
 3	S	S	X	AFX	_	1	fixed	_	_	_	X	S	_	_	_	_	_	O-X
 4	]	]	PUNCT	-RRB-	_	5	punct	_	_	_	PUNCT	]	_	_	_	_	_	O-PUNCT
@@ -13009,7 +13009,7 @@
 
 # sent_id = spanish-c55fd024-99dd-8bfa-b3d7-77e95bc2b64f-05
 # text = He can bring Vriska back without having to deal with the causal consequences that would have had in a normal timeline .
-# mwe = He can bring Vriska back without having to deal with the causal consequences that would have had in a normal timeline .
+# mwe = He can bring Vriska back without having to deal_with the causal consequences that would have had in a normal timeline .
 1	He	he	PRON	PRP	_	3	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
 2	can	can	AUX	MD	_	3	aux	_	_	_	AUX	can	_	_	_	_	_	O-AUX
 3	bring	bring	VERB	VB	_	0	root	_	_	_	V	bring	_	_	_	_	_	O-V
@@ -13018,8 +13018,8 @@
 6	without	without	SCONJ	IN	_	7	mark	_	_	_	P	without	p.Manner	p.Manner	_	_	_	O-P-p.Manner
 7	having	have	VERB	VBG	_	3	advcl	_	_	_	V	have	_	_	_	_	_	O-V
 8	to	to	PART	TO	_	9	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-9	deal	deal	VERB	VB	_	7	xcomp	_	_	_	V	deal	_	_	_	_	_	O-V
-10	with	with	ADP	IN	_	13	case	_	_	_	P	with	_	_	_	_	_	O-P
+9	deal	deal	VERB	VB	_	7	xcomp	_	_	1:1	V	deal with	_	_	_	_	_	B-V
+10	with	with	ADP	IN	_	13	case	_	_	1:2	_	_	_	_	_	_	_	I_
 11	the	the	DET	DT	_	13	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 12	causal	causal	ADJ	JJ	_	13	amod	_	_	_	ADJ	causal	_	_	_	_	_	O-ADJ
 13	consequences	consequence	NOUN	NNS	_	9	obl	_	_	_	N	consequence	_	_	_	_	_	O-N
@@ -13035,7 +13035,7 @@
 
 # sent_id = spanish-c55fd024-99dd-8bfa-b3d7-77e95bc2b64f-06
 # text = Since LE s team did not know that , they planned as if the timeline had followed its prior course , and did not account for Vriska .
-# mwe = Since LE s team did not know that , they planned as_if the timeline had followed its prior course , and did not account for Vriska .
+# mwe = Since LE s team did not know that , they planned as_if the timeline had followed its prior course , and did not account_for Vriska .
 1	Since	since	SCONJ	IN	_	7	mark	_	_	_	P	since	p.Explanation	p.Explanation	_	_	_	O-P-p.Explanation
 2	LE	LE	PROPN	NNP	_	4	nmod:poss	_	_	_	N	LE	_	_	_	_	_	O-N
 3	s	's	PART	POS	_	2	case	_	_	_	POSS	's	p.Org	p.Gestalt	_	_	_	O-POSS-p.Org|p.Gestalt
@@ -13060,8 +13060,8 @@
 22	and	and	CCONJ	CC	_	25	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
 23	did	do	AUX	VBD	_	25	aux	_	_	_	AUX	do	_	_	_	_	_	O-AUX
 24	not	not	PART	RB	_	25	advmod	_	_	_	ADV	not	_	_	_	_	_	O-ADV
-25	account	account	VERB	VB	_	17	conj	_	_	_	V	account	_	_	_	_	_	O-V
-26	for	for	ADP	IN	_	27	case	_	_	_	P	for	_	_	_	_	_	O-P
+25	account	account	VERB	VB	_	17	conj	_	_	2:1	V	account for	_	_	_	_	_	B-V
+26	for	for	ADP	IN	_	27	case	_	_	2:2	_	_	_	_	_	_	_	I_
 27	Vriska	Vriska	PROPN	NNP	_	25	obl	_	_	_	N	Vriska	_	_	_	_	_	O-N
 28	.	.	PUNCT	.	_	11	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
@@ -13337,7 +13337,7 @@
 17	winston	winston	NOUN	NN	_	18	compound	_	_	_	N	winston	_	_	_	_	_	O-N
 18	shield	shield	NOUN	NN	_	15	conj	_	_	_	N	shield	_	_	_	_	_	O-N
 19	being	be	AUX	VBG	_	24	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-20	up	up	ADP	RP	_	24	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+20	up	up	ADV	RB	_	24	compound:prt	_	_	_	ADV	up	_	_	_	_	_	O-ADV
 21	all	all	DET	PDT	_	23	det:predet	_	_	_	DET	all	_	_	_	_	_	O-DET
 22	the	the	DET	DT	_	23	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 23	time	time	NOUN	NN	_	24	nsubj	_	_	_	N	time	_	_	_	_	_	O-N
@@ -13353,11 +13353,11 @@
 
 # sent_id = french-d3f21dcc-2be8-8b46-75fa-6dd891fde85c-03
 # text = So you end up in a situation where you want to kill their Zarya but ca n't because Winston s shield is on her or she s getting ressurected at the instant she dies .
-# mwe = So you end up in a situation where you want to kill their Zarya but ca n't because Winston s shield is on her or she s getting ressurected at the instant she dies .
+# mwe = So you end_up in a situation where you want to kill their Zarya but ca n't because Winston s shield is on her or she s getting ressurected at the instant she dies .
 1	So	so	ADV	RB	_	3	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
 2	you	you	PRON	PRP	_	3	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
-3	end	end	VERB	VBP	_	0	root	_	_	_	V	end	_	_	_	_	_	O-V
-4	up	up	ADP	RP	_	3	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+3	end	end	VERB	VBP	_	0	root	_	_	1:1	V	end up	_	_	_	_	_	B-V
+4	up	up	ADP	RP	_	3	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 5	in	in	ADP	IN	_	7	case	_	_	_	P	in	p.Circumstance	p.Locus	_	_	_	O-P-p.Circumstance|p.Locus
 6	a	a	DET	DT	_	7	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 7	situation	situation	NOUN	NN	_	3	obl	_	_	_	N	situation	_	_	_	_	_	O-N
@@ -13584,7 +13584,7 @@
 
 # sent_id = english-65ff6adc-41ae-f3f7-0010-98240a614be3-07
 # text = My boss invited me around to his place for Easter Brunch ( something that is quite a tradition here ) , and even sorted me out with a flat .
-# mwe = My boss invited me around to his place for Easter Brunch ( something that is quite a tradition here ) , and even sorted me out with a flat .
+# mwe = My boss invited me around to his place for Easter Brunch ( something that is quite a tradition here ) , and even sorted_ me _out with a flat .
 1	My	my	PRON	PRP$	_	2	nmod:poss	_	_	_	PRON.POSS	my	p.SocialRel	p.Gestalt	_	_	_	O-PRON.POSS-p.SocialRel|p.Gestalt
 2	boss	boss	NOUN	NN	_	3	nsubj	_	_	_	N	boss	_	_	_	_	_	O-N
 3	invited	invite	VERB	VBD	_	0	root	_	_	_	V	invite	_	_	_	_	_	O-V
@@ -13608,9 +13608,9 @@
 21	,	,	PUNCT	,	_	24	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 22	and	and	CCONJ	CC	_	24	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
 23	even	even	ADV	RB	_	24	advmod	_	_	_	ADV	even	_	_	_	_	_	O-ADV
-24	sorted	sort	VERB	VBD	_	3	conj	_	_	_	V	sort	_	_	_	_	_	O-V
-25	me	I	PRON	PRP	_	24	obj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
-26	out	out	ADP	RP	_	24	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+24	sorted	sort	VERB	VBD	_	3	conj	_	_	1:1	V	sort out	_	_	_	_	_	B-V
+25	me	I	PRON	PRP	_	24	obj	_	_	_	PRON	I	_	_	_	_	_	o-PRON
+26	out	out	ADP	RP	_	24	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 27	with	with	ADP	IN	_	29	case	_	_	_	P	with	p.Topic	p.Topic	_	_	_	O-P-p.Topic
 28	a	a	DET	DT	_	29	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 29	flat	flat	NOUN	NN	_	24	obl	_	_	_	N	flat	_	_	_	_	_	O-N
@@ -13895,9 +13895,9 @@
 
 # sent_id = french-1d3b993f-7949-0eab-7f1a-355e526eb523-02
 # text = Woke up with a bad hangover on Saturday morning , had to throw up .
-# mwe = Woke up with a bad hangover on Saturday morning , had to throw up .
-1	Woke	wake	VERB	VBD	_	0	root	_	_	_	V	wake	_	_	_	_	_	O-V
-2	up	up	ADP	RP	_	1	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+# mwe = Woke_up with a bad hangover on Saturday morning , had to throw_up .
+1	Woke	wake	VERB	VBD	_	0	root	_	_	1:1	V	wake up	_	_	_	_	_	B-V
+2	up	up	ADP	RP	_	1	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 3	with	with	ADP	IN	_	6	case	_	_	_	P	with	p.Circumstance	p.Circumstance	_	_	_	O-P-p.Circumstance
 4	a	a	DET	DT	_	6	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 5	bad	bad	ADJ	JJ	_	6	amod	_	_	_	ADJ	bad	_	_	_	_	_	O-ADJ
@@ -13908,13 +13908,13 @@
 10	,	,	PUNCT	,	_	11	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 11	had	have	VERB	VBD	_	1	parataxis	_	_	_	V	have	_	_	_	_	_	O-V
 12	to	to	PART	TO	_	13	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-13	throw	throw	VERB	VB	_	11	xcomp	_	_	_	V	throw	_	_	_	_	_	O-V
-14	up	up	ADP	RP	_	13	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+13	throw	throw	VERB	VB	_	11	xcomp	_	_	2:1	V	throw up	_	_	_	_	_	B-V
+14	up	up	ADP	RP	_	13	compound:prt	_	_	2:2	_	_	_	_	_	_	_	I_
 15	.	.	PUNCT	.	_	1	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = french-1d3b993f-7949-0eab-7f1a-355e526eb523-03
 # text = I go out with my friends once or twice a week , I d say we end up drunk once or twice a month .
-# mwe = I go out with my friends once or twice a week , I d say we end up drunk once or twice a month .
+# mwe = I go out with my friends once or twice a week , I d say we end_up drunk once or twice a month .
 1	I	I	PRON	PRP	_	2	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 2	go	go	VERB	VBP	_	0	root	_	_	_	V	go	_	_	_	_	_	O-V
 3	out	out	ADV	RB	_	2	advmod	_	_	_	ADV	out	_	_	_	_	_	O-ADV
@@ -13931,8 +13931,8 @@
 14	d	would	AUX	MD	_	15	aux	_	_	_	AUX	would	_	_	_	_	_	O-AUX
 15	say	say	VERB	VB	_	2	parataxis	_	_	_	V	say	_	_	_	_	_	O-V
 16	we	we	PRON	PRP	_	17	nsubj	_	_	_	PRON	we	_	_	_	_	_	O-PRON
-17	end	end	VERB	VBP	_	15	ccomp	_	_	_	V	end	_	_	_	_	_	O-V
-18	up	up	ADP	RP	_	17	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+17	end	end	VERB	VBP	_	15	ccomp	_	_	1:1	V	end up	_	_	_	_	_	B-V
+18	up	up	ADP	RP	_	17	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 19	drunk	drunk	ADJ	JJ	_	17	xcomp	_	_	_	ADJ	drunk	_	_	_	_	_	O-ADJ
 20	once	once	ADV	RB	_	17	advmod	_	_	_	ADV	once	_	_	_	_	_	O-ADV
 21	or	or	CCONJ	CC	_	22	cc	_	_	_	CCONJ	or	_	_	_	_	_	O-CCONJ
@@ -13943,7 +13943,7 @@
 
 # sent_id = french-1d3b993f-7949-0eab-7f1a-355e526eb523-04
 # text = It used to be every week when we were in High School and University , but now we re all around 25 so we took it down a notch or two over the years .
-# mwe = It used to be every week when we were in High School and University , but now we re all around 25 so we took it down a notch or two over_the_years .
+# mwe = It used to be every week when we were in High School and University , but now we re all around 25 so we took_ it _down a notch or two over_the_years .
 1	It	it	PRON	PRP	_	2	nsubj	_	_	_	PRON	it	_	_	_	_	_	O-PRON
 2	used	use	VERB	VBD	_	0	root	_	_	_	V	use	_	_	_	_	_	O-V
 3	to	to	PART	TO	_	6	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
@@ -13968,16 +13968,16 @@
 22	25	25	NUM	CD	_	2	conj	_	_	_	NUM	25	_	_	_	_	_	O-NUM
 23	so	so	ADV	RB	_	25	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
 24	we	we	PRON	PRP	_	25	nsubj	_	_	_	PRON	we	_	_	_	_	_	O-PRON
-25	took	take	VERB	VBD	_	2	conj	_	_	_	V	take	_	_	_	_	_	O-V
-26	it	it	PRON	PRP	_	25	obj	_	_	_	PRON	it	_	_	_	_	_	O-PRON
-27	down	down	ADP	RP	_	25	compound:prt	_	_	_	P	down	_	_	_	_	_	O-P
+25	took	take	VERB	VBD	_	2	conj	_	_	1:1	V	take down	_	_	_	_	_	B-V
+26	it	it	PRON	PRP	_	25	obj	_	_	_	PRON	it	_	_	_	_	_	o-PRON
+27	down	down	ADP	RP	_	25	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 28	a	a	DET	DT	_	29	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 29	notch	notch	NOUN	NN	_	25	obl:npmod	_	_	_	N	notch	_	_	_	_	_	O-N
 30	or	or	CCONJ	CC	_	31	cc	_	_	_	CCONJ	or	_	_	_	_	_	O-CCONJ
 31	two	two	NUM	CD	_	29	nummod	_	_	_	NUM	two	_	_	_	_	_	O-NUM
-32	over	over	ADP	IN	_	34	case	_	_	1:1	PP	over the year	p.Duration	p.Duration	_	_	_	B-PP-p.Duration
-33	the	the	DET	DT	_	34	det	_	_	1:2	_	_	_	_	_	_	_	I_
-34	years	year	NOUN	NNS	_	25	obl	_	_	1:3	_	_	_	_	_	_	_	I_
+32	over	over	ADP	IN	_	34	case	_	_	2:1	PP	over the year	p.Duration	p.Duration	_	_	_	B-PP-p.Duration
+33	the	the	DET	DT	_	34	det	_	_	2:2	_	_	_	_	_	_	_	I_
+34	years	year	NOUN	NNS	_	25	obl	_	_	2:3	_	_	_	_	_	_	_	I_
 35	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-5d73b377-922e-ed65-0921-fa874e0abf27-01
@@ -14330,14 +14330,14 @@
 
 # sent_id = german-c85e348a-476c-52e4-b1b4-ff82e4a8836f-02
 # text = Also you can do pull - up variations or lat pulldowns etc .
-# mwe = Also you can do pull - up variations or lat pulldowns etc .
+# mwe = Also you can do pull_ - _up variations or lat pulldowns etc .
 1	Also	also	ADV	RB	_	4	advmod	_	_	_	ADV	also	_	_	_	_	_	O-ADV
 2	you	you	PRON	PRP	_	4	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
 3	can	can	AUX	MD	_	4	aux	_	_	_	AUX	can	_	_	_	_	_	O-AUX
 4	do	do	VERB	VB	_	0	root	_	_	_	V	do	_	_	_	_	_	O-V
-5	pull	pull	VERB	VB	_	8	compound	_	_	_	V	pull	_	_	_	_	_	O-V
-6	-	-	PUNCT	HYPH	_	5	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
-7	up	up	ADP	RP	_	5	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+5	pull	pull	VERB	VB	_	8	compound	_	_	1:1	V	pull up	_	_	_	_	_	B-V
+6	-	-	PUNCT	HYPH	_	5	punct	_	_	_	PUNCT	-	_	_	_	_	_	o-PUNCT
+7	up	up	ADP	RP	_	5	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 8	variations	variation	NOUN	NNS	_	4	obj	_	_	_	N	variation	_	_	_	_	_	O-N
 9	or	or	CCONJ	CC	_	11	cc	_	_	_	CCONJ	or	_	_	_	_	_	O-CCONJ
 10	lat	lat	NOUN	NN	_	11	compound	_	_	_	N	lat	_	_	_	_	_	O-N
@@ -14607,7 +14607,7 @@
 
 # sent_id = french-1959b9ef-58d0-7674-334d-e73d60c290d0-03
 # text = The current Persian regime sucks and is far worse , but I m simply pointing out that the US has a lot of responsibility for SAVAK .
-# mwe = The current Persian regime sucks and is far worse , but I m simply pointing out that the US has a lot of responsibility for SAVAK .
+# mwe = The current Persian regime sucks and is far worse , but I m simply pointing_out that the US has a lot of responsibility for SAVAK .
 1	The	the	DET	DT	_	4	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 2	current	current	ADJ	JJ	_	4	amod	_	_	_	ADJ	current	_	_	_	_	_	O-ADJ
 3	Persian	Persian	ADJ	JJ	_	4	amod	_	_	_	ADJ	Persian	_	_	_	_	_	O-ADJ
@@ -14622,8 +14622,8 @@
 12	I	I	PRON	PRP	_	15	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 13	m	be	AUX	VBP	_	15	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 14	simply	simply	ADV	RB	_	15	advmod	_	_	_	ADV	simply	_	_	_	_	_	O-ADV
-15	pointing	point	VERB	VBG	_	5	conj	_	_	_	V	point	_	_	_	_	_	O-V
-16	out	out	ADP	RP	_	15	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+15	pointing	point	VERB	VBG	_	5	conj	_	_	1:1	V	point out	_	_	_	_	_	B-V
+16	out	out	ADP	RP	_	15	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 17	that	that	SCONJ	IN	_	20	mark	_	_	_	SCONJ	that	_	_	_	_	_	O-SCONJ
 18	the	the	DET	DT	_	19	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 19	US	US	PROPN	NNP	_	20	nsubj	_	_	_	N	US	_	_	_	_	_	O-N
@@ -14742,7 +14742,7 @@
 
 # sent_id = english-00f24603-8295-1fe0-52c5-53b5d2f74429-03
 # text = To truly appreciate Fedor s flat gaze you have to know 1000 years of frigid Russian history forged out on the steppes and vast forests .
-# mwe = To truly appreciate Fedor s flat gaze you have to know 1000 years of frigid Russian history forged out on the steppes and vast forests .
+# mwe = To truly appreciate Fedor s flat gaze you have to know 1000 years of frigid Russian history forged_out on the steppes and vast forests .
 1	To	to	PART	TO	_	3	mark	_	_	_	INF.P	to	p.Purpose	p.Purpose	_	_	_	O-INF.P-p.Purpose
 2	truly	truly	ADV	RB	_	3	advmod	_	_	_	ADV	truly	_	_	_	_	_	O-ADV
 3	appreciate	appreciate	VERB	VB	_	9	advcl	_	_	_	V	appreciate	_	_	_	_	_	O-V
@@ -14760,8 +14760,8 @@
 15	frigid	frigid	ADJ	JJ	_	17	amod	_	_	_	ADJ	frigid	_	_	_	_	_	O-ADJ
 16	Russian	russian	ADJ	JJ	_	17	amod	_	_	_	ADJ	russian	_	_	_	_	_	O-ADJ
 17	history	history	NOUN	NN	_	13	nmod	_	_	_	N	history	_	_	_	_	_	O-N
-18	forged	forge	VERB	VBN	_	17	acl	_	_	_	V	forge	_	_	_	_	_	O-V
-19	out	out	ADP	RP	_	18	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+18	forged	forge	VERB	VBN	_	17	acl	_	_	1:1	V	forge out	_	_	_	_	_	B-V
+19	out	out	ADP	RP	_	18	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 20	on	on	ADP	IN	_	22	case	_	_	_	P	on	p.Locus	p.Locus	_	_	_	O-P-p.Locus
 21	the	the	DET	DT	_	22	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 22	steppes	steppe	NOUN	NNS	_	18	obl	_	_	_	N	steppe	_	_	_	_	_	O-N
@@ -15111,9 +15111,9 @@
 
 # sent_id = german-59d6c06d-9e5e-a86b-da7c-99fe3a770d14-03
 # text = Turns out my mom had fallen down the stairs .
-# mwe = Turns out my mom had fallen down the stairs .
-1	Turns	turn	VERB	VBZ	_	0	root	_	_	_	V	turn	_	_	_	_	_	O-V
-2	out	out	ADP	RP	_	1	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+# mwe = Turns_out my mom had fallen down the stairs .
+1	Turns	turn	VERB	VBZ	_	0	root	_	_	1:1	V	turn out	_	_	_	_	_	B-V
+2	out	out	ADP	RP	_	1	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 3	my	my	PRON	PRP$	_	4	nmod:poss	_	_	_	PRON.POSS	my	p.SocialRel	p.Gestalt	_	_	_	O-PRON.POSS-p.SocialRel|p.Gestalt
 4	mom	mom	NOUN	NN	_	6	nsubj	_	_	_	N	mom	_	_	_	_	_	O-N
 5	had	have	AUX	VBD	_	6	aux	_	_	_	AUX	have	_	_	_	_	_	O-AUX
@@ -15334,15 +15334,15 @@
 
 # sent_id = french-ceea590b-0537-3b76-385c-1b333ebebe3e-05
 # text = That s why I m not pointing out blink / tp / dagon effects .
-# mwe = That s why I m not pointing out blink / tp / dagon effects .
+# mwe = That s why I m not pointing_out blink / tp / dagon effects .
 1	That	that	PRON	DT	_	3	nsubj	_	_	_	PRON	that	_	_	_	_	_	O-PRON
 2	s	be	AUX	VBZ	_	3	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 3	why	why	ADV	WRB	_	0	root	_	_	_	ADV	why	_	_	_	_	_	O-ADV
 4	I	I	PRON	PRP	_	7	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 5	m	be	AUX	VBP	_	7	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 6	not	not	PART	RB	_	7	advmod	_	_	_	ADV	not	_	_	_	_	_	O-ADV
-7	pointing	point	VERB	VBG	_	3	acl:relcl	_	_	_	V	point	_	_	_	_	_	O-V
-8	out	out	ADP	RP	_	7	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+7	pointing	point	VERB	VBG	_	3	acl:relcl	_	_	1:1	V	point out	_	_	_	_	_	B-V
+8	out	out	ADP	RP	_	7	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 9	blink	blink	NOUN	NN	_	14	compound	_	_	_	N	blink	_	_	_	_	_	O-N
 10	/	/	PUNCT	,	_	11	punct	_	_	_	PUNCT	/	_	_	_	_	_	O-PUNCT
 11	tp	tp	NOUN	NN	_	9	conj	_	_	_	N	tp	_	_	_	_	_	O-N
@@ -15481,7 +15481,7 @@
 
 # sent_id = french-7e94f5ab-08e2-fad3-aeec-b544377054cf-03
 # text = We had a very nice time on map chat , dicking around , everybody speaking in a different language in each sentence , or even mixing up languages in same sentence .
-# mwe = We had a very nice time on map chat , dicking around , everybody speaking in a different language in each sentence , or even mixing up languages in same sentence .
+# mwe = We had a very nice time on map chat , dicking around , everybody speaking in a different language in each sentence , or even mixing_up languages in same sentence .
 1	We	we	PRON	PRP	_	2	nsubj	_	_	_	PRON	we	_	_	_	_	_	O-PRON
 2	had	have	VERB	VBD	_	0	root	_	_	_	V	have	_	_	_	_	_	O-V
 3	a	a	DET	DT	_	6	det	_	_	_	DET	a	_	_	_	_	_	O-DET
@@ -15507,8 +15507,8 @@
 23	,	,	PUNCT	,	_	26	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 24	or	or	CCONJ	CC	_	26	cc	_	_	_	CCONJ	or	_	_	_	_	_	O-CCONJ
 25	even	even	ADV	RB	_	26	advmod	_	_	_	ADV	even	_	_	_	_	_	O-ADV
-26	mixing	mixing	VERB	VBG	_	15	conj	_	_	_	V	mixing	_	_	_	_	_	O-V
-27	up	up	ADP	RP	_	26	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+26	mixing	mixing	VERB	VBG	_	15	conj	_	_	1:1	V	mixing up	_	_	_	_	_	B-V
+27	up	up	ADP	RP	_	26	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 28	languages	language	NOUN	NNS	_	26	obj	_	_	_	N	language	_	_	_	_	_	O-N
 29	in	in	ADP	IN	_	31	case	_	_	_	P	in	p.Locus	p.Locus	_	_	_	O-P-p.Locus
 30	same	same	ADJ	JJ	_	31	amod	_	_	_	ADJ	same	_	_	_	_	_	O-ADJ
@@ -16564,7 +16564,7 @@
 
 # sent_id = german-c2b1c26b-e814-7dc9-af47-9f2936631b3e-07
 # text = Our immediate task was to get rid of a power - armor wearing , female , Judge Dredd - like officer who was kicking down doors on the lower levels of a space station to check marriage certificates .
-# mwe = Our immediate task was to get_rid_of a power - armor wearing , female , Judge Dredd - like officer who was kicking down doors on the lower levels of a space station to check marriage certificates .
+# mwe = Our immediate task was to get_rid_of a power - armor wearing , female , Judge Dredd - like officer who was kicking_down doors on the lower levels of a space station to check marriage certificates .
 1	Our	we	PRON	PRP$	_	3	nmod:poss	_	_	_	PRON.POSS	we	p.Agent	p.Gestalt	_	_	_	O-PRON.POSS-p.Agent|p.Gestalt
 2	immediate	immediate	ADJ	JJ	_	3	amod	_	_	_	ADJ	immediate	_	_	_	_	_	O-ADJ
 3	task	task	NOUN	NN	_	4	nsubj	_	_	_	N	task	_	_	_	_	_	O-N
@@ -16588,8 +16588,8 @@
 21	officer	officer	NOUN	NN	_	7	obl	_	_	_	N	officer	_	_	_	_	_	O-N
 22	who	who	PRON	WP	_	24	nsubj	_	_	_	PRON	who	_	_	_	_	_	O-PRON
 23	was	be	AUX	VBD	_	24	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-24	kicking	kick	VERB	VBG	_	21	acl:relcl	_	_	_	V	kick	_	_	_	_	_	O-V
-25	down	down	ADP	RP	_	24	compound:prt	_	_	_	P	down	_	_	_	_	_	O-P
+24	kicking	kick	VERB	VBG	_	21	acl:relcl	_	_	2:1	V	kick down	_	_	_	_	_	B-V
+25	down	down	ADP	RP	_	24	compound:prt	_	_	2:2	_	_	_	_	_	_	_	I_
 26	doors	door	NOUN	NNS	_	24	obj	_	_	_	N	door	_	_	_	_	_	O-N
 27	on	on	ADP	IN	_	30	case	_	_	_	P	on	p.Locus	p.Locus	_	_	_	O-P-p.Locus
 28	the	the	DET	DT	_	30	det	_	_	_	DET	the	_	_	_	_	_	O-DET
@@ -16607,12 +16607,12 @@
 
 # sent_id = german-c2b1c26b-e814-7dc9-af47-9f2936631b3e-08
 # text = Neither of us holds up well in direct combat so we snuck into the officer s quarters and found the machine she uses to help her get out of her power armor .
-# mwe = Neither of us holds up well in direct combat so we snuck into the officer s quarters and found the machine she uses to help her get out_of her power armor .
+# mwe = Neither of us holds_up well in direct combat so we snuck into the officer s quarters and found the machine she uses to help her get out_of her power armor .
 1	Neither	neither	DET	DT	_	4	nsubj	_	_	_	DET	neither	_	_	_	_	_	O-DET
 2	of	of	ADP	IN	_	3	case	_	_	_	P	of	p.QuantityItem	p.Whole	_	_	_	O-P-p.QuantityItem|p.Whole
 3	us	we	PRON	PRP	_	1	nmod	_	_	_	PRON	we	_	_	_	_	_	O-PRON
-4	holds	hold	VERB	VBZ	_	0	root	_	_	_	V	hold	_	_	_	_	_	O-V
-5	up	up	ADP	RP	_	4	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+4	holds	hold	VERB	VBZ	_	0	root	_	_	1:1	V	hold up	_	_	_	_	_	B-V
+5	up	up	ADP	RP	_	4	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 6	well	well	ADV	RB	_	4	advmod	_	_	_	ADV	well	_	_	_	_	_	O-ADV
 7	in	in	ADP	IN	_	9	case	_	_	_	P	in	p.Circumstance	p.Circumstance	_	_	_	O-P-p.Circumstance
 8	direct	direct	ADJ	JJ	_	9	amod	_	_	_	ADJ	direct	_	_	_	_	_	O-ADJ
@@ -16635,8 +16635,8 @@
 25	help	help	VERB	VB	_	23	advcl	_	_	_	V	help	_	_	_	_	_	O-V
 26	her	she	PRON	PRP	_	25	obj	_	_	_	PRON	she	_	_	_	_	_	O-PRON
 27	get	get	VERB	VB	_	25	xcomp	_	_	_	V	get	_	_	_	_	_	O-V
-28	out	out	ADP	IN	_	32	case	_	_	1:1	P	out of	p.Source	p.Source	_	_	_	B-P-p.Source
-29	of	of	ADP	IN	_	32	case	_	_	1:2	_	_	_	_	_	_	_	I_
+28	out	out	ADP	IN	_	32	case	_	_	2:1	P	out of	p.Source	p.Source	_	_	_	B-P-p.Source
+29	of	of	ADP	IN	_	32	case	_	_	2:2	_	_	_	_	_	_	_	I_
 30	her	she	PRON	PRP$	_	32	nmod:poss	_	_	_	PRON.POSS	she	p.Gestalt	p.Gestalt	_	_	_	O-PRON.POSS-p.Gestalt
 31	power	power	NOUN	NN	_	32	compound	_	_	_	N	power	_	_	_	_	_	O-N
 32	armor	armor	NOUN	NN	_	27	obl	_	_	_	N	armor	_	_	_	_	_	O-N
@@ -17056,13 +17056,13 @@
 
 # sent_id = spanish-08682116-6861-d7f6-515f-0a4072b1a2f5-03
 # text = But I m not holding on to it .
-# mwe = But I m not holding on to it .
+# mwe = But I m not holding_on to it .
 1	But	but	CCONJ	CC	_	5	cc	_	_	_	CCONJ	but	_	_	_	_	_	O-CCONJ
 2	I	I	PRON	PRP	_	5	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 3	m	be	AUX	VBP	_	5	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 4	not	not	PART	RB	_	5	advmod	_	_	_	ADV	not	_	_	_	_	_	O-ADV
-5	holding	hold	VERB	VBG	_	0	root	_	_	_	V	hold	_	_	_	_	_	O-V
-6	on	on	ADP	RP	_	5	compound:prt	_	_	_	P	on	_	_	_	_	_	O-P
+5	holding	hold	VERB	VBG	_	0	root	_	_	1:1	V	hold on	_	_	_	_	_	B-V
+6	on	on	ADP	RP	_	5	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 7	to	to	ADP	IN	_	8	case	_	_	_	P	to	p.Theme	p.Theme	_	_	_	O-P-p.Theme
 8	it	it	PRON	PRP	_	5	obl	_	_	_	PRON	it	_	_	_	_	_	O-PRON
 9	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
@@ -17202,7 +17202,7 @@
 
 # sent_id = french-ee1b8cc4-7035-8a27-eba1-a9d3a61a59e3-03
 # text = And like others this show s stage is so familiar having grown up in the eighties ( and having been married to a Russian / Bulgarien makes it a recognisable environment
-# mwe = And like others this show s stage is so familiar having grown up in the eighties ( and having been married to a Russian / Bulgarien makes it a recognisable environment
+# mwe = And like others this show s stage is so familiar having grown_up in the eighties ( and having been married to a Russian / Bulgarien makes it a recognisable environment
 1	And	and	CCONJ	CC	_	10	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
 2	like	like	ADP	IN	_	3	case	_	_	_	P	like	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
 3	others	other	NOUN	NNS	_	10	obl	_	_	_	N	other	_	_	_	_	_	O-N
@@ -17214,8 +17214,8 @@
 9	so	so	ADV	RB	_	10	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
 10	familiar	familiar	ADJ	JJ	_	0	root	_	_	_	ADJ	familiar	_	_	_	_	_	O-ADJ
 11	having	have	AUX	VBG	_	12	aux	_	_	_	AUX	have	_	_	_	_	_	O-AUX
-12	grown	grow	VERB	VBN	_	10	advcl	_	_	_	V	grow	_	_	_	_	_	O-V
-13	up	up	ADP	RP	_	12	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+12	grown	grow	VERB	VBN	_	10	advcl	_	_	1:1	V	grow up	_	_	_	_	_	B-V
+13	up	up	ADP	RP	_	12	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 14	in	in	ADP	IN	_	16	case	_	_	_	P	in	p.Time	p.Time	_	_	_	O-P-p.Time
 15	the	the	DET	DT	_	16	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 16	eighties	eighty	NOUN	NNS	_	12	obl	_	_	_	N	eighty	_	_	_	_	_	O-N
@@ -17288,7 +17288,7 @@
 
 # sent_id = french-6e1fb6ad-cee9-a4fd-725a-9a5bf6a07500-01
 # text = Okay so can somebody from let s say the americans call the PUK officials , figure out what s going on , and if it s really them identify the culprits and punish / court martial them depending on their actions ?
-# mwe = Okay so can somebody from let s say the americans call the PUK officials , figure out what s going on , and if it s really them identify the culprits and punish / court martial them depending on their actions ?
+# mwe = Okay so can somebody from let s say the americans call the PUK officials , figure_out what s going_on , and if it s really them identify the culprits and punish / court martial them depending on their actions ?
 1	Okay	okay	INTJ	UH	_	16	discourse	_	_	_	INTJ	okay	_	_	_	_	_	O-INTJ
 2	so	so	ADV	RB	_	16	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
 3	can	can	AUX	MD	_	16	aux	_	_	_	AUX	can	_	_	_	_	_	O-AUX
@@ -17304,12 +17304,12 @@
 13	PUK	PUK	PROPN	NNP	_	14	compound	_	_	_	N	PUK	_	_	_	_	_	O-N
 14	officials	official	NOUN	NNS	_	11	obj	_	_	_	N	official	_	_	_	_	_	O-N
 15	,	,	PUNCT	,	_	16	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-16	figure	figure	VERB	VB	_	0	root	_	_	_	V	figure	_	_	_	_	_	O-V
-17	out	out	ADP	RP	_	16	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+16	figure	figure	VERB	VB	_	0	root	_	_	1:1	V	figure out	_	_	_	_	_	B-V
+17	out	out	ADP	RP	_	16	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 18	what	what	PRON	WP	_	20	nsubj	_	_	_	PRON	what	_	_	_	_	_	O-PRON
 19	s	be	AUX	VBZ	_	20	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-20	going	go	VERB	VBG	_	16	ccomp	_	_	_	V	go	_	_	_	_	_	O-V
-21	on	on	ADP	RP	_	20	compound:prt	_	_	_	P	on	_	_	_	_	_	O-P
+20	going	go	VERB	VBG	_	16	ccomp	_	_	2:1	V	go on	_	_	_	_	_	B-V
+21	on	on	ADP	RP	_	20	compound:prt	_	_	2:2	_	_	_	_	_	_	_	I_
 22	,	,	PUNCT	,	_	29	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 23	and	and	CCONJ	CC	_	29	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
 24	if	if	SCONJ	IN	_	29	mark	_	_	_	SCONJ	if	_	_	_	_	_	O-SCONJ
@@ -17829,7 +17829,7 @@
 
 # sent_id = german-2b68abef-41db-d351-83a0-614fb7222606-03
 # text = If churches , mosques and whatever else were 18 + places , we d have that thing sorted out in less than a generation .
-# mwe = If churches , mosques and whatever else were 18 + places , we d have that thing sorted out in less_than a generation .
+# mwe = If churches , mosques and whatever else were 18 + places , we d have that thing sorted_out in less_than a generation .
 1	If	if	SCONJ	IN	_	11	mark	_	_	_	SCONJ	if	_	_	_	_	_	O-SCONJ
 2	churches	church	NOUN	NNS	_	11	nsubj	_	_	_	N	church	_	_	_	_	_	O-N
 3	,	,	PUNCT	,	_	4	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
@@ -17847,11 +17847,11 @@
 15	have	have	VERB	VB	_	0	root	_	_	_	V	have	_	_	_	_	_	O-V
 16	that	that	DET	DT	_	17	det	_	_	_	DET	that	_	_	_	_	_	O-DET
 17	thing	thing	NOUN	NN	_	15	obj	_	_	_	N	thing	_	_	_	_	_	O-N
-18	sorted	sort	VERB	VBN	_	17	acl	_	_	_	V	sort	_	_	_	_	_	O-V
-19	out	out	ADP	RP	_	18	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+18	sorted	sort	VERB	VBN	_	17	acl	_	_	1:1	V	sort out	_	_	_	_	_	B-V
+19	out	out	ADP	RP	_	18	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 20	in	in	ADP	IN	_	24	case	_	_	_	P	in	p.Duration	p.Duration	_	_	_	O-P-p.Duration
-21	less	less	ADJ	JJR	_	24	advmod	_	_	1:1	P	less than	p.ComparisonRef	p.ComparisonRef	_	_	_	B-P-p.ComparisonRef
-22	than	than	ADP	IN	_	21	fixed	_	_	1:2	_	_	_	_	_	_	_	I_
+21	less	less	ADJ	JJR	_	24	advmod	_	_	2:1	P	less than	p.ComparisonRef	p.ComparisonRef	_	_	_	B-P-p.ComparisonRef
+22	than	than	ADP	IN	_	21	fixed	_	_	2:2	_	_	_	_	_	_	_	I_
 23	a	a	DET	DT	_	24	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 24	generation	generation	NOUN	NN	_	18	obl	_	_	_	N	generation	_	_	_	_	_	O-N
 25	.	.	PUNCT	.	_	15	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
@@ -18788,15 +18788,15 @@
 
 # sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-26
 # text = That s not telling all of them off ?
-# mwe = That s not telling all of them off ?
+# mwe = That s not telling_ all of them _off ?
 1	That	that	PRON	DT	_	4	nsubj	_	_	_	PRON	that	_	_	_	_	_	O-PRON
 2	s	be	AUX	VBZ	_	4	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 3	not	not	PART	RB	_	4	advmod	_	_	_	ADV	not	_	_	_	_	_	O-ADV
-4	telling	tell	VERB	VBG	_	0	root	_	_	_	V	tell	_	_	_	_	_	O-V
-5	all	all	DET	DT	_	4	obj	_	_	_	DET	all	_	_	_	_	_	O-DET
-6	of	of	ADP	IN	_	7	case	_	_	_	P	of	p.QuantityItem	p.QuantityItem	_	_	_	O-P-p.QuantityItem
-7	them	they	PRON	PRP	_	5	nmod	_	_	_	PRON	they	_	_	_	_	_	O-PRON
-8	off	off	ADP	RP	_	4	compound:prt	_	_	_	P	off	_	_	_	_	_	O-P
+4	telling	tell	VERB	VBG	_	0	root	_	_	1:1	V	tell off	_	_	_	_	_	B-V
+5	all	all	DET	DT	_	4	obj	_	_	_	DET	all	_	_	_	_	_	o-DET
+6	of	of	ADP	IN	_	7	case	_	_	_	P	of	p.QuantityItem	p.QuantityItem	_	_	_	o-P-p.QuantityItem
+7	them	they	PRON	PRP	_	5	nmod	_	_	_	PRON	they	_	_	_	_	_	o-PRON
+8	off	off	ADP	RP	_	4	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 9	?	?	PUNCT	.	_	4	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-27
@@ -19044,7 +19044,7 @@
 
 # sent_id = german-772644e7-a63c-8d6f-d1d9-7712f8b48223-01
 # text = Khaled is a living meme and Kanye is just drumming up controversy to promote his new record .
-# mwe = Khaled is a living meme and Kanye is just drumming up controversy to promote his new record .
+# mwe = Khaled is a living meme and Kanye is just drumming_up controversy to promote his new record .
 1	Khaled	Khaled	PROPN	NNP	_	5	nsubj	_	_	_	N	Khaled	_	_	_	_	_	O-N
 2	is	be	AUX	VBZ	_	5	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 3	a	a	DET	DT	_	5	det	_	_	_	DET	a	_	_	_	_	_	O-DET
@@ -19054,8 +19054,8 @@
 7	Kanye	Kanye	PROPN	NNP	_	10	nsubj	_	_	_	N	Kanye	_	_	_	_	_	O-N
 8	is	be	AUX	VBZ	_	10	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 9	just	just	ADV	RB	_	10	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
-10	drumming	drum	VERB	VBG	_	5	conj	_	_	_	V	drum	_	_	_	_	_	O-V
-11	up	up	ADP	RP	_	10	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+10	drumming	drum	VERB	VBG	_	5	conj	_	_	1:1	V	drum up	_	_	_	_	_	B-V
+11	up	up	ADP	RP	_	10	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 12	controversy	controversy	NOUN	NN	_	10	obj	_	_	_	N	controversy	_	_	_	_	_	O-N
 13	to	to	PART	TO	_	14	mark	_	_	_	INF.P	to	p.Purpose	p.Purpose	_	_	_	O-INF.P-p.Purpose
 14	promote	promote	VERB	VB	_	10	advcl	_	_	_	V	promote	_	_	_	_	_	O-V
@@ -19141,11 +19141,11 @@
 
 # sent_id = english-ec3aa314-da9b-b017-79c1-47c719a5711b-04
 # text = If people cluster up , its fucking useless .
-# mwe = If people cluster up , its fucking useless .
+# mwe = If people cluster_up , its fucking useless .
 1	If	if	SCONJ	IN	_	3	mark	_	_	_	SCONJ	if	_	_	_	_	_	O-SCONJ
 2	people	people	NOUN	NNS	_	3	nsubj	_	_	_	N	people	_	_	_	_	_	O-N
-3	cluster	cluster	VERB	VBP	_	8	advcl	_	_	_	V	cluster	_	_	_	_	_	O-V
-4	up	up	ADP	RP	_	3	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+3	cluster	cluster	VERB	VBP	_	8	advcl	_	_	1:1	V	cluster up	_	_	_	_	_	B-V
+4	up	up	ADP	RP	_	3	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 5	,	,	PUNCT	,	_	8	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 6	its	its	PRON	PRP$	_	7	nmod:poss	_	_	_	PRON	its	_	_	_	_	_	O-PRON
 7	fucking	fuck	NOUN	NN	_	8	nsubj	_	_	_	N	fuck	_	_	_	_	_	O-N
@@ -19682,13 +19682,13 @@
 
 # sent_id = german-77a70061-8eb3-2fc8-485c-111a02a9970d-02
 # text = I ve just about given up on my un- rivened Amprex .
-# mwe = I ve just_about given up on my un- rivened Amprex .
+# mwe = I ve just_about given_up on my un- rivened Amprex .
 1	I	I	PRON	PRP	_	5	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 2	ve	have	AUX	VBP	_	5	aux	_	_	_	AUX	have	_	_	_	_	_	O-AUX
 3	just	just	ADV	RB	_	5	advmod	_	_	1:1	PP	just about	p.Extent	p.Extent	_	_	_	B-PP-p.Extent
 4	about	about	ADV	RB	_	5	advmod	_	_	1:2	_	_	_	_	_	_	_	I_
-5	given	give	VERB	VBN	_	0	root	_	_	_	V	give	_	_	_	_	_	O-V
-6	up	up	ADP	RP	_	5	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+5	given	give	VERB	VBN	_	0	root	_	_	2:1	V	give up	_	_	_	_	_	B-V
+6	up	up	ADP	RP	_	5	compound:prt	_	_	2:2	_	_	_	_	_	_	_	I_
 7	on	on	ADP	IN	_	11	case	_	_	_	P	on	p.Topic	p.Topic	_	_	_	O-P-p.Topic
 8	my	my	PRON	PRP$	_	11	nmod:poss	_	_	_	PRON.POSS	my	p.Possessor	p.Possessor	_	_	_	O-PRON.POSS-p.Possessor
 9	un-	un-	ADJ	JJ	_	11	amod	_	_	_	ADJ	un-	_	_	_	_	_	O-ADJ
@@ -19875,7 +19875,7 @@
 
 # sent_id = german-a40837a9-f5ce-a353-e90e-2383743444ab-01
 # text = Yes there is because Dshield is intended tp help toplaners survive against autowin laners like Jayce or Kennen that just poke down 90 % of their matchups from lvl1 until the end of the laning phase .
-# mwe = Yes there is because Dshield is intended tp help toplaners survive against autowin laners like Jayce or Kennen that just poke down 90 % of their matchups from lvl1 until the end of the laning phase .
+# mwe = Yes there is because Dshield is intended tp help toplaners survive against autowin laners like Jayce or Kennen that just poke_down 90 % of their matchups from lvl1 until the end of the laning phase .
 1	Yes	yes	INTJ	UH	_	3	discourse	_	_	_	INTJ	yes	_	_	_	_	_	O-INTJ
 2	there	there	PRON	EX	_	3	expl	_	_	_	PRON	there	_	_	_	_	_	O-PRON
 3	is	be	VERB	VBZ	_	0	root	_	_	_	V	be	_	_	_	_	_	O-V
@@ -19896,8 +19896,8 @@
 18	Kennen	Kennen	PROPN	NNP	_	16	conj	_	_	_	N	Kennen	_	_	_	_	_	O-N
 19	that	that	PRON	WDT	_	21	nsubj	_	_	_	PRON	that	_	_	_	_	_	O-PRON
 20	just	just	ADV	RB	_	21	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
-21	poke	poke	VERB	VB	_	14	acl:relcl	_	_	_	V	poke	_	_	_	_	_	O-V
-22	down	down	ADP	RP	_	21	compound:prt	_	_	_	P	down	_	_	_	_	_	O-P
+21	poke	poke	VERB	VB	_	14	acl:relcl	_	_	1:1	V	poke down	_	_	_	_	_	B-V
+22	down	down	ADP	RP	_	21	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 23	90	90	NUM	CD	_	24	nummod	_	_	_	NUM	90	_	_	_	_	_	O-NUM
 24	%	%	SYM	NN	_	21	obj	_	_	_	SYM	%	_	_	_	_	_	O-SYM
 25	of	of	ADP	IN	_	27	case	_	_	_	P	of	p.QuantityItem	p.Whole	_	_	_	O-P-p.QuantityItem|p.Whole
@@ -20129,7 +20129,7 @@
 15	,	,	PUNCT	,	_	19	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 16	one	one	NUM	CD	_	19	nummod	_	_	_	NUM	one	_	_	_	_	_	O-NUM
 17	-	-	PUNCT	HYPH	_	16	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
-18	off	off	ADP	RP	_	16	compound	_	_	_	P	off	_	_	_	_	_	O-P
+18	off	off	ADV	RB	_	16	compound	_	_	_	ADV	off	_	_	_	_	_	O-ADV
 19	deals	deal	NOUN	NNS	_	11	obj	_	_	_	N	deal	_	_	_	_	_	O-N
 20	when	when	ADV	WRB	_	22	mark	_	_	_	ADV	when	_	_	_	_	_	O-ADV
 21	you	you	PRON	PRP	_	22	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
@@ -20376,7 +20376,7 @@
 
 # sent_id = french-9177206d-fbce-c1bd-c86d-dbce4559eb49-03
 # text = It s hard to tell what s really going on with just that ...
-# mwe = It s hard to tell what s really going on with just that ...
+# mwe = It s hard to tell what s really going_on with just that ...
 1	It	it	PRON	PRP	_	3	expl	_	_	_	PRON	it	_	_	_	_	_	O-PRON
 2	s	be	AUX	VBZ	_	3	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 3	hard	hard	ADJ	JJ	_	0	root	_	_	_	ADJ	hard	_	_	_	_	_	O-ADJ
@@ -20385,8 +20385,8 @@
 6	what	what	PRON	WP	_	9	obj	_	_	_	PRON	what	_	_	_	_	_	O-PRON
 7	s	be	AUX	VBZ	_	9	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 8	really	really	ADV	RB	_	9	advmod	_	_	_	ADV	really	_	_	_	_	_	O-ADV
-9	going	go	VERB	VBG	_	5	ccomp	_	_	_	V	go	_	_	_	_	_	O-V
-10	on	on	ADP	RP	_	9	compound:prt	_	_	_	P	on	_	_	_	_	_	O-P
+9	going	go	VERB	VBG	_	5	ccomp	_	_	1:1	V	go on	_	_	_	_	_	B-V
+10	on	on	ADP	RP	_	9	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 11	with	with	ADP	IN	_	13	case	_	_	_	P	with	p.Circumstance	p.Circumstance	_	_	_	O-P-p.Circumstance
 12	just	just	ADV	RB	_	13	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
 13	that	that	PRON	DT	_	9	obl	_	_	_	PRON	that	_	_	_	_	_	O-PRON
@@ -20757,7 +20757,7 @@
 
 # sent_id = german-e6944862-a347-413d-7809-aab248df0a5a-01
 # text = Guys i just wanted to say that down - voting every comment that has to do with her age because you think that the age - difference is too big kinda misses the goal - that s for comments that are not helping / off topic , not for things that you dot agree with .
-# mwe = Guys i just wanted to say that down - voting every comment that has to do with her age because you think that the age - difference is too big kinda misses the goal - that s for comments that are not helping / off topic , not for things that you dot agree with .
+# mwe = Guys i just wanted to say that down - voting every comment that has to do with her age because you think that the age - difference is too big kinda misses the goal - that s for comments that are not helping_ / _off topic , not for things that you dot agree with .
 1	Guys	guy	NOUN	NNS	_	4	nsubj	_	_	_	N	guy	_	_	_	_	_	O-N
 2	i	i	PRON	PRP	_	4	nsubj	_	_	_	PRON	i	_	_	_	_	_	O-PRON
 3	just	just	ADV	RB	_	4	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
@@ -20765,7 +20765,7 @@
 5	to	to	PART	TO	_	6	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
 6	say	say	VERB	VB	_	4	xcomp	_	_	_	V	say	_	_	_	_	_	O-V
 7	that	that	PRON	DT	_	6	obj	_	_	_	PRON	that	_	_	_	_	_	O-PRON
-8	down	down	ADP	RP	_	10	compound:prt	_	_	_	P	down	_	_	_	_	_	O-P
+8	down	down	ADV	RB	_	10	compound:prt	_	_	_	ADV	down	_	_	_	_	_	O-ADV
 9	-	-	PUNCT	HYPH	_	10	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
 10	voting	voting	VERB	VBG	_	6	advcl	_	_	_	V	voting	_	_	_	_	_	O-V
 11	every	every	DET	DT	_	12	det	_	_	_	DET	every	_	_	_	_	_	O-DET
@@ -20800,9 +20800,9 @@
 40	that	that	PRON	WDT	_	43	nsubj	_	_	_	PRON	that	_	_	_	_	_	O-PRON
 41	are	be	AUX	VBP	_	43	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 42	not	not	PART	RB	_	43	advmod	_	_	_	ADV	not	_	_	_	_	_	O-ADV
-43	helping	help	VERB	VBG	_	39	acl:relcl	_	_	_	V	help	_	_	_	_	_	O-V
-44	/	/	PUNCT	,	_	45	cc	_	_	_	PUNCT	/	_	_	_	_	_	O-PUNCT
-45	off	off	ADP	RP	_	43	compound:prt	_	_	_	P	off	_	_	_	_	_	O-P
+43	helping	help	VERB	VBG	_	39	acl:relcl	_	_	1:1	V	help off	_	_	_	_	_	B-V
+44	/	/	PUNCT	,	_	45	cc	_	_	_	PUNCT	/	_	_	_	_	_	o-PUNCT
+45	off	off	ADP	RP	_	43	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 46	topic	topic	NOUN	NN	_	43	obj	_	_	_	N	topic	_	_	_	_	_	O-N
 47	,	,	PUNCT	,	_	50	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 48	not	not	ADV	RB	_	50	advmod	_	_	_	ADV	not	_	_	_	_	_	O-ADV
@@ -21037,7 +21037,7 @@
 16	kid	kid	NOUN	NN	_	14	obj	_	_	_	N	kid	_	_	_	_	_	O-N
 17	with	with	ADP	IN	_	18	case	_	_	_	P	with	p.Characteristic	p.Characteristic	_	_	_	O-P-p.Characteristic
 18	Down	Down	PROPN	NNP	_	16	nmod	_	_	1:1	N	Down 's	_	_	_	_	_	B-N
-19	s	's	PART	POS	_	18	case	_	_	1:2	_	_	_	_	_	_	_	I_
+19	s	's	PART	POS	_	18	case	_	_	1:2	_	_	`$	`$	_	_	_	I_
 20	.	.	PUNCT	.	_	4	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = french-2dd5ad98-475c-61b1-af3e-f55c43ecf2b9-02
@@ -21247,16 +21247,16 @@
 
 # sent_id = english-0cbdc014-dbed-b42e-6da3-13e783e9973b-02
 # text = My group has a tendency to go all out on their characters .
-# mwe = My group has a tendency to go all out on their characters .
+# mwe = My group has a tendency to go_ all _out on their characters .
 1	My	my	PRON	PRP$	_	2	nmod:poss	_	_	_	PRON.POSS	my	p.OrgMember	p.Gestalt	_	_	_	O-PRON.POSS-p.OrgMember|p.Gestalt
 2	group	group	NOUN	NN	_	3	nsubj	_	_	_	N	group	_	_	_	_	_	O-N
 3	has	have	VERB	VBZ	_	0	root	_	_	_	V	have	_	_	_	_	_	O-V
 4	a	a	DET	DT	_	5	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 5	tendency	tendency	NOUN	NN	_	3	obj	_	_	_	N	tendency	_	_	_	_	_	O-N
 6	to	to	PART	TO	_	7	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-7	go	go	VERB	VB	_	5	acl	_	_	_	V	go	_	_	_	_	_	O-V
-8	all	all	ADV	RB	_	7	advmod	_	_	_	ADV	all	_	_	_	_	_	O-ADV
-9	out	out	ADP	RP	_	7	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+7	go	go	VERB	VB	_	5	acl	_	_	1:1	V	go out	_	_	_	_	_	B-V
+8	all	all	ADV	RB	_	7	advmod	_	_	_	ADV	all	_	_	_	_	_	o-ADV
+9	out	out	ADP	RP	_	7	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 10	on	on	ADP	IN	_	12	case	_	_	_	P	on	p.Topic	p.Topic	_	_	_	O-P-p.Topic
 11	their	they	PRON	PRP$	_	12	nmod:poss	_	_	_	PRON.POSS	they	p.Originator	p.Gestalt	_	_	_	O-PRON.POSS-p.Originator|p.Gestalt
 12	characters	character	NOUN	NNS	_	7	obl	_	_	_	N	character	_	_	_	_	_	O-N
@@ -21503,14 +21503,14 @@
 
 # sent_id = english-0cbdc014-dbed-b42e-6da3-13e783e9973b-13
 # text = Unfortunately , that particular campaign broke up after a while , so Thuror did n't get to see much adventure .
-# mwe = Unfortunately , that particular campaign broke up after a while , so Thuror did n't get to see much adventure .
+# mwe = Unfortunately , that particular campaign broke_up after a while , so Thuror did n't get to see much adventure .
 1	Unfortunately	unfortunately	ADV	RB	_	6	advmod	_	_	_	ADV	unfortunately	_	_	_	_	_	O-ADV
 2	,	,	PUNCT	,	_	6	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 3	that	that	DET	DT	_	5	det	_	_	_	DET	that	_	_	_	_	_	O-DET
 4	particular	particular	ADJ	JJ	_	5	amod	_	_	_	ADJ	particular	_	_	_	_	_	O-ADJ
 5	campaign	campaign	NOUN	NN	_	6	nsubj	_	_	_	N	campaign	_	_	_	_	_	O-N
-6	broke	break	VERB	VBD	_	0	root	_	_	_	V	break	_	_	_	_	_	O-V
-7	up	up	ADP	RP	_	6	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+6	broke	break	VERB	VBD	_	0	root	_	_	1:1	V	break up	_	_	_	_	_	B-V
+7	up	up	ADP	RP	_	6	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 8	after	after	ADP	IN	_	10	case	_	_	_	P	after	p.Time	p.Time	_	_	_	O-P-p.Time
 9	a	a	DET	DT	_	10	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 10	while	while	NOUN	NN	_	6	obl	_	_	_	N	while	_	_	_	_	_	O-N
@@ -21706,7 +21706,7 @@
 
 # sent_id = spanish-6000656e-f9f5-90fc-48ca-c843b34efc65-05
 # text = Though I usually more than double and end up putting like 4 or 5 cloves in .
-# mwe = Though I usually more than double and end up putting like 4 or 5 cloves in .
+# mwe = Though I usually more than double and end_up putting like 4 or 5 cloves in .
 1	Though	though	SCONJ	IN	_	4	mark	_	_	_	SCONJ	though	_	_	_	_	_	O-SCONJ
 2	I	I	PRON	PRP	_	4	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 3	usually	usually	ADV	RB	_	4	advmod	_	_	_	ADV	usually	_	_	_	_	_	O-ADV
@@ -21714,8 +21714,8 @@
 5	than	than	ADP	IN	_	6	case	_	_	_	P	than	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
 6	double	double	ADJ	JJ	_	4	obl	_	_	_	ADJ	double	_	_	_	_	_	O-ADJ
 7	and	and	CCONJ	CC	_	8	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-8	end	end	VERB	VBP	_	4	conj	_	_	_	V	end	_	_	_	_	_	O-V
-9	up	up	ADP	RP	_	8	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+8	end	end	VERB	VBP	_	4	conj	_	_	1:1	V	end up	_	_	_	_	_	B-V
+9	up	up	ADP	RP	_	8	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 10	putting	put	VERB	VBG	_	8	xcomp	_	_	_	V	put	_	_	_	_	_	O-V
 11	like	like	ADP	IN	_	15	case	_	_	_	P	like	p.Approximator	p.Approximator	_	_	_	O-P-p.Approximator
 12	4	4	NUM	CD	_	15	nummod	_	_	_	NUM	4	_	_	_	_	_	O-NUM
@@ -22405,7 +22405,7 @@
 
 # sent_id = german-86e7b795-7610-2737-745b-9fc4193c0361-04
 # text = So here s the whole process , from having cash at hand to paying : Do you honestly believe that most people need a new debit card to set up a paypal account ?
-# mwe = So here s the whole process , from having cash at_hand to paying : Do you honestly believe that most people need a new debit card to set up a paypal account ?
+# mwe = So here s the whole process , from having cash at_hand to paying : Do you honestly believe that most people need a new debit card to set_up a paypal account ?
 1	So	so	ADV	RB	_	2	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
 2	here	here	ADV	RB	_	0	root	_	_	_	ADV	here	_	_	_	_	_	O-ADV
 3	s	be	AUX	VBZ	_	2	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
@@ -22434,8 +22434,8 @@
 26	debit	debit	NOUN	NN	_	27	compound	_	_	_	N	debit	_	_	_	_	_	O-N
 27	card	card	NOUN	NN	_	23	obj	_	_	_	N	card	_	_	_	_	_	O-N
 28	to	to	PART	TO	_	29	mark	_	_	_	INF.P	to	p.Purpose	p.Purpose	_	_	_	O-INF.P-p.Purpose
-29	set	set	VERB	VB	_	23	advcl	_	_	_	V	set	_	_	_	_	_	O-V
-30	up	up	ADP	RP	_	29	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+29	set	set	VERB	VB	_	23	advcl	_	_	2:1	V	set up	_	_	_	_	_	B-V
+30	up	up	ADP	RP	_	29	compound:prt	_	_	2:2	_	_	_	_	_	_	_	I_
 31	a	a	DET	DT	_	33	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 32	paypal	paypal	NOUN	NN	_	33	compound	_	_	_	N	paypal	_	_	_	_	_	O-N
 33	account	account	NOUN	NN	_	29	obj	_	_	_	N	account	_	_	_	_	_	O-N
@@ -22594,7 +22594,7 @@
 
 # sent_id = german-86e7b795-7610-2737-745b-9fc4193c0361-13
 # text = There s magnitudes more people who have that already than would ever consider setting up something obscure like a Bitcoin wallet .
-# mwe = There s magnitudes more people who have that already than would ever consider setting up something obscure like a Bitcoin wallet .
+# mwe = There s magnitudes more people who have that already than would ever consider setting_up something obscure like a Bitcoin wallet .
 1	There	there	PRON	EX	_	2	expl	_	_	_	PRON	there	_	_	_	_	_	O-PRON
 2	s	be	VERB	VBZ	_	0	root	_	_	_	V	be	_	_	_	_	_	O-V
 3	magnitudes	magnitude	NOUN	NNS	_	2	nsubj	_	_	_	N	magnitude	_	_	_	_	_	O-N
@@ -22608,8 +22608,8 @@
 11	would	would	AUX	MD	_	13	aux	_	_	_	AUX	would	_	_	_	_	_	O-AUX
 12	ever	ever	ADV	RB	_	13	advmod	_	_	_	ADV	ever	_	_	_	_	_	O-ADV
 13	consider	consider	VERB	VB	_	7	advcl	_	_	_	V	consider	_	_	_	_	_	O-V
-14	setting	set	VERB	VBG	_	13	xcomp	_	_	_	V	set	_	_	_	_	_	O-V
-15	up	up	ADP	RP	_	14	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+14	setting	set	VERB	VBG	_	13	xcomp	_	_	1:1	V	set up	_	_	_	_	_	B-V
+15	up	up	ADP	RP	_	14	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 16	something	something	PRON	NN	_	14	obj	_	_	_	PRON	something	_	_	_	_	_	O-PRON
 17	obscure	obscure	ADJ	JJ	_	16	amod	_	_	_	ADJ	obscure	_	_	_	_	_	O-ADJ
 18	like	like	ADP	IN	_	21	case	_	_	_	P	like	p.PartPortion	p.ComparisonRef	_	_	_	O-P-p.PartPortion|p.ComparisonRef
@@ -23549,7 +23549,7 @@
 
 # sent_id = french-a9ec0806-705f-ca16-1622-bd795fec898f-05
 # text = Standard American English is the most widely / easily understood because Americans make up the largest percentage of English speakers and because American media is the most prevalent .
-# mwe = Standard American English is the most widely / easily understood because Americans make up the largest percentage of English speakers and because American media is the most prevalent .
+# mwe = Standard American English is the most widely / easily understood because Americans make_up the largest percentage of English speakers and because American media is the most prevalent .
 1	Standard	Standard	ADJ	JJ	_	3	amod	_	_	_	ADJ	Standard	_	_	_	_	_	O-ADJ
 2	American	American	PROPN	NNP	_	3	compound	_	_	_	N	American	_	_	_	_	_	O-N
 3	English	English	PROPN	NNP	_	10	nsubj:pass	_	_	_	N	English	_	_	_	_	_	O-N
@@ -23562,8 +23562,8 @@
 10	understood	understand	VERB	VBN	_	0	root	_	_	_	V	understand	_	_	_	_	_	O-V
 11	because	because	SCONJ	IN	_	13	mark	_	_	_	SCONJ	because	_	_	_	_	_	O-SCONJ
 12	Americans	Americans	PROPN	NNPS	_	13	nsubj	_	_	_	N	Americans	_	_	_	_	_	O-N
-13	make	make	VERB	VBP	_	10	advcl	_	_	_	V	make	_	_	_	_	_	O-V
-14	up	up	ADP	RP	_	13	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+13	make	make	VERB	VBP	_	10	advcl	_	_	1:1	V	make up	_	_	_	_	_	B-V
+14	up	up	ADP	RP	_	13	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 15	the	the	DET	DT	_	17	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 16	largest	largest	ADJ	JJS	_	17	amod	_	_	_	ADJ	largest	_	_	_	_	_	O-ADJ
 17	percentage	percentage	NOUN	NN	_	13	obj	_	_	_	N	percentage	_	_	_	_	_	O-N
@@ -24687,15 +24687,15 @@
 
 # sent_id = english-d960af85-c9df-7e44-4bdf-fa7d9f3dd894-06
 # text = lemme know if you wan na hang out with me at some point .
-# mwe = lemme know if you wan na hang out with me at some point .
+# mwe = lemme know if you wan na hang_out with me at some point .
 1	lemme	lemme	INTJ	UH	_	2	discourse	_	_	_	INTJ	lemme	_	_	_	_	_	O-INTJ
 2	know	know	VERB	VB	_	0	root	_	_	_	V	know	_	_	_	_	_	O-V
 3	if	if	SCONJ	IN	_	5	mark	_	_	_	SCONJ	if	_	_	_	_	_	O-SCONJ
 4	you	you	PRON	PRP	_	5	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
 5	wan	want	VERB	VBP	_	2	advcl	_	_	_	V	want	_	_	_	_	_	O-V
 6	na	to	PART	TO	_	7	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-7	hang	hang	VERB	VB	_	5	xcomp	_	_	_	V	hang	_	_	_	_	_	O-V
-8	out	out	ADP	RP	_	7	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+7	hang	hang	VERB	VB	_	5	xcomp	_	_	1:1	V	hang out	_	_	_	_	_	B-V
+8	out	out	ADP	RP	_	7	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 9	with	with	ADP	IN	_	10	case	_	_	_	P	with	p.Agent	p.Ancillary	_	_	_	O-P-p.Agent|p.Ancillary
 10	me	I	PRON	PRP	_	7	obl	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 11	at	at	ADP	IN	_	13	case	_	_	_	P	at	p.Time	p.Time	_	_	_	O-P-p.Time
@@ -25356,7 +25356,7 @@
 
 # sent_id = english-627b9de7-9ae4-45e0-8b1d-c2f8cbf1f93c-01
 # text = Naw man I think you missed my point - we were left off yet another list .
-# mwe = Naw man I think you missed my point - we were left off yet another list .
+# mwe = Naw man I think you missed my point - we were left_off yet another list .
 1	Naw	naw	INTJ	UH	_	4	discourse	_	_	_	INTJ	naw	_	_	_	_	_	O-INTJ
 2	man	man	NOUN	NN	_	4	vocative	_	_	_	N	man	_	_	_	_	_	O-N
 3	I	I	PRON	PRP	_	4	nsubj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
@@ -25368,8 +25368,8 @@
 9	-	-	PUNCT	,	_	4	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
 10	we	we	PRON	PRP	_	12	nsubj:pass	_	_	_	PRON	we	_	_	_	_	_	O-PRON
 11	were	be	AUX	VBD	_	12	aux:pass	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-12	left	leave	VERB	VBN	_	4	parataxis	_	_	_	V	leave	_	_	_	_	_	O-V
-13	off	off	ADP	RP	_	12	compound:prt	_	_	_	P	off	_	_	_	_	_	O-P
+12	left	leave	VERB	VBN	_	4	parataxis	_	_	1:1	V	leave off	_	_	_	_	_	B-V
+13	off	off	ADP	RP	_	12	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 14	yet	yet	CCONJ	CC	_	16	cc	_	_	_	CCONJ	yet	_	_	_	_	_	O-CCONJ
 15	another	another	DET	DT	_	16	det	_	_	_	DET	another	_	_	_	_	_	O-DET
 16	list	list	NOUN	NN	_	12	conj	_	_	_	N	list	_	_	_	_	_	O-N
@@ -25416,7 +25416,7 @@
 
 # sent_id = german-25482047-59d8-2aaa-da4b-25cd20b9e029-02
 # text = After Operation Barbarossa and the first encounters with the T - 34 & KV - 1 , Germany set up a comission that was to come up with guidelines for future tank - development .
-# mwe = After Operation Barbarossa and the first encounters with the T - 34 & KV - 1 , Germany set up a comission that was to come_up_with guidelines for future tank - development .
+# mwe = After Operation Barbarossa and the first encounters with the T - 34 & KV - 1 , Germany set_up a comission that was to come_up_with guidelines for future tank - development .
 1	After	after	ADP	IN	_	2	case	_	_	_	P	after	p.Time	p.Time	_	_	_	O-P-p.Time
 2	Operation	operation	NOUN	NN	_	19	obl	_	_	_	N	operation	_	_	_	_	_	O-N
 3	Barbarossa	Barbarossa	PROPN	NNP	_	19	obl	_	_	_	N	Barbarossa	_	_	_	_	_	O-N
@@ -25435,16 +25435,16 @@
 16	1	1	NUM	CD	_	14	nummod	_	_	_	NUM	1	_	_	_	_	_	O-NUM
 17	,	,	PUNCT	,	_	19	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 18	Germany	Germany	PROPN	NNP	_	19	nsubj	_	_	_	N	Germany	_	_	_	_	_	O-N
-19	set	set	VERB	VBD	_	0	root	_	_	_	V	set	_	_	_	_	_	O-V
-20	up	up	ADP	RP	_	19	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+19	set	set	VERB	VBD	_	0	root	_	_	1:1	V	set up	_	_	_	_	_	B-V
+20	up	up	ADP	RP	_	19	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 21	a	a	DET	DT	_	22	det	_	_	_	DET	a	_	_	_	_	_	O-DET
 22	comission	comission	NOUN	NN	_	19	obj	_	_	_	N	comission	_	_	_	_	_	O-N
 23	that	that	PRON	WDT	_	24	nsubj	_	_	_	PRON	that	_	_	_	_	_	O-PRON
 24	was	be	VERB	VBD	_	22	acl:relcl	_	_	_	V	be	_	_	_	_	_	O-V
 25	to	to	PART	TO	_	26	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-26	come	come	VERB	VB	_	24	xcomp	_	_	1:1	V	come up with	_	_	_	_	_	B-V
-27	up	up	ADP	RP	_	26	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
-28	with	with	ADP	IN	_	29	case	_	_	1:3	_	_	_	_	_	_	_	I_
+26	come	come	VERB	VB	_	24	xcomp	_	_	2:1	V	come up with	_	_	_	_	_	B-V
+27	up	up	ADP	RP	_	26	compound:prt	_	_	2:2	_	_	_	_	_	_	_	I_
+28	with	with	ADP	IN	_	29	case	_	_	2:3	_	_	_	_	_	_	_	I_
 29	guidelines	guideline	NOUN	NNS	_	26	obl	_	_	_	N	guideline	_	_	_	_	_	O-N
 30	for	for	ADP	IN	_	34	case	_	_	_	P	for	p.Purpose	p.Purpose	_	_	_	O-P-p.Purpose
 31	future	future	ADJ	JJ	_	34	amod	_	_	_	ADJ	future	_	_	_	_	_	O-ADJ
@@ -25479,14 +25479,14 @@
 
 # sent_id = german-25482047-59d8-2aaa-da4b-25cd20b9e029-05
 # text = No matter how much we simplify out tankdesigns , we will never be able to match their production .
-# mwe = No matter how much we simplify out tankdesigns , we will never be able to match their production .
+# mwe = No matter how much we simplify_out tankdesigns , we will never be able to match their production .
 1	No	no	ADV	RB	_	2	advmod	_	_	_	ADV	no	_	_	_	_	_	O-ADV
 2	matter	matter	ADV	RB	_	14	advmod	_	_	_	ADV	matter	_	_	_	_	_	O-ADV
 3	how	how	ADV	WRB	_	4	advmod	_	_	_	ADV	how	_	_	_	_	_	O-ADV
 4	much	much	ADJ	JJ	_	6	advmod	_	_	_	ADJ	much	_	_	_	_	_	O-ADJ
 5	we	we	PRON	PRP	_	6	nsubj	_	_	_	PRON	we	_	_	_	_	_	O-PRON
-6	simplify	simplify	VERB	VBP	_	2	ccomp	_	_	_	V	simplify	_	_	_	_	_	O-V
-7	out	out	ADP	RP	_	6	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+6	simplify	simplify	VERB	VBP	_	2	ccomp	_	_	1:1	V	simplify out	_	_	_	_	_	B-V
+7	out	out	ADP	RP	_	6	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 8	tankdesigns	tankdesign	NOUN	NNS	_	6	obj	_	_	_	N	tankdesign	_	_	_	_	_	O-N
 9	,	,	PUNCT	,	_	14	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 10	we	we	PRON	PRP	_	14	nsubj	_	_	_	PRON	we	_	_	_	_	_	O-PRON
@@ -25912,10 +25912,10 @@
 
 # sent_id = french-449c4ca2-3685-156b-89c8-0c4de9367ed9-04
 # text = Look it up , but basically Y goes from ground to each line and X goes across the lines .
-# mwe = Look it up , but basically Y goes from ground to each line and X goes across the lines .
-1	Look	look	VERB	VB	_	0	root	_	_	_	V	look	_	_	_	_	_	O-V
-2	it	it	PRON	PRP	_	1	obj	_	_	_	PRON	it	_	_	_	_	_	O-PRON
-3	up	up	ADP	RP	_	1	compound:prt	_	_	_	P	up	_	_	_	_	_	O-P
+# mwe = Look_ it _up , but basically Y goes from ground to each line and X goes across the lines .
+1	Look	look	VERB	VB	_	0	root	_	_	1:1	V	look up	_	_	_	_	_	B-V
+2	it	it	PRON	PRP	_	1	obj	_	_	_	PRON	it	_	_	_	_	_	o-PRON
+3	up	up	ADP	RP	_	1	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 4	,	,	PUNCT	,	_	8	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 5	but	but	CCONJ	CC	_	8	cc	_	_	_	CCONJ	but	_	_	_	_	_	O-CCONJ
 6	basically	basically	ADV	RB	_	8	advmod	_	_	_	ADV	basically	_	_	_	_	_	O-ADV
@@ -25936,7 +25936,7 @@
 
 # sent_id = german-e4beae2e-a4f8-cbd8-0481-f06c77b30256-01
 # text = > We ve written the plugin as a two - component solution : The JavaScript part of the plugin is responsible for both writing out the quiz form and validating it Ist also sehr leicht zu umgehen , da die Validierung Client - seitig funktioniert ...
-# mwe = > We ve written the plugin as a two - component solution : The JavaScript part of the plugin is responsible for both writing out the quiz form and validating it Ist also sehr leicht zu umgehen , da die Validierung Client - seitig funktioniert ...
+# mwe = > We ve written the plugin as a two - component solution : The JavaScript part of the plugin is responsible for both writing_out the quiz form and validating it Ist also sehr leicht zu umgehen , da die Validierung Client - seitig funktioniert ...
 1	>	>	PUNCT	-RRB-	_	4	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
 2	We	we	PRON	PRP	_	4	nsubj	_	_	_	PRON	we	_	_	_	_	_	O-PRON
 3	ve	have	AUX	VBP	_	4	aux	_	_	_	AUX	have	_	_	_	_	_	O-AUX
@@ -25960,8 +25960,8 @@
 21	responsible	responsible	ADJ	JJ	_	4	parataxis	_	_	_	ADJ	responsible	_	_	_	_	_	O-ADJ
 22	for	for	SCONJ	IN	_	24	mark	_	_	_	P	for	p.Purpose	p.Purpose	_	_	_	O-P-p.Purpose
 23	both	both	DET	DT	_	24	nsubj	_	_	_	DET	both	_	_	_	_	_	O-DET
-24	writing	write	VERB	VBG	_	21	advcl	_	_	_	V	write	_	_	_	_	_	O-V
-25	out	out	ADP	RP	_	24	compound:prt	_	_	_	P	out	_	_	_	_	_	O-P
+24	writing	write	VERB	VBG	_	21	advcl	_	_	1:1	V	write out	_	_	_	_	_	B-V
+25	out	out	ADP	RP	_	24	compound:prt	_	_	1:2	_	_	_	_	_	_	_	I_
 26	the	the	DET	DT	_	28	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 27	quiz	quiz	NOUN	NN	_	28	compound	_	_	_	N	quiz	_	_	_	_	_	O-N
 28	form	form	NOUN	NN	_	24	obj	_	_	_	N	form	_	_	_	_	_	O-N
