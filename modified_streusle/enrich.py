@@ -2,8 +2,8 @@ from collections import defaultdict
 
 import conllu
 
-from modified_streusle.mwerender import render
-from modified_streusle.tagging import sent_tags
+from mwerender import render
+from tagging import sent_tags
 
 
 # modified from streusle ----------------------------------------------------------------------
@@ -331,7 +331,7 @@ def main():
     add_lextag(sentences)
     renumber_mwes(sentences)
 
-    ignored = ["spanish-d684fef4-59bd-63a6-3ff8-48e936d3a69a-01"]
+    ignored = []
 
     sentences = [s for s in sentences if s.metadata["sent_id"] not in ignored]
     with open("../corpus.conllulex", "w") as f:
