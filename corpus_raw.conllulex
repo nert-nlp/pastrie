@@ -12799,7 +12799,7 @@
 17	winston	winston	NOUN	NN	_	18	compound	_	_	_	_	_	_	_	_	_	_	_
 18	shield	shield	NOUN	NN	_	15	conj	_	_	_	_	_	_	_	_	_	_	_
 19	being	be	AUX	VBG	_	24	cop	_	_	_	_	_	_	_	_	_	_	_
-20	up	up	ADP	RP	_	24	compound:prt	_	_	_	_	_	_	_	_	_	_	_
+20	up	up	ADV	RB	_	24	compound:prt	_	_	_	_	_	_	_	_	_	_	_
 21	all	all	DET	PDT	_	23	det:predet	_	_	_	_	_	_	_	_	_	_	_
 22	the	the	DET	DT	_	23	det	_	_	_	_	_	_	_	_	_	_	_
 23	time	time	NOUN	NN	_	24	nsubj	_	_	_	_	_	_	_	_	_	_	_
