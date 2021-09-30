@@ -271,17 +271,54 @@ def dedupe_question_marks(sentences):
                 t['ss2'] = "_"
 
 
+def make_compount_prts_smwes(sentences):
+    """
+    If a token has the deprel compound:prt and it's not in a SMWE, make a SMWE out of it and its head
+    """
+    for sentence in sentences:
+        smwes, wmwes = read_mwes(sentence)
+        print(smwes)
+        print(wmwes)
+        next_mwe_id = len(smwes) + len(wmwes) + 1
+
+        print(next_mwe_id)
+        if len(smwes) > 0:
+            assert False
+        for i, t in enumerate(sentence):
+            #if t['deprel'] == 'compound:prt' and t['ss'] == '_' and (t['smwe'] != '_' or t['wmwe'] != '_'):
+            #    print(sentence.metadata['sent_id'])
+            #    print("@!", t)
+            if t['deprel'] == 'compound:prt' and t['ss'] == '_' and t['smwe'] == '_' and t['wmwe'] == '_':
+                #print(sentence.metadata['sent_id'])
+                head = get_token(sentence, t['head'])
+
+                # Skip if compound:prt is to the left of head--this is a parse error
+                if not int(head['id']) < int(t['id']):
+                    continue
+
+                # Assign SMWE
+                head['smwe'] = f"{next_mwe_id}:1"
+                t['smwe'] = f"{next_mwe_id}:2"
+
+                # Fix lexlemma
+                t['lexlemma'] = '_'
+                head['lexlemma'] = f"{head['lemma']} {t['lemma']}"
+
+                next_mwe_id += 1
+
+
 def main():
     sentences = get_conllulex_tokenlists("corpus_raw.conllulex")
 
     dedupe_question_marks(sentences)
+    make_compount_prts_smwes(sentences)
     add_mwe_metadatum(sentences)
     add_lexlemma(sentences)
     add_wlemma(sentences)
     prefix_prepositional_supersenses(sentences)
     add_lexcat(sentences)
     add_lextag(sentences)
-    
+
     ignored = []
 
     sentences = [s for s in sentences if s.metadata["sent_id"] not in ignored]
