@@ -277,13 +277,8 @@ def make_compount_prts_smwes(sentences):
     """
     for sentence in sentences:
         smwes, wmwes = read_mwes(sentence)
-        print(smwes)
-        print(wmwes)
         next_mwe_id = len(smwes) + len(wmwes) + 1
 
-        print(next_mwe_id)
-        if len(smwes) > 0:
-            assert False
         for i, t in enumerate(sentence):
             #if t['deprel'] == 'compound:prt' and t['ss'] == '_' and (t['smwe'] != '_' or t['wmwe'] != '_'):
             #    print(sentence.metadata['sent_id'])
@@ -307,6 +302,22 @@ def make_compount_prts_smwes(sentences):
                 next_mwe_id += 1
 
 
+def renumber_mwes(sentences):
+    for sentence in sentences:
+        smwes, wmwes = read_mwes(sentence)
+        mwes = (
+                [(mwe_id, toknums, 'strong') for mwe_id, toknums in smwes.items()]
+                + [(mwe_id, toknums, 'weak') for mwe_id, toknums in wmwes.items()]
+        )
+        # Sort by first token number first, and strength second (to break toknum ties)
+        mwes = sorted(mwes, key=lambda x: (float(x[1][0]), 0 if x[2] == 'strong' else 1))
+        for new_id, (_, toknums, strength) in enumerate(mwes, start=1):
+            # also sort toknums just in case
+            for mwe_token_count, toknum in enumerate(sorted(toknums), start=1):
+                tok = get_token(sentence, toknum)
+                tok['smwe' if strength == 'strong' else 'wmwe'] = f"{new_id}:{mwe_token_count}"
+
+
 def main():
     sentences = get_conllulex_tokenlists("corpus_raw.conllulex")
 
@@ -318,6 +329,7 @@ def main():
     prefix_prepositional_supersenses(sentences)
     add_lexcat(sentences)
     add_lextag(sentences)
+    renumber_mwes(sentences)
 
     ignored = []
 
