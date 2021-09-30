@@ -19902,7 +19902,7 @@
 5	to	to	PART	TO	_	6	mark	_	_	_	_	_	`i	`i	_	_	_	_
 6	say	say	VERB	VB	_	4	xcomp	_	_	_	_	_	_	_	_	_	_	_
 7	that	that	PRON	DT	_	6	obj	_	_	_	_	_	_	_	_	_	_	_
-8	down	down	ADP	RP	_	10	compound:prt	_	_	_	_	_	_	_	_	_	_	_
+8	down	down	ADV	RB	_	10	compound:prt	_	_	_	_	_	_	_	_	_	_	_
 9	-	-	PUNCT	HYPH	_	10	punct	_	_	_	_	_	_	_	_	_	_	_
 10	voting	voting	VERB	VBG	_	6	advcl	_	_	_	_	_	_	_	_	_	_	_
 11	every	every	DET	DT	_	12	det	_	_	_	_	_	_	_	_	_	_	_
