@@ -19298,7 +19298,7 @@
 15	,	,	PUNCT	,	_	19	punct	_	_	_	_	_	_	_	_	_	_	_
 16	one	one	NUM	CD	_	19	nummod	_	_	_	_	_	_	_	_	_	_	_
 17	-	-	PUNCT	HYPH	_	16	punct	_	_	_	_	_	_	_	_	_	_	_
-18	off	off	ADP	RP	_	16	compound	_	_	_	_	_	_	_	_	_	_	_
+18	off	off	ADV	RB	_	16	compound	_	_	_	_	_	_	_	_	_	_	_
 19	deals	deal	NOUN	NNS	_	11	obj	_	_	_	_	_	_	_	_	_	_	_
 20	when	when	ADV	WRB	_	22	mark	_	_	_	_	_	_	_	_	_	_	_
 21	you	you	PRON	PRP	_	22	nsubj	_	_	_	_	_	_	_	_	_	_	_
