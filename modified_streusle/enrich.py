@@ -321,7 +321,7 @@ def renumber_mwes(sentences):
 
 
 def main():
-    sentences = get_conllulex_tokenlists("../corpus_raw.conllulex")
+    sentences = get_conllulex_tokenlists("../corpus.conllulex")
 
     dedupe_question_marks(sentences)
     make_compount_prts_smwes(sentences)
@@ -336,7 +336,7 @@ def main():
     ignored = []
 
     sentences = [s for s in sentences if s.metadata["sent_id"] not in ignored]
-    with open("../corpus.conllulex", "w") as f:
+    with open("../corpus_enriched.conllulex", "w") as f:
         f.write("".join(s.serialize() for s in sentences))
 
 
