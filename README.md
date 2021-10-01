@@ -28,9 +28,11 @@ Below is an example sentence from the corpus, where annotation targets are bolde
 ---
 
 ## Data Formats
-PASTRIE is released in both `.conllulex` and `.json` formats.
+PASTRIE is released in the following formats. We expect that most projects will be best served by one of the JSON formats.
 
-See [conllulex documentation](https://github.com/nert-nlp/streusle/blob/master/CONLLULEX.md) for details. Note that PASTRIE does not provide data for every `conllulex` column.
+- [`.conllulex`](https://github.com/nert-nlp/streusle/blob/master/CONLLULEX.md): the 19-column CoNLL-U-Lex format originally used for STREUSLE.
+- [`.json`](https://github.com/nert-nlp/streusle/blob/master/CONLLULEX.md#remarks): a JSON representation of the CoNLL-U-Lex that does not require a CoNLL-U-Lex parser.
+- [`.govobj.json`](https://github.com/nert-nlp/streusle/blob/master/govobj.py): an extended version of the JSON representation that contains information about each preposition's syntactic parent and object.
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
