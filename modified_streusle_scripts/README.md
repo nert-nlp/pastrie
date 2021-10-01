@@ -2,7 +2,7 @@ These scripts were used to convert PASTRIE's original release format, a sparse f
 
 ```
 python enrich.py
-python conllulex2json.py ../corpus.conllulex > ../corpus.json
+python conllulex2json.py ../corpus_enriched.conllulex > ../corpus.json
 python govobj.py ../corpus.json > ../corpus.govobj.json
 ```
 
