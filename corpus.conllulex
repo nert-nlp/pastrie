@@ -12798,11 +12798,11 @@
 16	and	and	CCONJ	CC	_	24	cc	_	_	_	_	_	_	_	_	_	_	_
 17	winston	winston	NOUN	NN	_	18	compound	_	_	_	_	_	_	_	_	_	_	_
 18	shield	shield	NOUN	NN	_	20	nsubj	_	_	_	_	_	_	_	_	_	_	_
-19	being	be	AUX	VBG	_	20	aux	_	_	_	_	_	_	_	_	_	_	_
+19	being	be	AUX	VBG	_	20	cop	_	_	_	_	_	_	_	_	_	_	_
 20	up	up	ADV	RB	_	24	csubj	_	_	_	_	_	_	_	_	_	_	_
 21	all	all	DET	PDT	_	23	det:predet	_	_	_	_	_	_	_	_	_	_	_
 22	the	the	DET	DT	_	23	det	_	_	_	_	_	_	_	_	_	_	_
-23	time	time	NOUN	NN	_	20	obl	_	_	_	_	_	_	_	_	_	_	_
+23	time	time	NOUN	NN	_	20	obl:npmod	_	_	_	_	_	_	_	_	_	_	_
 24	negates	negate	VERB	VBZ	_	8	conj	_	_	_	_	_	_	_	_	_	_	_
 25	a	a	DET	DT	_	26	det	_	_	_	_	_	_	_	_	_	_	_
 26	lot	lot	NOUN	NN	_	24	obj	_	_	_	_	_	_	_	_	_	_	_
