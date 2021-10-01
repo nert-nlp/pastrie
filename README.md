@@ -30,9 +30,18 @@ Below is an example sentence from the corpus, where annotation targets are bolde
 ## Data Formats
 PASTRIE is released in the following formats. We expect that most projects will be best served by one of the JSON formats.
 
-- [`.conllulex`](https://github.com/nert-nlp/streusle/blob/master/CONLLULEX.md): the 19-column CoNLL-U-Lex format originally used for STREUSLE.
+- [`.conllulex`](https://github.com/nert-nlp/streusle/blob/master/CONLLULEX.md): the 19-column CoNLL-U-Lex format originally used for [STREUSLE](https://github.com/nert-nlp/streusle).
 - [`.json`](https://github.com/nert-nlp/streusle/blob/master/CONLLULEX.md#remarks): a JSON representation of the CoNLL-U-Lex that does not require a CoNLL-U-Lex parser.
 - [`.govobj.json`](https://github.com/nert-nlp/streusle/blob/master/govobj.py): an extended version of the JSON representation that contains information about each preposition's syntactic parent and object.
+
+PASTRIE mostly follows [STREUSLE](https://github.com/nert-nlp/streusle) with respect to the data format and SNACS annotation practice. Primary differences in the annotations are:
+- Lemmas, part-of-speech tags, and syntactic dependencies aim to follow the UD standard in both cases. They are gold in STREUSLE, versus automatic with some manual corrections in PASTRIE.
+  * The PASTRIE `text` field for each sentence is tokenized, whereas in STREUSLE/most UD corpora it is the raw source text.
+  * PASTRIE does not group together base+clitic combinations, whereas STREUSLE does (_multiword tokens_—where a single orthographic word contains multiple syntactic words).
+  * PASTRIE lacks morphological features and enhanced dependencies.
+- Multiword expression annotations in PASTRIE are limited to expressions containing a preposition. Depending on the syntactic head, the expression may or may not have a SNACS supersense.
+  * Verbal multiword expressions in PASTRIE are not subtyped in the lexcat; they all have a lexcat of `V`.
+- Noun and verb expressions in PASTRIE do not have supersense labels.
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
