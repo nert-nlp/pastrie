@@ -48,8 +48,8 @@
 11	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = english-4c4b91fe-6c14-8fc6-9750-ca7e246cb09c-03
-# text = Something to think about is if supporters are leaving because they reoffended , or because he s losing support .
-# mwe = Something to think about is if supporters are leaving because they reoffended , or because he s losing support .
+# text = Something to think about is if supporters are leaving because they 're offended , or because he s losing support .
+# mwe = Something to think about is if supporters are leaving because they 're offended , or because he s losing support .
 1	Something	something	PRON	NN	_	5	nsubj	_	_	_	PRON	something	_	_	_	_	_	O-PRON
 2	to	to	PART	TO	_	3	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
 3	think	think	VERB	VB	_	1	acl	_	_	_	V	think	_	_	_	_	_	O-V
@@ -61,15 +61,16 @@
 9	leaving	leave	VERB	VBG	_	5	advcl	_	_	_	V	leave	_	_	_	_	_	O-V
 10	because	because	SCONJ	IN	_	12	mark	_	_	_	SCONJ	because	_	_	_	_	_	O-SCONJ
 11	they	they	PRON	PRP	_	12	nsubj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
-12	reoffended	reoffend	VERB	VBD	_	9	advcl	_	_	_	V	reoffend	_	_	_	_	_	O-V
-13	,	,	PUNCT	,	_	18	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-14	or	or	CCONJ	CC	_	18	cc	_	_	_	CCONJ	or	_	_	_	_	_	O-CCONJ
-15	because	because	SCONJ	IN	_	18	mark	_	_	_	SCONJ	because	_	_	_	_	_	O-SCONJ
-16	he	he	PRON	PRP	_	18	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-17	s	be	AUX	VBZ	_	18	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-18	losing	lose	VERB	VBG	_	9	conj	_	_	_	V	lose	_	_	_	_	_	O-V
-19	support	support	NOUN	NN	_	18	obj	_	_	_	N	support	_	_	_	_	_	O-N
-20	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
+12	're	be	VERB	VBZ	_	13	aux:pass	_	_	_	V	be	_	_	_	_	_	O-V
+13	offended	offend	VERB	VBD	_	9	advcl	_	_	_	V	offend	_	_	_	_	_	O-V
+14	,	,	PUNCT	,	_	19	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
+15	or	or	CCONJ	CC	_	19	cc	_	_	_	CCONJ	or	_	_	_	_	_	O-CCONJ
+16	because	because	SCONJ	IN	_	19	mark	_	_	_	SCONJ	because	_	_	_	_	_	O-SCONJ
+17	he	he	PRON	PRP	_	19	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+18	s	be	AUX	VBZ	_	19	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
+19	losing	lose	VERB	VBG	_	9	conj	_	_	_	V	lose	_	_	_	_	_	O-V
+20	support	support	NOUN	NN	_	19	obj	_	_	_	N	support	_	_	_	_	_	O-N
+21	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = spanish-0e2b47b9-36f3-5243-8395-65905dda85f5-01
 # text = He s a dictator .
@@ -1019,7 +1020,7 @@
 1	We	we	PRON	PRP	_	4	nsubj:pass	_	_	_	PRON	we	_	_	_	_	_	O-PRON
 2	are	be	AUX	VBP	_	4	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 3	being	be	AUX	VBG	_	4	aux:pass	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-4	bombareded	bombared	VERB	VBN	_	0	root	_	_	_	V	bombared	_	_	_	_	_	O-V
+4	bombareded	bombard	VERB	VBN	Tense=Past|Typo=Yes|VerbForm=Part|Voice=Pass	0	root	_	CorrectForm=bombarded	_	V	bombard	_	_	_	_	_	O-V
 5	with	with	ADP	IN	_	6	case	_	_	_	P	with	p.Theme	p.Theme	_	_	_	O-P-p.Theme
 6	images	image	NOUN	NNS	_	4	obl	_	_	_	N	image	_	_	_	_	_	O-N
 7	of	of	ADP	IN	_	9	case	_	_	_	P	of	p.Topic	p.Topic	_	_	_	O-P-p.Topic
@@ -1880,8 +1881,8 @@
 12	.	.	PUNCT	.	_	8	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = spanish-4ca44e40-943e-5a22-48d4-a701f3d13a7b-01
-# text = > They are n't going to buy it and make it completely different when they could make their own knock - off
-# mwe = > They are n't going to buy it and make it completely different when they could make their own knock - off
+# text = > They are n't going to buy it and make it completely different when they could make their own knock - off .
+# mwe = > They are n't going to buy it and make it completely different when they could make their own knock - off .
 1	>	>	PUNCT	-RRB-	_	5	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
 2	They	they	PRON	PRP	_	5	nsubj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
 3	are	be	AUX	VBP	_	5	aux	_	_	_	AUX	be	_	_	_	_	_	O-AUX
@@ -1904,10 +1905,11 @@
 20	knock	knock	NOUN	NN	_	22	compound	_	_	_	N	knock	_	_	_	_	_	O-N
 21	-	-	PUNCT	HYPH	_	22	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
 22	off	off	NOUN	NN	_	17	obj	_	_	_	N	off	_	_	_	_	_	O-N
+23	.	.	PUNCT	.	_	3	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = spanish-4ca44e40-943e-5a22-48d4-a701f3d13a7b-02
-# text = They d buy it to invest in what it currently is and build upon that You sure about that ?
-# mwe = They d buy it to invest in what it currently is and build_upon that You sure about that ?
+# text = They d buy it to invest in what it currently is and build upon that
+# mwe = They d buy it to invest in what it currently is and build_upon that
 1	They	they	PRON	PRP	_	3	nsubj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
 2	d	would	AUX	MD	_	3	aux	_	_	_	AUX	would	_	_	_	_	_	O-AUX
 3	buy	buy	VERB	VB	_	0	root	_	_	_	V	buy	_	_	_	_	_	O-V
@@ -1923,13 +1925,17 @@
 13	build	build	VERB	VB	_	6	conj	_	_	1:1	V	build upon	_	_	_	_	_	B-V
 14	upon	upon	ADP	IN	_	15	case	_	_	1:2	_	_	_	_	_	_	_	I_
 15	that	that	PRON	DT	_	13	obl	_	_	_	PRON	that	_	_	_	_	_	O-PRON
-16	You	you	PRON	PRP	_	17	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
-17	sure	sure	ADJ	JJ	_	3	parataxis	_	_	_	ADJ	sure	_	_	_	_	_	O-ADJ
-18	about	about	ADP	IN	_	19	case	_	_	_	P	about	p.Topic	p.Topic	_	_	_	O-P-p.Topic
-19	that	that	PRON	DT	_	17	obl	_	_	_	PRON	that	_	_	_	_	_	O-PRON
-20	?	?	PUNCT	.	_	3	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
 
 # sent_id = spanish-4ca44e40-943e-5a22-48d4-a701f3d13a7b-03
+# text = You sure about that ?
+# mwe = You sure about that ?
+1	You	you	PRON	PRP	_	2	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
+2	sure	sure	ADJ	JJ	_	0	root	_	_	_	ADJ	sure	_	_	_	_	_	O-ADJ
+3	about	about	ADP	IN	_	4	case	_	_	_	P	about	p.Topic	p.Topic	_	_	_	O-P-p.Topic
+4	that	that	PRON	DT	_	2	obl	_	_	_	PRON	that	_	_	_	_	_	O-PRON
+5	?	?	PUNCT	.	_	2	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
+
+# sent_id = spanish-4ca44e40-943e-5a22-48d4-a701f3d13a7b-04
 # text = Valve had to remove skeletons from Dota 2 when the game entered China .
 # mwe = Valve had to remove skeletons from Dota 2 when the game entered China .
 1	Valve	Valve	PROPN	NNP	_	2	nsubj	_	_	_	N	Valve	_	_	_	_	_	O-N
@@ -1947,7 +1953,7 @@
 13	China	China	PROPN	NNP	_	12	obj	_	_	_	N	China	_	_	_	_	_	O-N
 14	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-4ca44e40-943e-5a22-48d4-a701f3d13a7b-04
+# sent_id = spanish-4ca44e40-943e-5a22-48d4-a701f3d13a7b-05
 # text = > All countries make shitty games Agree but a lot of games that here in the west would be considered shitty seem to thrive in China .
 # mwe = > All countries make shitty games Agree but a lot of games that here in the west would be considered shitty seem to thrive in China .
 1	>	>	PUNCT	-RRB-	_	4	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
@@ -2012,8 +2018,8 @@
 29	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-01
-# text = > So you re hiring a couple more policeman let s say 5 more that s £ 150,000 a year so that s a lot of money If they catch just 5 criminals for 1 year each , it would be just as expensive as their imprisonment , and 5 criminals per year is an insanely conservative estimate .
-# mwe = > So you re hiring a couple more policeman let s say 5 more that s £ 150,000 a year so that s a lot of money If they catch just 5 criminals for 1 year each , it would be just as expensive as their imprisonment , and 5 criminals per year is an insanely conservative estimate .
+# text = > So you re hiring a couple more policeman let s say 5 more that s £ 150,000 a year so that s a lot of money
+# mwe = > So you re hiring a couple more policeman let s say 5 more that s £ 150,000 a year so that s a lot of money
 1	>	>	PUNCT	NFP	_	5	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
 2	So	so	ADV	RB	_	5	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
 3	you	you	PRON	PRP	_	5	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
@@ -2041,40 +2047,44 @@
 25	lot	lot	NOUN	NN	_	5	parataxis	_	_	_	N	lot	_	_	_	_	_	O-N
 26	of	of	ADP	IN	_	27	case	_	_	_	P	of	p.QuantityItem	p.QuantityItem	_	_	_	O-P-p.QuantityItem
 27	money	money	NOUN	NN	_	25	nmod	_	_	_	N	money	_	_	_	_	_	O-N
-28	If	if	SCONJ	IN	_	30	mark	_	_	_	SCONJ	if	_	_	_	_	_	O-SCONJ
-29	they	they	PRON	PRP	_	30	nsubj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
-30	catch	catch	VERB	VBP	_	25	advcl	_	_	_	V	catch	_	_	_	_	_	O-V
-31	just	just	ADV	RB	_	33	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
-32	5	5	NUM	CD	_	33	nummod	_	_	_	NUM	5	_	_	_	_	_	O-NUM
-33	criminals	criminal	NOUN	NNS	_	30	obj	_	_	_	N	criminal	_	_	_	_	_	O-N
-34	for	for	ADP	IN	_	36	case	_	_	_	P	for	p.Duration	p.Duration	_	_	_	O-P-p.Duration
-35	1	1	NUM	CD	_	36	nummod	_	_	_	NUM	1	_	_	_	_	_	O-NUM
-36	year	year	NOUN	NN	_	30	obl	_	_	_	N	year	_	_	_	_	_	O-N
-37	each	each	DET	DT	_	36	det	_	_	_	DET	each	_	_	_	_	_	O-DET
-38	,	,	PUNCT	,	_	44	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-39	it	it	PRON	PRP	_	44	nsubj	_	_	_	PRON	it	_	_	_	_	_	O-PRON
-40	would	would	AUX	MD	_	44	aux	_	_	_	AUX	would	_	_	_	_	_	O-AUX
-41	be	be	AUX	VB	_	44	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-42	just	just	ADV	RB	_	44	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
-43	as	as	ADV	RB	_	44	advmod	_	_	_	P	as	p.Characteristic	p.Extent	_	_	_	O-P-p.Characteristic|p.Extent
-44	expensive	expensive	ADJ	JJ	_	5	parataxis	_	_	_	ADJ	expensive	_	_	_	_	_	O-ADJ
-45	as	as	ADP	IN	_	47	case	_	_	_	P	as	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
-46	their	they	PRON	PRP$	_	47	nmod:poss	_	_	_	PRON.POSS	they	p.Theme	p.Gestalt	_	_	_	O-PRON.POSS-p.Theme|p.Gestalt
-47	imprisonment	imprisonment	NOUN	NN	_	44	obl	_	_	_	N	imprisonment	_	_	_	_	_	O-N
-48	,	,	PUNCT	,	_	58	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-49	and	and	CCONJ	CC	_	58	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-50	5	5	NUM	CD	_	51	nummod	_	_	_	NUM	5	_	_	_	_	_	O-NUM
-51	criminals	criminal	NOUN	NNS	_	58	nsubj	_	_	_	N	criminal	_	_	_	_	_	O-N
-52	per	per	ADP	IN	_	53	case	_	_	_	P	per	p.RateUnit	p.RateUnit	_	_	_	O-P-p.RateUnit
-53	year	year	NOUN	NN	_	51	nmod	_	_	_	N	year	_	_	_	_	_	O-N
-54	is	be	AUX	VBZ	_	58	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-55	an	a	DET	DT	_	58	det	_	_	_	DET	a	_	_	_	_	_	O-DET
-56	insanely	insanely	ADV	RB	_	57	advmod	_	_	_	ADV	insanely	_	_	_	_	_	O-ADV
-57	conservative	conservative	ADJ	JJ	_	58	amod	_	_	_	ADJ	conservative	_	_	_	_	_	O-ADJ
-58	estimate	estimate	NOUN	NN	_	5	conj	_	_	_	N	estimate	_	_	_	_	_	O-N
-59	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-02
+# text = If they catch just 5 criminals for 1 year each , it would be just as expensive as their imprisonment , and 5 criminals per year is an insanely conservative estimate .
+# mwe = If they catch just 5 criminals for 1 year each , it would be just as expensive as their imprisonment , and 5 criminals per year is an insanely conservative estimate .
+1	If	if	SCONJ	IN	_	3	mark	_	_	_	SCONJ	if	_	_	_	_	_	O-SCONJ
+2	they	they	PRON	PRP	_	3	nsubj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
+3	catch	catch	VERB	VBP	_	17	advcl	_	_	_	V	catch	_	_	_	_	_	O-V
+4	just	just	ADV	RB	_	6	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
+5	5	5	NUM	CD	_	6	nummod	_	_	_	NUM	5	_	_	_	_	_	O-NUM
+6	criminals	criminal	NOUN	NNS	_	3	obj	_	_	_	N	criminal	_	_	_	_	_	O-N
+7	for	for	ADP	IN	_	9	case	_	_	_	P	for	p.Duration	p.Duration	_	_	_	O-P-p.Duration
+8	1	1	NUM	CD	_	9	nummod	_	_	_	NUM	1	_	_	_	_	_	O-NUM
+9	year	year	NOUN	NN	_	3	obl	_	_	_	N	year	_	_	_	_	_	O-N
+10	each	each	DET	DT	_	9	det	_	_	_	DET	each	_	_	_	_	_	O-DET
+11	,	,	PUNCT	,	_	17	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
+12	it	it	PRON	PRP	_	17	nsubj	_	_	_	PRON	it	_	_	_	_	_	O-PRON
+13	would	would	AUX	MD	_	17	aux	_	_	_	AUX	would	_	_	_	_	_	O-AUX
+14	be	be	AUX	VB	_	17	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
+15	just	just	ADV	RB	_	17	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
+16	as	as	ADV	RB	_	17	advmod	_	_	_	P	as	p.Characteristic	p.Extent	_	_	_	O-P-p.Characteristic|p.Extent
+17	expensive	expensive	ADJ	JJ	_	0	root	_	_	_	ADJ	expensive	_	_	_	_	_	O-ADJ
+18	as	as	ADP	IN	_	20	case	_	_	_	P	as	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+19	their	they	PRON	PRP$	_	20	nmod:poss	_	_	_	PRON.POSS	they	p.Theme	p.Gestalt	_	_	_	O-PRON.POSS-p.Theme|p.Gestalt
+20	imprisonment	imprisonment	NOUN	NN	_	17	obl	_	_	_	N	imprisonment	_	_	_	_	_	O-N
+21	,	,	PUNCT	,	_	31	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
+22	and	and	CCONJ	CC	_	31	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
+23	5	5	NUM	CD	_	24	nummod	_	_	_	NUM	5	_	_	_	_	_	O-NUM
+24	criminals	criminal	NOUN	NNS	_	31	nsubj	_	_	_	N	criminal	_	_	_	_	_	O-N
+25	per	per	ADP	IN	_	26	case	_	_	_	P	per	p.RateUnit	p.RateUnit	_	_	_	O-P-p.RateUnit
+26	year	year	NOUN	NN	_	24	nmod	_	_	_	N	year	_	_	_	_	_	O-N
+27	is	be	AUX	VBZ	_	31	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
+28	an	a	DET	DT	_	31	det	_	_	_	DET	a	_	_	_	_	_	O-DET
+29	insanely	insanely	ADV	RB	_	30	advmod	_	_	_	ADV	insanely	_	_	_	_	_	O-ADV
+30	conservative	conservative	ADJ	JJ	_	31	amod	_	_	_	ADJ	conservative	_	_	_	_	_	O-ADJ
+31	estimate	estimate	NOUN	NN	_	5	conj	_	_	_	N	estimate	_	_	_	_	_	O-N
+32	.	.	PUNCT	.	_	17	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
+
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-03
 # text = > plus they re already stealing locked cars you re not changing that that s what s happening now so you re making it easier plus police do n't always catch the person who steals a car making more disruption on the street .
 # mwe = > plus they re already stealing locked cars you re not changing that that s what s happening now so you re making it easier plus police do n't always catch the person who steals a car making more disruption on the street .
 1	>	>	PUNCT	NFP	_	6	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
@@ -2122,7 +2132,7 @@
 43	street	street	NOUN	NN	_	40	nmod	_	_	_	N	street	_	_	_	_	_	O-N
 44	.	.	PUNCT	.	_	6	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-03
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-04
 # text = If they steal locked cars , that s harder than stealing unlocked car , so car stealing will go down , or at the very least you would n't have to fear your car getting stolen if you leave your keys on .
 # mwe = If they steal locked cars , that s harder than stealing unlocked car , so car stealing will go down , or at_the_very_least you would n't have to fear your car getting stolen if you leave your keys on .
 1	If	if	SCONJ	IN	_	3	mark	_	_	_	SCONJ	if	_	_	_	_	_	O-SCONJ
@@ -2169,7 +2179,7 @@
 42	on	on	ADV	RB	_	39	advmod	_	_	_	P	on	??	_	_	_	_	O-P-??
 43	.	.	PUNCT	.	_	9	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-04
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-05
 # text = Also policemen would catch them most of the time , a couple hidden gps devices ought to do the trick , add to that a disguised police car nearby or a hidden tear gas canister in the car for all I care and he s done .
 # mwe = Also policemen would catch them most of the time , a couple hidden gps devices ought to do the trick , add to that a disguised police car nearby or a hidden tear gas canister in the car for_all_I_care and he s done .
 1	Also	also	ADV	RB	_	4	advmod	_	_	_	ADV	also	_	_	_	_	_	O-ADV
@@ -2220,7 +2230,7 @@
 46	done	do	VERB	VBN	_	42	conj	_	_	_	V	do	_	_	_	_	_	O-V
 47	.	.	PUNCT	.	_	4	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-05
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-06
 # text = > You re creating crime because before that car was placed there , there was n't a crime that car being stolen is a crime you re inviting people to commit crime making crime go up it may go down but there will be a spike in crime because they re stealing a car .
 # mwe = > You re creating crime because before that car was placed there , there was n't a crime that car being stolen is a crime you re inviting people to commit crime making crime go up it may go down but there will be a spike in crime because they re stealing a car .
 1	>	>	PUNCT	NFP	_	4	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
@@ -2279,7 +2289,7 @@
 54	car	car	NOUN	NN	_	52	obj	_	_	_	N	car	_	_	_	_	_	O-N
 55	.	.	PUNCT	.	_	4	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-06
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-07
 # text = Crime will go up at first because potential criminals will become criminals , but as more and more of them get caught they ll learn not to steal cars and opt for other crimes or maybe even for a non-criminal way of existence ( ie they wo n't all shift to another equally wrong crime so some progress will be made ) .
 # mwe = Crime will go up at_first because potential criminals will become criminals , but as more and more of them get caught they ll learn not to steal cars and opt for other crimes or maybe even for a non-criminal way of existence ( ie they wo n't all shift to another equally wrong crime so some progress will be made ) .
 1	Crime	crime	NOUN	NN	_	3	nsubj	_	_	_	N	crime	_	_	_	_	_	O-N
@@ -2346,7 +2356,7 @@
 62	)	)	PUNCT	-RRB-	_	50	punct	_	_	_	PUNCT	)	_	_	_	_	_	O-PUNCT
 63	.	.	PUNCT	.	_	3	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-07
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-08
 # text = In the end crime will go down slightly , and car - stealing - related crime will decrease massively .
 # mwe = In_the_end crime will go down slightly , and car - stealing - related crime will decrease massively .
 1	In	in	ADP	IN	_	4	case	_	_	1:1	PP	in the end	p.Time	p.Time	_	_	_	B-PP-p.Time
@@ -2370,7 +2380,7 @@
 19	massively	massively	ADV	RB	_	18	advmod	_	_	_	ADV	massively	_	_	_	_	_	O-ADV
 20	.	.	PUNCT	.	_	6	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-08
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-09
 # text = > Criminals are smart they ll stop stealing locked cars when 3 or 4 cars unlocked are being watched constantly they just wo n't steal those cars so you re increasing police for a short spate of arrests before everything goes back to normal You know how to write separate paragraphs right ?
 # mwe = > Criminals are smart they ll stop stealing locked cars when 3 or 4 cars unlocked are being watched constantly they just wo n't steal those cars so you re increasing police for a short spate of arrests before everything goes back to normal You know how to write separate paragraphs right ?
 1	>	>	PUNCT	NFP	_	4	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
@@ -2427,7 +2437,7 @@
 52	right	right	ADV	RB	_	49	advmod	_	_	_	ADV	right	_	_	_	_	_	O-ADV
 53	?	?	PUNCT	.	_	4	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-09
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-10
 # text = Anyway the policemen will be switching cars so they wo n't be able to identify which cars are bait cars easily .
 # mwe = Anyway the policemen will be switching cars so they wo n't be able to identify which cars are bait cars easily .
 1	Anyway	anyway	ADV	RB	_	6	advmod	_	_	_	ADV	anyway	_	_	_	_	_	O-ADV
@@ -2453,7 +2463,7 @@
 21	easily	easily	ADV	RB	_	15	advmod	_	_	_	ADV	easily	_	_	_	_	_	O-ADV
 22	.	.	PUNCT	.	_	6	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-10
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-11
 # text = And if they stop stealing unlocked cars altogether that s a win for society !
 # mwe = And if they stop stealing unlocked cars altogether that s a win for society !
 1	And	and	CCONJ	CC	_	12	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
@@ -2472,7 +2482,7 @@
 14	society	society	NOUN	NN	_	12	nmod	_	_	_	N	society	_	_	_	_	_	O-N
 15	!	!	PUNCT	.	_	12	punct	_	_	_	PUNCT	!	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-11
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-12
 # text = And as I explained , sure , most will try other crimes , but just a few of them will give up on crime because now they ca n't just go an steal some random guy s car , and that s more than enough .
 # mwe = And as_I_explained , sure , most will try other crimes , but just a few of them will give_up~on crime because now they ca n't just go an steal some random guy s car , and that s more than enough .
 1	And	and	CCONJ	CC	_	21	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
@@ -2522,7 +2532,7 @@
 45	enough	enough	ADJ	JJ	_	43	obl	_	_	_	ADJ	enough	_	_	_	_	_	O-ADJ
 46	.	.	PUNCT	.	_	10	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-12
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-13
 # text = > so that s increasing police resources which people do n't wan na do to not help anything after about a month unless they re really really stupid .
 # mwe = > so that s increasing police resources which people do n't wan na do to not help anything after about a month unless they re really really stupid .
 1	>	>	PUNCT	-RRB-	_	5	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
@@ -2555,7 +2565,7 @@
 28	stupid	stupid	ADJ	JJ	_	17	advcl	_	_	_	ADJ	stupid	_	_	_	_	_	O-ADJ
 29	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-13
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-14
 # text = Even if nobody ever stole cars anymore , it d still be a great police tactic because a dozen bait cars , say , in all of New York , would still be a deterrent but would also be extremely cheap .
 # mwe = Even if nobody ever stole cars anymore , it d still be a great police tactic because a dozen bait cars , say , in all of New York , would still be a deterrent but would also be extremely cheap .
 1	Even	even	ADV	RB	_	5	advmod	_	_	_	ADV	even	_	_	_	_	_	O-ADV
@@ -2601,7 +2611,7 @@
 41	cheap	cheap	ADJ	JJ	_	35	conj	_	_	_	ADJ	cheap	_	_	_	_	_	O-ADJ
 42	.	.	PUNCT	.	_	16	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-14
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-15
 # text = Without that program , car stealing would go up like crazy .
 # mwe = Without that program , car stealing would go up like_crazy .
 1	Without	without	ADP	IN	_	3	case	_	_	_	P	without	p.Circumstance	p.Circumstance	_	_	_	O-P-p.Circumstance
@@ -2617,7 +2627,7 @@
 11	crazy	crazy	ADJ	JJ	_	8	obl	_	_	1:2	_	_	_	_	_	_	_	I_
 12	.	.	PUNCT	.	_	8	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-15
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-16
 # text = > Also they wo n't then get jobs they ll do something more profitable and risky and vehicular crime is already going down because as you said you could be in prison for up to 10 years .
 # mwe = > Also they wo n't then get jobs they ll do something more profitable and risky and vehicular crime is already going down because as_you_said you could be in prison for up_to 10 years .
 1	>	>	PUNCT	NFP	_	7	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
@@ -2659,7 +2669,7 @@
 37	years	year	NOUN	NNS	_	32	obl	_	_	_	N	year	_	_	_	_	_	O-N
 38	.	.	PUNCT	.	_	7	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-16
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-17
 # text = Then so be it , for every 10 criminals switching from stealing cars to mugging people , one of them might give up and find some legal way to stay afloat .
 # mwe = Then so be it , for every 10 criminals switching from stealing cars to mugging people , one of them might give_up and find some legal way to stay afloat .
 1	Then	then	ADV	RB	_	22	advmod	_	_	_	ADV	then	_	_	_	_	_	O-ADV
@@ -2695,7 +2705,7 @@
 31	afloat	afloat	ADJ	JJ	_	30	xcomp	_	_	_	ADJ	afloat	_	_	_	_	_	O-ADJ
 32	.	.	PUNCT	.	_	22	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-17
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-18
 # text = That s enough .
 # mwe = That s enough .
 1	That	that	PRON	DT	_	3	nsubj	_	_	_	PRON	that	_	_	_	_	_	O-PRON
@@ -2703,7 +2713,7 @@
 3	enough	enough	ADJ	JJ	_	0	root	_	_	_	ADJ	enough	_	_	_	_	_	O-ADJ
 4	.	.	PUNCT	.	_	3	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-18
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-19
 # text = > Hell you do a bank robbery that s like 12 years and probably more profitable you re trying to reduce and already reducing crime Unless we re talking about a GTA5 grade heist the most you can get from a bank robbery is a few thousands , and you have a pretty high chance of getting shot while also your penalty is much higher than by just stealing a car ( I mean , stealing a car might be 1 - 2 years , 10 years would be an extreme case , but robbing a bank is going to be 10 + years for sure , just not worth it ) .
 # mwe = > Hell you do a bank robbery that s like 12 years and probably more profitable you re trying to reduce and already reducing crime Unless we re talking about a GTA5 grade heist the most you can get from a bank robbery is a few thousands , and you have a pretty high chance of getting shot while also your penalty is much higher than by just stealing a car ( I mean , stealing a car might be 1 - 2 years , 10 years would be an extreme case , but robbing a bank is going to be 10 + years for_sure , just not worth it ) .
 1	>	>	PUNCT	NFP	_	2	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
@@ -2820,7 +2830,7 @@
 112	)	)	PUNCT	-RRB-	_	110	punct	_	_	_	PUNCT	)	_	_	_	_	_	O-PUNCT
 113	.	.	PUNCT	.	_	4	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-19
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-20
 # text = > You re creating crime , spending more money on a dwindling crime , taking up police time , filling the courts and not helping solve the problem your solution does n't stop anything other than the initial unfortunate ones and the really stupid after that I m not creating crime , those criminals were already there , waiting for someone to leave their car unlocked .
 # mwe = > You re creating crime , spending more money on a dwindling crime , taking_up police time , filling the courts and not helping solve the problem your solution does n't stop anything other_than the initial unfortunate ones and the really stupid after that I m not creating crime , those criminals were already there , waiting for someone to leave their car unlocked .
 1	>	>	PUNCT	NFP	_	4	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
@@ -2891,7 +2901,7 @@
 66	unlocked	unlock	VERB	VBN	_	63	xcomp	_	_	_	V	unlock	_	_	_	_	_	O-V
 67	.	.	PUNCT	.	_	4	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-20
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-21
 # text = Someone who is n't stealing purely because they had n't found the right opportunity is just another criminal , not a truly law - abiding citizen .
 # mwe = Someone who is n't stealing purely because they had n't found the right opportunity is just another criminal , not a truly law - abiding citizen .
 1	Someone	someone	PRON	NN	_	18	nsubj	_	_	_	PRON	someone	_	_	_	_	_	O-PRON
@@ -2922,7 +2932,7 @@
 26	citizen	citizen	NOUN	NN	_	18	conj	_	_	_	N	citizen	_	_	_	_	_	O-N
 27	.	.	PUNCT	.	_	18	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-21
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-22
 # text = Someone who does n't steal because they fear getting caught is a law - abiding citizen in the end .
 # mwe = Someone who does n't steal because they fear getting caught is a law - abiding citizen in_the_end .
 1	Someone	someone	PRON	NN	_	16	nsubj	_	_	_	PRON	someone	_	_	_	_	_	O-PRON
@@ -2946,7 +2956,7 @@
 19	end	end	NOUN	NN	_	16	nmod	_	_	1:3	_	_	_	_	_	_	_	I_
 20	.	.	PUNCT	.	_	16	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-22
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-23
 # text = Also it s extremely cheap because there s no need to fill the streets with bait cars to scare em off a little .
 # mwe = Also it s extremely cheap because there s no need to fill the streets with bait cars to scare_ em _off a little .
 1	Also	also	ADV	RB	_	5	advmod	_	_	_	ADV	also	_	_	_	_	_	O-ADV
@@ -2974,7 +2984,7 @@
 23	little	little	ADJ	JJ	_	19	obl:npmod	_	_	_	ADJ	little	_	_	_	_	_	O-ADJ
 24	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-23
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-24
 # text = And yes it does stop criminals because by switching cars they ca n't get to know which ones are bait cars , and by trying out new techniques the criminals ca n't predict which ones are most likely to be baits .
 # mwe = And yes it does stop criminals because by switching cars they ca n't get to know which ones are bait cars , and by trying_out new techniques the criminals ca n't predict which ones are most likely to be baits .
 1	And	and	CCONJ	CC	_	5	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
@@ -3020,7 +3030,7 @@
 41	baits	bait	NOUN	NNS	_	38	xcomp	_	_	_	N	bait	_	_	_	_	_	O-N
 42	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-24
+# sent_id = spanish-022ee17b-a59d-43d6-65c9-90b2acb26b87-25
 # text = The only reason they ll stop getting caught is because they wo n't try , and that s win-win .
 # mwe = The only reason they ll stop getting caught is because they wo n't try , and that s win-win .
 1	The	the	DET	DT	_	3	det	_	_	_	DET	the	_	_	_	_	_	O-DET
@@ -6645,8 +6655,8 @@
 12	Wrong.	wrong.	ADV	RB	_	8	advmod	_	_	_	ADV	wrong.	_	_	_	_	_	O-ADV
 
 # sent_id = spanish-eb0fc38b-db7c-4aa0-d306-241c7801db00-03
-# text = Australia celebrates the day Captain Cook and the first fleet arrived in Botany Bay and began wiping out a 40,000 year old culture as its national day spend the day off at Aleixasv s house so you can be obnoxious together
-# mwe = Australia celebrates the day Captain Cook and the first fleet arrived in Botany Bay and began wiping_out a 40,000 year old culture as its national day spend_ the day _off at Aleixasv s house so you can be obnoxious together
+# text = Australia celebrates the day Captain Cook and the first fleet arrived in Botany Bay and began wiping out a 40,000 year old culture as its national day .
+# mwe = Australia celebrates the day Captain Cook and the first fleet arrived in Botany Bay and began wiping_out a 40,000 year old culture as its national day .
 1	Australia	Australia	PROPN	NNP	_	2	nsubj	_	_	_	N	Australia	_	_	_	_	_	O-N
 2	celebrates	celebrate	VERB	VBZ	_	0	root	_	_	_	V	celebrate	_	_	_	_	_	O-V
 3	the	the	DET	DT	_	4	det	_	_	_	DET	the	_	_	_	_	_	O-DET
@@ -6674,20 +6684,25 @@
 25	its	its	PRON	PRP$	_	27	nmod:poss	_	_	_	PRON.POSS	its	p.Gestalt	p.Gestalt	_	_	_	O-PRON.POSS-p.Gestalt
 26	national	national	ADJ	JJ	_	27	amod	_	_	_	ADJ	national	_	_	_	_	_	O-ADJ
 27	day	day	NOUN	NN	_	23	nmod	_	_	_	N	day	_	_	_	_	_	O-N
-28	spend	spend	VERB	VBP	_	2	conj	_	_	2:1	V	spend off	_	_	_	_	_	B-V
-29	the	the	DET	DT	_	30	det	_	_	_	DET	the	_	_	_	_	_	o-DET
-30	day	day	NOUN	NN	_	28	obj	_	_	_	N	day	_	_	_	_	_	o-N
-31	off	off	ADP	RP	_	28	compound:prt	_	_	2:2	_	_	_	_	_	_	_	I_
-32	at	at	ADP	IN	_	35	case	_	_	_	P	at	p.Locus	p.Locus	_	_	_	O-P-p.Locus
-33	Aleixasv	Aleixasv	PROPN	NNP	_	35	nmod:poss	_	_	_	N	Aleixasv	_	_	_	_	_	O-N
-34	s	's	PART	POS	_	33	case	_	_	_	POSS	's	p.Possessor	p.Possessor	_	_	_	O-POSS-p.Possessor
-35	house	house	NOUN	NN	_	28	obl	_	_	_	N	house	_	_	_	_	_	O-N
-36	so	so	SCONJ	IN	_	40	mark	_	_	_	SCONJ	so	_	_	_	_	_	O-SCONJ
-37	you	you	PRON	PRP	_	40	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
-38	can	can	AUX	MD	_	40	aux	_	_	_	AUX	can	_	_	_	_	_	O-AUX
-39	be	be	AUX	VB	_	40	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-40	obnoxious	obnoxious	ADJ	JJ	_	28	advcl	_	_	_	ADJ	obnoxious	_	_	_	_	_	O-ADJ
-41	together	together	ADV	RB	_	40	advmod	_	_	_	P	together	p.Ancillary	p.Ancillary	_	_	_	O-P-p.Ancillary
+28	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
+
+# sent_id = spanish-eb0fc38b-db7c-4aa0-d306-241c7801db00-04
+# text = spend the day off at Aleixasv s house so you can be obnoxious together
+# mwe = spend the day off at Aleixasv s house so you can be obnoxious together
+1	spend	spend	VERB	VBP	_	0	root	_	_	_	V	spend	_	_	_	_	_	O-V
+2	the	the	DET	DT	_	3	det	_	_	_	DET	the	_	_	_	_	_	O-DET
+3	day	day	NOUN	NN	_	1	obj	_	_	_	N	day	_	_	_	_	_	O-N
+4	off	off	ADV	RP	_	3	advcl	_	_	_	ADV	off	_	_	_	_	_	O-ADV
+5	at	at	ADP	IN	_	8	case	_	_	_	P	at	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+6	Aleixasv	Aleixasv	PROPN	NNP	_	8	nmod:poss	_	_	_	N	Aleixasv	_	_	_	_	_	O-N
+7	s	's	PART	POS	_	6	case	_	_	_	POSS	's	p.Possessor	p.Possessor	_	_	_	O-POSS-p.Possessor
+8	house	house	NOUN	NN	_	1	obl	_	_	_	N	house	_	_	_	_	_	O-N
+9	so	so	SCONJ	IN	_	13	mark	_	_	_	SCONJ	so	_	_	_	_	_	O-SCONJ
+10	you	you	PRON	PRP	_	13	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
+11	can	can	AUX	MD	_	13	aux	_	_	_	AUX	can	_	_	_	_	_	O-AUX
+12	be	be	AUX	VB	_	13	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
+13	obnoxious	obnoxious	ADJ	JJ	_	1	advcl	_	_	_	ADJ	obnoxious	_	_	_	_	_	O-ADJ
+14	together	together	ADV	RB	_	13	advmod	_	_	_	P	together	p.Ancillary	p.Ancillary	_	_	_	O-P-p.Ancillary
 
 # sent_id = french-fad32caf-e595-e3cb-07bf-aaea891e53cb-01
 # text = As you said , everyone makes mistakes .
@@ -9003,7 +9018,7 @@
 5	women	woman	NOUN	NNS	_	2	nmod	_	_	_	N	woman	_	_	_	_	_	O-N
 6	?	?	PUNCT	.	_	2	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
 
-# sent_id = german-8ebdbfe3-eb9a-c688-b9d3-9cca91551e82-07
+# sent_id = german-8ebdbfe3-eb9a-c688-b9d3-9cca91551e82-06
 # text = In the english language , men can refer to both people of the male gender as well as to people in general .
 # mwe = In the english language , men can refer to both people of the male gender as_well_as to people in general .
 1	In	in	ADP	IN	_	4	case	_	_	_	P	in	p.Manner	p.Manner	_	_	_	O-P-p.Manner
@@ -9030,7 +9045,7 @@
 22	general	general	ADJ	JJ	_	20	nmod	_	_	_	ADJ	general	_	_	_	_	_	O-ADJ
 23	.	.	PUNCT	.	_	8	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = german-8ebdbfe3-eb9a-c688-b9d3-9cca91551e82-08
+# sent_id = german-8ebdbfe3-eb9a-c688-b9d3-9cca91551e82-07
 # text = The latter definition is used here .
 # mwe = The latter definition is used here .
 1	The	the	DET	DT	_	3	det	_	_	_	DET	the	_	_	_	_	_	O-DET
@@ -11340,7 +11355,7 @@
 14	plus	plus	CCONJ	CC	_	16	cc	_	_	_	CCONJ	plus	_	_	_	_	_	O-CCONJ
 15	there	there	PRON	EX	_	16	expl	_	_	_	PRON	there	_	_	_	_	_	O-PRON
 16	are	be	VERB	VBP	_	4	conj	_	_	_	V	be	_	_	_	_	_	O-V
-17	~~probably~~	~~probably~~	ADV	RB	_	18	advmod	_	_	_	ADV	~~probably~~	_	_	_	_	_	O-ADV
+17	~~probably~~	probably	ADV	RB	_	18	advmod	_	_	_	ADV	probably	_	_	_	_	_	O-ADV
 18	surely	surely	ADV	RB	_	19	advmod	_	_	_	ADV	surely	_	_	_	_	_	O-ADV
 19	more	more	ADJ	JJR	_	20	amod	_	_	_	ADJ	more	_	_	_	_	_	O-ADJ
 20	people	people	NOUN	NNS	_	16	nsubj	_	_	_	N	people	_	_	_	_	_	O-N
@@ -18800,8 +18815,8 @@
 9	?	?	PUNCT	.	_	4	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-27
-# text = > this was in your first reaction to me , and i told you then You told me then what ?
-# mwe = > this was in your first reaction to me , and i told you then You told me then what ?
+# text = > this was in your first reaction to me , and i told you then
+# mwe = > this was in your first reaction to me , and i told you then
 1	>	>	PUNCT	NFP	_	7	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
 2	this	this	PRON	DT	_	7	nsubj	_	_	_	PRON	this	_	_	_	_	_	O-PRON
 3	was	be	AUX	VBD	_	7	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
@@ -18816,15 +18831,19 @@
 12	i	i	PRON	PRP	_	13	nsubj	_	_	_	PRON	i	_	_	_	_	_	O-PRON
 13	told	tell	VERB	VBD	_	7	conj	_	_	_	V	tell	_	_	_	_	_	O-V
 14	you	you	PRON	PRP	_	13	obj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
-15	then	then	ADV	RB	_	17	advmod	_	_	_	ADV	then	_	_	_	_	_	O-ADV
-16	You	you	PRON	PRP	_	17	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
-17	told	tell	VERB	VBD	_	13	ccomp	_	_	_	V	tell	_	_	_	_	_	O-V
-18	me	I	PRON	PRP	_	17	obj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
-19	then	then	ADV	RB	_	20	advmod	_	_	_	ADV	then	_	_	_	_	_	O-ADV
-20	what	what	PRON	WP	_	17	ccomp	_	_	_	PRON	what	_	_	_	_	_	O-PRON
-21	?	?	PUNCT	.	_	7	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
+15	then	then	ADV	RB	_	13	advmod	_	_	_	ADV	then	_	_	_	_	_	O-ADV
 
 # sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-28
+# text = You told me then what ?
+# mwe = You told me then what ?
+1	You	you	PRON	PRP	_	2	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
+2	told	tell	VERB	VBD	_	13	root	_	_	_	V	tell	_	_	_	_	_	O-V
+3	me	I	PRON	PRP	_	2	obj	_	_	_	PRON	I	_	_	_	_	_	O-PRON
+4	then	then	ADV	RB	_	2	advmod	_	_	_	ADV	then	_	_	_	_	_	O-ADV
+5	what	what	PRON	WP	_	2	obj	_	_	_	PRON	what	_	_	_	_	_	O-PRON
+6	?	?	PUNCT	.	_	2	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
+
+# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-29
 # text = Your first reply to me was : > umm , read my other comments i ve already answered this .
 # mwe = Your first reply to me was : > umm , read my other comments i ve already answered this .
 1	Your	you	PRON	PRP$	_	3	nmod:poss	_	_	_	PRON.POSS	you	p.Originator	p.Gestalt	_	_	_	O-PRON.POSS-p.Originator|p.Gestalt
@@ -18848,7 +18867,7 @@
 19	this	this	PRON	DT	_	18	obj	_	_	_	PRON	this	_	_	_	_	_	O-PRON
 20	.	.	PUNCT	.	_	11	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-29
+# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-30
 # text = one is clearly going for an image while the other is not
 # mwe = one is clearly going_for an image while the other is not
 1	one	one	NUM	CD	_	4	nsubj	_	_	_	NUM	one	_	_	_	_	_	O-NUM
@@ -18864,7 +18883,7 @@
 11	is	be	AUX	VBZ	_	12	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 12	not	not	PART	RB	_	4	advcl	_	_	_	ADV	not	_	_	_	_	_	O-ADV
 
-# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-30
+# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-31
 # text = That s not really telling * anything * .
 # mwe = That s not really telling * anything * .
 1	That	that	PRON	DT	_	5	nsubj	_	_	_	PRON	that	_	_	_	_	_	O-PRON
@@ -18877,15 +18896,15 @@
 8	*	*	PUNCT	NFP	_	7	punct	_	_	_	PUNCT	*	_	_	_	_	_	O-PUNCT
 9	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-31
+# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-32
 # text = > learn 2 read
 # mwe = > learn 2 read
 1	>	>	SYM	NFP	_	2	punct	_	_	_	SYM	>	_	_	_	_	_	O-SYM
 2	learn	learn	VERB	VB	_	0	root	_	_	_	V	learn	_	_	_	_	_	O-V
-3	2	2	NUM	CD	_	4	nummod	_	_	_	NUM	2	_	_	_	_	_	O-NUM
+3	2	to	PART	TO	Abbr=Yes	4	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
 4	read	read	NOUN	NN	_	2	obj	_	_	_	N	read	_	_	_	_	_	O-N
 
-# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-32
+# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-33
 # text = Are ... are you serious ?
 # mwe = Are ... are you serious ?
 1	Are	be	VERB	VBP	_	0	root	_	_	_	V	be	_	_	_	_	_	O-V
@@ -18895,7 +18914,7 @@
 5	serious	serious	ADJ	JJ	_	1	parataxis	_	_	_	ADJ	serious	_	_	_	_	_	O-ADJ
 6	?	?	PUNCT	.	_	1	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
 
-# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-33
+# sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-34
 # text = Of the two of us * I m * not the one using eye - liquefyingly bad spelling and grammar .
 # mwe = Of the two of us * I m * not the one using eye - liquefyingly bad spelling and grammar .
 1	Of	of	ADP	IN	_	3	case	_	_	_	P	of	p.Whole	p.Whole	_	_	_	O-P-p.Whole
@@ -21669,7 +21688,7 @@
 15	in	in	ADP	RP	_	14	compound:prt	_	_	_	P	in	p.Goal	p.Locus	_	_	_	O-P-p.Goal|p.Locus
 16	.	.	PUNCT	.	_	3	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-6000656e-f9f5-90fc-48ca-c843b34efc65-03
+# sent_id = spanish-6000656e-f9f5-90fc-48ca-c843b34efc65-02
 # text = Most of the time you can and should double the amount of garlic .
 # mwe = Most of the time you can and should double the amount of garlic .
 1	Most	most	ADJ	JJS	_	6	obj	_	_	_	ADJ	most	_	_	_	_	_	O-ADJ
@@ -21687,7 +21706,7 @@
 13	garlic	garlic	NOUN	NN	_	11	nmod	_	_	_	N	garlic	_	_	_	_	_	O-N
 14	.	.	PUNCT	.	_	6	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-6000656e-f9f5-90fc-48ca-c843b34efc65-04
+# sent_id = spanish-6000656e-f9f5-90fc-48ca-c843b34efc65-03
 # text = Hah , glad I m not the only one who does this .
 # mwe = Hah , glad I m not the only one who does this .
 1	Hah	hah	INTJ	UH	_	3	discourse	_	_	_	INTJ	hah	_	_	_	_	_	O-INTJ
@@ -21704,7 +21723,7 @@
 12	this	this	PRON	DT	_	11	obj	_	_	_	PRON	this	_	_	_	_	_	O-PRON
 13	.	.	PUNCT	.	_	3	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = spanish-6000656e-f9f5-90fc-48ca-c843b34efc65-05
+# sent_id = spanish-6000656e-f9f5-90fc-48ca-c843b34efc65-04
 # text = Though I usually more than double and end up putting like 4 or 5 cloves in .
 # mwe = Though I usually more than double and end_up putting like 4 or 5 cloves in .
 1	Though	though	SCONJ	IN	_	4	mark	_	_	_	SCONJ	though	_	_	_	_	_	O-SCONJ
@@ -23373,19 +23392,23 @@
 8	BLABLA	BLABLA	PROPN	NNP	_	6	conj	_	_	_	N	BLABLA	_	_	_	_	_	O-N
 
 # sent_id = french-b80100ca-99e4-3e94-44e2-0d0d57508c39-03
-# text = > everybody stare at us Thanks every god for self checkout
-# mwe = > everybody stare at us Thanks every god for self checkout
+# text = > everybody stare at us
+# mwe = > everybody stare at us
 1	>	>	PUNCT	NFP	_	3	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
 2	everybody	everybody	PRON	NN	_	3	nsubj	_	_	_	PRON	everybody	_	_	_	_	_	O-PRON
 3	stare	stare	VERB	VB	_	0	root	_	_	_	V	stare	_	_	_	_	_	O-V
 4	at	at	ADP	IN	_	5	case	_	_	_	P	at	p.Stimulus	p.Direction	_	_	_	O-P-p.Stimulus|p.Direction
 5	us	we	PRON	PRP	_	3	obl	_	_	_	PRON	we	_	_	_	_	_	O-PRON
-6	Thanks	thanks	NOUN	NN	_	3	parataxis	_	_	_	N	thanks	_	_	_	_	_	O-N
-7	every	every	DET	DT	_	8	det	_	_	_	DET	every	_	_	_	_	_	O-DET
-8	god	god	PROPN	NNP	_	6	nmod:npmod	_	_	_	N	god	_	_	_	_	_	O-N
-9	for	for	ADP	IN	_	11	case	_	_	_	P	for	p.Explanation	p.Explanation	_	_	_	O-P-p.Explanation
-10	self	self	PRON	PRP	_	11	compound	_	_	_	PRON	self	_	_	_	_	_	O-PRON
-11	checkout	checkout	NOUN	NN	_	6	nmod	_	_	_	N	checkout	_	_	_	_	_	O-N
+
+# sent_id = french-b80100ca-99e4-3e94-44e2-0d0d57508c39-04
+# text = Thanks every god for self checkout
+# mwe = Thanks every god for self checkout
+1	Thanks	thanks	NOUN	NN	_	0	root	_	_	_	N	thanks	_	_	_	_	_	O-N
+2	every	every	DET	DT	_	3	det	_	_	_	DET	every	_	_	_	_	_	O-DET
+3	god	god	PROPN	NNP	_	1	nmod:npmod	_	_	_	N	god	_	_	_	_	_	O-N
+4	for	for	ADP	IN	_	6	case	_	_	_	P	for	p.Explanation	p.Explanation	_	_	_	O-P-p.Explanation
+5	self	self	PRON	PRP	_	6	compound	_	_	_	PRON	self	_	_	_	_	_	O-PRON
+6	checkout	checkout	NOUN	NN	_	1	nmod	_	_	_	N	checkout	_	_	_	_	_	O-N
 
 # sent_id = spanish-a25e8289-e04a-f5af-ce56-ead9faca65b1-01
 # text = I have actually seen people complaining about the movie having a feminist droid .
@@ -24333,12 +24356,12 @@
 14	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = spanish-0f3ce8a5-5a27-0308-8239-0bbc7e6ef79d-02
-# text = If when they turn 13 and they choose to make their life public lives , of course after teaching them the dos and do nt's of cyberlife , then so be it .
-# mwe = If when they turn 13 and they choose to make their life public lives , of_course after teaching them the dos and do nt's of cyberlife , then so be it .
+# text = If when they turn 13 and they choose to make their life public lives , of course after teaching them the dos and dont's of cyberlife , then so be it .
+# mwe = If when they turn 13 and they choose to make their life public lives , of_course after teaching them the dos and dont's of cyberlife , then so be it .
 1	If	if	SCONJ	IN	_	4	mark	_	_	_	SCONJ	if	_	_	_	_	_	O-SCONJ
 2	when	when	ADV	WRB	_	4	mark	_	_	_	ADV	when	_	_	_	_	_	O-ADV
 3	they	they	PRON	PRP	_	4	nsubj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
-4	turn	turn	VERB	VBP	_	32	advcl	_	_	_	V	turn	_	_	_	_	_	O-V
+4	turn	turn	VERB	VBP	_	31	advcl	_	_	_	V	turn	_	_	_	_	_	O-V
 5	13	13	NUM	CD	_	4	obj	_	_	_	NUM	13	_	_	_	_	_	O-NUM
 6	and	and	CCONJ	CC	_	8	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
 7	they	they	PRON	PRP	_	8	nsubj	_	_	_	PRON	they	_	_	_	_	_	O-PRON
@@ -24358,20 +24381,19 @@
 21	the	the	DET	DT	_	22	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 22	dos	dos	NOUN	NN	_	19	obj	_	_	_	N	dos	_	_	_	_	_	O-N
 23	and	and	CCONJ	CC	_	24	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-24	do	do	VERB	VB	_	19	conj	_	_	_	V	do	_	_	_	_	_	O-V
-25	nt's	nt'	NOUN	NNS	_	24	obj	_	_	_	N	nt'	_	_	_	_	_	O-N
-26	of	of	ADP	IN	_	27	case	_	_	_	P	of	p.Gestalt	p.Gestalt	_	_	_	O-P-p.Gestalt
-27	cyberlife	cyberlife	NOUN	NN	_	25	nmod	_	_	_	N	cyberlife	_	_	_	_	_	O-N
-28	,	,	PUNCT	,	_	32	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-29	then	then	ADV	RB	_	32	advmod	_	_	_	ADV	then	_	_	_	_	_	O-ADV
-30	so	so	ADV	RB	_	32	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
-31	be	be	AUX	VB	_	32	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-32	it	it	PRON	PRP	_	0	root	_	_	_	PRON	it	_	_	_	_	_	O-PRON
-33	.	.	PUNCT	.	_	32	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
+24	dont's	don't	NOUN	NNS	_	22	conj	_	_	_	N	don't	_	_	_	_	_	O-N
+25	of	of	ADP	IN	_	26	case	_	_	_	P	of	p.Gestalt	p.Gestalt	_	_	_	O-P-p.Gestalt
+26	cyberlife	cyberlife	NOUN	NN	_	24	nmod	_	_	_	N	cyberlife	_	_	_	_	_	O-N
+27	,	,	PUNCT	,	_	31	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
+28	then	then	ADV	RB	_	31	advmod	_	_	_	ADV	then	_	_	_	_	_	O-ADV
+29	so	so	ADV	RB	_	31	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
+30	be	be	AUX	VB	_	31	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
+31	it	it	PRON	PRP	_	0	root	_	_	_	PRON	it	_	_	_	_	_	O-PRON
+32	.	.	PUNCT	.	_	31	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = english-d138d150-8557-716a-a750-2a812227d96d-01
-# text = > The thing that determines the capability of an air force is usually pilot skill which is directly proportional to the number of available flying hours for things like training and exercises , F - 35 is almost designed to be stuck on the ground for most of the time for non- - USAF budgeted air forces
-# mwe = > The thing that determines the capability of an air force is usually pilot skill which is directly proportional to the number of available flying hours for things like training and exercises , F - 35 is almost designed to be stuck on the ground for most of the time for non- - USAF budgeted air forces
+# text = > The thing that determines the capability of an air force is usually pilot skill which is directly proportional to the number of available flying hours for things like training and exercises , F - 35 is almost designed to be stuck on the ground for most of the time for non - USAF budgeted air forces
+# mwe = > The thing that determines the capability of an air force is usually pilot skill which is directly proportional to the number of available flying hours for things like training and exercises , F - 35 is almost designed to be stuck on the ground for most of the time for non - USAF budgeted air forces
 1	>	>	PUNCT	NFP	_	15	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
 2	The	the	DET	DT	_	3	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 3	thing	thing	NOUN	NN	_	15	nsubj	_	_	_	N	thing	_	_	_	_	_	O-N
@@ -24423,7 +24445,7 @@
 49	the	the	DET	DT	_	50	det	_	_	_	DET	the	_	_	_	_	_	O-DET
 50	time	time	NOUN	NN	_	47	nmod	_	_	_	N	time	_	_	_	_	_	O-N
 51	for	for	ADP	IN	_	57	case	_	_	_	P	for	p.Circumstance	p.Circumstance	_	_	_	O-P-p.Circumstance
-52	non-	non-	ADJ	JJ	_	54	amod	_	_	_	ADJ	non-	_	_	_	_	_	O-ADJ
+52	non	non	ADJ	JJ	_	54	amod	_	_	_	ADJ	non	_	_	_	_	_	O-ADJ
 53	-	-	PUNCT	HYPH	_	54	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
 54	USAF	USAF	PROPN	NNP	_	57	compound	_	_	_	N	USAF	_	_	_	_	_	O-N
 55	budgeted	budget	VERB	VBN	_	57	amod	_	_	_	V	budget	_	_	_	_	_	O-V
@@ -25464,18 +25486,19 @@
 6	:	:	PUNCT	:	_	2	punct	_	_	_	PUNCT	:	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-25482047-59d8-2aaa-da4b-25cd20b9e029-04
-# text = 1 . The enemys industrial advantage is to big .
-# mwe = 1 . The enemys industrial advantage is to big .
-1	1	1	X	LS	_	9	nummod	_	_	_	X	1	_	_	_	_	_	O-X
+# text = 1 . The enemy s industrial advantage is to big .
+# mwe = 1 . The enemy s industrial advantage is to big .
+1	1	1	X	LS	_	10	nummod	_	_	_	X	1	_	_	_	_	_	O-X
 2	.	.	PUNCT	.	_	1	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
-3	The	the	DET	DT	_	6	det	_	_	_	DET	the	_	_	_	_	_	O-DET
-4	enemys	enemy	NOUN	NNS	_	6	compound	_	_	_	N	enemy	_	_	_	_	_	O-N
-5	industrial	industrial	ADJ	JJ	_	6	amod	_	_	_	ADJ	industrial	_	_	_	_	_	O-ADJ
-6	advantage	advantage	NOUN	NN	_	9	nsubj	_	_	_	N	advantage	_	_	_	_	_	O-N
-7	is	be	AUX	VBZ	_	9	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-8	to	too	ADV	RB	Typo=Yes	9	advmod	_	CorrectForm=too	_	ADV	too	_	_	_	_	_	O-ADV
-9	big	big	ADJ	JJ	_	0	root	_	_	_	ADJ	big	_	_	_	_	_	O-ADJ
-10	.	.	PUNCT	.	_	9	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
+3	The	the	DET	DT	_	7	det	_	_	_	DET	the	_	_	_	_	_	O-DET
+4	enemy	enemy	NOUN	NNS	_	7	nmod:poss	_	_	_	N	enemy	_	_	_	_	_	O-N
+5	s	's	PART	POS	_	4	case	_	_	_	POSS	's	p.Gestalt	p.Gestalt	_	_	_	O-POSS-p.Gestalt|p.Gestalt
+6	industrial	industrial	ADJ	JJ	_	7	amod	_	_	_	ADJ	industrial	_	_	_	_	_	O-ADJ
+7	advantage	advantage	NOUN	NN	_	10	nsubj	_	_	_	N	advantage	_	_	_	_	_	O-N
+8	is	be	AUX	VBZ	_	10	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
+9	to	too	ADV	RB	Typo=Yes	10	advmod	_	CorrectForm=too	_	ADV	too	_	_	_	_	_	O-ADV
+10	big	big	ADJ	JJ	_	0	root	_	_	_	ADJ	big	_	_	_	_	_	O-ADJ
+11	.	.	PUNCT	.	_	10	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-25482047-59d8-2aaa-da4b-25cd20b9e029-05
 # text = No matter how much we simplify out tankdesigns , we will never be able to match their production .
@@ -25764,7 +25787,7 @@
 7	gathering	gather	VERB	VBG	_	6	xcomp	_	_	_	V	gather	_	_	_	_	_	O-V
 8	their	they	PRON	PRP$	_	11	nmod:poss	_	_	_	PRON.POSS	they	p.Originator	p.Gestalt	_	_	_	O-PRON.POSS-p.Originator|p.Gestalt
 9	actual	actual	ADJ	JJ	_	11	amod	_	_	_	ADJ	actual	_	_	_	_	_	O-ADJ
-10	usefull	usefull	ADJ	JJ	_	11	amod	_	_	_	ADJ	usefull	_	_	_	_	_	O-ADJ
+10	usefull	useful	ADJ	JJ	_	11	amod	_	_	_	ADJ	useful	_	_	_	_	_	O-ADJ
 11	research	research	NOUN	NN	_	7	obj	_	_	_	N	research	_	_	_	_	_	O-N
 12	in	in	ADP	IN	_	14	case	_	_	_	P	in	p.Goal	p.Locus	_	_	_	O-P-p.Goal|p.Locus
 13	secret	secret	NOUN	NN	_	14	compound	_	_	_	N	secret	_	_	_	_	_	O-N
@@ -25846,17 +25869,21 @@
 
 # sent_id = french-449c4ca2-3685-156b-89c8-0c4de9367ed9-01
 # text = Looks like 0.1µF X-type and 2x2500µF Y-type 250V capacitors .
-# mwe = Looks like 0.1µF X-type and 2x2500µF Y-type 250V capacitors .
+# mwe = Looks like 0.1 µF X-type and 2x 2500 µF Y-type 250 V capacitors .
 1	Looks	look	VERB	VBZ	_	0	root	_	_	_	V	look	_	_	_	_	_	O-V
-2	like	like	ADP	IN	_	4	case	_	_	_	P	like	p.Theme	p.ComparisonRef	_	_	_	O-P-p.Theme|p.ComparisonRef
-3	0.1µF	0.1µF	NUM	CD	_	4	nummod	_	_	_	NUM	0.1µF	_	_	_	_	_	O-NUM
-4	X-type	X-type	PROPN	NNP	_	1	obl	_	_	_	N	X-type	_	_	_	_	_	O-N
-5	and	and	CCONJ	CC	_	9	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-6	2x2500µF	2x2500µF	NUM	CD	_	4	conj	_	_	_	NUM	2x2500µF	_	_	_	_	_	O-NUM
-7	Y-type	Y-type	PROPN	NNP	_	9	compound	_	_	_	N	Y-type	_	_	_	_	_	O-N
-8	250V	250v	NOUN	NN	_	9	compound	_	_	_	N	250v	_	_	_	_	_	O-N
-9	capacitors	capacitor	NOUN	NNS	_	4	conj	_	_	_	N	capacitor	_	_	_	_	_	O-N
-10	.	.	PUNCT	.	_	1	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
+2	like	like	ADP	IN	_	5	case	_	_	_	P	like	p.Theme	p.ComparisonRef	_	_	_	O-P-p.Theme|p.ComparisonRef
+3	0.1	0.1	NUM	CD	_	4	nummod	_	_	_	NUM	0.1	_	_	_	_	_	O-NUM
+4	µF	µF	NOUN	NN	_	5	compound	_	_	_	N	µF	_	_	_	_	_	O-N
+5	X-type	X-type	PROPN	NNP	_	13	compound	_	_	_	N	X-type	_	_	_	_	_	O-N
+6	and	and	CCONJ	CC	_	10	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
+7	2x	2x	NUM	CD	_	10	nummod	_	_	_	NUM	2x	_	_	_	_	_	O-NUM
+8	2500	2500	NUM	CD	_	9	nummod	_	_	_	NUM	2500	_	_	_	_	_	O-NUM
+9	µF	µF	NOUN	CD	_	10	compound	_	_	_	N	µF	_	_	_	_	_	O-N
+10	Y-type	Y-type	PROPN	NNP	_	5	conj	_	_	_	N	Y-type	_	_	_	_	_	O-N
+11	250	250	NUM	CD	_	12	nummod	_	_	_	NUM	250	_	_	_	_	_	O-NUM
+12	V	V	NOUN	NN	_	13	compound	_	_	_	N	V	_	_	_	_	_	O-N
+13	capacitors	capacitor	NOUN	NNS	_	4	conj	_	_	_	N	capacitor	_	_	_	_	_	O-N
+14	.	.	PUNCT	.	_	1	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = french-449c4ca2-3685-156b-89c8-0c4de9367ed9-02
 # text = If you ca n't find a 3 - in - 1 package you can replace it with 3 individual caps .
