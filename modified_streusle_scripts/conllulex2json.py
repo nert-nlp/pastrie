@@ -26,7 +26,7 @@ Also performs validation checks on the input.
 
 
 def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=False and 'full' and 'toks',
-               validate_pos=True, validate_type=True):
+               validate_pos=True, validate_type=True, override_mwe_render=False):
     """Given a .conllulex or .json file, return an iterator over sentences.
     If a .conllulex file, performs consistency checks.
 
@@ -43,6 +43,8 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
     input lines as a string in the returned data structure--'full' to store all
     lines (including metadata and ellipsis nodes), 'toks' to store regular tokens only.
     Has no effect if input is JSON.
+    @param override_mwe_render: If the automatically rendered MWE display differs from the `# mwe = `
+    line of the CoNLL-U file, print a warning and use the automatic one for the JSON.
     """
     if store_conllulex: assert store_conllulex in {'full', 'toks'}
 
@@ -222,6 +224,9 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
                    smweGroups, wmweGroups)
         if sent['mwe']!=s:
             caveat = ' (may be due to simplification)' if '$1' in sent['mwe'] else ''
+            if override_mwe_render:
+                caveat += ' (OVERRIDING)'
+                sent['mwe'] = s
             print(f'MWE string mismatch{caveat}:', s,sent['mwe'],sent['sent_id'], file=sys.stderr)
 
     if ss_mapper is None:
@@ -419,4 +424,5 @@ if __name__ == '__main__':
     argparser.add_argument("--no-validate-pos", action="store_false", dest="validate_pos")
     argparser.add_argument("--no-validate-type", action="store_false", dest="validate_type")
     argparser.add_argument("--store-conllulex", choices=(False, 'full', 'toks'))
+    argparser.add_argument("--override-mwe-render", action="store_true", dest="override_mwe_render")
     print_json(load_sents(**vars(argparser.parse_args())))

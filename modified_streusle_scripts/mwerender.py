@@ -308,3 +308,6 @@ def test_unrender():
 if __name__=='__main__':
     import doctest
     doctest.testmod()
+    
+# To update the rendered MWE strings in .conllulex to match token annotations,
+# use the --override-mwe-render flag of conllulex2json.py (and then run json2conllulex.py).
