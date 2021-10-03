@@ -36,9 +36,10 @@ PASTRIE is released in the following formats. We expect that most projects will 
 
 PASTRIE mostly follows [STREUSLE](https://github.com/nert-nlp/streusle) with respect to the data format and SNACS annotation practice. Primary differences in the annotations are:
 - Lemmas, part-of-speech tags, and syntactic dependencies aim to follow the UD standard in both cases. They are gold in STREUSLE, versus automatic with some manual corrections in PASTRIE.
-  * The PASTRIE `text` field for each sentence is tokenized, whereas in STREUSLE/most UD corpora it is the raw source text.
   * PASTRIE does not group together base+clitic combinations, whereas STREUSLE does (_multiword tokens_—where a single orthographic word contains multiple syntactic words).
-  * PASTRIE lacks morphological features and enhanced dependencies.
+  * PASTRIE does not regularly specify `SpaceAfter=No` to indicate alignment between the tokens and the raw text.
+  * In PASTRIE, the raw text string accompanying the sentence may contain two or more consecutive spaces.
+  * PASTRIE lacks enhanced dependencies.
 - Multiword expression annotations in PASTRIE are limited to expressions containing a preposition. Depending on the syntactic head, the expression may or may not have a SNACS supersense.
   * Verbal multiword expressions in PASTRIE are not subtyped in the lexcat; they all have a lexcat of `V`.
 - Noun and verb expressions in PASTRIE do not have supersense labels.
