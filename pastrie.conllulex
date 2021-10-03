@@ -8315,10 +8315,10 @@
 
 # sent_id = german-fe0717e9-61b4-b18e-7fde-174c299e3274-04
 # text = ARK and its DLC BS on the other hand ..
-# mwe = ARK and it DLC BS on_the_other_hand ..
+# mwe = ARK and its DLC BS on_the_other_hand ..
 1	ARK	ARK	PROPN	NNP	Number=Sing	0	root	_	_	_	N	ARK	_	_	_	_	_	O-N
 2	and	and	CCONJ	CC	_	5	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-3	it	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	_	_	PRON	its	_	_	_	_	_	O-PRON
+3	its	it	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	_	_	PRON	it	_	_	_	_	_	O-PRON
 4	DLC	DLC	PROPN	NNP	Number=Sing	5	compound	_	_	_	N	DLC	_	_	_	_	_	O-N
 5	BS	bs	NOUN	NN	Number=Sing	1	conj	_	_	_	N	bs	_	_	_	_	_	O-N
 6	on	on	ADP	IN	_	9	case	_	_	1:1	DISC	on the other hand	_	_	_	_	_	B-DISC
@@ -9445,8 +9445,8 @@
 
 # newdoc id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04
 # sent_id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-01
-# text = > Comparing him to the Nazis is just downright wrong -
-# mwe = > Comparing him to the Nazi's is just downright wrong -
+# text = > Comparing him to the Nazis is just downright wrong
+# mwe = > Comparing him to the Nazi's is just downright wrong
 1	>	>	PUNCT	NFP	_	10	punct	_	_	_	PUNCT	>	_	_	_	_	_	O-PUNCT
 2	Comparing	compare	VERB	VBG	VerbForm=Ger	10	csubj	_	_	_	V	compare	_	_	_	_	_	O-V
 3	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	obj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
@@ -9457,169 +9457,173 @@
 8	just	just	ADV	RB	_	10	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
 9	downright	downright	ADV	RB	_	10	advmod	_	_	_	ADV	downright	_	_	_	_	_	O-ADV
 10	wrong	wrong	ADJ	JJ	Degree=Pos	0	root	_	_	_	ADJ	wrong	_	_	_	_	_	O-ADJ
-11	-	-	PUNCT	,	_	10	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-02
-# text = He joined a racially motivated terrorist group whose official goal was ethnic cleansings , which he supported since he was twelve . -
-# mwe = He joined a racially motivated terrorist group whose official goal was ethnic cleansings , which he supported since he was twelve . -
-1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-2	joined	join	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_	_	V	join	_	_	_	_	_	O-V
-3	a	a	DET	DT	Definite=Ind|PronType=Art	7	det	_	_	_	DET	a	_	_	_	_	_	O-DET
-4	racially	racially	ADV	RB	_	5	advmod	_	_	_	ADV	racially	_	_	_	_	_	O-ADV
-5	motivated	motivated	ADJ	JJ	Degree=Pos	7	amod	_	_	_	ADJ	motivated	_	_	_	_	_	O-ADJ
-6	terrorist	terrorist	NOUN	NN	Degree=Pos	7	compound	_	_	_	N	terrorist	_	_	_	_	_	O-N
-7	group	group	NOUN	NN	Number=Sing	2	obj	_	_	_	N	group	_	_	_	_	_	O-N
-8	whose	whose	PRON	WP$	Poss=Yes|PronType=Int	10	nmod:poss	_	_	_	PRON.POSS	whose	p.Gestalt	p.Gestalt	_	_	_	O-PRON.POSS-p.Gestalt
-9	official	official	ADJ	JJ	Degree=Pos	10	amod	_	_	_	ADJ	official	_	_	_	_	_	O-ADJ
-10	goal	goal	NOUN	NN	Number=Sing	13	nsubj	_	_	_	N	goal	_	_	_	_	_	O-N
-11	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-12	ethnic	ethnic	ADJ	JJ	Degree=Pos	13	amod	_	_	_	ADJ	ethnic	_	_	_	_	_	O-ADJ
-13	cleansings	cleansing	NOUN	NNS	Number=Plur	7	acl:relcl	_	_	_	N	cleansing	_	_	_	_	_	O-N
-14	,	,	PUNCT	,	_	13	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-15	which	which	PRON	WDT	PronType=Rel	17	obj	_	_	_	PRON	which	_	_	_	_	_	O-PRON
-16	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-17	supported	support	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	acl:relcl	_	_	_	V	support	_	_	_	_	_	O-V
-18	since	since	SCONJ	IN	_	21	mark	_	_	_	P	since	p.StartTime	p.StartTime	_	_	_	O-P-p.StartTime
-19	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-20	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-21	twelve	twelve	NUM	CD	NumType=Card	17	advcl	_	_	_	NUM	twelve	_	_	_	_	_	O-NUM
-22	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
-23	-	-	PUNCT	NFP	_	2	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+# text = - He joined a racially motivated terrorist group whose official goal was ethnic cleansings , which he supported since he was twelve .
+# mwe = - He joined a racially motivated terrorist group whose official goal was ethnic cleansings , which he supported since he was twelve .
+1	-	-	PUNCT	,	_	3	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+2	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+3	joined	join	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_	_	V	join	_	_	_	_	_	O-V
+4	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_	_	DET	a	_	_	_	_	_	O-DET
+5	racially	racially	ADV	RB	_	6	advmod	_	_	_	ADV	racially	_	_	_	_	_	O-ADV
+6	motivated	motivated	ADJ	JJ	Degree=Pos	8	amod	_	_	_	ADJ	motivated	_	_	_	_	_	O-ADJ
+7	terrorist	terrorist	NOUN	NN	Degree=Pos	8	compound	_	_	_	N	terrorist	_	_	_	_	_	O-N
+8	group	group	NOUN	NN	Number=Sing	3	obj	_	_	_	N	group	_	_	_	_	_	O-N
+9	whose	whose	PRON	WP$	Poss=Yes|PronType=Int	11	nmod:poss	_	_	_	PRON.POSS	whose	p.Gestalt	p.Gestalt	_	_	_	O-PRON.POSS-p.Gestalt
+10	official	official	ADJ	JJ	Degree=Pos	11	amod	_	_	_	ADJ	official	_	_	_	_	_	O-ADJ
+11	goal	goal	NOUN	NN	Number=Sing	14	nsubj	_	_	_	N	goal	_	_	_	_	_	O-N
+12	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
+13	ethnic	ethnic	ADJ	JJ	Degree=Pos	14	amod	_	_	_	ADJ	ethnic	_	_	_	_	_	O-ADJ
+14	cleansings	cleansing	NOUN	NNS	Number=Plur	8	acl:relcl	_	_	_	N	cleansing	_	_	_	_	_	O-N
+15	,	,	PUNCT	,	_	14	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
+16	which	which	PRON	WDT	PronType=Rel	18	obj	_	_	_	PRON	which	_	_	_	_	_	O-PRON
+17	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+18	supported	support	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	acl:relcl	_	_	_	V	support	_	_	_	_	_	O-V
+19	since	since	SCONJ	IN	_	22	mark	_	_	_	P	since	p.StartTime	p.StartTime	_	_	_	O-P-p.StartTime
+20	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+21	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
+22	twelve	twelve	NUM	CD	NumType=Card	18	advcl	_	_	_	NUM	twelve	_	_	_	_	_	O-NUM
+23	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-03
-# text = He committed treason , took part in a civil war and broke the Geneva convention whilst doing so . -
-# mwe = He committed treason , took_part~in a civil war and broke the Geneva convention whilst doing so . -
-1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-2	committed	commit	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_	_	V	commit	_	_	_	_	_	O-V
-3	treason	treason	NOUN	NN	Number=Sing	2	obj	_	_	_	N	treason	_	_	_	_	_	O-N
-4	,	,	PUNCT	,	_	5	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-5	took	take	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	conj	_	_	1:1	V	take part	_	_	2:1	_	take part in	B-V
-6	part	part	NOUN	NN	Number=Sing	5	obj	_	_	1:2	_	_	_	_	2:2	_	_	I_
-7	in	in	ADP	IN	_	10	case	_	_	_	P	in	p.Circumstance	p.Locus	2:3	_	_	I~-P-p.Circumstance|p.Locus
-8	a	a	DET	DT	Definite=Ind|PronType=Art	10	det	_	_	_	DET	a	_	_	_	_	_	O-DET
-9	civil	civil	ADJ	JJ	Degree=Pos	10	amod	_	_	_	ADJ	civil	_	_	_	_	_	O-ADJ
-10	war	war	NOUN	NN	Number=Sing	5	obl	_	_	_	N	war	_	_	_	_	_	O-N
-11	and	and	CCONJ	CC	_	12	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-12	broke	break	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	conj	_	_	_	V	break	_	_	_	_	_	O-V
-13	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_	_	DET	the	_	_	_	_	_	O-DET
-14	Geneva	Geneva	PROPN	NNP	Number=Sing	15	compound	_	_	_	N	Geneva	_	_	_	_	_	O-N
-15	convention	convention	NOUN	NN	Number=Sing	12	obj	_	_	_	N	convention	_	_	_	_	_	O-N
-16	whilst	whilst	SCONJ	IN	_	17	mark	_	_	_	SCONJ	whilst	_	_	_	_	_	O-SCONJ
-17	doing	do	VERB	VBG	VerbForm=Ger	12	advcl	_	_	_	V	do	_	_	_	_	_	O-V
-18	so	so	ADV	RB	_	17	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
-19	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
-20	-	-	PUNCT	NFP	_	2	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+# text = - He committed treason , took part in a civil war and broke the Geneva convention whilst doing so .
+# mwe = - He committed treason , took_part~in a civil war and broke the Geneva convention whilst doing so .
+1	-	-	PUNCT	NFP	_	3	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+2	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+3	committed	commit	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_	_	V	commit	_	_	_	_	_	O-V
+4	treason	treason	NOUN	NN	Number=Sing	3	obj	_	_	_	N	treason	_	_	_	_	_	O-N
+5	,	,	PUNCT	,	_	6	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
+6	took	take	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	conj	_	_	1:1	V	take part	_	_	2:1	_	take part in	B-V
+7	part	part	NOUN	NN	Number=Sing	6	obj	_	_	1:2	_	_	_	_	2:2	_	_	I_
+8	in	in	ADP	IN	_	11	case	_	_	_	P	in	p.Circumstance	p.Locus	2:3	_	_	I~-P-p.Circumstance|p.Locus
+9	a	a	DET	DT	Definite=Ind|PronType=Art	11	det	_	_	_	DET	a	_	_	_	_	_	O-DET
+10	civil	civil	ADJ	JJ	Degree=Pos	11	amod	_	_	_	ADJ	civil	_	_	_	_	_	O-ADJ
+11	war	war	NOUN	NN	Number=Sing	6	obl	_	_	_	N	war	_	_	_	_	_	O-N
+12	and	and	CCONJ	CC	_	13	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
+13	broke	break	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	conj	_	_	_	V	break	_	_	_	_	_	O-V
+14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_	_	DET	the	_	_	_	_	_	O-DET
+15	Geneva	Geneva	PROPN	NNP	Number=Sing	16	compound	_	_	_	N	Geneva	_	_	_	_	_	O-N
+16	convention	convention	NOUN	NN	Number=Sing	13	obj	_	_	_	N	convention	_	_	_	_	_	O-N
+17	whilst	whilst	SCONJ	IN	_	18	mark	_	_	_	SCONJ	whilst	_	_	_	_	_	O-SCONJ
+18	doing	do	VERB	VBG	VerbForm=Ger	13	advcl	_	_	_	V	do	_	_	_	_	_	O-V
+19	so	so	ADV	RB	_	18	advmod	_	_	_	ADV	so	_	_	_	_	_	O-ADV
+20	.	.	PUNCT	.	_	3	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-04
-# text = He assisted in several counts of murder and attempted murder . -
-# mwe = He assisted in several counts of murder and attempted murder . -
-1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-2	assisted	assist	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_	_	V	assist	_	_	_	_	_	O-V
-3	in	in	ADP	IN	_	5	case	_	_	_	P	in	p.Theme	p.Theme	_	_	_	O-P-p.Theme
-4	several	several	ADJ	JJ	Degree=Pos	5	amod	_	_	_	ADJ	several	_	_	_	_	_	O-ADJ
-5	counts	count	NOUN	NNS	Number=Plur	2	obl	_	_	_	N	count	_	_	_	_	_	O-N
-6	of	of	ADP	IN	_	7	case	_	_	_	P	of	p.Topic	p.Topic	_	_	_	O-P-p.Topic
-7	murder	murder	NOUN	NN	Number=Sing	5	nmod	_	_	_	N	murder	_	_	_	_	_	O-N
-8	and	and	CCONJ	CC	_	9	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-9	attempted	attempt	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	2	conj	_	_	_	V	attempt	_	_	_	_	_	O-V
-10	murder	murder	NOUN	NN	Number=Sing	9	obj	_	_	_	N	murder	_	_	_	_	_	O-N
-11	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
-12	-	-	PUNCT	,	_	2	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+# text = - He assisted in several counts of murder and attempted murder .
+# mwe = - He assisted in several counts of murder and attempted murder .
+1	-	-	PUNCT	NFP	_	3	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+2	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+3	assisted	assist	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_	_	V	assist	_	_	_	_	_	O-V
+4	in	in	ADP	IN	_	6	case	_	_	_	P	in	p.Theme	p.Theme	_	_	_	O-P-p.Theme
+5	several	several	ADJ	JJ	Degree=Pos	6	amod	_	_	_	ADJ	several	_	_	_	_	_	O-ADJ
+6	counts	count	NOUN	NNS	Number=Plur	3	obl	_	_	_	N	count	_	_	_	_	_	O-N
+7	of	of	ADP	IN	_	8	case	_	_	_	P	of	p.Topic	p.Topic	_	_	_	O-P-p.Topic
+8	murder	murder	NOUN	NN	Number=Sing	6	nmod	_	_	_	N	murder	_	_	_	_	_	O-N
+9	and	and	CCONJ	CC	_	10	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
+10	attempted	attempt	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	conj	_	_	_	V	attempt	_	_	_	_	_	O-V
+11	murder	murder	NOUN	NN	Number=Sing	10	obj	_	_	_	N	murder	_	_	_	_	_	O-N
+12	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-05
-# text = He used Unforgivables ( on Katie Bell ) , which as the name says are unforgivable and earn you a lifetime stay in Azkaban . -
-# mwe = He used Unforgivables ( on Katie Bell ) , which as the name says are unforgivable and earn you a lifetime stay in Azkaban . -
-1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-2	used	use	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_	_	V	use	_	_	_	_	_	O-V
-3	Unforgivables	unforgivable	NOUN	NNS	Number=Plur	2	obj	_	_	_	N	unforgivable	_	_	_	_	_	O-N
-4	(	(	PUNCT	-LRB-	_	6	punct	_	_	_	PUNCT	(	_	_	_	_	_	O-PUNCT
-5	on	on	ADP	IN	_	6	case	_	_	_	P	on	p.Goal	p.Locus	_	_	_	O-P-p.Goal|p.Locus
-6	Katie	Katie	PROPN	NNP	Number=Sing	3	nmod	_	_	_	N	Katie	_	_	_	_	_	O-N
-7	Bell	Bell	PROPN	NNP	Number=Sing	6	flat	_	_	_	N	Bell	_	_	_	_	_	O-N
-8	)	)	PUNCT	-RRB-	_	6	punct	_	_	_	PUNCT	)	_	_	_	_	_	O-PUNCT
-9	,	,	PUNCT	,	_	3	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-10	which	which	PRON	WDT	PronType=Rel	14	nsubj	_	_	_	PRON	which	_	_	_	_	_	O-PRON
-11	as	as	SCONJ	IN	_	14	mark	_	_	_	P	as	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
-12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_	_	DET	the	_	_	_	_	_	O-DET
-13	name	name	NOUN	NN	Number=Sing	14	nsubj	_	_	_	N	name	_	_	_	_	_	O-N
-14	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	_	_	_	V	say	_	_	_	_	_	O-V
-15	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	16	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-16	unforgivable	unforgivable	ADJ	JJ	Degree=Pos	14	ccomp	_	_	_	ADJ	unforgivable	_	_	_	_	_	O-ADJ
-17	and	and	CCONJ	CC	_	18	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-18	earn	earn	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	16	conj	_	_	_	V	earn	_	_	_	_	_	O-V
-19	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	18	iobj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
-20	a	a	DET	DT	Definite=Ind|PronType=Art	22	det	_	_	_	DET	a	_	_	_	_	_	O-DET
-21	lifetime	lifetime	NOUN	NN	Number=Sing	22	compound	_	_	_	N	lifetime	_	_	_	_	_	O-N
-22	stay	stay	NOUN	NN	Number=Sing	18	obj	_	_	_	N	stay	_	_	_	_	_	O-N
-23	in	in	ADP	IN	_	24	case	_	_	_	P	in	p.Locus	p.Locus	_	_	_	O-P-p.Locus
-24	Azkaban	Azkaban	PROPN	NNP	Number=Sing	22	nmod	_	_	_	N	Azkaban	_	_	_	_	_	O-N
-25	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
-26	-	-	PUNCT	,	_	2	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+# text = - He used Unforgivables ( on Katie Bell ) , which as the name says are unforgivable and earn you a lifetime stay in Azkaban .
+# mwe = - He used Unforgivables ( on Katie Bell ) , which as the name says are unforgivable and earn you a lifetime stay in Azkaban .
+1	-	-	PUNCT	,	_	3	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+2	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+3	used	use	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_	_	V	use	_	_	_	_	_	O-V
+4	Unforgivables	unforgivable	NOUN	NNS	Number=Plur	3	obj	_	_	_	N	unforgivable	_	_	_	_	_	O-N
+5	(	(	PUNCT	-LRB-	_	7	punct	_	_	_	PUNCT	(	_	_	_	_	_	O-PUNCT
+6	on	on	ADP	IN	_	7	case	_	_	_	P	on	p.Goal	p.Locus	_	_	_	O-P-p.Goal|p.Locus
+7	Katie	Katie	PROPN	NNP	Number=Sing	4	nmod	_	_	_	N	Katie	_	_	_	_	_	O-N
+8	Bell	Bell	PROPN	NNP	Number=Sing	7	flat	_	_	_	N	Bell	_	_	_	_	_	O-N
+9	)	)	PUNCT	-RRB-	_	7	punct	_	_	_	PUNCT	)	_	_	_	_	_	O-PUNCT
+10	,	,	PUNCT	,	_	4	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
+11	which	which	PRON	WDT	PronType=Rel	15	nsubj	_	_	_	PRON	which	_	_	_	_	_	O-PRON
+12	as	as	SCONJ	IN	_	15	mark	_	_	_	P	as	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_	_	DET	the	_	_	_	_	_	O-DET
+14	name	name	NOUN	NN	Number=Sing	15	nsubj	_	_	_	N	name	_	_	_	_	_	O-N
+15	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_	_	V	say	_	_	_	_	_	O-V
+16	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	17	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
+17	unforgivable	unforgivable	ADJ	JJ	Degree=Pos	15	ccomp	_	_	_	ADJ	unforgivable	_	_	_	_	_	O-ADJ
+18	and	and	CCONJ	CC	_	19	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
+19	earn	earn	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	17	conj	_	_	_	V	earn	_	_	_	_	_	O-V
+20	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	19	iobj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
+21	a	a	DET	DT	Definite=Ind|PronType=Art	23	det	_	_	_	DET	a	_	_	_	_	_	O-DET
+22	lifetime	lifetime	NOUN	NN	Number=Sing	23	compound	_	_	_	N	lifetime	_	_	_	_	_	O-N
+23	stay	stay	NOUN	NN	Number=Sing	19	obj	_	_	_	N	stay	_	_	_	_	_	O-N
+24	in	in	ADP	IN	_	25	case	_	_	_	P	in	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+25	Azkaban	Azkaban	PROPN	NNP	Number=Sing	23	nmod	_	_	_	N	Azkaban	_	_	_	_	_	O-N
+26	.	.	PUNCT	.	_	3	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-06
-# text = At some point , namely as he had to do wet work , he realised that he had chosen the wrong side , just like many in the Waffen - SS and Hitler - Jugend . -
-# mwe = At_some_point , namely as he had to do wet work , he realised that he had chosen the wrong side , just like many in the Waffen - SS and Hitler - Jugend . -
-1	At	at	ADP	IN	_	3	case	_	_	1:1	PP	at some point	p.Time	p.Time	_	_	_	B-PP-p.Time
-2	some	some	DET	DT	_	3	det	_	_	1:2	_	_	_	_	_	_	_	I_
-3	point	point	NOUN	NN	Number=Sing	15	obl	_	_	1:3	_	_	_	_	_	_	_	I_
-4	,	,	PUNCT	,	_	15	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-5	namely	namely	ADV	RB	_	15	advmod	_	_	_	ADV	namely	_	_	_	_	_	O-ADV
-6	as	as	SCONJ	IN	_	8	mark	_	_	_	P	as	p.Time	p.Time	_	_	_	O-P-p.Time
-7	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-8	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	advcl	_	_	_	V	have	_	_	_	_	_	O-V
-9	to	to	PART	TO	_	10	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-10	do	do	VERB	VB	VerbForm=Inf	8	xcomp	_	_	_	V	do	_	_	_	_	_	O-V
-11	wet	wet	ADJ	JJ	Degree=Pos	12	amod	_	_	_	ADJ	wet	_	_	_	_	_	O-ADJ
-12	work	work	NOUN	NN	Number=Sing	10	obj	_	_	_	N	work	_	_	_	_	_	O-N
-13	,	,	PUNCT	,	_	15	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-14	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-15	realised	realise	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_	_	V	realise	_	_	_	_	_	O-V
-16	that	that	SCONJ	IN	_	19	mark	_	_	_	SCONJ	that	_	_	_	_	_	O-SCONJ
-17	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-18	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	19	aux	_	_	_	AUX	have	_	_	_	_	_	O-AUX
-19	chosen	choose	VERB	VBN	Tense=Past|VerbForm=Part	15	ccomp	_	_	_	V	choose	_	_	_	_	_	O-V
-20	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_	_	DET	the	_	_	_	_	_	O-DET
-21	wrong	wrong	ADJ	JJ	Degree=Pos	22	amod	_	_	_	ADJ	wrong	_	_	_	_	_	O-ADJ
-22	side	side	NOUN	NN	Number=Sing	19	obj	_	_	_	N	side	_	_	_	_	_	O-N
-23	,	,	PUNCT	,	_	22	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
-24	just	just	ADV	RB	_	26	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
-25	like	like	ADP	IN	_	26	case	_	_	_	P	like	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
-26	many	many	ADJ	JJ	Degree=Pos	19	obl	_	_	_	ADJ	many	_	_	_	_	_	O-ADJ
-27	in	in	ADP	IN	_	31	case	_	_	_	P	in	p.Org	p.Locus	_	_	_	O-P-p.Org|p.Locus
-28	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_	_	DET	the	_	_	_	_	_	O-DET
-29	Waffen	Waffen	PROPN	NNP	Number=Sing	31	compound	_	_	_	N	Waffen	_	_	_	_	_	O-N
-30	-	-	PUNCT	HYPH	_	31	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
-31	SS	SS	PROPN	NNP	Number=Sing	26	nmod	_	_	_	N	SS	_	_	_	_	_	O-N
-32	and	and	CCONJ	CC	_	35	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
-33	Hitler	Hitler	PROPN	NNP	Number=Sing	35	compound	_	_	_	N	Hitler	_	_	_	_	_	O-N
-34	-	-	PUNCT	HYPH	_	35	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
-35	Jugend	Jugend	PROPN	NNP	Number=Sing	31	conj	_	_	_	N	Jugend	_	_	_	_	_	O-N
-36	.	.	PUNCT	.	_	15	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
-37	-	-	PUNCT	,	_	15	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+# text = - At some point , namely as he had to do wet work , he realised that he had chosen the wrong side , just like many in the Waffen - SS and Hitler - Jugend .
+# mwe = - At_some_point , namely as he had to do wet work , he realised that he had chosen the wrong side , just like many in the Waffen - SS and Hitler - Jugend .
+1	-	-	PUNCT	,	_	16	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+2	At	at	ADP	IN	_	4	case	_	_	1:1	PP	at some point	p.Time	p.Time	_	_	_	B-PP-p.Time
+3	some	some	DET	DT	_	4	det	_	_	1:2	_	_	_	_	_	_	_	I_
+4	point	point	NOUN	NN	Number=Sing	16	obl	_	_	1:3	_	_	_	_	_	_	_	I_
+5	,	,	PUNCT	,	_	16	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
+6	namely	namely	ADV	RB	_	16	advmod	_	_	_	ADV	namely	_	_	_	_	_	O-ADV
+7	as	as	SCONJ	IN	_	9	mark	_	_	_	P	as	p.Time	p.Time	_	_	_	O-P-p.Time
+8	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+9	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	advcl	_	_	_	V	have	_	_	_	_	_	O-V
+10	to	to	PART	TO	_	11	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
+11	do	do	VERB	VB	VerbForm=Inf	9	xcomp	_	_	_	V	do	_	_	_	_	_	O-V
+12	wet	wet	ADJ	JJ	Degree=Pos	13	amod	_	_	_	ADJ	wet	_	_	_	_	_	O-ADJ
+13	work	work	NOUN	NN	Number=Sing	11	obj	_	_	_	N	work	_	_	_	_	_	O-N
+14	,	,	PUNCT	,	_	16	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
+15	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+16	realised	realise	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_	_	V	realise	_	_	_	_	_	O-V
+17	that	that	SCONJ	IN	_	20	mark	_	_	_	SCONJ	that	_	_	_	_	_	O-SCONJ
+18	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+19	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	20	aux	_	_	_	AUX	have	_	_	_	_	_	O-AUX
+20	chosen	choose	VERB	VBN	Tense=Past|VerbForm=Part	16	ccomp	_	_	_	V	choose	_	_	_	_	_	O-V
+21	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_	_	DET	the	_	_	_	_	_	O-DET
+22	wrong	wrong	ADJ	JJ	Degree=Pos	23	amod	_	_	_	ADJ	wrong	_	_	_	_	_	O-ADJ
+23	side	side	NOUN	NN	Number=Sing	20	obj	_	_	_	N	side	_	_	_	_	_	O-N
+24	,	,	PUNCT	,	_	23	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
+25	just	just	ADV	RB	_	27	advmod	_	_	_	ADV	just	_	_	_	_	_	O-ADV
+26	like	like	ADP	IN	_	27	case	_	_	_	P	like	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+27	many	many	ADJ	JJ	Degree=Pos	20	obl	_	_	_	ADJ	many	_	_	_	_	_	O-ADJ
+28	in	in	ADP	IN	_	32	case	_	_	_	P	in	p.Org	p.Locus	_	_	_	O-P-p.Org|p.Locus
+29	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_	_	DET	the	_	_	_	_	_	O-DET
+30	Waffen	Waffen	PROPN	NNP	Number=Sing	32	compound	_	_	_	N	Waffen	_	_	_	_	_	O-N
+31	-	-	PUNCT	HYPH	_	32	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+32	SS	SS	PROPN	NNP	Number=Sing	27	nmod	_	_	_	N	SS	_	_	_	_	_	O-N
+33	and	and	CCONJ	CC	_	36	cc	_	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
+34	Hitler	Hitler	PROPN	NNP	Number=Sing	36	compound	_	_	_	N	Hitler	_	_	_	_	_	O-N
+35	-	-	PUNCT	HYPH	_	36	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+36	Jugend	Jugend	PROPN	NNP	Number=Sing	32	conj	_	_	_	N	Jugend	_	_	_	_	_	O-N
+37	.	.	PUNCT	.	_	16	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-07
-# text = He takes pleasure from the suffering of others ( Buckbeak s trial ) Looks pretty Nazi - like to me
-# mwe = He takes pleasure from the suffering of others ( Buckbeak 's trial ) Looks pretty Nazi - like to me
-1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
-2	takes	take	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	_	V	take	_	_	_	_	_	O-V
-3	pleasure	pleasure	NOUN	NN	Number=Sing	2	obj	_	_	_	N	pleasure	_	_	_	_	_	O-N
-4	from	from	ADP	IN	_	6	case	_	_	_	P	from	p.Stimulus	p.Source	_	_	_	O-P-p.Stimulus|p.Source
-5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_	_	DET	the	_	_	_	_	_	O-DET
-6	suffering	suffering	NOUN	NN	Number=Sing	3	nmod	_	_	_	N	suffering	_	_	_	_	_	O-N
-7	of	of	ADP	IN	_	8	case	_	_	_	P	of	p.Experiencer	p.Gestalt	_	_	_	O-P-p.Experiencer|p.Gestalt
-8	others	other	NOUN	NNS	Number=Plur	6	nmod	_	_	_	N	other	_	_	_	_	_	O-N
-9	(	(	PUNCT	-LRB-	_	12	punct	_	_	_	PUNCT	(	_	_	_	_	_	O-PUNCT
-10	Buckbeak	Buckbeak	PROPN	NNP	Number=Sing	12	nmod:poss	_	_	_	N	Buckbeak	_	_	_	_	_	O-N
-11	's	's	PART	POS	_	10	case	_	_	_	POSS	's	p.Theme	p.Gestalt	_	_	_	O-POSS-p.Theme|p.Gestalt
-12	trial	trial	NOUN	NN	Number=Sing	8	appos	_	_	_	N	trial	_	_	_	_	_	O-N
-13	)	)	PUNCT	-RRB-	_	12	punct	_	_	_	PUNCT	)	_	_	_	_	_	O-PUNCT
-14	Looks	look	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	_	V	look	_	_	_	_	_	O-V
-15	pretty	pretty	ADV	RB	_	18	advmod	_	_	_	ADV	pretty	_	_	_	_	_	O-ADV
-16	Nazi	Nazi	PROPN	NNP	Degree=Pos	18	obl:npmod	_	_	_	N	Nazi	_	_	_	_	_	O-N
-17	-	-	PUNCT	HYPH	_	18	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
-18	like	like	ADJ	JJ	Degree=Pos	14	xcomp	_	_	_	ADJ	like	_	_	_	_	_	O-ADJ
-19	to	to	ADP	IN	_	20	case	_	_	_	P	to	p.Experiencer	p.Goal	_	_	_	O-P-p.Experiencer|p.Goal
-20	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	18	obl	_	_	_	PRON	I	_	_	_	_	_	O-PRON
+# text = - He takes pleasure from the suffering of others ( Buckbeak s trial )
+# mwe = - He takes pleasure from the suffering of others ( Buckbeak 's trial )
+1	-	-	PUNCT	,	_	3	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+2	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	_	PRON	he	_	_	_	_	_	O-PRON
+3	takes	take	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	_	V	take	_	_	_	_	_	O-V
+4	pleasure	pleasure	NOUN	NN	Number=Sing	3	obj	_	_	_	N	pleasure	_	_	_	_	_	O-N
+5	from	from	ADP	IN	_	7	case	_	_	_	P	from	p.Stimulus	p.Source	_	_	_	O-P-p.Stimulus|p.Source
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_	_	DET	the	_	_	_	_	_	O-DET
+7	suffering	suffering	NOUN	NN	Number=Sing	4	nmod	_	_	_	N	suffering	_	_	_	_	_	O-N
+8	of	of	ADP	IN	_	9	case	_	_	_	P	of	p.Experiencer	p.Gestalt	_	_	_	O-P-p.Experiencer|p.Gestalt
+9	others	other	NOUN	NNS	Number=Plur	7	nmod	_	_	_	N	other	_	_	_	_	_	O-N
+10	(	(	PUNCT	-LRB-	_	13	punct	_	_	_	PUNCT	(	_	_	_	_	_	O-PUNCT
+11	Buckbeak	Buckbeak	PROPN	NNP	Number=Sing	13	nmod:poss	_	_	_	N	Buckbeak	_	_	_	_	_	O-N
+12	's	's	PART	POS	_	11	case	_	_	_	POSS	's	p.Theme	p.Gestalt	_	_	_	O-POSS-p.Theme|p.Gestalt
+13	trial	trial	NOUN	NN	Number=Sing	9	parataxis	_	_	_	N	trial	_	_	_	_	_	O-N
+14	)	)	PUNCT	-RRB-	_	13	punct	_	_	_	PUNCT	)	_	_	_	_	_	O-PUNCT
+
+# sent_id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-07
+# text = Looks pretty Nazi - like to me
+# mwe = Looks pretty Nazi - like to me
+1	Looks	look	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	_	V	look	_	_	_	_	_	O-V
+2	pretty	pretty	ADV	RB	_	5	advmod	_	_	_	ADV	pretty	_	_	_	_	_	O-ADV
+3	Nazi	Nazi	PROPN	NNP	Degree=Pos	5	obl:npmod	_	_	_	N	Nazi	_	_	_	_	_	O-N
+4	-	-	PUNCT	HYPH	_	5	punct	_	_	_	PUNCT	-	_	_	_	_	_	O-PUNCT
+5	like	like	ADJ	JJ	Degree=Pos	1	xcomp	_	_	_	ADJ	like	_	_	_	_	_	O-ADJ
+6	to	to	ADP	IN	_	7	case	_	_	_	P	to	p.Experiencer	p.Goal	_	_	_	O-P-p.Experiencer|p.Goal
+7	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	5	obl	_	_	_	PRON	I	_	_	_	_	_	O-PRON
 
 # newdoc id = german-52578494-b41c-299b-5717-5d11f4b2f068
 # sent_id = german-52578494-b41c-299b-5717-5d11f4b2f068-01
@@ -12901,7 +12905,7 @@
 
 # sent_id = english-6522ff46-74b7-061c-09ce-15a8afd4fc7b-02
 # text = But as people said here earlier , because its proportional , every vote does count .
-# mwe = But as people said here earlier , because it 's proportional , every vote does count .
+# mwe = But as people said here earlier , because it s proportional , every vote does count .
 1	But	but	CCONJ	CC	_	16	cc	_	_	_	CCONJ	but	_	_	_	_	_	O-CCONJ
 2	as	as	SCONJ	IN	_	4	mark	_	_	_	DISC	as	_	_	_	_	_	O-DISC
 3	people	people	NOUN	NNS	Number=Plur	4	nsubj	_	_	_	N	people	_	_	_	_	_	O-N
@@ -12911,7 +12915,7 @@
 7	,	,	PUNCT	,	_	16	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 8	because	because	SCONJ	IN	_	11	mark	_	_	_	SCONJ	because	_	_	_	_	_	O-SCONJ
 9	it	it	PRON	PRP	Gender=Neut|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	SpaceAfter=No	_	PRON	it	_	_	_	_	_	O-PRON
-10	's	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Typo=Yes|VerbForm=Fin	11	cop	_	CorrectForm='s	_	V	be	_	_	_	_	_	O-V
+10	s	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|Typo=Yes|VerbForm=Fin	11	cop	_	CorrectForm='s	_	V	be	_	_	_	_	_	O-V
 11	proportional	proportional	ADJ	JJ	Degree=Pos	16	advcl	_	_	_	ADJ	proportional	_	_	_	_	_	O-ADJ
 12	,	,	PUNCT	,	_	16	punct	_	_	_	PUNCT	,	_	_	_	_	_	O-PUNCT
 13	every	every	DET	DT	_	14	det	_	_	_	DET	every	_	_	_	_	_	O-DET
@@ -14427,25 +14431,21 @@
 12	.	.	PUNCT	.	_	4	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = french-2da54a07-d6ae-4cae-bfc2-47155b5b46b3-03
-# text = TBH
-# mwe = TBH
-1	TBH	tbh	INTJ	UH	_	0	root	_	_	_	INTJ	tbh	_	_	_	_	_	O-INTJ
+# text = TBH I ll probably be glued to the couch anyway .
+# mwe = TBH I 'll probably be glued to the couch anyway .
+1	TBH	tbh	INTJ	UH	_	6	discourse	_	_	_	INTJ	tbh	_	_	_	_	_	O-INTJ
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj:pass	_	_	_	PRON	I	_	_	_	_	_	O-PRON
+3	'll	will	AUX	MD	VerbForm=Fin	6	aux	_	_	_	AUX	will	_	_	_	_	_	O-AUX
+4	probably	probably	ADV	RB	_	6	advmod	_	_	_	ADV	probably	_	_	_	_	_	O-ADV
+5	be	be	AUX	VB	VerbForm=Inf	6	aux:pass	_	_	_	AUX	be	_	_	_	_	_	O-AUX
+6	glued	glue	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	_	V	glue	_	_	_	_	_	O-V
+7	to	to	ADP	IN	_	9	case	_	_	_	P	to	p.Locus	p.Goal	_	_	_	O-P-p.Locus|p.Goal
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_	_	DET	the	_	_	_	_	_	O-DET
+9	couch	couch	NOUN	NN	Number=Sing	6	obl	_	_	_	N	couch	_	_	_	_	_	O-N
+10	anyway	anyway	ADV	RB	_	5	advmod	_	_	_	ADV	anyway	_	_	_	_	_	O-ADV
+11	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = french-2da54a07-d6ae-4cae-bfc2-47155b5b46b3-04
-# text = I ll probably be glued to the couch anyway .
-# mwe = I 'll probably be glued to the couch anyway .
-1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj:pass	_	_	_	PRON	I	_	_	_	_	_	O-PRON
-2	'll	will	AUX	MD	VerbForm=Fin	5	aux	_	_	_	AUX	will	_	_	_	_	_	O-AUX
-3	probably	probably	ADV	RB	_	5	advmod	_	_	_	ADV	probably	_	_	_	_	_	O-ADV
-4	be	be	AUX	VB	VerbForm=Inf	5	aux:pass	_	_	_	AUX	be	_	_	_	_	_	O-AUX
-5	glued	glue	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	_	V	glue	_	_	_	_	_	O-V
-6	to	to	ADP	IN	_	8	case	_	_	_	P	to	p.Locus	p.Goal	_	_	_	O-P-p.Locus|p.Goal
-7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_	_	DET	the	_	_	_	_	_	O-DET
-8	couch	couch	NOUN	NN	Number=Sing	5	obl	_	_	_	N	couch	_	_	_	_	_	O-N
-9	anyway	anyway	ADV	RB	_	5	advmod	_	_	_	ADV	anyway	_	_	_	_	_	O-ADV
-10	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
-
-# sent_id = french-2da54a07-d6ae-4cae-bfc2-47155b5b46b3-05
 # text = Or , delay the game two hours and watch it with everyone !
 # mwe = Or , delay the game two hours and watch it with everyone !
 1	Or	or	CCONJ	CC	_	9	cc	_	_	_	CCONJ	or	_	_	_	_	_	O-CCONJ
@@ -18828,42 +18828,42 @@
 9	.	.	PUNCT	.	_	6	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-16
-# text = Some men are good runners . ?
-# mwe = Some men are good runners . ⇒
+# text = Some men are good runners .
+# mwe = Some men are good runners .
 1	Some	some	DET	DT	_	2	det	_	_	_	DET	some	_	_	_	_	_	O-DET
 2	men	man	NOUN	NNS	Number=Plur	5	nsubj	_	_	_	N	man	_	_	_	_	_	O-N
 3	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 4	good	good	ADJ	JJ	Degree=Pos	5	amod	_	_	_	ADJ	good	_	_	_	_	_	O-ADJ
 5	runners	runner	NOUN	NNS	Number=Plur	0	root	_	_	_	N	runner	_	_	_	_	_	O-N
 6	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
-7	⇒	?	PUNCT	.	_	5	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-17
-# text = Reasonable to assume .
-# mwe = Reasonable to assume .
-1	Reasonable	reasonable	ADJ	JJ	Degree=Pos	0	root	_	_	_	ADJ	reasonable	_	_	_	_	_	O-ADJ
-2	to	to	PART	TO	_	3	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-3	assume	assume	VERB	VB	VerbForm=Inf	1	csubj	_	_	_	V	assume	_	_	_	_	_	O-V
-4	.	.	PUNCT	.	_	1	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
+# text = ⇒ Reasonable to assume .
+# mwe = ⇒ Reasonable to assume .
+1	⇒	⇒	PUNCT	.	_	2	punct	_	_	_	PUNCT	⇒	_	_	_	_	_	O-PUNCT
+2	Reasonable	reasonable	ADJ	JJ	Degree=Pos	0	root	_	_	_	ADJ	reasonable	_	_	_	_	_	O-ADJ
+3	to	to	PART	TO	_	4	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
+4	assume	assume	VERB	VB	VerbForm=Inf	2	csubj	_	_	_	V	assume	_	_	_	_	_	O-V
+5	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-18
-# text = All men are good runners . ?
-# mwe = All men are good runners . ⇒
+# text = All men are good runners .
+# mwe = All men are good runners .
 1	All	all	DET	DT	_	2	det	_	_	_	DET	all	_	_	_	_	_	O-DET
 2	men	man	NOUN	NNS	Number=Plur	5	nsubj	_	_	_	N	man	_	_	_	_	_	O-N
 3	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_	_	AUX	be	_	_	_	_	_	O-AUX
 4	good	good	ADJ	JJ	Degree=Pos	5	amod	_	_	_	ADJ	good	_	_	_	_	_	O-ADJ
 5	runners	runner	NOUN	NNS	Number=Plur	0	root	_	_	_	N	runner	_	_	_	_	_	O-N
 6	.	.	PUNCT	.	_	5	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
-7	⇒	?	PUNCT	.	_	5	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-19
-# text = Unreasonable to assume .
-# mwe = Unreasonable to assume .
-1	Unreasonable	unreasonable	ADJ	JJ	Degree=Pos	0	root	_	_	_	ADJ	unreasonable	_	_	_	_	_	O-ADJ
-2	to	to	PART	TO	_	3	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
-3	assume	assume	VERB	VB	VerbForm=Inf	1	csubj	_	_	_	V	assume	_	_	_	_	_	O-V
-4	.	.	PUNCT	.	_	1	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
+# text = ⇒ Unreasonable to assume .
+# mwe = ⇒ Unreasonable to assume .
+1	⇒	⇒	PUNCT	.	_	2	punct	_	_	_	PUNCT	⇒	_	_	_	_	_	O-PUNCT
+2	Unreasonable	unreasonable	ADJ	JJ	Degree=Pos	0	root	_	_	_	ADJ	unreasonable	_	_	_	_	_	O-ADJ
+3	to	to	PART	TO	_	4	mark	_	_	_	INF	to	_	_	_	_	_	O-INF
+4	assume	assume	VERB	VB	VerbForm=Inf	2	csubj	_	_	_	V	assume	_	_	_	_	_	O-V
+5	.	.	PUNCT	.	_	2	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-e0fc66c4-0bd0-f7fd-73e0-9d7886571ddb-20
 # text = > sorry man , if you re going to tell an american what they can or can not do or say .
@@ -24969,7 +24969,7 @@
 4	of	of	ADP	IN	_	6	case	_	_	_	P	of	p.Stuff	p.Stuff	_	_	_	O-P-p.Stuff
 5	humming	hum	VERB	VBG	VerbForm=Ger	6	amod	_	_	_	V	hum	_	_	_	_	_	O-V
 6	machinery	machinery	NOUN	NN	Number=Sing	1	nmod	_	_	_	N	machinery	_	_	_	_	_	O-N
-7	! 	!	PUNCT	.	_	1	punct	_	_	_	PUNCT	!	_	_	_	_	_	O-PUNCT
+7	!	!	PUNCT	.	_	1	punct	_	_	_	PUNCT	!	_	_	_	_	_	O-PUNCT
 
 # sent_id = german-a71d226c-2c56-a0ee-64be-9726fc430932-02
 # text = I ve never seen so many knobs .
