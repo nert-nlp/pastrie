@@ -234,6 +234,7 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
 
     sent = {}
     sent_conllulex = ''
+    first_sent_in_doc = False
 
     for ln in chain(inF, [""]):  # Add empty line at the end to avoid skipping the last sent
         ln = ln.strip()
@@ -248,12 +249,18 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
 
         if ln.startswith('#'):  # metadata
             if store_conllulex=='full': sent_conllulex += ln + '\n'
-            if ln.startswith('# newdoc ') or ln.startswith('# newpar ') or ln.startswith('# TODO: '): continue
+            if ln.startswith('# newdoc '):
+                first_sent_in_doc = True
+                continue
+            elif ln.startswith('# newpar ') or ln.startswith('# TODO: '): continue
             m = re.match(r'^# (\w+) = (.*)$', ln)
             assert m,ln
             k, v = m.group(1), m.group(2)
             assert k not in ('toks', 'swes', 'smwes', 'wmwes')
+            assert k not in sent,(k,sent[k])
             sent[k] = v
+            if k=='sent_id':
+                assert first_sent_in_doc==(int(v.rsplit('-',1)[1])==1),v   # First sentence in document should end in -1, -01, -001 etc.
         else:   # regular and ellipsis tokens
             if 'toks' not in sent:
                 sent['toks'] = []   # excludes ellipsis tokens, so they don't interfere with indexing
@@ -368,6 +375,8 @@ def load_sents(inF, morph_syn=True, misc=True, ss_mapper=None, store_conllulex=F
                 sent['etoks'].append(tok)
             else:
                 sent['toks'].append(tok)
+
+            first_sent_in_doc = False
     if sent:
         if store_conllulex: sent['conllulex'] = sent_conllulex
         _postproc_sent(sent)
@@ -407,11 +416,22 @@ def print_sent_json(sent):
 def print_json(sents):
     print('[')
     first = True
+    sent_ids = set()
+    sent_id = None
     for sent in sents:
+        # check for duplicate sentence IDs
+        prev_sent_id = sent_id
+        sent_id = sent['sent_id']
+        assert sent_id not in sent_ids,('Duplicate sent_id:',sent['sent_id'])
+        sent_ids.add(sent['sent_id'])
+
         # specially format the output
         if first:
             first = False
-        else:
+        else:   # check that sentence IDs count from 1 within docs
+            pdoc, pnum = prev_sent_id.rsplit('-',1)
+            doc, num = sent_id.rsplit('-',1)
+            assert pdoc==doc and int(num)==int(pnum)+1 or pdoc!=doc and int(num)==1,('Invalid sent_id:',sent_id,'after',prev_sent_id)
             print(',')
         print_sent_json(sent)
     print(']')

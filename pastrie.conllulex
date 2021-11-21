@@ -7183,7 +7183,7 @@
 22	itself	itself	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	21	nmod:npmod	_	_	_	PRON	itself	_	_	_	_	_	O-PRON
 23	?	?	PUNCT	.	_	2	punct	_	_	_	PUNCT	?	_	_	_	_	_	O-PUNCT
 
-# sent_id = german-cfa8fd9b-a8c2-9379-c816-a94b0e42b253-03
+# sent_id = german-cfa8fd9b-a8c2-9379-c816-a94b0e42b253-02
 # text = you just answered the question yourself.
 # mwe = you just answered the question yourself .
 1	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	3	nsubj	_	_	_	PRON	you	_	_	_	_	_	O-PRON
@@ -7194,7 +7194,7 @@
 6	yourself	yourself	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs|Reflex=Yes	3	obl:npmod	_	_	_	PRON	yourself	_	_	_	_	_	O-PRON
 7	.	.	PUNCT	.	_	3	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
-# sent_id = german-cfa8fd9b-a8c2-9379-c816-a94b0e42b253-04
+# sent_id = german-cfa8fd9b-a8c2-9379-c816-a94b0e42b253-03
 # text = Where else should they be if not on the PCB?
 # mwe = Where else should they be if not on the PCB ?
 1	Where	where	ADV	WRB	PronType=Int	10	advmod	_	_	_	ADV	where	_	_	_	_	_	O-ADV
@@ -9614,7 +9614,7 @@
 13	trial	trial	NOUN	NN	Number=Sing	9	parataxis	_	_	_	N	trial	_	_	_	_	_	O-N
 14	)	)	PUNCT	-RRB-	_	13	punct	_	_	_	PUNCT	)	_	_	_	_	_	O-PUNCT
 
-# sent_id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-07
+# sent_id = german-b7b4ea19-f3c6-0ca9-f523-ae25f9908c04-08
 # text = Looks pretty Nazi-like to me
 # mwe = Looks pretty Nazi - like to me
 1	Looks	look	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	_	V	look	_	_	_	_	_	O-V
