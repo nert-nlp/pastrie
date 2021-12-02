@@ -46,3 +46,13 @@ PASTRIE mostly follows [STREUSLE](https://github.com/nert-nlp/streusle) with res
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+# Development
+[pastrie.conllulex](./pastrie.conllulex) is the source of truth, and the two `.json` files are derived from it using the [conllulex tools](https://github.com/nert-nlp/conllulex). Usage:
+
+```
+conllulex2json -c pastrie pastrie.conllulex pastrie.json
+conllulex-govobj --no-edeps pastrie.json pastrie.govobj.json
+```
+
+(Note that the current [pastrie.conllulex](./pastrie.conllulex) was created from an earlier version of it that did not contain some information such as LEXCAT. Cf. [this commit](https://github.com/nert-nlp/pastrie/tree/f742d98f478d6e1e54b2e19fda01ea2247bfd9ef).)
